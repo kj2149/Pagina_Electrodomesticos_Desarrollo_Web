@@ -77,12 +77,19 @@ aside{
     border: 1px solid rgb(17, 17, 17);
 }
 
+/*Scroll-barra de desplazamiento*/
+body::-webkit-scrollbar{
+    width: 15px;
+    background: #1d9b97;
 
-
-
-
-
-
+}
+body::-webkit-scrollbar-thumb{
+    background: #EBF8E5;
+    border-radius: 6px;
+    border-right: 2px solid #1d9b97;
+    border-left: 2px solid #1d9b97;
+    overflow: auto;
+}
 
 ul#css3menu1,ul#css3menu1 ul{
 	margin:0;list-style:none;padding:0;background-color:none;border-width:0;border-style:solid;border-color: none; }

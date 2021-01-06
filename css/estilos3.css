@@ -18,6 +18,12 @@ img{
     border-radius: 50px;
 
 }
+#imagen{
+    width: 120px;
+    height: 110px;
+    
+
+}
 .titulo{
     float: right;
     padding: 8px;

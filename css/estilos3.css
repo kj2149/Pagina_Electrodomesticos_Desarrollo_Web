@@ -1,15 +1,11 @@
+/*estilo de toda la pagina*/
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     
 }
-/*
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    */
+/*estilo de imagenes*/
 img{
     width: 250px;
     height: 100px;
@@ -24,6 +20,7 @@ img{
     
 
 }
+/*estilo de header*/
 .titulo{
     float: right;
     padding: 8px;
@@ -71,17 +68,22 @@ header{
     background: #6ECC40;
     color: #EBF8E5;
 }
+/*estilo del aside*/
 aside{
     width: 15%;
     background: rgba(88, 86, 86, 0.137);
     padding: 10px;
     float: left;
-    height: 800px;
+    height: 1000px;
     margin-left: 2px;
     margin-top: 2px;
-    text-align: left;
+    margin-bottom: 0px;
     border: 1px solid rgb(17, 17, 17);
 }
+.filtro {
+    margin-left: 10px;
+}
+
 
 /*Scroll-barra de desplazamiento*/
 body::-webkit-scrollbar{
@@ -96,7 +98,7 @@ body::-webkit-scrollbar-thumb{
     border-left: 2px solid #1d9b97;
     overflow: auto;
 }
-
+/*estilo del menu desplegable*/
 ul#css3menu1,ul#css3menu1 ul{
 	margin:0;list-style:none;padding:0;background-color:none;border-width:0;border-style:solid;border-color: none; }
 ul#css3menu1 ul{
@@ -181,18 +183,19 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 		display: block;}
 	ul#css3menu1 > li.switch > label {		position: absolute;cursor: pointer;top: 0;left: 0;right: 0;bottom: 0;}}
 
-
+/*estilo barra de busqueda*/
 .buscar{
     position: absolute;
     padding: 0px;
     margin-left: 1080px;
     margin-top: -90px;
+    float: right;
     
     
 }
 .buscar input{
     width: 200px;
-    height: 40px;
+    height: 45px;
     padding: 100 200px;
     font-size: -5px;
     color:rgb(3, 3, 3);
@@ -200,8 +203,8 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
     border: 15px solid #0000;
     border-radius: 30px;
     transition: all 0.6s ease;
-    color: #000000;
-    
+    color: #00000000;
+    float: right;
 
 }
 .btn{
@@ -210,14 +213,15 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
     right: 0;
     background: #14cfd6;
     width: 40px;
-    height: 40px;
+    height: 45px;
     line-height: 20px;
     text-align: center;
     color: rgb(19, 18, 18);
     font-size: 28px;
     border-radius: 50%;
     cursor: pointer;
-}/*
+}
+/*
 .buscar:hover input{
     width: 240px;
 }

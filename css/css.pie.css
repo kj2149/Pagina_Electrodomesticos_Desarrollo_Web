@@ -55,22 +55,14 @@ footer{
     height: 30px;
     margin: 6px;
 }
-#what{
-    width: 30px;
-    height: 30px;
-    margin: 6px;
-    border-radius: 0%;
-}
+
 #gml{
     width: 33px;
     height: 30px;
     margin: 6px;
     border-radius: 0%;
 }
-#phone{
-    width: 30%;
-    height: 30%;
-}
+
 #phon{
     width: 30px;
     height: 30px;

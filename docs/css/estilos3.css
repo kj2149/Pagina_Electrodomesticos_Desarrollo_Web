@@ -5,6 +5,14 @@
     box-sizing: border-box;
     
 }
+/*estilo parael parallax*/
+#parallax {
+    background-image: url(../imagenes/pl2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
 /*estilo de imagenes*/
 img{
     width: 250px;
@@ -36,7 +44,8 @@ img{
     
 }
 header{
-    background-color: rgba(12, 12, 12, 0.89);
+   /* background-color: rgba(12, 12, 12, 0.89);*/
+    background-image: url(../imagenes/pl1.jpg);
 }
 .iniciar{
     float: right;
@@ -48,6 +57,7 @@ header{
     border: 1px solid #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
+    background: rgba(59, 58, 58, 0.952);
 }
 .registrar{
     float: right;
@@ -59,6 +69,7 @@ header{
     border: 1px solid #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
+    background: rgba(59, 58, 58, 0.952);
 }
 .iniciar:hover{
     background: #6ECC40;
@@ -122,11 +133,12 @@ header{
 }
 /*estilo del aside*/
 aside{
+    display: block;
     width: 12%;
     background: rgba(97, 94, 94, 0.226);
     padding: 10px;
     float: left;
-    height: 1000px;
+    height: 1500px;
     margin-left: 2px;
     margin-top: -360px;
     margin-bottom: 0px;
@@ -135,7 +147,31 @@ aside{
 .filtro {
     margin-left: 10px;
 }
+/*estilo para contenido*/
 
+.col {
+    display: block;
+    width: 100px;
+    margin: 30px;
+    padding: 0px;
+    color: white;
+    background: rgba(64, 224, 208, 0.377);
+    
+}
+.til{
+    color: white;
+
+    display: block;
+    width: 1100px;
+    margin-left: 200px;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #1F618D;
+    background-image: url(../imagenes/pl1.jpg);
+    background-repeat: repeat;
+    background-size: 50%;
+    background-attachment: fixed; 
+}
 
 /*Scroll-barra de desplazamiento*/
 body::-webkit-scrollbar{

@@ -1,0 +1,21 @@
+/*ENCABEZADO DE LA PAGINA DE TERMINOS Y CONDICIONES*/
+
+.barra{
+    width: 100%;
+    margin: 0%;
+    padding: 2%;
+    height: 150px;
+    background-color: rgb(43, 48, 53);
+}
+
+.especificartermino{
+    width: 90%;
+    height: 60%;
+    padding: 5%;
+    margin: 6%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    box-shadow: rgba(0, 0, 0, 0.109);
+    background-color: rgb(215, 255, 231);
+    position: relative;
+}

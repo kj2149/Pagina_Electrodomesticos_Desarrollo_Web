@@ -29,7 +29,7 @@ img{
 
 }
 /*estilo de header*/
-.titulo{
+.titulo1{
     float: right;
     padding: 8px;
     margin-top: 40px;
@@ -39,8 +39,8 @@ img{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 2px outset #04faff;
 
-    box-shadow: rgb(240, 129, 15) 5px 5px 100px; 
-    text-shadow: 0px 0 rgb(240, 129, 15), 0 0px rgb(14, 73, 209), 1px 0  rgb(240, 129, 15), 0 -1px  rgb(240, 129, 15), -2px 2px 0  rgb(240, 129, 15), 2px 2px 0 #f0810f, 1px 1px #f0810f, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+    box-shadow: rgb(10, 170, 233) 5px 5px 10px; 
+    text-shadow: 0px 0 rgb(14, 73, 209), 0 0px rgb(14, 73, 209), 1px 0  rgb(14, 73, 209), 0 -1px  rgb(14, 73, 209), -2px 2px 0  rgb(14, 73, 209), 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
     
 }
 header{
@@ -54,7 +54,7 @@ header{
     margin-right: -820px;
     margin-bottom: 20px;
     color: rgb(50, 190, 214);
-    border: 2px outset #F0810F;
+    border: 2px outset #f0610f79;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: underline;
     background: rgba(17, 17, 17);
@@ -66,18 +66,18 @@ header{
     margin-right: -910px;
     margin-bottom: 20px;
     color: rgb(50, 190, 214);
-    border: 2px inset #F0810F;
+    border: 2px inset #f0610f79;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: underline;
     background: rgba(17, 17, 17);
 }
 .iniciar:hover{
-    background: #F0810F;
-    color: #EBF8E5;
+    background: #0fe1f0;
+    color: #141414;
 }
 .registrar:hover{
-    background: #F0810F;
-    color: #EBF8E5;
+    background: #0fe1f0;
+    color: #141414;
 }
 /*estilo slider*/
 .slider{
@@ -213,7 +213,7 @@ ul#css3menu1 ul>li{
 ul#css3menu1 a:active, ul#css3menu1 a:focus{
 	outline-style:none;}
 ul#css3menu1 a{
-	display:block;vertical-align:middle;text-align:center;text-decoration:none;font:19px Arial,sans-serif;color:#32bed6;cursor:default;padding:3px;background-color:#111111;background-repeat:repeat;border-width:0px;border-style:none;border-color: none;}
+	display:block;vertical-align: middle;text-align:center;text-decoration:none;font:19px Arial,sans-serif;color:#32bed6;cursor:default;padding:3px;background-color:#111111;background-repeat:repeat;border-width:0px;border-style:none;border-color: none;}
 ul#css3menu1 ul li{
 	float:none;margin:0;}
 ul#css3menu1 ul a{

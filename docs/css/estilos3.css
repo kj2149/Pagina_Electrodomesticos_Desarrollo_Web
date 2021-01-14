@@ -36,6 +36,7 @@
 #imagen{
     width: 120px;
     height: 110px;
+	padding: 5px; margin: 5px;  float: center 120px;
     
 
 }

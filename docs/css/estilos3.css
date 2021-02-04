@@ -26,10 +26,10 @@
 }
 /*estilo de imagenes*/
 .logo{
-    width: 200px;
-    height: 100px;
-    margin-top: -5px;
-    margin-left: -21px;
+    width: 160px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 0px;
     
 
 }
@@ -152,6 +152,7 @@ aside{
     display: block;
     width: 12.5%;
     background: rgba(97, 94, 94, 0.226);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 10px;
     float: left;
     height: 5000px;
@@ -172,12 +173,14 @@ aside{
     margin: 30px;
     padding: 0px;
     color: white;
-    background: rgba(64, 224, 208, 0.377);
+    background: rgba(36, 107, 170);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
 
 .til{
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     display: block;
     width: 1100px;
@@ -294,13 +297,13 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
     position: absolute;
     padding: 0px;
     margin-left: 1080px;
-    margin-top: -90px;
+    margin-top: -65px;
     float: right;
     
     
 }
 .buscar1 input{
-    width: 245px;
+    width: 255px;
     height: 35px;
     padding: 100 200px;
     font-size: -5px;

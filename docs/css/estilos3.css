@@ -20,16 +20,38 @@
 #parallax {
     background-image: url(../imagenes/pl2.jpg);
     background-repeat: no-repeat;
+/*estilo de toda la pagina*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+/*estilo del logo*//*
+.logo{
+    float: left;
+    width: 40%;
+    height: 500px;
+    padding: 8px;
+    margin-top: 30px;
+    margin-right:480px;
+    margin-bottom: 30px;
+}*/
+
+/*estilo parael parallax*/
+#parallax {
+    background-image: url(../imagenes/pl2.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     
 }
 /*estilo de imagenes*/
 .logo{
-    width: 275px;
-    height: 105px;
-    margin-top: 2px;
-    margin-left: -50px;
+    width: 200px;
+    height: 100px;
+    margin-top: -5px;
+    margin-left: -21px;
     
 
 }
@@ -45,7 +67,7 @@
     float: right;
     padding: 8px;
     margin-top: 30px;
-    margin-right:700px;
+    margin-right:682px;
     margin-bottom: 30px;
     color: rgb(253, 253, 253);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -150,7 +172,7 @@ header{
 /*estilo del aside*/
 aside{
     display: block;
-    width: 12%;
+    width: 12.5%;
     background: rgba(97, 94, 94, 0.226);
     padding: 10px;
     float: left;
@@ -161,7 +183,8 @@ aside{
     border: 0px solid rgb(17, 17, 17);
 }
 .filtro {
-    margin-left: 10px;
+    margin-left: 1px;
+    color: #04faff;
 }
 /*estilo para contenido*/
 
@@ -174,6 +197,7 @@ aside{
     background: rgba(64, 224, 208, 0.377);
     
 }
+ 
 .til{
     color: white;
 

@@ -48,8 +48,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 976,
-											"top": 224,
+											"left": 1040,
+											"top": 160,
 											"height": 13
 										},
 										{
@@ -59,8 +59,8 @@
 												"$ref": "AAAAAAF3aBWS9+xazF4="
 											},
 											"font": "Arial;13;1",
-											"left": 629,
-											"top": 327,
+											"left": 661,
+											"top": 295,
 											"width": 169.0634765625,
 											"height": 13,
 											"text": "Tbl_Compras_a_Proveedor"
@@ -73,8 +73,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 976,
-											"top": 224,
+											"left": 1040,
+											"top": 160,
 											"width": 200.13525390625,
 											"height": 13,
 											"text": "(from Diagrama de clases general)"
@@ -87,15 +87,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 976,
-											"top": 224,
+											"left": 1040,
+											"top": 160,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 624,
-									"top": 320,
+									"left": 656,
+									"top": 288,
 									"width": 179.0634765625,
 									"height": 25,
 									"stereotypeLabel": {
@@ -131,8 +131,8 @@
 												"$ref": "AAAAAAF3aFmgDlxm8Vo="
 											},
 											"font": "Arial;13;0",
-											"left": 629,
-											"top": 350,
+											"left": 661,
+											"top": 318,
 											"width": 169.0634765625,
 											"height": 13,
 											"text": "+ID_Producto",
@@ -148,8 +148,8 @@
 												"$ref": "AAAAAAF3aFmwblxswIw="
 											},
 											"font": "Arial;13;0",
-											"left": 629,
-											"top": 365,
+											"left": 661,
+											"top": 333,
 											"width": 169.0634765625,
 											"height": 13,
 											"text": "+Cantidad",
@@ -165,8 +165,8 @@
 												"$ref": "AAAAAAF3aFnoNlxyV5E="
 											},
 											"font": "Arial;13;0",
-											"left": 629,
-											"top": 380,
+											"left": 661,
+											"top": 348,
 											"width": 169.0634765625,
 											"height": 13,
 											"text": "+Precio_total",
@@ -182,8 +182,8 @@
 												"$ref": "AAAAAAF3bcrD2zbo71E="
 											},
 											"font": "Arial;13;0",
-											"left": 629,
-											"top": 395,
+											"left": 661,
+											"top": 363,
 											"width": 169.0634765625,
 											"height": 13,
 											"text": "+ID_Proveedor",
@@ -199,8 +199,8 @@
 												"$ref": "AAAAAAF3bdu14TdHVuE="
 											},
 											"font": "Arial;13;0",
-											"left": 629,
-											"top": 410,
+											"left": 661,
+											"top": 378,
 											"width": 169.0634765625,
 											"height": 13,
 											"text": "+Fecha_de_compra",
@@ -208,8 +208,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 624,
-									"top": 345,
+									"left": 656,
+									"top": 313,
 									"width": 179.0634765625,
 									"height": 83
 								},
@@ -223,8 +223,8 @@
 										"$ref": "AAAAAAF3aBWS9uxXrNE="
 									},
 									"font": "Arial;13;0",
-									"left": 624,
-									"top": 428,
+									"left": 656,
+									"top": 396,
 									"width": 179.0634765625,
 									"height": 10
 								},
@@ -239,8 +239,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 488,
-									"top": 112,
+									"left": 520,
+									"top": 80,
 									"width": 10,
 									"height": 10
 								},
@@ -255,16 +255,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 488,
-									"top": 112,
+									"left": 520,
+									"top": 80,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 624,
-							"top": 320,
+							"left": 656,
+							"top": 288,
 							"width": 179.0634765625,
 							"height": 118,
 							"nameCompartment": {
@@ -859,7 +859,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 96,
-											"top": -32,
+											"top": -112,
 											"height": 13
 										},
 										{
@@ -870,7 +870,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 461,
-											"top": 335,
+											"top": 295,
 											"width": 133.580078125,
 											"height": 13,
 											"text": "Tbl_Producto"
@@ -884,7 +884,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 96,
-											"top": -32,
+											"top": -112,
 											"width": 200.13525390625,
 											"height": 13,
 											"text": "(from Diagrama de clases general)"
@@ -898,14 +898,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 96,
-											"top": -32,
+											"top": -112,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 456,
-									"top": 328,
+									"top": 288,
 									"width": 143.580078125,
 									"height": 25,
 									"stereotypeLabel": {
@@ -942,7 +942,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 358,
+											"top": 318,
 											"width": 133.580078125,
 											"height": 13,
 											"text": "+ID_Producto",
@@ -959,7 +959,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 373,
+											"top": 333,
 											"width": 133.580078125,
 											"height": 13,
 											"text": "+Tipo_Producto",
@@ -976,7 +976,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 388,
+											"top": 348,
 											"width": 133.580078125,
 											"height": 13,
 											"text": "+Precio_Producto",
@@ -993,7 +993,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 461,
-											"top": 403,
+											"top": 363,
 											"width": 133.580078125,
 											"height": 13,
 											"text": "+Nombre_Producto",
@@ -1002,7 +1002,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 456,
-									"top": 353,
+									"top": 313,
 									"width": 143.580078125,
 									"height": 68
 								},
@@ -1017,7 +1017,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 456,
-									"top": 421,
+									"top": 381,
 									"width": 143.580078125,
 									"height": 10
 								},
@@ -1033,7 +1033,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 24,
-									"top": -56,
+									"top": -96,
 									"width": 10,
 									"height": 10
 								},
@@ -1049,7 +1049,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 24,
-									"top": -56,
+									"top": -96,
 									"width": 10,
 									"height": 10
 								}
@@ -1057,7 +1057,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 456,
-							"top": 328,
+							"top": 288,
 							"width": 143.580078125,
 							"height": 105,
 							"nameCompartment": {
@@ -1105,7 +1105,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 1056,
-											"top": -16,
+											"top": -32,
 											"height": 13
 										},
 										{
@@ -1116,7 +1116,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 861,
-											"top": 327,
+											"top": 319,
 											"width": 189.0078125,
 											"height": 13,
 											"text": "Tbl_Inventario"
@@ -1130,7 +1130,7 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 1056,
-											"top": -16,
+											"top": -32,
 											"width": 200.13525390625,
 											"height": 13,
 											"text": "(from Diagrama de clases general)"
@@ -1144,14 +1144,14 @@
 											"visible": false,
 											"font": "Arial;13;0",
 											"left": 1056,
-											"top": -16,
+											"top": -32,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 856,
-									"top": 320,
+									"top": 312,
 									"width": 199.0078125,
 									"height": 25,
 									"stereotypeLabel": {
@@ -1188,7 +1188,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 861,
-											"top": 350,
+											"top": 342,
 											"width": 189.0078125,
 											"height": 13,
 											"text": "+ID_Producto",
@@ -1205,7 +1205,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 861,
-											"top": 365,
+											"top": 357,
 											"width": 189.0078125,
 											"height": 13,
 											"text": "+Canti_inicial_dia",
@@ -1222,7 +1222,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 861,
-											"top": 380,
+											"top": 372,
 											"width": 189.0078125,
 											"height": 13,
 											"text": "+Canti_disponible_dia",
@@ -1239,7 +1239,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 861,
-											"top": 395,
+											"top": 387,
 											"width": 189.0078125,
 											"height": 13,
 											"text": "+Canti_vendida_dia",
@@ -1256,7 +1256,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 861,
-											"top": 410,
+											"top": 402,
 											"width": 189.0078125,
 											"height": 13,
 											"text": "+Fecha_producto_no_disponible",
@@ -1273,7 +1273,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 861,
-											"top": 425,
+											"top": 417,
 											"width": 189.0078125,
 											"height": 13,
 											"text": "+Producto_agregado",
@@ -1282,7 +1282,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 856,
-									"top": 345,
+									"top": 337,
 									"width": 199.0078125,
 									"height": 98
 								},
@@ -1297,7 +1297,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 856,
-									"top": 443,
+									"top": 435,
 									"width": 199.0078125,
 									"height": 10
 								},
@@ -1313,7 +1313,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 528,
-									"top": -24,
+									"top": -32,
 									"width": 10,
 									"height": 10
 								},
@@ -1329,7 +1329,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 528,
-									"top": -24,
+									"top": -32,
 									"width": 10,
 									"height": 10
 								}
@@ -1337,7 +1337,7 @@
 							"font": "Arial;13;0",
 							"containerChangeable": true,
 							"left": 856,
-							"top": 320,
+							"top": 312,
 							"width": 199.0078125,
 							"height": 133,
 							"nameCompartment": {
@@ -1840,8 +1840,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -256,
-											"top": 416,
+											"left": -320,
+											"top": 384,
 											"height": 13
 										},
 										{
@@ -1851,8 +1851,8 @@
 												"$ref": "AAAAAAF3aBgWju26iJ0="
 											},
 											"font": "Arial;13;1",
-											"left": 341,
-											"top": 639,
+											"left": 309,
+											"top": 623,
 											"width": 96.4716796875,
 											"height": 13,
 											"text": "Tbl_Pago"
@@ -1865,8 +1865,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -256,
-											"top": 416,
+											"left": -320,
+											"top": 384,
 											"width": 200.13525390625,
 											"height": 13,
 											"text": "(from Diagrama de clases general)"
@@ -1879,15 +1879,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -256,
-											"top": 416,
+											"left": -320,
+											"top": 384,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 336,
-									"top": 632,
+									"left": 304,
+									"top": 616,
 									"width": 106.4716796875,
 									"height": 25,
 									"stereotypeLabel": {
@@ -1923,8 +1923,8 @@
 												"$ref": "AAAAAAF3aGGBoFznfxI="
 											},
 											"font": "Arial;13;0",
-											"left": 341,
-											"top": 662,
+											"left": 309,
+											"top": 646,
 											"width": 96.4716796875,
 											"height": 13,
 											"text": "+Metodo_Pago",
@@ -1940,8 +1940,8 @@
 												"$ref": "AAAAAAF3aLwvKGAOSzw="
 											},
 											"font": "Arial;13;0",
-											"left": 341,
-											"top": 677,
+											"left": 309,
+											"top": 661,
 											"width": 96.4716796875,
 											"height": 13,
 											"text": "+ID_Pago",
@@ -1949,8 +1949,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 336,
-									"top": 657,
+									"left": 304,
+									"top": 641,
 									"width": 106.4716796875,
 									"height": 38
 								},
@@ -1964,8 +1964,8 @@
 										"$ref": "AAAAAAF3aBgWje23XBQ="
 									},
 									"font": "Arial;13;0",
-									"left": 336,
-									"top": 695,
+									"left": 304,
+									"top": 679,
 									"width": 106.4716796875,
 									"height": 10
 								},
@@ -1980,8 +1980,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -128,
-									"top": 208,
+									"left": -160,
+									"top": 192,
 									"width": 10,
 									"height": 10
 								},
@@ -1996,16 +1996,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -128,
-									"top": 208,
+									"left": -160,
+									"top": 192,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 336,
-							"top": 632,
+							"left": 304,
+							"top": 616,
 							"width": 106.4716796875,
 							"height": 73,
 							"nameCompartment": {
@@ -2315,7 +2315,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -528,
+											"left": -592,
 											"top": 32,
 											"height": 13
 										},
@@ -2326,7 +2326,7 @@
 												"$ref": "AAAAAAF3aB2u+u4r9A0="
 											},
 											"font": "Arial;13;1",
-											"left": 333,
+											"left": 301,
 											"top": 487,
 											"width": 99.3662109375,
 											"height": 13,
@@ -2340,7 +2340,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -528,
+											"left": -592,
 											"top": 32,
 											"width": 200.13525390625,
 											"height": 13,
@@ -2354,14 +2354,14 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -528,
+											"left": -592,
 											"top": 32,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 328,
+									"left": 296,
 									"top": 480,
 									"width": 109.3662109375,
 									"height": 25,
@@ -2398,7 +2398,7 @@
 												"$ref": "AAAAAAF3aG1JJF1mjag="
 											},
 											"font": "Arial;13;0",
-											"left": 333,
+											"left": 301,
 											"top": 510,
 											"width": 99.3662109375,
 											"height": 13,
@@ -2415,7 +2415,7 @@
 												"$ref": "AAAAAAF3aG1OrF1sOuk="
 											},
 											"font": "Arial;13;0",
-											"left": 333,
+											"left": 301,
 											"top": 525,
 											"width": 99.3662109375,
 											"height": 13,
@@ -2432,7 +2432,7 @@
 												"$ref": "AAAAAAF3aG1TVF1yLW8="
 											},
 											"font": "Arial;13;0",
-											"left": 333,
+											"left": 301,
 											"top": 540,
 											"width": 99.3662109375,
 											"height": 13,
@@ -2441,7 +2441,7 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 328,
+									"left": 296,
 									"top": 505,
 									"width": 109.3662109375,
 									"height": 53
@@ -2456,7 +2456,7 @@
 										"$ref": "AAAAAAF3aB2u+u4oghw="
 									},
 									"font": "Arial;13;0",
-									"left": 328,
+									"left": 296,
 									"top": 558,
 									"width": 109.3662109375,
 									"height": 10
@@ -2472,7 +2472,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -264,
+									"left": -296,
 									"top": 16,
 									"width": 10,
 									"height": 10
@@ -2488,7 +2488,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -264,
+									"left": -296,
 									"top": 16,
 									"width": 10,
 									"height": 10
@@ -2496,7 +2496,7 @@
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 328,
+							"left": 296,
 							"top": 480,
 							"width": 109.3662109375,
 							"height": 88,
@@ -4004,8 +4004,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -1584,
-											"top": -272,
+											"left": -1616,
+											"top": -336,
 											"height": 13
 										},
 										{
@@ -4015,8 +4015,8 @@
 												"$ref": "AAAAAAF3bb9e1TZRiYM="
 											},
 											"font": "Arial;13;1",
-											"left": 93,
-											"top": 423,
+											"left": 77,
+											"top": 391,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "Tbl_Factura"
@@ -4029,8 +4029,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -1584,
-											"top": -272,
+											"left": -1616,
+											"top": -336,
 											"width": 200.13525390625,
 											"height": 13,
 											"text": "(from Diagrama de clases general)"
@@ -4043,15 +4043,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -1584,
-											"top": -272,
+											"left": -1616,
+											"top": -336,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 88,
-									"top": 416,
+									"left": 72,
+									"top": 384,
 									"width": 162.1279296875,
 									"height": 25,
 									"stereotypeLabel": {
@@ -4087,8 +4087,8 @@
 												"$ref": "AAAAAAF3bcADyDZ4/QA="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 446,
+											"left": 77,
+											"top": 414,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+ID_factura",
@@ -4104,8 +4104,8 @@
 												"$ref": "AAAAAAF3bfS6ujfNTmY="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 461,
+											"left": 77,
+											"top": 429,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+ID_Perfil",
@@ -4121,8 +4121,8 @@
 												"$ref": "AAAAAAF3bffl7Dftgz4="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 476,
+											"left": 77,
+											"top": 444,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+ID_Producto",
@@ -4138,8 +4138,8 @@
 												"$ref": "AAAAAAF3bf5C1jgLZ1g="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 491,
+											"left": 77,
+											"top": 459,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+Precio_unitario_producto",
@@ -4155,8 +4155,8 @@
 												"$ref": "AAAAAAF3bfkVqzf51cU="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 506,
+											"left": 77,
+											"top": 474,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+Sub_total_compra",
@@ -4172,8 +4172,8 @@
 												"$ref": "AAAAAAF3bcDFMDaI5hY="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 521,
+											"left": 77,
+											"top": 489,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+IVA_Total",
@@ -4189,8 +4189,8 @@
 												"$ref": "AAAAAAF3bcAKYDZ+tkw="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 536,
+											"left": 77,
+											"top": 504,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+Precio_total_compra",
@@ -4206,8 +4206,8 @@
 												"$ref": "AAAAAAF3bdZHODcnpWQ="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 551,
+											"left": 77,
+											"top": 519,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+Fecha_de_facturacion",
@@ -4223,8 +4223,8 @@
 												"$ref": "AAAAAAF3bfVW6jfY+aI="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 566,
+											"left": 77,
+											"top": 534,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+Hora_de_factura",
@@ -4240,8 +4240,8 @@
 												"$ref": "AAAAAAF3bfv7nTgEgMw="
 											},
 											"font": "Arial;13;0",
-											"left": 93,
-											"top": 581,
+											"left": 77,
+											"top": 549,
 											"width": 152.1279296875,
 											"height": 13,
 											"text": "+Estado-de_factura",
@@ -4249,8 +4249,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 88,
-									"top": 441,
+									"left": 72,
+									"top": 409,
 									"width": 162.1279296875,
 									"height": 158
 								},
@@ -4264,8 +4264,8 @@
 										"$ref": "AAAAAAF3bb9e1DZOBmg="
 									},
 									"font": "Arial;13;0",
-									"left": 88,
-									"top": 599,
+									"left": 72,
+									"top": 567,
 									"width": 162.1279296875,
 									"height": 10
 								},
@@ -4280,8 +4280,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -792,
-									"top": -136,
+									"left": -808,
+									"top": -168,
 									"width": 10,
 									"height": 10
 								},
@@ -4296,16 +4296,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -792,
-									"top": -136,
+									"left": -808,
+									"top": -168,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 88,
-							"top": 416,
+							"left": 72,
+							"top": 384,
 							"width": 162.1279296875,
 							"height": 193,
 							"nameCompartment": {
@@ -4352,8 +4352,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -352,
-											"top": -288,
+											"left": -336,
+											"top": -320,
 											"height": 13
 										},
 										{
@@ -4363,8 +4363,8 @@
 												"$ref": "AAAAAAF3bcl+wTaeZ3k="
 											},
 											"font": "Arial;13;1",
-											"left": 293,
-											"top": 311,
+											"left": 301,
+											"top": 295,
 											"width": 124.25537109375,
 											"height": 13,
 											"text": "Tbl_Compra_cliente"
@@ -4377,8 +4377,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -352,
-											"top": -288,
+											"left": -336,
+											"top": -320,
 											"width": 200.13525390625,
 											"height": 13,
 											"text": "(from Diagrama de clases general)"
@@ -4391,15 +4391,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -352,
-											"top": -288,
+											"left": -336,
+											"top": -320,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 288,
-									"top": 304,
+									"left": 296,
+									"top": 288,
 									"width": 134.25537109375,
 									"height": 25,
 									"stereotypeLabel": {
@@ -4435,8 +4435,8 @@
 												"$ref": "AAAAAAF3bcpw4zbQaZ4="
 											},
 											"font": "Arial;13;0",
-											"left": 293,
-											"top": 334,
+											"left": 301,
+											"top": 318,
 											"width": 124.25537109375,
 											"height": 13,
 											"text": "+ID_Perfil",
@@ -4452,8 +4452,8 @@
 												"$ref": "AAAAAAF3bcp3CzbWPSk="
 											},
 											"font": "Arial;13;0",
-											"left": 293,
-											"top": 349,
+											"left": 301,
+											"top": 333,
 											"width": 124.25537109375,
 											"height": 13,
 											"text": "+ID_Producto",
@@ -4469,8 +4469,8 @@
 												"$ref": "AAAAAAF3bcp8IzbcG6I="
 											},
 											"font": "Arial;13;0",
-											"left": 293,
-											"top": 364,
+											"left": 301,
+											"top": 348,
 											"width": 124.25537109375,
 											"height": 13,
 											"text": "+Cantidad",
@@ -4486,11 +4486,28 @@
 												"$ref": "AAAAAAF3bcqCszbi7zg="
 											},
 											"font": "Arial;13;0",
-											"left": 293,
-											"top": 379,
+											"left": 301,
+											"top": 363,
 											"width": 124.25537109375,
 											"height": 13,
 											"text": "+Descuento",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3bgBLEDgeWdg=",
+											"_parent": {
+												"$ref": "AAAAAAF3bcl+wTajeII="
+											},
+											"model": {
+												"$ref": "AAAAAAF3bgBK9jgbYpY="
+											},
+											"font": "Arial;13;0",
+											"left": 301,
+											"top": 378,
+											"width": 124.25537109375,
+											"height": 13,
+											"text": "+IVA",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4503,8 +4520,8 @@
 												"$ref": "AAAAAAF3bc2AXTcXH9c="
 											},
 											"font": "Arial;13;0",
-											"left": 293,
-											"top": 394,
+											"left": 301,
+											"top": 393,
 											"width": 124.25537109375,
 											"height": 13,
 											"text": "+Garantia",
@@ -4520,8 +4537,8 @@
 												"$ref": "AAAAAAF3bdtOaTdAsQ0="
 											},
 											"font": "Arial;13;0",
-											"left": 293,
-											"top": 409,
+											"left": 301,
+											"top": 408,
 											"width": 124.25537109375,
 											"height": 13,
 											"text": "+Precio_total",
@@ -4537,8 +4554,8 @@
 												"$ref": "AAAAAAF3bd3uczdOP1w="
 											},
 											"font": "Arial;13;0",
-											"left": 293,
-											"top": 424,
+											"left": 301,
+											"top": 423,
 											"width": 124.25537109375,
 											"height": 13,
 											"text": "+Fecha_de_compra",
@@ -4546,10 +4563,10 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 288,
-									"top": 329,
+									"left": 296,
+									"top": 313,
 									"width": 134.25537109375,
-									"height": 113
+									"height": 128
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -4561,8 +4578,8 @@
 										"$ref": "AAAAAAF3bcl+wDabFCY="
 									},
 									"font": "Arial;13;0",
-									"left": 288,
-									"top": 442,
+									"left": 296,
+									"top": 441,
 									"width": 134.25537109375,
 									"height": 10
 								},
@@ -4577,8 +4594,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -176,
-									"top": -144,
+									"left": -168,
+									"top": -160,
 									"width": 10,
 									"height": 10
 								},
@@ -4593,18 +4610,18 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -176,
-									"top": -144,
+									"left": -168,
+									"top": -160,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 288,
-							"top": 304,
+							"left": 296,
+							"top": 288,
 							"width": 134.25537109375,
-							"height": 148,
+							"height": 163,
 							"nameCompartment": {
 								"$ref": "AAAAAAF3bcl+wTaeZ3k="
 							},
@@ -5768,6 +5785,14 @@
 								"$ref": "AAAAAAF3bcl+wDabFCY="
 							},
 							"name": "Descuento"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3bgBK9jgbYpY=",
+							"_parent": {
+								"$ref": "AAAAAAF3bcl+wDabFCY="
+							},
+							"name": "IVA"
 						},
 						{
 							"_type": "UMLAttribute",

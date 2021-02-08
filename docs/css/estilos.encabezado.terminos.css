@@ -9,13 +9,35 @@
 }
 
 .especificartermino{
-    width: 90%;
-    height: 60%;
-    padding: 5%;
-    margin: 6%;
+    width: 80%;
+    height: 0%;
+    left: 6%;
+    right: 80%;
+    padding: 1%;
+    margin: 8.8%;
     margin-bottom: 1%;
     margin-top: 1%;
-    box-shadow: rgba(0, 0, 0, 0.109);
-    background-color: rgb(215, 255, 231);
+
+    color:white;
+    background-color: rgb(36, 107, 170);
+
+ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: justify;
     position: relative;
 }
+ .aside{
+    display: block;
+    width: 12.5%;
+    background: rgba(97, 94, 94, 0.226);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    float: left;
+    height: 1800px;
+    margin-left: 2px;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    border: 0px solid rgb(17, 17, 17);
+
+ }

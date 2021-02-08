@@ -186,7 +186,7 @@
 											"top": 507,
 											"width": 264.11328125,
 											"height": 13,
-											"text": "+Precio_total_del_proveedor: SMALLMONEY",
+											"text": "+Precio_total_del_proveedor: DECIMAL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1015,7 +1015,7 @@
 											"top": 612,
 											"width": 201.22705078125,
 											"height": 13,
-											"text": "+Precio_Producto: SMALLMONEY",
+											"text": "+Precio_Producto: DECIMAL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2328,7 +2328,7 @@
 											"top": 850,
 											"width": 225.5703125,
 											"height": 13,
-											"text": "+Valor_de_Descuento: SMALLMONEY",
+											"text": "+Valor_de_Descuento: DECIMAL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -3084,7 +3084,7 @@
 											"top": 114,
 											"width": 168.009765625,
 											"height": 13,
-											"text": "+Comentario: String",
+											"text": "+Comentario: TEXT",
 											"horizontalAlignment": 0
 										}
 									],
@@ -3771,7 +3771,7 @@
 											"top": 333,
 											"width": 196.16796875,
 											"height": 13,
-											"text": "+Cost_productos: SMALLMONEY",
+											"text": "+Cost_productos: DECIMAL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -3822,7 +3822,7 @@
 											"top": 378,
 											"width": 196.16796875,
 											"height": 13,
-											"text": "+Hora_venta: Time",
+											"text": "+Hora_venta: TIME",
 											"horizontalAlignment": 0
 										}
 									],
@@ -4051,7 +4051,7 @@
 											"top": 844,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "+Precio_unitario_producto: SMALLMONEY",
+											"text": "+Precio_unitario_producto: DECIMAL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4068,7 +4068,7 @@
 											"top": 859,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "+Sub_total_compra: SMALLMONEY",
+											"text": "+Sub_total_compra: DECIMAL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4085,7 +4085,7 @@
 											"top": 874,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "+Cost_total_venta_producto: SMALLMONEY",
+											"text": "+Cost_total_venta_producto: DECIMAL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4365,7 +4365,7 @@
 											"top": 634,
 											"width": 224.34521484375,
 											"height": 13,
-											"text": "+Precio_total_compra: SMALLMONEY",
+											"text": "+Precio_total_compra: DECIMAL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4399,7 +4399,7 @@
 											"top": 664,
 											"width": 224.34521484375,
 											"height": 13,
-											"text": "+Hora_de_factura: Time",
+											"text": "+Hora_de_factura: TIME",
 											"horizontalAlignment": 0
 										}
 									],
@@ -4696,7 +4696,7 @@
 											"top": 416,
 											"width": 173.76708984375,
 											"height": 13,
-											"text": "+Precio_total: SMALLMONEY",
+											"text": "+Precio_total: DECIMAL",
 											"horizontalAlignment": 0
 										},
 										{
@@ -9457,7 +9457,7 @@
 								"$ref": "AAAAAAF3aBWS9uxXrNE="
 							},
 							"name": "Precio_total_del_proveedor",
-							"type": "SMALLMONEY"
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -9824,7 +9824,7 @@
 								"$ref": "AAAAAAF3aBbYCOzaQqc="
 							},
 							"name": "Precio_Producto",
-							"type": "SMALLMONEY"
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10207,7 +10207,7 @@
 								"$ref": "AAAAAAF3aBw0Yu32oMo="
 							},
 							"name": "Valor_de_Descuento",
-							"type": "SMALLMONEY"
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10426,7 +10426,7 @@
 								"$ref": "AAAAAAF3aDF4I1uMIUQ="
 							},
 							"name": "Comentario",
-							"type": "String"
+							"type": "TEXT"
 						}
 					]
 				},
@@ -10537,7 +10537,7 @@
 								"$ref": "AAAAAAF3aNOYSmAn6Wo="
 							},
 							"name": "Cost_productos",
-							"type": "SMALLMONEY"
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10564,7 +10564,7 @@
 								"$ref": "AAAAAAF3aNOYSmAn6Wo="
 							},
 							"name": "Hora_venta",
-							"type": "Time"
+							"type": "TIME"
 						}
 					]
 				},
@@ -10647,7 +10647,7 @@
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
 							"name": "Precio_unitario_producto",
-							"type": "SMALLMONEY"
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10656,7 +10656,7 @@
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
 							"name": "Sub_total_compra",
-							"type": "SMALLMONEY"
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10665,7 +10665,7 @@
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
 							"name": "Cost_total_venta_producto",
-							"type": "SMALLMONEY"
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10791,7 +10791,7 @@
 								"$ref": "AAAAAAF3bb9e1DZOBmg="
 							},
 							"name": "Precio_total_compra",
-							"type": "SMALLMONEY"
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -10809,7 +10809,7 @@
 								"$ref": "AAAAAAF3bb9e1DZOBmg="
 							},
 							"name": "Hora_de_factura",
-							"type": "Time"
+							"type": "TIME"
 						}
 					]
 				},
@@ -10897,7 +10897,7 @@
 								"$ref": "AAAAAAF3bcl+wDabFCY="
 							},
 							"name": "Precio_total",
-							"type": "SMALLMONEY"
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",

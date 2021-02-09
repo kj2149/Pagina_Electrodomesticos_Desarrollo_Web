@@ -2507,7 +2507,7 @@
 											"top": 100,
 											"width": 158.36767578125,
 											"height": 13,
-											"text": "+ID_Perfil",
+											"text": "+FK_ID_Perfil",
 											"horizontalAlignment": 0
 										}
 									],
@@ -4059,7 +4059,7 @@
 											"top": 61,
 											"width": 131.599609375,
 											"height": 13,
-											"text": "+ID_Usuario: INT",
+											"text": "+FK_ID_Usuario: INT",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5260,40 +5260,6 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3bfS61zfQdCk=",
-											"_parent": {
-												"$ref": "AAAAAAF3bb9e1jZWoqc="
-											},
-											"model": {
-												"$ref": "AAAAAAF3bfS6ujfNTmY="
-											},
-											"font": "Arial;13;0",
-											"left": 61,
-											"top": 693,
-											"width": 224.34521484375,
-											"height": 13,
-											"text": "+ID_Perfil: INT ",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3bffmCDfwsm4=",
-											"_parent": {
-												"$ref": "AAAAAAF3bb9e1jZWoqc="
-											},
-											"model": {
-												"$ref": "AAAAAAF3bffl7Dftgz4="
-											},
-											"font": "Arial;13;0",
-											"left": 61,
-											"top": 708,
-											"width": 224.34521484375,
-											"height": 13,
-											"text": "+ID_Producto: INT ",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
 											"_id": "AAAAAAF3bcDFPzaLj5o=",
 											"_parent": {
 												"$ref": "AAAAAAF3bb9e1jZWoqc="
@@ -5303,7 +5269,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 723,
+											"top": 693,
 											"width": 224.34521484375,
 											"height": 13,
 											"text": "+IVA_Total: DEC",
@@ -5320,7 +5286,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 738,
+											"top": 708,
 											"width": 224.34521484375,
 											"height": 13,
 											"text": "+Precio_total_compra: DECIMAL",
@@ -5337,7 +5303,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 753,
+											"top": 723,
 											"width": 224.34521484375,
 											"height": 13,
 											"text": "+Fecha_de_facturacion: DATE",
@@ -5354,10 +5320,44 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 768,
+											"top": 738,
 											"width": 224.34521484375,
 											"height": 13,
 											"text": "+Hora_de_factura: TIME",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3bfS61zfQdCk=",
+											"_parent": {
+												"$ref": "AAAAAAF3bb9e1jZWoqc="
+											},
+											"model": {
+												"$ref": "AAAAAAF3bfS6ujfNTmY="
+											},
+											"font": "Arial;13;0",
+											"left": 61,
+											"top": 753,
+											"width": 224.34521484375,
+											"height": 13,
+											"text": "+FK_ID_Perfil: INT",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3bffmCDfwsm4=",
+											"_parent": {
+												"$ref": "AAAAAAF3bb9e1jZWoqc="
+											},
+											"model": {
+												"$ref": "AAAAAAF3bffl7Dftgz4="
+											},
+											"font": "Arial;13;0",
+											"left": 61,
+											"top": 768,
+											"width": 224.34521484375,
+											"height": 13,
+											"text": "+FK_ID_Producto: INT",
 											"horizontalAlignment": 0
 										}
 									],
@@ -11493,7 +11493,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF3aBgWje23XBQ="
 							},
-							"name": "ID_Perfil"
+							"name": "FK_ID_Perfil"
 						}
 					],
 					"operations": [
@@ -11948,7 +11948,7 @@
 							"_parent": {
 								"$ref": "AAAAAAF3aJaEF13IlM0="
 							},
-							"name": "ID_Usuario",
+							"name": "FK_ID_Usuario",
 							"type": "INT"
 						},
 						{
@@ -12350,24 +12350,6 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3bfS6ujfNTmY=",
-							"_parent": {
-								"$ref": "AAAAAAF3bb9e1DZOBmg="
-							},
-							"name": "ID_Perfil",
-							"type": "INT "
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3bffl7Dftgz4=",
-							"_parent": {
-								"$ref": "AAAAAAF3bb9e1DZOBmg="
-							},
-							"name": "ID_Producto",
-							"type": "INT "
-						},
-						{
-							"_type": "UMLAttribute",
 							"_id": "AAAAAAF3bcDFMDaI5hY=",
 							"_parent": {
 								"$ref": "AAAAAAF3bb9e1DZOBmg="
@@ -12401,6 +12383,24 @@
 							},
 							"name": "Hora_de_factura",
 							"type": "TIME"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3bfS6ujfNTmY=",
+							"_parent": {
+								"$ref": "AAAAAAF3bb9e1DZOBmg="
+							},
+							"name": "FK_ID_Perfil",
+							"type": "INT"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3bffl7Dftgz4=",
+							"_parent": {
+								"$ref": "AAAAAAF3bb9e1DZOBmg="
+							},
+							"name": "FK_ID_Producto",
+							"type": "INT"
 						}
 					],
 					"operations": [

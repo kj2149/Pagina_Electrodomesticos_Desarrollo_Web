@@ -34,14 +34,12 @@ footer{
 
 
 #terminos{
-    width: 27%;
-    float: right;
-    height: 70%;
-    margin: 0.4%;
-    position: relative;
-    padding: 20px;
-    margin-right: 1%;
-    line-height: 20px;
+    font-size: 14px;
+    position: absolute;
+    margin-top:115px ;
+    margin-bottom: 1px;
+    margin-left: 1143px;
+
     display: inline-block;
 }
 

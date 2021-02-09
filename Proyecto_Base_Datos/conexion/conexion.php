@@ -10,7 +10,7 @@ class conexion{
 
         try{
 
-            $pdo = new PDO('mysql:host=localhost;dbname=u_t_base', $this->usuario, $this->contraseña );
+            $pdo = new PDO ( "mysql:host=localhost;dbname=u_t_base", $this->usuario, $this->contraseña);
 
             echo "Conectado XD";
         }catch(PDOException $error ){

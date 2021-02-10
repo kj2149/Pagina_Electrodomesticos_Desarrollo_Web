@@ -1,0 +1,43 @@
+/*ENCABEZADO DE LA PAGINA DE TERMINOS Y CONDICIONES*/
+
+.barra{
+    width: 100%;
+    margin: 0%;
+    padding: 2%;
+    height: 150px;
+    background-color: rgb(43, 48, 53);
+}
+
+.especificartermino{
+    width: 80%;
+    height: 0%;
+    left: 6%;
+    right: 80%;
+    padding: 1%;
+    margin: 8.8%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+
+    color:white;
+    background-color: rgba(36, 108, 170, 0.507);
+
+ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: justify;
+    position: relative;
+}
+ .aside{
+    display: block;
+    width: 12.5%;
+    background: rgba(97, 94, 94, 0.226);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    float: left;
+    height: 1800px;
+    margin-left: 2px;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    border: 0px solid rgb(17, 17, 17);
+
+ }

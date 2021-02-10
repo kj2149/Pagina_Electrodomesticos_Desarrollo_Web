@@ -30,9 +30,15 @@
     height: 80px;
     margin-top: 5px;
     margin-left: 0px;
-    
-
 }
+
+#logo-box{
+    margin-right: 2%;
+    width: 200px; 
+    position: absolute;
+    height:150px ;
+}
+
 #imagen{
     width: 120px;
     height: 110px;
@@ -42,23 +48,43 @@
 }
 /*estilo de header*/
 .titulo1{
-    float: right;
-    padding: 8px;
-    margin-top: 30px;
-    margin-right:682px;
-    margin-bottom: 30px;
+    text-align: center;   
     color: rgb(253, 253, 253);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 2px outset #04faff;
-
+    border-width: 10%;
+    padding: 10px;
     box-shadow: rgb(10, 170, 233) 5px 5px 10px; 
     text-shadow: 0px 0 rgb(14, 73, 209), 0 0px rgb(14, 73, 209), 1px 0  rgb(14, 73, 209), 0 -1px  rgb(14, 73, 209), -2px 2px 0  rgb(14, 73, 209), 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
-    
+
 }
+
+#titulo-box{
+    height: 150px;
+    margin-left: 40%;
+    margin-top: 2%;
+    position: absolute;
+
+}
+
+
 header{
    /* background-color: rgba(12, 12, 12, 0.89);*/
     background-image: url(../imagenes/pl1.jpg);
+    padding-top: 2%;
 }
+
+
+.lista-cate{
+    margin-top: 140px;
+}
+
+.log_inc_reg{
+   margin: 1%;
+   width: auto;
+   height:auto ;
+}
+
 .iniciar1{
     float: right;
     padding: 5px;
@@ -294,13 +320,11 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 
 /*estilo barra de busqueda*/
 .buscar1{
-    position: absolute;
-    padding: 0px;
-    margin-left: 1080px;
-    margin-top: -65px;
-    float: right;
-    
-    
+    position: relative;
+    padding: 3px;
+    margin: 1px;    
+    width: auto;
+
 }
 .buscar1 input{
     width: 255px;

@@ -88,16 +88,6 @@
 
 	</header>
 
-
-	<div>
-		<div class="slider">
-			<ul>
-				<li><img src="../imagenes/s1.png" alt=""></li>
-				<li><img src="../imagenes/s2.jpg" alt=""></li>
-				<li><img src="../imagenes/s3.jpg" alt=""></li>
-				<li><img src="../imagenes/s4.jpg" alt=""></li>
-			</ul>
-		</div>
 		<aside class="aside">
 
 			<div class="filtro">

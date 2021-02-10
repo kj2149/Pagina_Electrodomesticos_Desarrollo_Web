@@ -24,30 +24,43 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>unlimited tecnhology</title>
+	<title>Unlimited Tecnhology</title>
 </head>
 
 <body id="parallax" class="text-white">
 
 	<header class="">
-		<img class="logo" src="../imagenes/2.jpg" alt="logoempresa">
 
-		<h1 class="titulo1">UNLIMITED TECNHOLOGY</h1>
+    <!--LOGO DE LA EMPRESA-->
+	<div id="logo-box">
+		<img class="logo" src="../imagenes/2.jpg" alt="logoempresa">	
+	</div>
+	
+	
+	<!--TITULO ULIMITED TECNHOLOGY-->
 
+	      <div id="titulo-box">
+		   <h1 class="titulo1">UNLIMITED TECNHOLOGY</h1>
+		  </div>
+    <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
 		<div class="buscar1">
 			<input type="text" placeholder="Buscar" required>
 			<div class="btn">
 				<i class="fas fa-search icon"></i>
 			</div>
-		</div>
-
+		<div class="log_inc_reg">
 		<a class="iniciar1" href="../vista/login.html">iniciar sesion</a>
 		<a class="registrar1" href="#">registrarse</a>
-
-
+	    </div>
+        </div>
 
 		<input type="checkbox" id="css3menu-switcher" class="c3m-switch-input">
-		<ul id="css3menu1" class="topmenu">
+
+
+	 <!--LISTA DE CATEGORIAS-->
+	 
+       <div class="lista-cate">
+		   <ul id="css3menu1" class="topmenu">
 			<li class="switch"><label onclick="" for="css3menu-switcher"></label></li>
 			<li class="topmenu"><a href="inicio.html" target="marco" style="height:28px;line-height:22px;">inicio</a>
 			</li>
@@ -79,11 +92,11 @@
 				</ul>
 			</li>
 			<li class="toplast"><a href="#" target="marco" style="height:26px;line-height:22px;">contactenos</a></li>
-		</ul>
+		   </ul>
+	   </div>
 		<p class="_css3m"><a href="http://css3menu.com/">drop down menu html</a> by Css3Menu.com</p>
 
 	</header>
-
 
 	<div>
 		<div class="slider">
@@ -410,13 +423,12 @@
 			 </lu>
 		<img id="pin" src="../imagenes/pin.png">Calle 167 C No. 54C-36 Piso 3 - Bogotá D. C. - Colombia<br>
 		</div>
-           <div id="copyright"> 
-			<p>| © 2021 todos los derechos reservados |</p>
-		   </div>
+           
+		
 
-	     <div id="terminos">
+	     <div class="terminos">
 		  <p><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
-		  
+		  <p id="copyright">| © 2021 |  Todos los derechos reservados | Uunlimited Tecnhology</p>
 	    </div>
    </footer>
 

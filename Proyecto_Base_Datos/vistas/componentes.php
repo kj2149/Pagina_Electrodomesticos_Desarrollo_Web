@@ -7,7 +7,7 @@
 
 <head>
 	<script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../css/estilos3.css" type="text/css" />
+	<link rel="stylesheet" href="../css/estilos4.css" type="text/css" />
 	<style type="text/css">
 		._css3m {
 			display: none
@@ -22,7 +22,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keyswords" content="html5, css3">
-	<link rel="stylesheet" type="text/css" href="../css/estilos3.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos4.css">
 	<!--IMPLEMENTANDO BOOTSTRAP - Ajax -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -89,15 +89,6 @@
 	</header>
 
 
-	<div>
-		<div class="slider">
-			<ul>
-				<li><img src="../imagenes/s1.png" alt=""></li>
-				<li><img src="../imagenes/s2.jpg" alt=""></li>
-				<li><img src="../imagenes/s3.jpg" alt=""></li>
-				<li><img src="../imagenes/s4.jpg" alt=""></li>
-			</ul>
-		</div>
 		<aside class="aside">
 
 			<div class="filtro">

@@ -81,7 +81,7 @@ header{
 
 
 .lista-cate{
-    margin-top: 250px;
+    margin-top: 210px;
 }
 
 
@@ -97,8 +97,14 @@ header{
     font-size: large;
     border-radius: 8%;
 }
+.bot-log-reg{
+    background:none ;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}	
+
 .registrar1{
-    margin-top: 30px;
     padding: 5px;
     color: rgb(50, 190, 214);
     border: 2px inset#04faff;
@@ -108,14 +114,17 @@ header{
     font-size: large;
     border-radius: 8%;
 }
+
 .iniciar1:hover{
     background: rgba(240, 127, 15, 0.664);
     color: #ebe5e5;
 }
+
 .registrar1:hover{
     background: rgba(240, 127, 15, 0.664);
     color: #ebe5e5;
 }
+
 /*estilo slider*/
 .slider{
     width: 80%;
@@ -127,6 +136,7 @@ header{
     margin-bottom: 0px;
     margin-left: 200px;
 }
+
 .slider ul{
     display: flex;
     padding: 1px;
@@ -136,15 +146,18 @@ header{
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+
 .slider ul:hover{
     animation-play-state: paused;
     cursor: pointer;
 }
+
 .slider li {
     width: 100%;
     list-style: none;
     
 }
+
 .slider img{
     
     width: 1100px;

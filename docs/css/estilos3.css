@@ -97,12 +97,14 @@ header{
     font-size: large;
     border-radius: 8%;
 }
+
 .bot-log-reg{
     background:none ;
     border: none;
     outline: none;
     margin-top: 10px;
-}	
+}
+
 
 .registrar1{
     padding: 5px;

@@ -95,14 +95,7 @@
 					<li><a href="#" target="marco">proyectos</a></li>
 				</ul>
 			</li>
-			<li class="toproot"><a href="#" target="marco"
-					style="height:28px;line-height:22px;"><span>servicios</span></a>
-				<ul>
-					<li><a href="#" target="marco">instalaciones</a></li>
-					<li><a href="#" target="marco">mantenimiento</a></li>
-					<li><a href="#" target="marco">proyectos</a></li>
-				</ul>
-			</li>
+			
 			<li class="toproot"><a href="#" target="marco" style="height:28px;line-height:22px;"><span>Quienes
 						somos?</span></a>
 				<ul>

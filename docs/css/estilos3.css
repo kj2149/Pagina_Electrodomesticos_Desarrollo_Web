@@ -28,8 +28,8 @@
 .logo{
     width: 160px;
     height: 80px;
-    margin-top: 5px;
-    margin-left: 0px;
+    margin-top: 60px;
+    margin-left: 30px;
 }
 
 #logo-box{
@@ -38,7 +38,6 @@
     position: absolute;
     height:150px ;
 }
-
 #imagen{
     width: 120px;
     height: 110px;

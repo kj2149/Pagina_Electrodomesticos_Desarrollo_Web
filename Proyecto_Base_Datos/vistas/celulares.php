@@ -7,7 +7,7 @@
 
 <head>
 	<script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../css/estilos4.css" type="text/css" />
+	<link rel="stylesheet" href="../css/estilos3.css" type="text/css" />
 	<style type="text/css">
 		._css3m {
 			display: none
@@ -22,7 +22,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keyswords" content="html5, css3">
-	<link rel="stylesheet" type="text/css" href="../css/estilos4.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos3.css">
 	<!--IMPLEMENTANDO BOOTSTRAP - Ajax -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -58,12 +58,33 @@
 			<li class="toproot"><a href="#" target="marco"
 					style="height:28px;line-height:22px;"><span>productos</span></a>
 				<ul>
-					<li><a href="#" target="marco">celulares</a></li>
-					<li><a href="#" target="marco">computadores</a></li>
-					<li><a href="#" target="marco">herramientas</a></li>
-					<li><a href="#" target="marco">componentes</a></li>
-					<li><a href="#" target="marco">repuestos</a></li>
-					<li><a href="#" target="marco">cableado</a></li>
+					<li><a href="#" target="marco">Celulares</a></li>
+					<li><a href="#" target="marco">Computadores</a>
+
+					    <ul style="left:190px;">
+							
+					    <li><a href="#">Combo teclado + Mouse</a></li>
+						<li><a href="#">Portatiles</a></li>
+						<li><a href="#">Equipos De Escritorio</a></li>
+						<li><a href="#">Equipos Todo En Uno</a></li>
+                        </ul>
+						</li>
+
+					<li><a href="#" target="marco">Boards</a></li>
+					<li><a href="#" target="marco">Tarjetas Graficas</a></li>
+					<li><a href="#" target="marco">Procesadores</a></li>
+					<li><a href="#" target="marco">Gabinetes</a></li>
+					<li><a href="#" target="marco">Fuentes De Poder</a></li>
+					<li><a href="#" target="marco">Impresoras</a>
+					<li><a href="#" target="marco">herramientas</a>
+
+
+					<ul style="left:190px;">	
+					    <li><a href="#">Componentes</a></li>
+						<li><a href="#">Repuestos</a></li>
+						<li><a href="#">Cableado</a></li>
+                        </ul>
+						</li>
 				</ul>
 			</li>
 			<li class="toproot"><a href="#" target="marco"
@@ -88,9 +109,17 @@
 
 	</header>
 
-	
-		<aside class="aside">
 
+	<div>
+		<div class="slider">
+			<ul>
+				<li><img src="../imagenes/s1.png" alt=""></li>
+				<li><img src="../imagenes/s2.jpg" alt=""></li>
+				<li><img src="../imagenes/s3.jpg" alt=""></li>
+				<li><img src="../imagenes/s4.jpg" alt=""></li>
+			</ul>
+		</div>
+		<aside class="aside" style="height:1210px;">
 			<div class="filtro">
 
 				<h3 class="text-white">Celulares</h3>
@@ -183,9 +212,44 @@
 			</div> 
 
 		</aside>
+<!--Fin del div antes de aside-->
+  
+<!--/////////////          HEAD           //////////////-->
 
-    <!--/////////////          HEAD           //////////////-->
-
+	<section>
+		<article>
+		    <h1 class="til">CELULARES</h1>
+	            <P>
+			         <ul>
+                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen1.png">
+							<h3>Celular samsung galaxy a01 32gb rojo + Seguro gratis</h3>
+							<h4>$369,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen2.png">	
+							<h3>Huawey Y5P 4G Con Obsequio</h3>
+								<h4>$341,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen3.png">
+						    <h3>Celular Samsung Galaxy a01 32gb rojo + seguro</h3>
+							<h4>$369,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen4.png">	
+							<h3>Celular huawey Y5 neo 16gb ds azul + seguro gratis</h3>
+							<h4>$320,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen5.png">
+							<h3>Celular samsung galaxy m31 128gb rojo cover negro</h3>
+							<h4>$990,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen6.png">	
+							<h3>Celular samsung galaxy a71 128gb plateado + Seguro gratis</h3>
+								<h4>$1,699,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen7.png">	
+							<h3>Celular samsung galaxy a71 128gb plateado + Seguro gratis</h3>
+								<h4>$1,299,900</h4>	</li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen8.png">	
+							<h3>Celular samsung galaxy a51 128gb plateado + Seguro gratis</h3>
+								<h4>$1,499,000</h4></li>
+                            
+		
+		</article>
+	</section>
+	
 
     <!-- FOOTER DE LA PAGINA -->
 
@@ -220,3 +284,7 @@
 		  
 	    </div>
    </footer>
+
+
+</body>
+</html>

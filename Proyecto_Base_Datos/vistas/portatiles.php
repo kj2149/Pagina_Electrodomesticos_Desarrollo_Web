@@ -242,7 +242,7 @@
                             </li><li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen68.webp">
 							<h3>QERE 15.6 pulgadas Portátiles 8GB RAM 256G SSD Cuerpo de metal 1080P Win10 OS</h3>
 							<h4>$1,450,000</h4></li>
-                            </li><li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen56.webp">
+                            </li><li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen69.webp">
 							<h3>Hp Omen Portatil Gamer Amd Ryzen 7 4800h 8gb Ram Gtx 1660ti</h3>
 							<h4>$3,100,000</h4></li>
                             

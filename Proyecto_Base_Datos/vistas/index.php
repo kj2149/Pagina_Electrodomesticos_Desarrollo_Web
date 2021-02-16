@@ -235,18 +235,7 @@
 						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen4.png">	
 							<h3>Celular huawey Y5 neo 16gb ds azul + seguro gratis</h3>
 							<h4>$320,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen5.png">
-							<h3>Celular samsung galaxy m31 128gb rojo cover negro</h3>
-							<h4>$990,900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen6.png">	
-							<h3>Celular samsung galaxy a71 128gb plateado + Seguro gratis</h3>
-								<h4>$1,699,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen7.png">	
-							<h3>Celular samsung galaxy a71 128gb plateado + Seguro gratis</h3>
-								<h4>$1,299,900</h4>	</li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen8.png">	
-							<h3>Celular samsung galaxy a51 128gb plateado + Seguro gratis</h3>
-								<h4>$1,499,000</h4></li>
+						
 					 </ul>
 	            </P>
 		</article>
@@ -268,18 +257,6 @@
 						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen14.png">
 							<h3>All in one hp 24dd0000la intel pentium</h3>
 							<h4>$1,779,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen16.png">	
-							<h3>Portátil LENOVO IdeaPad 3 14" Pulgadas Intel Celeron 4GB</h3>
-								<h4>$1,200,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen17.png">	
-							<h3>Portátil LENOVO 14" Pulgadas S145 Intel Core i3 Ram 4GB </h3>
-								<h4>$1,400,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen18.png">	
-							<h3>Computador HUAWEI Matebook X Pro 13.9 " Pulgadas 1TB SSD</h3>
-								<h4>$1,250,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen19.png">	
-							<h3>Portátil Lenovo S145 Intel Core i3 14" Pulgadas</h3>
-								<h4>$1,600,000</h4></li>
 					
 						
 					 </ul>
@@ -303,19 +280,7 @@
 								<h4>$699,000</h4></li>
 					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen24.png">	
 							<h3>Combo Taladro 850w Makita Y Pulidora 850w</h3>
-								<h4>$199,900</h4></li>
-					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen25.png">	
-							<h3>Set De 179 Herramientas Con Estuche Klatter</h3>
-								<h4>$99,000</h4></li>
-					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen26.png">	
-							<h3>Herramientas Taladro Caladora Lijadora Y Linterna</h3>
-								<h4>$629,000</h4></li>
-					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen27.png">	
-							<h3>Set Herramienta Manual 16p K-shm16</h3>
-								<h4>$749,000</h4></li>
-					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen28+.png">	
-							<h3>Portátil Lenovo S145 Intel Core i3 14" Pulgadas</h3>
-								<h4>$1,600,000</h4></li>			
+								<h4>$199,900</h4></li>			
 						
 					 </ul>
 	            </P>
@@ -359,19 +324,7 @@
 								<h4>$290,000</h4></li>
 						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen36.jpg">	
 							<h3>BASE PARA PORTATIL J&R BRJR-009 RECLINAJ 2FAN</h3>
-								<h4>$50,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen37.jpg">	
-							<h3>BATERIA PC ACER 10.8V/2200MHZ 1410 1810T 1810TZ </h3>
-								<h4>$149,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen38.jpg">	
-							<h3>BATERIA PC ACER ONE 11.6P 9CEL-11.1-7800MHA</h3>
-								<h4>$289,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen39.jpg">	
-							<h3>BATERIA PC DELL 1525/1540 11.1/4400MAH PREM</h3>
-								<h4>$160,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen40.jpg">	
-							<h3>BATERIA PC DELL 2500/3700/3800</h3>
-								<h4>$198,000</h4></li>		
+								<h4>$50,000</h4></li>	
 					 </ul>
 	            </P>
 		</article>
@@ -394,18 +347,6 @@
 						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen44.jpg">	
 							<h3>Alambre #12 100 metros negro Conectores y Cables</h3>
 								<h4>$124.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen45.jpg">	
-							<h3>Nexans Alambre #14 100m Color Verde</h3>
-								<h4>$89,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen46.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1AMAR 1BCO 1RJO 1VDE)</h3>
-								<h4>$489,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen47.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1NEG 1BCO 1VDE 1AZUL)</h3>
-								<h4>$460,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen48.jpg">	
-							<h3>Alambre #14 100 metros amarillo Conectores y Cables</h3>
-								<h4>$88.900</h4></li>
 					 </ul>
 	            </P>
 		</article>

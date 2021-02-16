@@ -240,7 +240,6 @@
 	            </P>
 		</article>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<article>
 		    <h1 class="til">COMPUTADORES</h1>
 	            <P>
@@ -262,8 +261,6 @@
 					 </ul>
 	            </P>
 		</article>
-		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<article>
 		    <h1 class="til">HERRAMIENTAS</h1>
@@ -285,8 +282,6 @@
 					 </ul>
 	            </P>
 		</article>
-		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<article>
 		    <h1 class="til">COMPONENTES</h1>
@@ -328,8 +323,6 @@
 					 </ul>
 	            </P>
 		</article>
-
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<article>
 		    <h1 class="til">CABLEADO</h1>

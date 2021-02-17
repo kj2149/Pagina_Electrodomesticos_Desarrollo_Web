@@ -43,7 +43,7 @@
     <input type="checkbox" id="css3menu-switcher" class="c3m-switch-input">
     <ul id="css3menu1" class="topmenu">
       <li class="switch"><label onclick="" for="css3menu-switcher"></label></li>
-      <li class="topmenu"><a href="inicio.html" target="marco" style="height:28px;line-height:22px;">inicio</a>
+      <li class="topmenu"><a href="../vistas/index.php" target="marco" style="height:28px;line-height:22px;">inicio</a>
       </li>
       <li class="toproot"><a href="#" target="marco"
           style="height:28px;line-height:22px;"><span>productos</span></a>

@@ -53,36 +53,35 @@
 		<input type="checkbox" id="css3menu-switcher" class="c3m-switch-input">
 		<ul id="css3menu1" class="topmenu">
 			<li class="switch"><label onclick="" for="css3menu-switcher"></label></li>
-			<li class="topmenu"><a href="inicio.html" target="marco" style="height:28px;line-height:22px;">inicio</a>
-			</li>
+			<li class="topmenu"><a href="../vistas/index.php" target="marco" style="height:28px;line-height:22px;">inicio</a></li>
 			<li class="toproot"><a href="#" target="marco"
 					style="height:28px;line-height:22px;"><span>productos</span></a>
-				<ul>
-					<li><a href="#" target="marco">Celulares</a></li>
-					<li><a href="#" target="marco">Computadores</a>
+					<ul>
+					<li><a href="../vistas/celulares.php" target="marco">Celulares</a></li>
+					<li><a href="../vistas/computadores.php" target="marco">Computadores</a>
 
 					    <ul style="left:190px;">
 							
-					    <li><a href="#">Combo teclado + Mouse</a></li>
-						<li><a href="#">Portatiles</a></li>
-						<li><a href="#">Equipos De Escritorio</a></li>
-						<li><a href="#">Equipos Todo En Uno</a></li>
+					    <li><a href="../vistas/combo teclado + mouse.php">Combo teclado + Mouse</a></li>
+						<li><a href="../vistas/portatiles.php">Portatiles</a></li>
+						<li><a href="../vistas/equipos de escritorio.php">Equipos De Escritorio</a></li>
+						<li><a href="../vistas/equipos todo en uno.php">Equipos Todo En Uno</a></li>
                         </ul>
 						</li>
-
-					<li><a href="#" target="marco">Boards</a></li>
-					<li><a href="#" target="marco">Tarjetas Graficas</a></li>
-					<li><a href="#" target="marco">Procesadores</a></li>
-					<li><a href="#" target="marco">Gabinetes</a></li>
-					<li><a href="#" target="marco">Fuentes De Poder</a></li>
-					<li><a href="#" target="marco">Impresoras</a>
-					<li><a href="#" target="marco">herramientas</a>
-
+				
+					<li><a href="../vistas/boards.php" target="marco">Boards</a></li>
+					<li><a href="../vistas/tarjetas graficas.php" target="marco">Tarjetas Graficas</a></li>
+					<li><a href="../vistas/procesadores.php" target="marco">Procesadores</a></li>
+					<li><a href="../vistas/gabinetes.php" target="marco">Gabinetes</a></li>
+					<li><a href="../vistas/fuentes de poder.php" target="marco">Fuentes De Poder</a></li>
+					<li><a href="../vistas/impresoras.php" target="marco">Impresoras</a>
+					<li><a href="../vistas/herramientas.php" target="marco">herramientas</a>
+			
 
 					<ul style="left:190px;">	
-					    <li><a href="#">Componentes</a></li>
-						<li><a href="#">Repuestos</a></li>
-						<li><a href="#">Cableado</a></li>
+					    <li><a href="../vistas/componentes.php">Componentes</a></li>
+						<li><a href="../vistas/repuestos.php">Repuestos</a></li>
+						<li><a href="../vistas/cableado.php">Cableado</a></li>
                         </ul>
 						</li>
 				</ul>

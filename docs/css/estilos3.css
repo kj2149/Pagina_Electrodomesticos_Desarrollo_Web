@@ -134,25 +134,22 @@ header{
 }
 
 /*estilo slider*/
-.slider{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
 
-    margin-top: 5px;
-    margin-right:0px;
-    margin-bottom: 0px;
-    margin-left: 200px;
+
+.slider{
+    width: 75%;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-right:5%; 
+    overflow:hidden;
 }
 
 .slider ul{
     display: flex;
-    padding: 1px;
-    width: 100%;
+    padding: 0%;
+    width: 400%;
 
-    animation: cambio 10s infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+    animation: cambio 6s infinite
 }
 
 .slider ul:hover{
@@ -160,21 +157,16 @@ header{
     cursor: pointer;
 }
 
-.slider li {
+.slider li{
     width: 100%;
     list-style: none;
-    
 }
 
 .slider img{
-    
-    width: 1100px;
-    height: 300px;
-    margin-top: 2px;
-    margin-right:0px;
-    margin-bottom: 0px;
-    margin-left: 1px;
+    width: 100%;
 }
+
+
 
 @keyframes cambio{
     0%{ margin-left: 0%;}

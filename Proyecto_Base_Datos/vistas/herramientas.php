@@ -22,7 +22,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keyswords" content="html5, css3">
-	<link rel="stylesheet" type="text/css" href="../css/estilos3.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos4.css">
 	<!--IMPLEMENTANDO BOOTSTRAP - Ajax -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -57,10 +57,6 @@
 			</li>
 			<li class="toproot"><a href="#" target="marco"
 					style="height:28px;line-height:22px;"><span>productos</span></a>
-				<ul>
-					<li><a href="#" target="marco">Celulares</a></li>
-					<li><a href="#" target="marco">Computadores</a>
-
 					<ul>
 					<li><a href="../vistas/celulares.php" target="marco">Celulares</a></li>
 					<li><a href="../vistas/computadores.php" target="marco">Computadores</a>
@@ -115,14 +111,7 @@
 
 
 	<div>
-		<div class="slider">
-			<ul>
-				<li><img src="../imagenes/s1.png" alt=""></li>
-				<li><img src="../imagenes/s2.jpg" alt=""></li>
-				<li><img src="../imagenes/s3.jpg" alt=""></li>
-				<li><img src="../imagenes/s4.jpg" alt=""></li>
-			</ul>
-		</div>
+	
 		<aside class="aside" style="height:1210px;">
 			<div class="filtro">
 

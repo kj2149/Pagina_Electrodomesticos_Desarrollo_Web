@@ -278,14 +278,11 @@ ul#css3menu1 span{
 	display:block;overflow:visible;background-image:url("arrowmain0.gif");background-position:right center;background-repeat:no-repeat;padding-right:17px;}
 ul#css3menu1 li:hover>a>span{
 	background-image:url("arrowmain1.gif");}
-ul#css3menu1 > li.switch{
-	display:none;cursor:pointer;width:25px;height:20px;padding:3px 10px;}
-ul#css3menu1 > li.switch:before{
-	content:"";position:right center;display:block;height:4px;width:25px;border-radius:4px;background: #32bed6;-moz-box-shadow:0 8px #32bed6, 0 16px #32bed6;-webkit-box-shadow:0 8px #32bed6, 0 16px #32bed6;box-shadow:0 8px #32bed6, 0 16px #32bed6; margin-bottom: 7px; }
-ul#css3menu1 > li.switch:hover:before{
-	background:#F0810F;-moz-box-shadow:0 8px #F0810F, 0 16px #F0810F;-webkit-box-shadow:0 8px #F0810F, 0 16px #F0810F;box-shadow:0 8px #F0810F, 0 16px #F0810F;}
-.c3m-switch-input{
-	display:none;}
+/*estilo boton filtro*/
+
+
+
+/*fin*/
 ul#css3menu1 li:hover>a,ul#css3menu1 li > a.pressed{
 	background-color:#111111;border-style:none;color:#F0810F;text-decoration:none;}
 ul#css3menu1 ul li:hover>a,ul#css3menu1 ul li > a.pressed{

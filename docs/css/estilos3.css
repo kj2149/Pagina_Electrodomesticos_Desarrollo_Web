@@ -72,9 +72,16 @@
 
 header{
    /* background-color: rgba(12, 12, 12, 0.89);*/
-    background-image: url(../imagenes/pl1.jpg);
+   
     padding: 0.1%;
     width: 100%;
+    display: block;
+    text-align: center;
+    border: 1px solid #1F618D;
+    background-image: url(../imagenes/pl1.jpg);
+    background-repeat: repeat;
+    background-size: 50%;
+    background-attachment: fixed; 
    
 }
 
@@ -182,24 +189,6 @@ header{
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
 }
-/*estilo del aside*/
-aside{
-    display: block;
-    width: 12.5%;
-    background: rgba(97, 94, 94, 0.226);
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 10px;
-    float: left;
-    height: 5000px;
-    margin-left: 2px;
-    margin-top: -319px;
-    margin-bottom: 0px;
-    border: 0px solid rgb(17, 17, 17);
-}
-.filtro {
-    margin-left: 1px;
-    color: #04faff;
-}
 /*estilo para contenido*/
 
 .col {
@@ -226,6 +215,25 @@ aside{
     background-size: 50%;
     background-attachment: fixed; 
 }
+/*estilo del aside*/
+aside{
+    display: block;
+    width: 12.5%;
+    background: rgba(97, 94, 94, 0.226);
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    float: left;
+    height: 5000px;
+    margin-left: 2px;
+    margin-top: -319px;
+    margin-bottom: 0px;
+    border: 0px solid rgb(17, 17, 17);
+}
+.filtro {
+    margin-left: 1px;
+    color: #04faff;
+}
+
 
 /*Scroll-barra de desplazamiento*/
 body::-webkit-scrollbar{
@@ -282,7 +290,7 @@ ul#css3menu1 li:hover>a>span{
 
 
 
-/*fin*/
+
 ul#css3menu1 li:hover>a,ul#css3menu1 li > a.pressed{
 	background-color:#111111;border-style:none;color:#F0810F;text-decoration:none;}
 ul#css3menu1 ul li:hover>a,ul#css3menu1 ul li > a.pressed{

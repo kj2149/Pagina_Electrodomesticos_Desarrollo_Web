@@ -218,33 +218,34 @@
 
 	<section>
 		<article>
-		    <h1 class="til">CABLEADO</h1>
+		    <h1 class="til">TARJETAS GRAFICAS</h1>
 	            <P>
 			         <ul>
-                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen41.jpg">	
-							<h3>Propack 3 Rollos de Alambre N12 X 100M Blanco</h3>
-								<h4>$366.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen42.jpg">	
-							<h3>Alambre N10 100M Negro Nexans</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen43.jpg">	
-							<h3>Nexans Alambre #10 100m Color Rojo</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen44.jpg">	
-							<h3>Alambre #12 100 metros negro Conectores y Cables</h3>
-								<h4>$124.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen45.jpg">	
-							<h3>Nexans Alambre #14 100m Color Verde</h3>
-								<h4>$89,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen46.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1AMAR 1BCO 1RJO 1VDE)</h3>
-								<h4>$489,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen47.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1NEG 1BCO 1VDE 1AZUL)</h3>
-								<h4>$460,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen48.jpg">	
-							<h3>Alambre #14 100 metros amarillo Conectores y Cables</h3>
-								<h4>$88.900</h4></li>
+                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen96.png">
+							<h3>arjeta De Video Gigabyte Gt 710 2gb Ddr5 Gold</h3>
+							<h4>$249.000</h4></li>
+                        <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen100.png">
+							<h3>Tarjeta Video Msi Gt 710 2gb Ddr3 Low Profile Pci-e 2.0</h3>
+							<h4>$290,900</h4></li>    
+						
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen98.png">
+						    <h3>Tarjeta De Vídeo Gigabyte Gt 1030 2gb Oc Ddr5</h3>
+							<h4>$420.000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen99.png">	
+							<h3>Tarjeta Grafica Asrock Phantom Rx 550 2gb Ddr5</h3>
+							<h4>$480,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen97.png">	
+							<h3>Tarjeta Video Gigabyte Gtx 1050 Ti 4gb Ddr5 Oc Lp 1. Fan</h3>
+								<h4>$940.000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen101.png">	
+							<h3>Tarjeta Grafica Sapphire Pulse Rx 550 4gb Ddr5</h3>
+								<h4>$899,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen102.png">	
+							<h3>Msi Computer Video Tarjetas Graficas Geforce Gtx 1050 Ti Gam</h3>
+								<h4>$1,699,900</h4>	</li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen103.png">	
+							<h3>Tarjeta De Video Nvidia Quadro M2000 4gb Gddr5 Display Port</h3>
+								<h4>$1,249,000</h4></li>
                             
 		
 		</article>
@@ -288,7 +289,3 @@
 
 </body>
 </html>
-<?php
-    include("../conexion/conexion.php");
-	/*include("../controlador/ususarios.class.php");	*/
-?>

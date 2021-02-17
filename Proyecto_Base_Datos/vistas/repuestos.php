@@ -58,12 +58,33 @@
 			<li class="toproot"><a href="#" target="marco"
 					style="height:28px;line-height:22px;"><span>productos</span></a>
 				<ul>
-					<li><a href="#" target="marco">celulares</a></li>
-					<li><a href="#" target="marco">computadores</a></li>
-					<li><a href="#" target="marco">herramientas</a></li>
-					<li><a href="#" target="marco">componentes</a></li>
-					<li><a href="#" target="marco">repuestos</a></li>
-					<li><a href="#" target="marco">cableado</a></li>
+					<li><a href="#" target="marco">Celulares</a></li>
+					<li><a href="#" target="marco">Computadores</a>
+
+					    <ul style="left:190px;">
+							
+					    <li><a href="#">Combo teclado + Mouse</a></li>
+						<li><a href="#">Portatiles</a></li>
+						<li><a href="#">Equipos De Escritorio</a></li>
+						<li><a href="#">Equipos Todo En Uno</a></li>
+                        </ul>
+						</li>
+
+					<li><a href="#" target="marco">Boards</a></li>
+					<li><a href="#" target="marco">Tarjetas Graficas</a></li>
+					<li><a href="#" target="marco">Procesadores</a></li>
+					<li><a href="#" target="marco">Gabinetes</a></li>
+					<li><a href="#" target="marco">Fuentes De Poder</a></li>
+					<li><a href="#" target="marco">Impresoras</a>
+					<li><a href="#" target="marco">herramientas</a>
+
+
+					<ul style="left:190px;">	
+					    <li><a href="#">Componentes</a></li>
+						<li><a href="#">Repuestos</a></li>
+						<li><a href="#">Cableado</a></li>
+                        </ul>
+						</li>
 				</ul>
 			</li>
 			<li class="toproot"><a href="#" target="marco"
@@ -98,8 +119,7 @@
 				<li><img src="../imagenes/s4.jpg" alt=""></li>
 			</ul>
 		</div>
-		<aside class="aside">
-
+		<aside class="aside" style="height:1210px;">
 			<div class="filtro">
 
 				<h3 class="text-white">Celulares</h3>
@@ -192,9 +212,44 @@
 			</div> 
 
 		</aside>
+<!--Fin del div antes de aside-->
+  
+<!--/////////////          HEAD           //////////////-->
 
-    <!--/////////////          HEAD           //////////////-->
-
+	<section>
+		<article>
+		    <h1 class="til">REPUESTOS</h1>
+	            <P>
+			         <ul>
+                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen33.jpg">	
+							<h3>DISIPADOR COOLER MASTER FAN MF120R ARGB</h3>
+								<h4>$49,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen34.jpg">	
+							<h3>DISIPADOR COOLER MASTER HPER H410R RGB</h3>
+								<h4>$149,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen35.jpg">	
+							<h3>DISIPADOR COOLER MASTER HYPER 212RGB</h3>
+								<h4>$290,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen36.jpg">	
+							<h3>BASE PARA PORTATIL J&R BRJR-009 RECLINAJ 2FAN</h3>
+								<h4>$50,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen37.jpg">	
+							<h3>BATERIA PC ACER 10.8V/2200MHZ 1410 1810T 1810TZ </h3>
+								<h4>$149,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen38.jpg">	
+							<h3>BATERIA PC ACER ONE 11.6P 9CEL-11.1-7800MHA</h3>
+								<h4>$289,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen39.jpg">	
+							<h3>BATERIA PC DELL 1525/1540 11.1/4400MAH PREM</h3>
+								<h4>$160,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen40.jpg">	
+							<h3>BATERIA PC DELL 2500/3700/3800</h3>
+								<h4>$198,000</h4></li>	
+                            
+		
+		</article>
+	</section>
+	
 
     <!-- FOOTER DE LA PAGINA -->
 
@@ -229,3 +284,7 @@
 		  
 	    </div>
    </footer>
+
+
+</body>
+</html>

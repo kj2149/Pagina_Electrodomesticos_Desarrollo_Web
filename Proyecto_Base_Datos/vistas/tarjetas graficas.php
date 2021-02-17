@@ -218,33 +218,33 @@
 
 	<section>
 		<article>
-		    <h1 class="til">CABLEADO</h1>
+		    <h1 class="til">TARJETAS GRAFICAS</h1>
 	            <P>
 			         <ul>
-                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen41.jpg">	
-							<h3>Propack 3 Rollos de Alambre N12 X 100M Blanco</h3>
-								<h4>$366.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen42.jpg">	
-							<h3>Alambre N10 100M Negro Nexans</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen43.jpg">	
-							<h3>Nexans Alambre #10 100m Color Rojo</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen44.jpg">	
-							<h3>Alambre #12 100 metros negro Conectores y Cables</h3>
-								<h4>$124.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen45.jpg">	
-							<h3>Nexans Alambre #14 100m Color Verde</h3>
-								<h4>$89,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen46.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1AMAR 1BCO 1RJO 1VDE)</h3>
-								<h4>$489,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen47.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1NEG 1BCO 1VDE 1AZUL)</h3>
-								<h4>$460,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen48.jpg">	
-							<h3>Alambre #14 100 metros amarillo Conectores y Cables</h3>
-								<h4>$88.900</h4></li>
+                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen1.png">
+							<h3>Celular samsung galaxy a01 32gb rojo + Seguro gratis</h3>
+							<h4>$369,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen2.png">	
+							<h3>Huawey Y5P 4G Con Obsequio</h3>
+								<h4>$341,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen3.png">
+						    <h3>Celular Samsung Galaxy a01 32gb rojo + seguro</h3>
+							<h4>$369,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen4.png">	
+							<h3>Celular huawey Y5 neo 16gb ds azul + seguro gratis</h3>
+							<h4>$320,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen5.png">
+							<h3>Celular samsung galaxy m31 128gb rojo cover negro</h3>
+							<h4>$990,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen6.png">	
+							<h3>Celular samsung galaxy a71 128gb plateado + Seguro gratis</h3>
+								<h4>$1,699,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen7.png">	
+							<h3>Celular samsung galaxy a71 128gb plateado + Seguro gratis</h3>
+								<h4>$1,299,900</h4>	</li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen8.png">	
+							<h3>Celular samsung galaxy a51 128gb plateado + Seguro gratis</h3>
+								<h4>$1,499,000</h4></li>
                             
 		
 		</article>
@@ -288,7 +288,3 @@
 
 </body>
 </html>
-<?php
-    include("../conexion/conexion.php");
-	/*include("../controlador/ususarios.class.php");	*/
-?>

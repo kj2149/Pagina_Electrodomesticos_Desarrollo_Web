@@ -218,33 +218,33 @@
 
 	<section>
 		<article>
-		    <h1 class="til">CABLEADO</h1>
+		    <h1 class="til">FUENTES DE PODER</h1>
 	            <P>
 			         <ul>
-                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen41.jpg">	
-							<h3>Propack 3 Rollos de Alambre N12 X 100M Blanco</h3>
-								<h4>$366.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen42.jpg">	
-							<h3>Alambre N10 100M Negro Nexans</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen43.jpg">	
-							<h3>Nexans Alambre #10 100m Color Rojo</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen44.jpg">	
-							<h3>Alambre #12 100 metros negro Conectores y Cables</h3>
-								<h4>$124.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen45.jpg">	
-							<h3>Nexans Alambre #14 100m Color Verde</h3>
-								<h4>$89,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen46.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1AMAR 1BCO 1RJO 1VDE)</h3>
-								<h4>$489,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen47.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1NEG 1BCO 1VDE 1AZUL)</h3>
-								<h4>$460,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen48.jpg">	
-							<h3>Alambre #14 100 metros amarillo Conectores y Cables</h3>
-								<h4>$88.900</h4></li>
+                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen111.png">
+							<h3>Fuente De Poder Cougar Vtc 600 80 Plus White</h3>
+							<h4>$280.000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen112.png">	
+							<h3>Fuente De Poder Xpg Core Reactor 850w 80 Plus Gold</h3>
+								<h4>$641,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen113.png">
+						    <h3>Fuente De Poder Antec 1000w Hcg-1000 Extreme 80 Plus Gold</h3>
+							<h4>$369,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen114.png">	
+							<h3>Thermaltake Toughpower Irgb Plus 1200w Platinum Fuente Poder</h3>
+							<h4>$320,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen115.webp">
+							<h3>Fuente De Poder Evga 1000W Gq Gold Modular</h3>
+							<h4>$990,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen116.webp">	
+							<h3>Cooler Master V1200 Platinum Fuente De Poder</h3>
+								<h4>$699,000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen117.webp">	
+							<h3>Thermaltake Toughpower Grand Rgb 1200w Platinum Fuente Poder/h3>
+								<h4>$399,900</h4>	</li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen118.webp">	
+							<h3>Fuente De Poder Cougar 650 80 Plus Gold Modular</h3>
+								<h4>$699,000</h4></li>
                             
 		
 		</article>
@@ -288,7 +288,3 @@
 
 </body>
 </html>
-<?php
-    include("../conexion/conexion.php");
-	/*include("../controlador/ususarios.class.php");	*/
-?>

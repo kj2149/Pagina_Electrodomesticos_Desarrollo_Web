@@ -218,34 +218,33 @@
 
 	<section>
 		<article>
-		    <h1 class="til">CABLEADO</h1>
+		    <h1 class="til">PROCESADORES</h1>
 	            <P>
 			         <ul>
-                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen41.jpg">	
-							<h3>Propack 3 Rollos de Alambre N12 X 100M Blanco</h3>
-								<h4>$366.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen42.jpg">	
-							<h3>Alambre N10 100M Negro Nexans</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen43.jpg">	
-							<h3>Nexans Alambre #10 100m Color Rojo</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen44.jpg">	
-							<h3>Alambre #12 100 metros negro Conectores y Cables</h3>
-								<h4>$124.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen45.jpg">	
-							<h3>Nexans Alambre #14 100m Color Verde</h3>
-								<h4>$89,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen46.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1AMAR 1BCO 1RJO 1VDE)</h3>
-								<h4>$489,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen47.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1NEG 1BCO 1VDE 1AZUL)</h3>
-								<h4>$460,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen48.jpg">	
-							<h3>Alambre #14 100 metros amarillo Conectores y Cables</h3>
-								<h4>$88.900</h4></li>
-                            
+                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen104.png">
+							<h3>Procesador Amd Ryzen 5 3600 6 Núcleos 12 Hilos</h3>
+							<h4>$869,900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen107.png">
+							<h3>Procesador Celeron G4930 9na Gen</h3>
+							<h4>$258.000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen108.png">	
+							<h3>Procesador Intel Core I5 10400 2.9ghz 6 Nucleos 12 H</h3>
+								<h4>$371.000</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen109.png">	
+							<h3>Procesador Amd Athlon 3000g 3.5ghz Am4</h3>
+								<h4>$1,299,900</h4>	</li>
+                         <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen106.png">
+						    <h3>Intel Core I5-9400f - Procesador Sobremesa 6 Núcleos, 4ghz</h3>
+							<h4>$649.999</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen106.png">	
+							<h3>Procesador Amd Ryzen 7 3800x 4.5ghz 8 Nucleos Nuevo @att</h3>
+							<h4>$1.599.000</h4></li>       
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen110.png">	
+							<h3>Procesador Intel Core I5 10600k</h3>
+								<h4>$1,299,000</h4></li>
+                         <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen105.png">	
+							<h3>Procesador Amd Ryzen 7 3700x 8 Nucleos Hasta 4.4ghz @att</h3>
+								<h4>$1.395.000</h4></li>   
 		
 		</article>
 	</section>
@@ -288,7 +287,3 @@
 
 </body>
 </html>
-<?php
-    include("../conexion/conexion.php");
-	/*include("../controlador/ususarios.class.php");	*/
-?>

@@ -7,7 +7,7 @@
 
 <head>
 	<script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../css/estilos4.css" type="text/css" />
+	<link rel="stylesheet" href="../css/estilos3.css" type="text/css" />
 	<style type="text/css">
 		._css3m {
 			display: none
@@ -22,7 +22,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keyswords" content="html5, css3">
-	<link rel="stylesheet" type="text/css" href="../css/estilos4.css">
+	<link rel="stylesheet" type="text/css" href="../css/estilos3.css">
 	<!--IMPLEMENTANDO BOOTSTRAP - Ajax -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -58,12 +58,33 @@
 			<li class="toproot"><a href="#" target="marco"
 					style="height:28px;line-height:22px;"><span>productos</span></a>
 				<ul>
-					<li><a href="#" target="marco">celulares</a></li>
-					<li><a href="#" target="marco">computadores</a></li>
-					<li><a href="#" target="marco">herramientas</a></li>
-					<li><a href="#" target="marco">componentes</a></li>
-					<li><a href="#" target="marco">repuestos</a></li>
-					<li><a href="#" target="marco">cableado</a></li>
+					<li><a href="#" target="marco">Celulares</a></li>
+					<li><a href="#" target="marco">Computadores</a>
+
+					    <ul style="left:190px;">
+							
+					    <li><a href="#">Combo teclado + Mouse</a></li>
+						<li><a href="#">Portatiles</a></li>
+						<li><a href="#">Equipos De Escritorio</a></li>
+						<li><a href="#">Equipos Todo En Uno</a></li>
+                        </ul>
+						</li>
+
+					<li><a href="#" target="marco">Boards</a></li>
+					<li><a href="#" target="marco">Tarjetas Graficas</a></li>
+					<li><a href="#" target="marco">Procesadores</a></li>
+					<li><a href="#" target="marco">Gabinetes</a></li>
+					<li><a href="#" target="marco">Fuentes De Poder</a></li>
+					<li><a href="#" target="marco">Impresoras</a>
+					<li><a href="#" target="marco">herramientas</a>
+
+
+					<ul style="left:190px;">	
+					    <li><a href="#">Componentes</a></li>
+						<li><a href="#">Repuestos</a></li>
+						<li><a href="#">Cableado</a></li>
+                        </ul>
+						</li>
 				</ul>
 			</li>
 			<li class="toproot"><a href="#" target="marco"
@@ -88,8 +109,17 @@
 
 	</header>
 
-		<aside class="aside">
 
+	<div>
+		<div class="slider">
+			<ul>
+				<li><img src="../imagenes/s1.png" alt=""></li>
+				<li><img src="../imagenes/s2.jpg" alt=""></li>
+				<li><img src="../imagenes/s3.jpg" alt=""></li>
+				<li><img src="../imagenes/s4.jpg" alt=""></li>
+			</ul>
+		</div>
+		<aside class="aside" style="height:1210px;">
 			<div class="filtro">
 
 				<h3 class="text-white">Celulares</h3>
@@ -182,9 +212,44 @@
 			</div> 
 
 		</aside>
+<!--Fin del div antes de aside-->
+  
+<!--/////////////          HEAD           //////////////-->
 
-    <!--/////////////          HEAD           //////////////-->
-
+	<section>
+		<article>
+		    <h1 class="til">HERRAMIENTAS</h1>
+	            <P>
+			         <ul>
+                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen21.png">	
+							<h3>Combo Peluquera Wahl Deluxe Groom Pro 3 En 1</h3>
+								<h4>$320,000</h4></li>
+					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen22.png">	
+							<h3>Taladro + Atornillador + Brocas + 40pcs</h3>
+								<h4>$190,000</h4></li>
+					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen23.png">	
+							<h3>Taladro Atornillador 20v 1/2 Total Tools</h3>
+								<h4>$699,000</h4></li>
+					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen24.png">	
+							<h3>Combo Taladro 850w Makita Y Pulidora 850w</h3>
+								<h4>$199,900</h4></li>
+					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen25.png">	
+							<h3>Set De 179 Herramientas Con Estuche Klatter</h3>
+								<h4>$99,000</h4></li>
+					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen26.png">	
+							<h3>Herramientas Taladro Caladora Lijadora Y Linterna</h3>
+								<h4>$629,000</h4></li>
+					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen27.png">	
+							<h3>Set Herramienta Manual 16p K-shm16</h3>
+								<h4>$749,000</h4></li>
+					<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen28+.png">	
+							<h3>Portátil Lenovo S145 Intel Core i3 14" Pulgadas</h3>
+								<h4>$1,600,000</h4></li>		
+                            
+		
+		</article>
+	</section>
+	
 
     <!-- FOOTER DE LA PAGINA -->
 
@@ -219,3 +284,11 @@
 		  
 	    </div>
    </footer>
+
+
+</body>
+</html>
+<?php
+    include("../conexion/conexion.php");
+	/*include("../controlador/ususarios.class.php");	*/
+?>

@@ -218,33 +218,33 @@
 
 	<section>
 		<article>
-		    <h1 class="til">CABLEADO</h1>
+		    <h1 class="til">EQUIPOS TODO EN UNO</h1>
 	            <P>
 			         <ul>
-                     <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen41.jpg">	
-							<h3>Propack 3 Rollos de Alambre N12 X 100M Blanco</h3>
-								<h4>$366.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen42.jpg">	
-							<h3>Alambre N10 100M Negro Nexans</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen43.jpg">	
-							<h3>Nexans Alambre #10 100m Color Rojo</h3>
-								<h4>$210.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen44.jpg">	
-							<h3>Alambre #12 100 metros negro Conectores y Cables</h3>
-								<h4>$124.900</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen45.jpg">	
-							<h3>Nexans Alambre #14 100m Color Verde</h3>
-								<h4>$89,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen46.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1AMAR 1BCO 1RJO 1VDE)</h3>
-								<h4>$489,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen47.jpg">	
-							<h3>Procables Alambre N12 100mt Propack 4und (1NEG 1BCO 1VDE 1AZUL)</h3>
-								<h4>$460,000</h4></li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen48.jpg">	
-							<h3>Alambre #14 100 metros amarillo Conectores y Cables</h3>
-								<h4>$88.900</h4></li>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen79.png">
+							<h3>In One LENOVO AIO 3 AMD Athlon 21,5"</h3>
+							<h4>$ 1.649.000</h4></li>
+                            <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen80.png">
+							<h3>Todo en Uno HP Pavilion 24-xa011la</h3>
+							<h4>$3.599.000</h4></li>
+                            <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen81.png">
+							<h3>IdeaCentre A340 (21.5", Intel)</h3>
+							<h4>$2.529.900</h4></li>
+                            <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen82.png">
+							<h3>Todo en Uno HP Pavilion 24-xa016la</h3>
+							<h4>$3.149.000</h4>
+                            </li><li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen83.png">
+							<h3>Todo En Uno LENOVO V130-20IGM CELERON J4005N 4GB 1TB DVD 19.5 LINUX NEGRO</h3>
+							<h4>$1.439.700</h4></li>
+                            </li><li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen85.webp">
+							<h3>Todo En Uno Lenovo A540-24api Ryzen 3 3200 2tb/8gb</h3>
+							<h4>$2.599.000</h4></li>
+                            </li><li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen86.webp">
+							<h3>Todo en uno aio lenovo 3-22ada05 athlon silver</h3>
+							<h4>$2.599.000</h4></li>
+                            </li><li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen87.webp">
+							<h3>All in one Lenovo 23.8 pulgadas AMD RYZEN R5 4GB 1TB</h3>
+							<h4>$2,699,000</h4></li>
                             
 		
 		</article>
@@ -288,7 +288,3 @@
 
 </body>
 </html>
-<?php
-    include("../conexion/conexion.php");
-	/*include("../controlador/ususarios.class.php");	*/
-?>

@@ -50,7 +50,7 @@
     width: 96%;
     text-align: center;   
     color: rgb(253, 253, 253);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
     border: 2px outset #04faff;
     border-width: 10%;
     padding: 10px;
@@ -90,7 +90,7 @@ header{
     padding: 5px;
     color: rgb(50, 190, 214);
     border: 2px outset#04faff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
     background: rgba(17, 17, 17);
     font-size: large;
@@ -109,7 +109,7 @@ header{
     padding: 5px;
     color: rgb(50, 190, 214);
     border: 2px inset#04faff;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Josefin Sans',arial sans-serif;
     text-decoration: none;
     background: rgba(17, 17, 17);
     font-size: large;
@@ -187,7 +187,7 @@ aside{
     display: block;
     width: 12.5%;
     background: rgba(97, 94, 94, 0.226);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     padding: 10px;
     float: left;
     height: 5000px;
@@ -209,13 +209,11 @@ aside{
     padding: 0px;
     color: white;
     background: rgba(36, 107, 170);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     
 }
 
 .til{
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     display: block;
     width: 1100px;
@@ -283,7 +281,7 @@ ul#css3menu1 li:hover>a>span{
 ul#css3menu1 > li.switch{
 	display:none;cursor:pointer;width:25px;height:20px;padding:3px 10px;}
 ul#css3menu1 > li.switch:before{
-	content:"";position:right center;display:block;height:4px;width:25px;border-radius:4px;background: #32bed6;-moz-box-shadow:0 8px #32bed6, 0 16px #32bed6;-webkit-box-shadow:0 8px #32bed6, 0 16px #32bed6;box-shadow:0 8px #32bed6, 0 16px #32bed6; margin-bottom: 10px; }
+	content:"";position:right center;display:block;height:4px;width:25px;border-radius:4px;background: #32bed6;-moz-box-shadow:0 8px #32bed6, 0 16px #32bed6;-webkit-box-shadow:0 8px #32bed6, 0 16px #32bed6;box-shadow:0 8px #32bed6, 0 16px #32bed6; margin-bottom: 7px; }
 ul#css3menu1 > li.switch:hover:before{
 	background:#F0810F;-moz-box-shadow:0 8px #F0810F, 0 16px #F0810F;-webkit-box-shadow:0 8px #F0810F, 0 16px #F0810F;box-shadow:0 8px #F0810F, 0 16px #F0810F;}
 .c3m-switch-input{

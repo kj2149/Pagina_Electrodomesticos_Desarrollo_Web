@@ -107,4 +107,15 @@ footer{
 }
 
 
+@media only screen and  (max-width: 900px){
+     .redes{ font-size: 10px;
+                  
+       }
+    }
+
+@media only screen and  (max-width: 900px){
+     .contactenos{ font-size: 12px;
+                   
+       }
+    }
 

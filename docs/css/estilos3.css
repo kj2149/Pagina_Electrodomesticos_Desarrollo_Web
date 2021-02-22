@@ -382,10 +382,9 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 }
 
 .buscar1 input{
-    width: 100%;
+   width: 100%;
     height: 35px;
     padding: 10px;
-    font-size: -5px;
     color:rgb(3, 3, 3);
     outline: none;
     border: 2px solid #00f8fc;
@@ -393,9 +392,9 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
     transition: all 0.6s ease;
     color: #111111;
     float: right;
- 
-
+    margin-bottom: 20px;
 }
+
 .btn{
 	 margin: 3px;
     position: absolute;

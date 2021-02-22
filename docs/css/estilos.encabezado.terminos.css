@@ -26,7 +26,26 @@
     font-size: large;
     text-align: justify;
     position: relative;
+    
 }
+
+.especificartermino1{
+    width: 80%;
+    height: 0%;
+    left: 6%;
+    right: 80%;
+    padding: 1%;
+    margin: 8.8%;
+    margin-bottom: 1%;
+    margin-top: 230px;
+    color:white;
+    background-color: rgba(36, 108, 170, 0.507);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: justify;
+    position: relative;   
+}
+
  .aside{
     display: block;
     width: 12.5%;

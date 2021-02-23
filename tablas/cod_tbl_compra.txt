@@ -65,3 +65,15 @@ FK_Id_Produc,
   REFERENCES tbl_Producto(FK_Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
 
+CREATE TABLE Detalles_Venta(
+,
+,
+,
+,
+,
+FK_,
+  PRIMARY KEY(#),
+  CONSTRAINT FK_ /
+  FOREIGN KEY(=)  
+  REFERENCES tbl_#(=) ON DELETE NO ACTION ON UPDATE CASCADE  
+);

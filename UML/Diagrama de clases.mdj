@@ -4944,6 +4944,23 @@
 									"subViews": [
 										{
 											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3z1AeMgBR+8I=",
+											"_parent": {
+												"$ref": "AAAAAAF3bU2e6zVxUVQ="
+											},
+											"model": {
+												"$ref": "AAAAAAF3z1AdlABOmYw="
+											},
+											"font": "Arial;13;0",
+											"left": 45,
+											"top": 950,
+											"width": 260.50146484375,
+											"height": 13,
+											"text": "+Id_Detalles_vente",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
 											"_id": "AAAAAAF3bU3oOTWc7YE=",
 											"_parent": {
 												"$ref": "AAAAAAF3bU2e6zVxUVQ="
@@ -4953,27 +4970,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 45,
-											"top": 950,
-											"width": 260.50146484375,
-											"height": 13,
-											"text": "+Unid_vendidas: TINYINT",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3bZiIXjYuquE=",
-											"_parent": {
-												"$ref": "AAAAAAF3bU2e6zVxUVQ="
-											},
-											"model": {
-												"$ref": "AAAAAAF3bZiITjYrDcA="
-											},
-											"font": "Arial;13;0",
-											"left": 45,
 											"top": 965,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "+IVA_total: DEC",
+											"text": "+Unid_vendidas: TINYINT",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5174,7 +5174,7 @@
 							"left": 40,
 							"top": 920,
 							"width": 270.50146484375,
-							"height": 191,
+							"height": 206,
 							"nameCompartment": {
 								"$ref": "AAAAAAF3bU2e6jVseRk="
 							},
@@ -7526,7 +7526,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 153,
-									"top": 1132,
+									"top": 1139,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -7547,7 +7547,7 @@
 									"visible": null,
 									"font": "Arial;13;0",
 									"left": 138,
-									"top": 1132,
+									"top": 1139,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -7568,7 +7568,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 182,
-									"top": 1133,
+									"top": 1140,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -7585,7 +7585,7 @@
 							"tail": {
 								"$ref": "AAAAAAF3aBb7WO0Gjtc="
 							},
-							"points": "168:1168;168:1110",
+							"points": "168:1168;168:1125",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF3cpvPB77UelU="
@@ -12825,21 +12825,20 @@
 					"attributes": [
 						{
 							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3z1AdlABOmYw=",
+							"_parent": {
+								"$ref": "AAAAAAF3bU2e6TVpd8A="
+							},
+							"name": "Id_Detalles_vente"
+						},
+						{
+							"_type": "UMLAttribute",
 							"_id": "AAAAAAF3bU3oJzWZBi0=",
 							"_parent": {
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
 							"name": "Unid_vendidas",
 							"type": "TINYINT"
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3bZiITjYrDcA=",
-							"_parent": {
-								"$ref": "AAAAAAF3bU2e6TVpd8A="
-							},
-							"name": "IVA_total",
-							"type": "DEC"
 						},
 						{
 							"_type": "UMLAttribute",

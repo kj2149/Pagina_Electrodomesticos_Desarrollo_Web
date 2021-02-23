@@ -345,11 +345,11 @@ ul#css3menu1 ul>li{
 ul#css3menu1 a:active, ul#css3menu1 a:focus{
 	outline-style:none;}
 ul#css3menu1 a{
-	display:block;vertical-align: middle;text-align:center;text-decoration:none;font:19px Arial,sans-serif;color:#32bed6;cursor:default;padding:3px;background-color:#111111;background-repeat:repeat;border-width:0px;border-style:none;border-color: none;}
+	display:block;vertical-align: middle;text-align:center;text-decoration:none;font:19px Josefin Sans,sans-serif;color:#32bed6;cursor:default;padding:3px;background-color:#111111;background-repeat:repeat;border-width:0px;border-style:none;border-color: none;}
 ul#css3menu1 ul li{
 	float:none;margin:0;}
 ul#css3menu1 ul a{
-	text-align:left;padding:4px;background-color:#111111;border-width:0 0 1px 0;border-style:solid;border-color:#424D3C;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;font:18px Arial,sans-serif;color:#1d9b97;text-decoration:none;}
+	text-align:left;padding:4px;background-color:#111111;border-width:0 0 1px 0;border-style:solid;border-color:#424D3C;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;font:18px Josefin Sans,sans-serif;color:#1d9b97;text-decoration:none;}
 ul#css3menu1 li:hover>a,ul#css3menu1 li a.pressed{
 	background-color:#111111;border-style:none;color:#F0810F;}
 ul#css3menu1 span{
@@ -440,6 +440,10 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
     font-size: 30px;
     border-radius: 0%;
     cursor: pointer;
+}
+
+.text-white{
+    font-family: 'Josefin Sans', sans-serif;
 }
 /*
 .buscar:hover input{

@@ -52,12 +52,16 @@ FK_Id_Produc,
 CREATE TABLE tbl_Inventario(
 Id_Inventario,
 Fech_Entrada_Inventario,
-,
-,
-,
-FK_,
-  PRIMARY KEY(#),
-  CONSTRAINT FK_ /
-  FOREIGN KEY(=)  
-  REFERENCES tbl_#(=) ON DELETE NO ACTION ON UPDATE CASCADE  
+Fech_Salida_Inventario,
+Hora_Entrada_Inventario,
+Hora_salida_Inventario,
+Canti_Inicial_Dia_Inventario,
+Canti_Vendida_Dia_Inventario,
+Canti_Disponible_Dia_Inventario,
+FK_Id_Produc,
+  PRIMARY KEY(Id_Inventario),
+  CONSTRAINT FK_ProductoInventario
+  FOREIGN KEY(FK_Id_Produc)  
+  REFERENCES tbl_Producto(FK_Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
+

@@ -1,0 +1,41 @@
+CREATE TABLE tbl_Orden_Compra (
+  Id_Orden_Com,
+  Cost_Productos_Orden_Com,
+  Uni_Vendidas_Orden_Com,
+  Fecha_Ventas_Orden_Com,
+  Hora_Venta_Orden_Com,
+  PRIMARY KEY (Id_Orden_Com),
+  CONSTRAINT FK_Usuario
+  FOREIGN KEY(FK_Id_Usuario)  
+  REFERENCIAS tbl_Usuario (FK_ID_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE    
+);
+
+
+
+CREATE TABLE tbl_Compra_Proveedor (
+  Id_Comp_Proveedor,
+  Cantidad_Comp_Proveedor,
+  Precio_Total_Comp_Proveedor,
+  Fecha_Compra_Proveedor,
+  PRIMARY KEY (Id_Comp_Proveedor),
+  CONSTRAINT FK_Producto
+  FOREIGN KEY (FK_ID_Producto)  
+  REFERENCIAS tbl_Producto (FK_ID_Producto) OON DELETE NO ACTION ON UPDATE CASCADE    
+);
+
+
+
+CREATE TABLE Tbl_Descuentos (
+  Id_Descuento,
+  Dias_Descuento,
+  Tipo_Descuento,
+  Descripción_Descuento,
+  Valor_Descuento,
+  PRIMARY KEY (Id_Descuento),
+  CONSTRAINT FK_
+  FOREIGN KEY (FK_ID_)  
+  REFERENCIAS Tbl_ (FK_ID_) OON DELETE NO ACTION ON UPDATE CASCADE  
+);
+
+
+

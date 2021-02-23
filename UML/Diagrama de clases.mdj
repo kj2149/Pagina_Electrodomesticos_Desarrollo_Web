@@ -4884,7 +4884,7 @@
 											"top": 927,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "Tbl_Ventas_detalles"
+											"text": "Tbl_Detalles_Venta"
 										},
 										{
 											"_type": "LabelView",
@@ -12775,7 +12775,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Tbl_Ventas_detalles",
+					"name": "Tbl_Detalles_Venta",
 					"ownedElements": [
 						{
 							"_type": "UMLDependency",

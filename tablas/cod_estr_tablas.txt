@@ -38,3 +38,6 @@ CREATE TABLE tbl_Edad(
   FOREIGN KEY(FK_Id_Usuario)  
   REFERENCES tbl_Usuario(FK_Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
+
+
+

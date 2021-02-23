@@ -17,3 +17,15 @@ CREATE TABLE tbl_Compra_Cliente(
   REFERENCES tbl_Factura(FK_Id_Factura) ON DELETE NO ACTION ON UPDATE CASCADE
 );
 
+CREATE TABLE tbl_Factura(
+Id_Factu,
+,
+,
+,
+,
+FK_,
+  PRIMARY KEY(#),
+  CONSTRAINT FK_ /
+  FOREIGN KEY(=)  
+  REFERENCES tbl_#(=) ON DELETE NO ACTION ON UPDATE CASCADE  
+);

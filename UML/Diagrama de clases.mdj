@@ -1612,23 +1612,6 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3bT1CaeS+I6I=",
-											"_parent": {
-												"$ref": "AAAAAAF3aBb7WO0MxHw="
-											},
-											"model": {
-												"$ref": "AAAAAAF3bT1CYeS7q0w="
-											},
-											"font": "Arial;13;0",
-											"left": 85,
-											"top": 1303,
-											"width": 239.5986328125,
-											"height": 13,
-											"text": "+Canti_producto_no_disponible: Date",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
 											"_id": "AAAAAAF3ggbLellvTjs=",
 											"_parent": {
 												"$ref": "AAAAAAF3aBb7WO0MxHw="
@@ -1638,7 +1621,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1318,
+											"top": 1303,
 											"width": 239.5986328125,
 											"height": 13,
 											"text": "+Fecha_salida_inventario: DATE",
@@ -1655,7 +1638,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1333,
+											"top": 1318,
 											"width": 239.5986328125,
 											"height": 13,
 											"text": "+Hora_salida_inventario: TIME",
@@ -1672,7 +1655,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1348,
+											"top": 1333,
 											"width": 239.5986328125,
 											"height": 13,
 											"text": "+FK_ID_Producto: VARCHAR",
@@ -1683,7 +1666,7 @@
 									"left": 80,
 									"top": 1193,
 									"width": 249.5986328125,
-									"height": 173
+									"height": 158
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1706,7 +1689,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1371,
+											"top": 1356,
 											"width": 239.5986328125,
 											"height": 13,
 											"text": "+Actualizar()",
@@ -1723,7 +1706,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1386,
+											"top": 1371,
 											"width": 239.5986328125,
 											"height": 13,
 											"text": "+Consultar()",
@@ -1732,7 +1715,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 80,
-									"top": 1366,
+									"top": 1351,
 									"width": 249.5986328125,
 									"height": 38
 								},
@@ -5357,7 +5340,7 @@
 											"top": 693,
 											"width": 224.34521484375,
 											"height": 13,
-											"text": "+IVA_Total: DEC",
+											"text": "+Total_IVA: INTEGER",
 											"horizontalAlignment": 0
 										},
 										{
@@ -11866,15 +11849,6 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3bT1CYeS7q0w=",
-							"_parent": {
-								"$ref": "AAAAAAF3aBb7WO0EUdI="
-							},
-							"name": "Canti_producto_no_disponible",
-							"type": "Date"
-						},
-						{
-							"_type": "UMLAttribute",
 							"_id": "AAAAAAF3ggbLb1ls0Oc=",
 							"_parent": {
 								"$ref": "AAAAAAF3aBb7WO0EUdI="
@@ -13052,8 +13026,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF3bb9e1DZOBmg="
 							},
-							"name": "IVA_Total",
-							"type": "DEC"
+							"name": "Total_IVA",
+							"type": "INTEGER"
 						},
 						{
 							"_type": "UMLAttribute",

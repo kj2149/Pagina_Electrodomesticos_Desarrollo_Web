@@ -1,0 +1,40 @@
+CREATE TABLE tbl_Genero(
+  Id_Genero,
+  Nom_genero,
+  PRIMARY KEY(Id_Genero),  
+);
+
+CREATE TABLE tbl_Usuario(
+  Id_usuario,
+  Prim_Nom_Usuario,
+  Seg_Nom_Usuario,
+  Prim_Ape_Usuario,
+  Seg_ape_Usuario,
+  FK_Id_Genero,
+  PRIMARY KEY(Id_Usuario),
+  CONSTRAINT FK_GeneroUsuario
+  FOREIGN KEY(FK_Id_Genero)  
+  REFERENCES tbl_Genero(Id_Genero) ON DELETE NO ACTION ON UPDATE CASCADE  
+);
+
+CREATE TABLE tbl_Contacto(
+  Id_contacto,
+  Direc_Contacto,
+  Telefono_Contacto,
+  Correo_Contacto,
+  FK_Id_Usuario,
+  PRIMARY KEY(Id_Contacto),
+  CONSTRAINT FK_UsuarioContacto
+  FOREIGN KEY(FK_Id_Usuario)  
+  REFERENCES tbl_Usuario(FK_Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
+);
+
+CREATE TABLE tbl_Edad(
+  Id_Edad,
+  Fech_Nac_Edad,
+  FK_Id_Usuario,
+  PRIMARY KEY(Id_Edad),
+  CONSTRAINT FK_UsuarioEdad
+  FOREIGN KEY(FK_Id_Usuario)  
+  REFERENCES tbl_Usuario(FK_Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
+);

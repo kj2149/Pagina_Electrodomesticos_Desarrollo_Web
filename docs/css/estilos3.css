@@ -292,15 +292,17 @@ header{
 
     font-family: 'Josefin Sans', sans-serif;
     display: block;
-    width: 1100px;
+    width: 1010px;
     margin-left: 200px;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     border: 1px solid #1F618D;
     background-image: url(../imagenes/pl1.jpg);
     background-repeat: repeat;
     background-size: 50%;
-    background-attachment: fixed; 
+    background-attachment: fixed;
+    padding-left: 20%;
+    padding-right: 20%; 
 }
 
 /*Scroll-barra de desplazamiento*/

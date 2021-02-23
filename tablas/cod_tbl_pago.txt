@@ -1,0 +1,43 @@
+CREATE TABLE Tbl_Pago (
+  Id_Pago,
+  Metodo_Pago,
+  Tipo_Pago,
+  PRIMARY KEY (Id_Pago),
+  CONSTRAINT FK_Factura
+  FOREIGN KEY(FK_Id_Factura)  
+  REFERENCIAS Tbl_Factura (FK_ID_Factura) ON DELETE NO ACTION ON UPDATE CASCADE    
+);
+
+
+CREATE TABLE Tbl_Envio (
+  Id_Envio,
+  Tipo_de_envio,
+  Dirección,
+  PRIMARY KEY (Id_Envio),
+
+  CONSTRAINT FK_Pago
+  FOREIGN KEY(FK_Id_Pago)  
+  REFERENCIAS Tbl_Pago (FK_ID_Pago) ON DELETE NO ACTION ON UPDATE CASCADE 
+
+  CONSTRAINT FK_Ciudad
+  FOREIGN KEY(FK_Id_Ciudad)  
+  REFERENCIAS tbl_Ciudad (FK_ID_Ciudad ON DELETE NO ACTION ON UPDATE CASCADE       
+);
+
+
+CREATE TABLE Tbl_Ciudad (
+  Id_Ciudad,
+  Nombre_ciudad,
+  Localidad,
+  PRIMARY KEY (Id_Ciudad),   
+);
+
+
+CREATE TABLE Tbl_Departamento (
+  Id_Departamento,
+  Nombre_Departamento,
+  PRIMARY KEY (Id_Departamento),
+  CONSTRAINT FK_Ciudad
+  FOREIGN KEY(FK_Id_Ciudad)  
+  REFERENCIAS Tbl_Ciudad (FK_ID_Ciudad) ON DELETE NO ACTION ON UPDATE CASCADE    
+);

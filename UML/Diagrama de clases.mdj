@@ -1510,23 +1510,6 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3aGFnmFzkNMY=",
-											"_parent": {
-												"$ref": "AAAAAAF3aBb7WO0MxHw="
-											},
-											"model": {
-												"$ref": "AAAAAAF3aGFnkFzhtk8="
-											},
-											"font": "Arial;13;0",
-											"left": 85,
-											"top": 1213,
-											"width": 239.5986328125,
-											"height": 13,
-											"text": "+FK_ID_Producto: VARCHAR",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
 											"_id": "AAAAAAF3ggZwk1ZJFiA=",
 											"_parent": {
 												"$ref": "AAAAAAF3aBb7WO0MxHw="
@@ -1536,10 +1519,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1228,
+											"top": 1213,
 											"width": 239.5986328125,
 											"height": 13,
 											"text": "+Fecha_entrada_inventario: DATE",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3ggbLellvTjs=",
+											"_parent": {
+												"$ref": "AAAAAAF3aBb7WO0MxHw="
+											},
+											"model": {
+												"$ref": "AAAAAAF3ggbLb1ls0Oc="
+											},
+											"font": "Arial;13;0",
+											"left": 85,
+											"top": 1228,
+											"width": 239.5986328125,
+											"height": 13,
+											"text": "+Fecha_salida_inventario: DATE",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1561,6 +1561,23 @@
 										},
 										{
 											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3ggfCyWAQcRc=",
+											"_parent": {
+												"$ref": "AAAAAAF3aBb7WO0MxHw="
+											},
+											"model": {
+												"$ref": "AAAAAAF3ggfCv2ANTi8="
+											},
+											"font": "Arial;13;0",
+											"left": 85,
+											"top": 1258,
+											"width": 239.5986328125,
+											"height": 13,
+											"text": "+Hora_salida_inventario: TIME",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
 											"_id": "AAAAAAF3aG8ln12cihQ=",
 											"_parent": {
 												"$ref": "AAAAAAF3aBb7WO0MxHw="
@@ -1570,27 +1587,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1258,
-											"width": 239.5986328125,
-											"height": 13,
-											"text": "+Canti_inicial_dia: TINYINT",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3bT02AuSyqiY=",
-											"_parent": {
-												"$ref": "AAAAAAF3aBb7WO0MxHw="
-											},
-											"model": {
-												"$ref": "AAAAAAF3bT018uSvOgc="
-											},
-											"font": "Arial;13;0",
-											"left": 85,
 											"top": 1273,
 											"width": 239.5986328125,
 											"height": 13,
-											"text": "+Canti_disponible_dia: TINYINT",
+											"text": "+Canti_inicial_dia: TINYINT",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1612,36 +1612,19 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3ggbLellvTjs=",
+											"_id": "AAAAAAF3bT02AuSyqiY=",
 											"_parent": {
 												"$ref": "AAAAAAF3aBb7WO0MxHw="
 											},
 											"model": {
-												"$ref": "AAAAAAF3ggbLb1ls0Oc="
+												"$ref": "AAAAAAF3bT018uSvOgc="
 											},
 											"font": "Arial;13;0",
 											"left": 85,
 											"top": 1303,
 											"width": 239.5986328125,
 											"height": 13,
-											"text": "+Fecha_salida_inventario: DATE",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3ggfCyWAQcRc=",
-											"_parent": {
-												"$ref": "AAAAAAF3aBb7WO0MxHw="
-											},
-											"model": {
-												"$ref": "AAAAAAF3ggfCv2ANTi8="
-											},
-											"font": "Arial;13;0",
-											"left": 85,
-											"top": 1318,
-											"width": 239.5986328125,
-											"height": 13,
-											"text": "+Hora_salida_inventario: TIME",
+											"text": "+Canti_disponible_dia: TINYINT",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1655,7 +1638,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1333,
+											"top": 1318,
 											"width": 239.5986328125,
 											"height": 13,
 											"text": "+FK_ID_Producto: VARCHAR",
@@ -1666,7 +1649,7 @@
 									"left": 80,
 									"top": 1193,
 									"width": 249.5986328125,
-									"height": 158
+									"height": 143
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1689,7 +1672,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1356,
+											"top": 1341,
 											"width": 239.5986328125,
 											"height": 13,
 											"text": "+Actualizar()",
@@ -1706,7 +1689,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 85,
-											"top": 1371,
+											"top": 1356,
 											"width": 239.5986328125,
 											"height": 13,
 											"text": "+Consultar()",
@@ -1715,7 +1698,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 80,
-									"top": 1351,
+									"top": 1336,
 									"width": 249.5986328125,
 									"height": 38
 								},
@@ -11795,20 +11778,20 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3aGFnkFzhtk8=",
-							"_parent": {
-								"$ref": "AAAAAAF3aBb7WO0EUdI="
-							},
-							"name": "FK_ID_Producto",
-							"type": "VARCHAR"
-						},
-						{
-							"_type": "UMLAttribute",
 							"_id": "AAAAAAF3ggZwgFZGjB0=",
 							"_parent": {
 								"$ref": "AAAAAAF3aBb7WO0EUdI="
 							},
 							"name": "Fecha_entrada_inventario",
+							"type": "DATE"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3ggbLb1ls0Oc=",
+							"_parent": {
+								"$ref": "AAAAAAF3aBb7WO0EUdI="
+							},
+							"name": "Fecha_salida_inventario",
 							"type": "DATE"
 						},
 						{
@@ -11822,20 +11805,20 @@
 						},
 						{
 							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3ggfCv2ANTi8=",
+							"_parent": {
+								"$ref": "AAAAAAF3aBb7WO0EUdI="
+							},
+							"name": "Hora_salida_inventario",
+							"type": "TIME"
+						},
+						{
+							"_type": "UMLAttribute",
 							"_id": "AAAAAAF3aG8llV2ZUXs=",
 							"_parent": {
 								"$ref": "AAAAAAF3aBb7WO0EUdI="
 							},
 							"name": "Canti_inicial_dia",
-							"type": "TINYINT"
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3bT018uSvOgc=",
-							"_parent": {
-								"$ref": "AAAAAAF3aBb7WO0EUdI="
-							},
-							"name": "Canti_disponible_dia",
 							"type": "TINYINT"
 						},
 						{
@@ -11849,21 +11832,12 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3ggbLb1ls0Oc=",
+							"_id": "AAAAAAF3bT018uSvOgc=",
 							"_parent": {
 								"$ref": "AAAAAAF3aBb7WO0EUdI="
 							},
-							"name": "Fecha_salida_inventario",
-							"type": "DATE"
-						},
-						{
-							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3ggfCv2ANTi8=",
-							"_parent": {
-								"$ref": "AAAAAAF3aBb7WO0EUdI="
-							},
-							"name": "Hora_salida_inventario",
-							"type": "TIME"
+							"name": "Canti_disponible_dia",
+							"type": "TINYINT"
 						},
 						{
 							"_type": "UMLAttribute",

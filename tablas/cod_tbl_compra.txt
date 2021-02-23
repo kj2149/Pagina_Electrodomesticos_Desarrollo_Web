@@ -19,7 +19,39 @@ CREATE TABLE tbl_Compra_Cliente(
 
 CREATE TABLE tbl_Factura(
 Id_Factu,
-,
+Total_IVA_Factu,
+Precio_Total_Comp_Factu,
+Fech_Facturacion_Factu,
+Hora_Factu,
+FK_Id_Produc,
+  PRIMARY KEY(Id_Factu),
+  CONSTRAINT FK_PreoductoFactura
+  FOREIGN KEY(FK_Id_Produc)  
+  REFERENCES tbl_Produacto(FK_Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
+);
+
+CREATE TABLE tbl_Producto(
+Id_Produc,
+Nombre_Produc,
+Tipo_Produc,
+Precio_Produc, 
+  PRIMARY KEY(Id_Produc), 
+);
+
+CREATE TABLE tbl_Categoria_Produactos(
+Id_Categ_Produc,
+Tipo_Categ_Produc,
+Nombre_Categ_Produc,
+FK_Id_Produc,
+  PRIMARY KEY(Id_Categ_Produc),
+  CONSTRAINT FK_ProductoCategoriaProducto
+  FOREIGN KEY(FK_Id_Produc)  
+  REFERENCES tbl_Producto(FK_Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
+);
+
+CREATE TABLE tbl_Inventario(
+Id_Inventario,
+Fech_Entrada_Inventario,
 ,
 ,
 ,

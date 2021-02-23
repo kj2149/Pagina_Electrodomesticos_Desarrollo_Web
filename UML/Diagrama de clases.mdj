@@ -1242,13 +1242,47 @@
 											"height": 13,
 											"text": "+Precio_Producto: DECIMAL",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3z4QxzBQ3eh8=",
+											"_parent": {
+												"$ref": "AAAAAAF3aBbYCOzic+g="
+											},
+											"model": {
+												"$ref": "AAAAAAF3z4QxOxQ0Ryk="
+											},
+											"font": "Arial;13;0",
+											"left": 661,
+											"top": 738,
+											"width": 215.439453125,
+											"height": 13,
+											"text": "+Descripcion_Producto",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3z4SBPxYAYLA=",
+											"_parent": {
+												"$ref": "AAAAAAF3aBbYCOzic+g="
+											},
+											"model": {
+												"$ref": "AAAAAAF3z4SBFRX9/Vg="
+											},
+											"font": "Arial;13;0",
+											"left": 661,
+											"top": 753,
+											"width": 215.439453125,
+											"height": 13,
+											"text": "+Img_Producto",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 656,
 									"top": 673,
 									"width": 225.439453125,
-									"height": 68
+									"height": 98
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1271,7 +1305,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 661,
-											"top": 746,
+											"top": 776,
 											"width": 215.439453125,
 											"height": 13,
 											"text": "+Consultar()",
@@ -1288,7 +1322,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 661,
-											"top": 761,
+											"top": 791,
 											"width": 215.439453125,
 											"height": 13,
 											"text": "+Crear()",
@@ -1305,7 +1339,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 661,
-											"top": 776,
+											"top": 806,
 											"width": 215.439453125,
 											"height": 13,
 											"text": "+Eliminar()",
@@ -1322,7 +1356,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 661,
-											"top": 791,
+											"top": 821,
 											"width": 215.439453125,
 											"height": 13,
 											"text": "+Actualizar()",
@@ -1331,7 +1365,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 656,
-									"top": 741,
+									"top": 771,
 									"width": 225.439453125,
 									"height": 68
 								},
@@ -1373,7 +1407,7 @@
 							"left": 656,
 							"top": 648,
 							"width": 225.439453125,
-							"height": 176,
+							"height": 191,
 							"nameCompartment": {
 								"$ref": "AAAAAAF3aBbYCOzdTpA="
 							},
@@ -4093,7 +4127,7 @@
 											"top": 76,
 											"width": 166.283203125,
 											"height": 13,
-											"text": "+Telefono: INTEGER",
+											"text": "+Telefono: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -7771,7 +7805,7 @@
 							"tail": {
 								"$ref": "AAAAAAF3aBbYCOzcGkU="
 							},
-							"points": "721:823;721:1264;329:1264",
+							"points": "721:838;721:1264;329:1264",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF3cpzGps1cHyU="
@@ -11677,6 +11711,22 @@
 							},
 							"name": "Precio_Producto",
 							"type": "DECIMAL"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3z4QxOxQ0Ryk=",
+							"_parent": {
+								"$ref": "AAAAAAF3aBbYCOzaQqc="
+							},
+							"name": "Descripcion_Producto"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3z4SBFRX9/Vg=",
+							"_parent": {
+								"$ref": "AAAAAAF3aBbYCOzaQqc="
+							},
+							"name": "Img_Producto"
 						}
 					],
 					"operations": [
@@ -12585,7 +12635,7 @@
 								"$ref": "AAAAAAF3aJaEF13IlM0="
 							},
 							"name": "Telefono",
-							"type": "INTEGER"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12829,7 +12879,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
-							"name": "Id_Detalles_vente"
+							"name": "Id_Detalles_vente",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",

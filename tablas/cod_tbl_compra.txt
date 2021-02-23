@@ -35,7 +35,9 @@ CREATE TABLE tbl_Producto(
   Id_Produc,
   Nombre_Produc,
   Tipo_Produc,
-  Precio_Produc, 
+  Precio_Produc,
+  Img_Produc,
+  Descrp_Produc, 
   PRIMARY KEY(Id_Produc), 
 );
 

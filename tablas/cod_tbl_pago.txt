@@ -3,9 +3,9 @@ CREATE TABLE Tbl_Pago (
   Metodo_Pago,
   Tipo_Pago,
   PRIMARY KEY (Id_Pago),
-  CONSTRAINT FK_Factura
+  CONSTRAINT FK_FacturaPago
   FOREIGN KEY(FK_Id_Factura)  
-  REFERENCIAS Tbl_Factura (FK_ID_Factura) ON DELETE NO ACTION ON UPDATE CASCADE    
+  REFERENCIAS Tbl_Factura (FK_Id_Factura) ON DELETE NO ACTION ON UPDATE CASCADE    
 );
 
 

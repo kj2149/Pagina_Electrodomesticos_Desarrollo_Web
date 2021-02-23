@@ -18,13 +18,13 @@ CREATE TABLE tbl_Compra_Cliente(
 );
 
 CREATE TABLE tbl_Factura(
-Id_Factu,
-Total_IVA_Factu,
-Precio_Total_Comp_Factu,
-Fech_Facturacion_Factu,
-Hora_Factu,
-Sub_Total_Factu
-FK_Id_Produc,
+  Id_Factu,
+  Total_IVA_Factu,
+  Precio_Total_Comp_Factu,
+  Fech_Facturacion_Factu,
+  Hora_Factu,
+  Sub_Total_Factu
+  FK_Id_Produc,
   PRIMARY KEY(Id_Factu),
   CONSTRAINT FK_PreoductoFactura
   FOREIGN KEY(FK_Id_Produc)  
@@ -32,18 +32,18 @@ FK_Id_Produc,
 );
 
 CREATE TABLE tbl_Producto(
-Id_Produc,
-Nombre_Produc,
-Tipo_Produc,
-Precio_Produc, 
+  Id_Produc,
+  Nombre_Produc,
+  Tipo_Produc,
+  Precio_Produc, 
   PRIMARY KEY(Id_Produc), 
 );
 
 CREATE TABLE tbl_Categoria_Produactos(
-Id_Categ_Produc,
-Tipo_Categ_Produc,
-Nombre_Categ_Produc,
-FK_Id_Produc,
+  Id_Categ_Produc,
+  Tipo_Categ_Produc,
+  Nombre_Categ_Produc,
+  FK_Id_Produc,
   PRIMARY KEY(Id_Categ_Produc),
   CONSTRAINT FK_ProductoCategoriaProducto
   FOREIGN KEY(FK_Id_Produc)  
@@ -51,30 +51,48 @@ FK_Id_Produc,
 );
 
 CREATE TABLE tbl_Inventario(
-Id_Inventario,
-Fech_Entrada_Inventario,
-Fech_Salida_Inventario,
-Hora_Entrada_Inventario,
-Hora_salida_Inventario,
-Canti_Inicial_Dia_Inventario,
-Canti_Vendida_Dia_Inventario,
-Canti_Disponible_Dia_Inventario,
-FK_Id_Produc,
+  Id_Inventario,
+  Fech_Entrada_Inventario,
+  Fech_Salida_Inventario,
+  Hora_Entrada_Inventario,
+  Hora_salida_Inventario,
+  Canti_Inicial_Dia_Inventario,
+  Canti_Vendida_Dia_Inventario,
+  Canti_Disponible_Dia_Inventario,
+  FK_Id_Produc,
   PRIMARY KEY(Id_Inventario),
   CONSTRAINT FK_ProductoInventario
   FOREIGN KEY(FK_Id_Produc)  
   REFERENCES tbl_Producto(FK_Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
 
-CREATE TABLE Detalles_Venta(
-Id_Deta_Venta,
-Unid_Ventdida_Deta_Venta,
-Precio_Unid_Deta_Venta,
-,
-,
-FK_,
-  PRIMARY KEY(#),
-  CONSTRAINT FK_ /
-  FOREIGN KEY(=)  
-  REFERENCES tbl_#(=) ON DELETE NO ACTION ON UPDATE CASCADE  
+CREATE TABLE tbl_Detalles_Venta(
+  Id_Deta_Venta,
+  Unid_Ventdida_Deta_Venta,
+  Precio_Unid_Deta_Venta,
+  Cost_Total_Venta_Deta_Venta,
+  FK_Id_Factu,
+  FK_Id_Inventario,
+  FK_Id_Descuento,
+  PRIMARY KEY(Id_Deta_Venta),
+
+  CONSTRAINT FK_FacturaDetallesVenta
+  FOREIGN KEY(FK_Id_Factu)  
+  REFERENCES tbl_Factura(FK_Id_Factu) ON DELETE NO ACTION ON UPDATE CASCADE 
+
+  CONSTRAINT FK_InventarioDetallesVenta 
+  FOREIGN KEY(FK_Id_Inventario)  
+  REFERENCES tbl_Ineventario(FK_Id_Inventario) ON DELETE NO ACTION ON UPDATE CASCADE
+
+  CONSTRAINT FK_DescuentoDetallesVenta 
+  FOREIGN KEY(FK_Id_Descuento)  
+  REFERENCES tbl_Descuento(FK_Id_Descuento) ON DELETE NO ACTION ON UPDATE CASCADE 
 );
+
+CREATE TABLE tbl_Descuento(
+  Id_Descuento,
+  Dias_Descuento,
+  Tipo_Descuento,
+  Descripcion_Descuento,
+  Valor_Descuento,
+  PRIMARY KEY(Id_Descuento),

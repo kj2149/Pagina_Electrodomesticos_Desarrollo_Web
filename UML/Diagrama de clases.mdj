@@ -4995,23 +4995,6 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3geurD1dNlLo=",
-											"_parent": {
-												"$ref": "AAAAAAF3bU2e6zVxUVQ="
-											},
-											"model": {
-												"$ref": "AAAAAAF3geuq/ldKWM8="
-											},
-											"font": "Arial;13;0",
-											"left": 45,
-											"top": 995,
-											"width": 260.50146484375,
-											"height": 13,
-											"text": "+Sub_total_compra: DECIMAL",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
 											"_id": "AAAAAAF3bU7myDWsBQ8=",
 											"_parent": {
 												"$ref": "AAAAAAF3bU2e6zVxUVQ="
@@ -5021,7 +5004,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 45,
-											"top": 1010,
+											"top": 995,
 											"width": 260.50146484375,
 											"height": 13,
 											"text": "+Cost_total_venta_producto: DECIMAL",
@@ -5038,7 +5021,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 45,
-											"top": 1025,
+											"top": 1010,
 											"width": 260.50146484375,
 											"height": 13,
 											"text": "+FK_ID_Factura: VARCHAR",
@@ -5055,7 +5038,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 45,
-											"top": 1040,
+											"top": 1025,
 											"width": 260.50146484375,
 											"height": 13,
 											"text": "+FK_ID_Inventario",
@@ -5072,7 +5055,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 45,
-											"top": 1055,
+											"top": 1040,
 											"width": 260.50146484375,
 											"height": 13,
 											"text": "+FK_ID_descuento: VARCHART NULL",
@@ -5083,7 +5066,7 @@
 									"left": 40,
 									"top": 945,
 									"width": 270.50146484375,
-									"height": 128
+									"height": 113
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -5106,7 +5089,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 45,
-											"top": 1078,
+											"top": 1063,
 											"width": 260.50146484375,
 											"height": 13,
 											"text": "+Eliminar()",
@@ -5123,7 +5106,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 45,
-											"top": 1093,
+											"top": 1078,
 											"width": 260.50146484375,
 											"height": 13,
 											"text": "+Consultar()",
@@ -5132,7 +5115,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 40,
-									"top": 1073,
+									"top": 1058,
 									"width": 270.50146484375,
 									"height": 38
 								},
@@ -5379,6 +5362,23 @@
 										},
 										{
 											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3z1bjbhEaxUA=",
+											"_parent": {
+												"$ref": "AAAAAAF3bb9e1jZWoqc="
+											},
+											"model": {
+												"$ref": "AAAAAAF3z1bi5xEXf7g="
+											},
+											"font": "Arial;13;0",
+											"left": 61,
+											"top": 753,
+											"width": 224.34521484375,
+											"height": 13,
+											"text": "+Sub_total_compra: DECIMAL",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
 											"_id": "AAAAAAF3bffmCDfwsm4=",
 											"_parent": {
 												"$ref": "AAAAAAF3bb9e1jZWoqc="
@@ -5388,7 +5388,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 753,
+											"top": 768,
 											"width": 224.34521484375,
 											"height": 13,
 											"text": "+FK_ID_Producto: VARCHAR",
@@ -5399,7 +5399,7 @@
 									"left": 56,
 									"top": 673,
 									"width": 234.34521484375,
-									"height": 98
+									"height": 113
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -5422,7 +5422,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 776,
+											"top": 791,
 											"width": 224.34521484375,
 											"height": 13,
 											"text": "+Consultar()",
@@ -5439,7 +5439,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 791,
+											"top": 806,
 											"width": 224.34521484375,
 											"height": 13,
 											"text": "+Crear()",
@@ -5474,7 +5474,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 806,
+											"top": 821,
 											"width": 224.34521484375,
 											"height": 13,
 											"text": "+Anular()",
@@ -5483,7 +5483,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 56,
-									"top": 771,
+									"top": 786,
 									"width": 234.34521484375,
 									"height": 53
 								},
@@ -12851,15 +12851,6 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3geuq/ldKWM8=",
-							"_parent": {
-								"$ref": "AAAAAAF3bU2e6TVpd8A="
-							},
-							"name": "Sub_total_compra",
-							"type": "DECIMAL"
-						},
-						{
-							"_type": "UMLAttribute",
 							"_id": "AAAAAAF3bU7mtzWpCHs=",
 							"_parent": {
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
@@ -13028,6 +13019,15 @@
 							},
 							"name": "Hora_de_factura",
 							"type": "TIME"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3z1bi5xEXf7g=",
+							"_parent": {
+								"$ref": "AAAAAAF3bb9e1DZOBmg="
+							},
+							"name": "Sub_total_compra",
+							"type": "DECIMAL"
 						},
 						{
 							"_type": "UMLAttribute",

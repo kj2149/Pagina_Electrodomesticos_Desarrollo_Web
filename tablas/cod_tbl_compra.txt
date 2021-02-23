@@ -23,6 +23,7 @@ Total_IVA_Factu,
 Precio_Total_Comp_Factu,
 Fech_Facturacion_Factu,
 Hora_Factu,
+Sub_Total_Factu
 FK_Id_Produc,
   PRIMARY KEY(Id_Factu),
   CONSTRAINT FK_PreoductoFactura
@@ -66,9 +67,9 @@ FK_Id_Produc,
 );
 
 CREATE TABLE Detalles_Venta(
-,
-,
-,
+Id_Deta_Venta,
+Unid_Ventdida_Deta_Venta,
+Precio_Unid_Deta_Venta,
 ,
 ,
 FK_,

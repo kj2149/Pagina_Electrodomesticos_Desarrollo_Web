@@ -330,7 +330,7 @@ ul#css3menu1 li{
 ul#css3menu1 li:hover{
 	z-index:1;}
 ul#css3menu1{
-	font-size:0;width:99%;z-index:999;position:relative;display:inline-block;zoom:1;padding:5px 10% -5px 0%;margin:0 0%;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;
+	font-size:0;width:95%;z-index:999;position:relative;display:inline-block;zoom:1;padding:5px 10% -5px 0%;margin:0 0%;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;
 	*display:inline;*padding-right:1.68%;}
 * html ul#css3menu1 li a{
 	display:inline-block;}

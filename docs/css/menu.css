@@ -1,0 +1,14 @@
+#menu_bar{
+    display: none;
+}
+div label{
+    
+    float: left;
+    font-size: 500px;
+    margin: 4px 6px;
+    padding: 3px 10px;
+    margin-top: -5px;
+}
+.menu{
+    display: none;
+}

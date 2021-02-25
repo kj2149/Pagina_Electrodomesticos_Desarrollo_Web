@@ -283,8 +283,9 @@ header{
 .col {
     display: block;
     width: 100px;
-    margin: 15px;
+    margin: 20px;
     padding: 0px;
+    right: -180px;
     background: #CEDADA;
     font-family: 'Josefin Sans', sans-serif;
     

@@ -15,11 +15,11 @@ div label{
 
 .menu{
     position: absolute;
-    top: 250px;
+    top: 200px;
     left: 0;
-    width: 100%;
+    width: 12%;
     height: 100vh;
-    background: rgba(129, 182, 218, 0.59);
+    background: rgba(68, 69, 70, 0.274);
     transition: all 0.5s;
     transform: translateX(-100%);
 }

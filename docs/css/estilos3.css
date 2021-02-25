@@ -219,10 +219,12 @@ header{
 
 .slider{
     width: 75%;
-    margin-left: 20%;
-    margin-top: 290px;
+    margin-left: 13%;
+    margin-top: 220px;
     margin-right:5%; 
     overflow:hidden;
+ 
+ 
 }
 
 .slider ul{

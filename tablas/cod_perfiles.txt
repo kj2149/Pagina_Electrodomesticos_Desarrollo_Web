@@ -1,0 +1,32 @@
+i-------------------------------------------------i
+i     TOTAL 2 TBLS                                            
+i     * PERFIL                                            
+i     * CALIFICACION                                           
+i-------------------------------------------------i
+
+
+CREATE TABLE tbl_Perfil(
+  Id_Perfil VARCHAR(50) NOT NULL,
+  Nombre_Perfil VARCHAR(50) NOT NULL,
+  Tipo_Perfil VARCHAR(50) NOT NULL,
+  FK_Id_Usuario VARCHAR(50) NOT NULL,
+  FK_Id_Calificacion VARCHAR(50) NULL,
+  PRIMARY KEY(Id_Perfil),
+  CONSTRAINT FK_UsuarioPerfil
+  FOREIGN KEY(FK_Id_Usuario)  
+  REFERENCES tbl_Usuario(Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
+
+CONSTRAINT FK_CalificacionPerfil
+  FOREIGN KEY(FK_Id_Calificacion)  
+  REFERENCES tbl_Calificacion(Id_Calificacion) ON DELETE NO ACTION ON UPDATE CASCADE
+);
+
+
+CREATE TABLE tbl_Calificacion(
+  Id_Calificacion VARCHAR(50) NOT NULL,
+  Tipo_Calificacion VARCHAR(50) NOT NULL,
+  Fech_Calificacion DATE NOT NULL,
+  Comentario_Calificacion VARCHAR(50) NOT NULL,
+  PRIMARY KEY(Id_Calificacion),
+   
+);

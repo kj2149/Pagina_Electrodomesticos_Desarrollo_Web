@@ -152,7 +152,7 @@
 											"top": 477,
 											"width": 264.11328125,
 											"height": 13,
-											"text": "+Cantidad_Comp_Proveedor: TINYINT",
+											"text": "+Cantidad_Comp_Proveedor: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -186,24 +186,24 @@
 											"top": 507,
 											"width": 264.11328125,
 											"height": 13,
-											"text": "+Fecha_de_compra: DATE",
+											"text": "+Fecha_de_compra: DATETIME",
 											"horizontalAlignment": 0
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3aFmgJVxp7q8=",
+											"_id": "AAAAAAF32X72GSdCvwI=",
 											"_parent": {
 												"$ref": "AAAAAAF3aBWS+OxfP3c="
 											},
 											"model": {
-												"$ref": "AAAAAAF3aFmgDlxm8Vo="
+												"$ref": "AAAAAAF32X71kCc/olU="
 											},
 											"font": "Arial;13;0",
 											"left": 1501,
 											"top": 522,
 											"width": 264.11328125,
 											"height": 13,
-											"text": "+FK_ID_Producto: VARCHAR",
+											"text": "+FK_Id_orden_comp: VARCHAR",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1257,7 +1257,7 @@
 											"top": 738,
 											"width": 215.439453125,
 											"height": 13,
-											"text": "+Descripcion_Producto",
+											"text": "+Descripcion_Producto: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1274,7 +1274,7 @@
 											"top": 753,
 											"width": 215.439453125,
 											"height": 13,
-											"text": "+Img_Producto",
+											"text": "+Img_Producto: BLOB",
 											"horizontalAlignment": 0
 										}
 									],
@@ -3746,23 +3746,6 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3aGbxtV1DYiw=",
-											"_parent": {
-												"$ref": "AAAAAAF3aDF4I1uUnNo="
-											},
-											"model": {
-												"$ref": "AAAAAAF3aGbxql1AxBU="
-											},
-											"font": "Arial;13;0",
-											"left": 509,
-											"top": 461,
-											"width": 174.255859375,
-											"height": 13,
-											"text": "+FK_ID_Pefil: VARCHAR",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
 											"_id": "AAAAAAF3aGb4XV1JdNg=",
 											"_parent": {
 												"$ref": "AAAAAAF3aDF4I1uUnNo="
@@ -3772,10 +3755,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 509,
-											"top": 476,
+											"top": 461,
 											"width": 174.255859375,
 											"height": 13,
-											"text": "+Tipo_calificacion: TEXT",
+											"text": "+Tipo_calificacion: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -3789,7 +3772,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 509,
-											"top": 491,
+											"top": 476,
 											"width": 174.255859375,
 											"height": 13,
 											"text": "+Fecha-de_calificación: DATE",
@@ -3806,10 +3789,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 509,
-											"top": 506,
+											"top": 491,
 											"width": 174.255859375,
 											"height": 13,
-											"text": "+Comentario: TEXT",
+											"text": "+Comentario: VARCHAR",
 											"horizontalAlignment": 0
 										}
 									],
@@ -3817,7 +3800,7 @@
 									"left": 504,
 									"top": 441,
 									"width": 184.255859375,
-									"height": 83
+									"height": 68
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -3840,7 +3823,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 509,
-											"top": 529,
+											"top": 514,
 											"width": 174.255859375,
 											"height": 13,
 											"text": "+Crear()",
@@ -3875,7 +3858,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 509,
-											"top": 544,
+											"top": 529,
 											"width": 174.255859375,
 											"height": 13,
 											"text": "+Eliminar()",
@@ -3910,7 +3893,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 509,
-											"top": 559,
+											"top": 544,
 											"width": 174.255859375,
 											"height": 13,
 											"text": "+Modificar()",
@@ -3919,7 +3902,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 504,
-									"top": 524,
+									"top": 509,
 									"width": 184.255859375,
 									"height": 53
 								},
@@ -4318,7 +4301,7 @@
 											"font": "Arial;13;1",
 											"left": 1565,
 											"top": 279,
-											"width": 153.31494140625,
+											"width": 169,
 											"height": 13,
 											"text": "Tbl_Genero"
 										},
@@ -4353,7 +4336,7 @@
 									"font": "Arial;13;0",
 									"left": 1560,
 									"top": 272,
-									"width": 163.31494140625,
+									"width": 179,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3aJfK814Z0dQ="
@@ -4390,7 +4373,7 @@
 											"font": "Arial;13;0",
 											"left": 1565,
 											"top": 302,
-											"width": 153.31494140625,
+											"width": 169,
 											"height": 13,
 											"text": "+ID_Genero: VARCHAR",
 											"horizontalAlignment": 0
@@ -4407,16 +4390,16 @@
 											"font": "Arial;13;0",
 											"left": 1565,
 											"top": 317,
-											"width": 153.31494140625,
+											"width": 169,
 											"height": 13,
-											"text": "+Nombre_genero: TEXT",
+											"text": "+Nombre_genero: VARCHAR",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 1560,
 									"top": 297,
-									"width": 163.31494140625,
+									"width": 179,
 									"height": 38
 								},
 								{
@@ -4441,7 +4424,7 @@
 											"font": "Arial;13;0",
 											"left": 1565,
 											"top": 340,
-											"width": 153.31494140625,
+											"width": 169,
 											"height": 13,
 											"text": "+Consultar()",
 											"horizontalAlignment": 0
@@ -4458,7 +4441,7 @@
 											"font": "Arial;13;0",
 											"left": 1565,
 											"top": 355,
-											"width": 153.31494140625,
+											"width": 169,
 											"height": 13,
 											"text": "+Actualizar()",
 											"horizontalAlignment": 0
@@ -4467,7 +4450,7 @@
 									"font": "Arial;13;0",
 									"left": 1560,
 									"top": 335,
-									"width": 163.31494140625,
+									"width": 179,
 									"height": 38
 								},
 								{
@@ -4507,7 +4490,7 @@
 							"containerChangeable": true,
 							"left": 1560,
 							"top": 272,
-							"width": 163.31494140625,
+							"width": 179,
 							"height": 116,
 							"nameCompartment": {
 								"$ref": "AAAAAAF3aJfK814YCeE="
@@ -4674,7 +4657,7 @@
 											"top": 492,
 											"width": 235.92333984375,
 											"height": 13,
-											"text": "+Uni_vendidas_orden_com: TINYINT",
+											"text": "+Uni_vendidas_orden_com: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5708,7 +5691,7 @@
 											"top": 301,
 											"width": 188.6904296875,
 											"height": 13,
-											"text": "+Cantidad: TINYINT",
+											"text": "+Cantidad: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5725,7 +5708,7 @@
 											"top": 316,
 											"width": 188.6904296875,
 											"height": 13,
-											"text": "+Descuento: DEC",
+											"text": "+Descuento: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5742,7 +5725,7 @@
 											"top": 331,
 											"width": 188.6904296875,
 											"height": 13,
-											"text": "+IVA: DEC",
+											"text": "+IVA: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5759,7 +5742,7 @@
 											"top": 346,
 											"width": 188.6904296875,
 											"height": 13,
-											"text": "+Garantia: DATE",
+											"text": "+Garantia: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -10422,7 +10405,7 @@
 											"top": 165,
 											"width": 166.283203125,
 											"height": 13,
-											"text": "+Fecha_nacimiento: INT",
+											"text": "+Fecha_nacimiento: DATE",
 											"horizontalAlignment": 0
 										},
 										{
@@ -11183,7 +11166,7 @@
 								"$ref": "AAAAAAF3aBWS9uxXrNE="
 							},
 							"name": "Cantidad_Comp_Proveedor",
-							"type": "TINYINT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -11201,15 +11184,15 @@
 								"$ref": "AAAAAAF3aBWS9uxXrNE="
 							},
 							"name": "Fecha_de_compra",
-							"type": "DATE"
+							"type": "DATETIME"
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3aFmgDlxm8Vo=",
+							"_id": "AAAAAAF32X71kCc/olU=",
 							"_parent": {
 								"$ref": "AAAAAAF3aBWS9uxXrNE="
 							},
-							"name": "FK_ID_Producto",
+							"name": "FK_Id_orden_comp",
 							"type": "VARCHAR"
 						}
 					],
@@ -11718,7 +11701,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF3aBbYCOzaQqc="
 							},
-							"name": "Descripcion_Producto"
+							"name": "Descripcion_Producto",
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -11726,7 +11710,8 @@
 							"_parent": {
 								"$ref": "AAAAAAF3aBbYCOzaQqc="
 							},
-							"name": "Img_Producto"
+							"name": "Img_Producto",
+							"type": "BLOB"
 						}
 					],
 					"operations": [
@@ -12524,21 +12509,12 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3aGbxql1AxBU=",
-							"_parent": {
-								"$ref": "AAAAAAF3aDF4I1uMIUQ="
-							},
-							"name": "FK_ID_Pefil",
-							"type": "VARCHAR"
-						},
-						{
-							"_type": "UMLAttribute",
 							"_id": "AAAAAAF3aGb4Ul1G4+U=",
 							"_parent": {
 								"$ref": "AAAAAAF3aDF4I1uMIUQ="
 							},
 							"name": "Tipo_calificacion",
-							"type": "TEXT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12556,7 +12532,7 @@
 								"$ref": "AAAAAAF3aDF4I1uMIUQ="
 							},
 							"name": "Comentario",
-							"type": "TEXT"
+							"type": "VARCHAR"
 						}
 					],
 					"operations": [
@@ -12699,7 +12675,7 @@
 								"$ref": "AAAAAAF3aJfK8l4V5n4="
 							},
 							"name": "Nombre_genero",
-							"type": "TEXT"
+							"type": "VARCHAR"
 						}
 					],
 					"operations": [
@@ -12754,7 +12730,7 @@
 								"$ref": "AAAAAAF3aNOYSmAn6Wo="
 							},
 							"name": "Uni_vendidas_orden_com",
-							"type": "TINYINT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13164,7 +13140,7 @@
 								"$ref": "AAAAAAF3bcl+wDabFCY="
 							},
 							"name": "Cantidad",
-							"type": "TINYINT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13173,7 +13149,7 @@
 								"$ref": "AAAAAAF3bcl+wDabFCY="
 							},
 							"name": "Descuento",
-							"type": "DEC"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13182,7 +13158,7 @@
 								"$ref": "AAAAAAF3bcl+wDabFCY="
 							},
 							"name": "IVA",
-							"type": "DEC"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13191,7 +13167,7 @@
 								"$ref": "AAAAAAF3bcl+wDabFCY="
 							},
 							"name": "Garantia",
-							"type": "DATE"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13289,7 +13265,7 @@
 								"$ref": "AAAAAAF3jB7yZS8+RbM="
 							},
 							"name": "Fecha_nacimiento",
-							"type": "INT"
+							"type": "DATE"
 						},
 						{
 							"_type": "UMLAttribute",

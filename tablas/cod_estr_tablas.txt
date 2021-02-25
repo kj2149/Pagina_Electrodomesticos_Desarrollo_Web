@@ -1,16 +1,23 @@
+i-------------------------------------------------i
+i     TOTAL 4 TBLS                                            
+i     * GENERO                                            
+i     * USUARIO                                           
+i     * COTECTO                                           
+i     * EDAD                                           
+i-------------------------------------------------i
 CREATE TABLE tbl_Genero(
-  Id_Genero,
-  Nom_genero,
-  PRIMARY KEY(Id_Genero),  
+  Id_Genero VARCHAR(3) NOT NULL,
+  Nom_genero VARCHAR(50) NOT NULL,
+  PRIMARY KEY(Id_Genero)  
 );
 
 CREATE TABLE tbl_Usuario(
-  Id_usuario,
-  Prim_Nom_Usuario,
-  Seg_Nom_Usuario,
-  Prim_Ape_Usuario,
-  Seg_ape_Usuario,
-  FK_Id_Genero,
+  Id_usuario VARCHAR(50) NOT NULL,
+  Prim_Nom_Usuario VARCHAR(50) NOT NULL,
+  Seg_Nom_Usuario VARCHAR(50) NOT NULL,
+  Prim_Ape_Usuario VARCHAR(50) NOT NULL,
+  Seg_ape_Usuario VARCHAR(50) NOT NULL,
+  FK_Id_Genero VARCHAR(50) NOT NULL,
   PRIMARY KEY(Id_Usuario),
   CONSTRAINT FK_GeneroUsuario
   FOREIGN KEY(FK_Id_Genero)  
@@ -18,25 +25,25 @@ CREATE TABLE tbl_Usuario(
 );
 
 CREATE TABLE tbl_Contacto(
-  Id_contacto,
-  Direc_Contacto,
-  Telefono_Contacto,
-  Correo_Contacto,
-  FK_Id_Usuario,
+  Id_contacto VARCHAR(50) NOT NULL,
+  Direc_Contacto VARCHAR(50) NOT NULL,
+  Telefono_Contacto VARCHAR(50) NOT NULL,
+  Correo_Contacto VARCHAR(50) NOT NULL,
+  FK_Id_Usuario VARCHAR(50) NOT NULL,
   PRIMARY KEY(Id_Contacto),
   CONSTRAINT FK_UsuarioContacto
   FOREIGN KEY(FK_Id_Usuario)  
-  REFERENCES tbl_Usuario(FK_Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
+  REFERENCES tbl_Usuario(Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
 
 CREATE TABLE tbl_Edad(
-  Id_Edad,
-  Fech_Nac_Edad,
-  FK_Id_Usuario,
+  Id_Edad VARCHAR(50) NOT NULL,
+  Fech_Nac_Edad VARCHAR(50) NOT NULL,
+  FK_Id_Usuario VARCHAR(50) NOT NULL,
   PRIMARY KEY(Id_Edad),
   CONSTRAINT FK_UsuarioEdad
   FOREIGN KEY(FK_Id_Usuario)  
-  REFERENCES tbl_Usuario(FK_Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
+  REFERENCES tbl_Usuario(Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
 
 

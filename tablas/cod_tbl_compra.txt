@@ -1,3 +1,14 @@
+i-------------------------------------------------i
+i     TOTAL 7 TBLS                                            
+i     * COMPRA_CLIENTE                                            
+i     * FACTURA                                           
+i     * PRODUCTO                                           
+i     * CATEGORIA_PRODUCTOS
+i     * INVENTARIO
+i     * DETALLES_VENTA
+i     * DESCUENTO                          
+i-------------------------------------------------i
+
 CREATE TABLE tbl_Compra_Cliente(
   Id_Comp_Cli,
   Cantidad_Comp_cli,
@@ -37,11 +48,12 @@ CREATE TABLE tbl_Producto(
   Tipo_Produc,
   Precio_Produc,
   Img_Produc,
-  Descrp_Produc, 
+  Descrp_Produc,
+  Especificaciones_Producto 
   PRIMARY KEY(Id_Produc), 
 );
 
-CREATE TABLE tbl_Categoria_Produactos(
+CREATE TABLE tbl_Categoria_Productos(
   Id_Categ_Produc,
   Tipo_Categ_Produc,
   Nombre_Categ_Produc,

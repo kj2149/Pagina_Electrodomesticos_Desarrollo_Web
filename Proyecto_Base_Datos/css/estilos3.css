@@ -97,9 +97,14 @@ header{
 }
 /*estilo slider*/
 .slider{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    width: 75%;
+    margin-left: 13%;
+    margin-top: 220px;
+    margin-right:5%; 
+    overflow:hidden;
+ 
+ 
+}
 
     margin-top: 5px;
     margin-right:0px;

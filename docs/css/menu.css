@@ -13,6 +13,16 @@ div label{
     
 }
 
+
+.menu a :hover{
+    background: rgb(94, 222, 232);
+    color: floralwhite;
+}
+
+#menu_bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
 .menu{
     position: absolute;
     top: 250px;
@@ -31,13 +41,4 @@ div label{
     padding: 15px;
     border-bottom: cornsilk;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.menu a :hover{
-    background: rgb(94, 222, 232);
-    color: floralwhite;
-}
-
-#menu_bar:checked ~ .menu{
-    transform: translateX(0%);
 }

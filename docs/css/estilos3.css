@@ -379,12 +379,11 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
     border-radius: 30px;
     transition: all 0.6s ease;
     color: #111111;
-    float: right;
     margin-bottom: 20px;
 }
 
 .btn{
-    margin-left:  200px;
+    margin-left:  -20px;
     position: absolute;
     background: #00f8fc;
     width: 47px;

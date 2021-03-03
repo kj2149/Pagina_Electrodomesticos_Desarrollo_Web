@@ -42,7 +42,7 @@
 
 @media only screen and  (max-width: 750px){
         .logo{       margin: 3% 3% 0%;
-                     width: 10%;
+                     width: 15%;
                      height: 50px;
        }
     }
@@ -73,7 +73,7 @@
 
 @media only screen and  (max-width: 750px){
         .titulo1{      margin: 3%  0.3% 1%  6% ;
-                       width: 60%;
+                       width: 63%;
                     
        }
     }
@@ -175,7 +175,7 @@ header{
 
 .slider{
     width: 75%;
-    margin-left: 13%;
+    margin-left: 15%;
     margin-top: 220px;
     margin-right:5%; 
     overflow:hidden;
@@ -212,8 +212,8 @@ header{
        }
     }
 
-@media only screen and  (max-width: 800px){
-     .slider{ margin-top: 210px;
+@media only screen and  (max-width: 750px){
+     .slider{ margin-top: 300px;
                 
        }
     }

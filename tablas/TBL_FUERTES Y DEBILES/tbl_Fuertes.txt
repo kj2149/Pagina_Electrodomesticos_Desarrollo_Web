@@ -1,0 +1,42 @@
+CREATE TABLE tbl_Genero(
+  Id_Genero VARCHAR(3) NOT NULL,
+  Nom_genero VARCHAR(50) NOT NULL,
+  PRIMARY KEY(Id_Genero)  
+);
+
+CREATE TABLE tbl_Calificacion(
+  Id_Calificacion VARCHAR(50) NOT NULL,
+  Tipo_Calificacion VARCHAR(50) NOT NULL,
+  Fech_Calificacion DATE NOT NULL,
+  Comentario_Calificacion VARCHAR(50) NOT NULL,
+  PRIMARY KEY(Id_Calificacion),
+   
+);
+
+
+CREATE TABLE tbl_Producto(
+  Id_Produc,
+  Nombre_Produc,
+  Tipo_Produc,
+  Precio_Produc,
+  Img_Produc,
+  Descrp_Produc,
+  Especificaciones_Producto 
+  PRIMARY KEY(Id_Produc), 
+);
+
+CREATE TABLE tbl_Descuento(
+  Id_Descuento,
+  Dias_Descuento,
+  Tipo_Descuento,
+  Descripcion_Descuento,
+  Valor_Descuento,
+  PRIMARY KEY(Id_Descuento)
+);
+
+CREATE TABLE Tbl_Ciudad (
+  Id_Ciudad,
+  Nombre_ciudad,
+  Localidad_Ciudad,
+  PRIMARY KEY (Id_Ciudad),   
+);

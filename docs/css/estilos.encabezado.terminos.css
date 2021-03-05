@@ -17,11 +17,8 @@
     margin: 8.8%;
     margin-bottom: 2%;
     margin-top: 1%;
-
-    color:#fbfbfb;
-    background-color: rgba(9, 139, 190, 0.907);
-
- 
+    color:#000000;
+    background-color: rgba(206 218 218 / 90%);
     font-family: 'Josefin Sans', sans-serif;
     font-size: large;
     text-align: justify;
@@ -38,9 +35,9 @@
     margin: 8.8%;
     margin-bottom: 2%;
     margin-top: 230px;
-    color:#fbfbfb;
-    background-color: rgba(9, 139, 190, 0.907);
-    f font-family: 'Josefin Sans', sans-serif;
+    color:#000000;
+    background-color: rgba(206 218 218 / 90%);
+    font-family: 'Josefin Sans', sans-serif;
     font-size: large;
     text-align: justify;
     position: relative;   

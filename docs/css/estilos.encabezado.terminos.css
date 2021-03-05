@@ -11,7 +11,7 @@
 .especificartermino{
     width: 80%;
     height: 0%;
-    left: 6%;
+    left: 1.5%;
     right: 80%;
     padding: 1%;
     margin: 8.8%;
@@ -19,10 +19,10 @@
     margin-top: 1%;
 
     color:white;
-    background-color: rgba(36, 108, 170, 0.507);
+    background-color: rgba(9, 139, 190, 0.907);
 
  
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: large;
     text-align: justify;
     position: relative;
@@ -32,15 +32,15 @@
 .especificartermino1{
     width: 80%;
     height: 0%;
-    left: 6%;
+    left: 1.5;
     right: 80%;
     padding: 1%;
     margin: 8.8%;
     margin-bottom: 1%;
     margin-top: 230px;
     color:white;
-    background-color: rgba(36, 108, 170, 0.507);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(9, 139, 190, 0.907);
+    f font-family: 'Josefin Sans', sans-serif;
     font-size: large;
     text-align: justify;
     position: relative;   
@@ -50,7 +50,7 @@
     display: block;
     width: 12.5%;
     background: rgba(97, 94, 94, 0.226);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     padding: 10px;
     float: left;
     height: 1800px;

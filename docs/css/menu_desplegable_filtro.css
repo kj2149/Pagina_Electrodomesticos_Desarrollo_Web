@@ -29,7 +29,7 @@ div label{
     left: 0;
     width: 12%;
     height: 100vh;
-    background: rgba(129, 182, 218, 0.59);
+    background: rgba(75, 95, 109, 0.823);
     transition: all 0.5s;
     transform: translateX(-100%);
 }

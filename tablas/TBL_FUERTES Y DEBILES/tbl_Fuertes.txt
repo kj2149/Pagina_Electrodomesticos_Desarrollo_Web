@@ -24,7 +24,7 @@ CREATE TABLE tbl_Producto(
 );
 
 CREATE TABLE tbl_Descuento(
-  Id_Descuento VARCHAR(5) NOT NULL,
+  Id_Descuento VARCHAR(5) NULL,
   Dias_Descuento DATETIME NOT NULL,
   Tipo_Descuento VARCHAR(50) NOT NULL,
   Descripcion_Descuento VARCHAR(50) NOT NULL,

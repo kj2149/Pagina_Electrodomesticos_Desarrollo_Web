@@ -1,0 +1,70 @@
+CREATE TABLE tbl_Usuario(
+  Id_usuario VARCHAR(5) NOT NULL,
+  Prim_Nom_Usuario VARCHAR(50) NOT NULL,
+  Seg_Nom_Usuario VARCHAR(50) NULL,
+  Prim_Ape_Usuario VARCHAR(50) NOT NULL,
+  Seg_ape_Usuario VARCHAR(50) NULL,
+  FK_Id_Genero VARCHAR(5) NOT NULL,
+  PRIMARY KEY(Id_Usuario),
+  CONSTRAINT FK_GeneroUsuario
+  FOREIGN KEY(FK_Id_Genero)  
+  REFERENCES tbl_Genero(Id_Genero) ON DELETE NO ACTION ON UPDATE CASCADE  
+);
+
+CREATE TABLE tbl_Compra_Cliente(
+  Id_Comp_Cli VARCHAR(5) NOT NULL,
+  Cantidad_Comp_cli VARCHAR(50) NOT NULL,
+  Descuento_Comp_Cli VARCHAR(50) NULL,
+  Iva_Comp_Cli VARCHAR(50) NOT NULL,
+  Garantia_Comp_Cli VARCHAR(50) NOT NULL,
+  Precio_Total_Comp_Cli VARCHAR(50) NOT NULL,
+  Fech_Comp_Cli DATETIME NOT NULL,
+  FK_Id_usuario VARCHAR(5) NOT NULL,
+  FK_Id_Factu VARCHAR(5) NOT NULL,
+  PRIMARY KEY(Id_Comp_Cli),
+  CONSTRAINT FK_UsuarioCompraCLiente
+  FOREIGN KEY(FK_Id_usuario)  
+  REFERENCES tbl_Usuario(Id_usuario) ON DELETE NO ACTION ON UPDATE CASCADE,  
+  CONSTRAINT FK_FacturaCompraCliente
+  FOREIGN KEY(FK_Id_Factu)  
+  REFERENCES tbl_Factura(Id_Factu) ON DELETE NO ACTION ON UPDATE CASCADE
+);
+
+CREATE TABLE tbl_Inventario(
+  Id_Inventario VARCHAR(50) NOT NULL,
+  Fech_Entrada_Inventario DATE NOT NULL,
+  Fech_Salida_Inventario DATE NOT NULL,
+  Hora_Entrada_Inventario TIME NOT NULL,
+  Hora_salida_Inventario TIME NOT NULL,
+  Canti_Inicial_Dia_Inventario VARCHAR(50) NOT NULL,
+  Canti_Vendida_Dia_Inventario VARCHAR(50) NOT NULL,
+  Canti_Disponible_Dia_Inventario VARCHAR(50) NOT NULL,
+  FK_Id_Produc VARCHAR(5) NOT NULL,
+  PRIMARY KEY(Id_Inventario),
+  CONSTRAINT FK_ProductoInventario
+  FOREIGN KEY(FK_Id_Produc)  
+  REFERENCES tbl_Producto(Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
+);
+
+CREATE TABLE Tbl_Pago (
+  Id_Pago VARCHAR(5) NOT NULL,
+  Metodo_Pago VARCHAR(50) NOT NULL,
+  Tipo_Pago VARCHAR(50) NOT NULL,
+  FK_Id_Factu VARCHAR(5) NOT NULL,
+  PRIMARY KEY (Id_Pago),
+  CONSTRAINT FK_FacturaPago
+  FOREIGN KEY(FK_Id_Factu)  
+  REFERENCES Tbl_Factura (Id_Factu) ON DELETE NO ACTION ON UPDATE CASCADE    
+);
+CREATE TABLE tbl_Orden_Compra (
+  Id_Orden_Com VARCHAR(5) NOT NULL,
+  Cost_Productos_Orden_Com VARCHAR(50) NOT NULL,
+  Uni_Vendidas_Orden_Com VARCHAR(50) NOT NULL,
+  Fecha_Ventas_Orden_Com DATE NOT NULL,
+  Hora_Venta_Orden_Com TIME NOT NULL,
+  FK_Id_Usuario VARCHAR(5) NOT NULL,
+  PRIMARY KEY (Id_Orden_Com),
+  CONSTRAINT FK_UsuarioOrdenCompra
+  FOREIGN KEY(FK_Id_Usuario)  
+  REFERENCES tbl_Usuario (Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE    
+);

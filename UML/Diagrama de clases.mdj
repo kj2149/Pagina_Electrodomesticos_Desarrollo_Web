@@ -1240,7 +1240,7 @@
 											"top": 723,
 											"width": 233,
 											"height": 13,
-											"text": "+Precio_Producto: DECIMAL",
+											"text": "+Precio_Producto: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1262,23 +1262,6 @@
 										},
 										{
 											"_type": "UMLAttributeView",
-											"_id": "AAAAAAF3z4SBPxYAYLA=",
-											"_parent": {
-												"$ref": "AAAAAAF3aBbYCOzic+g="
-											},
-											"model": {
-												"$ref": "AAAAAAF3z4SBFRX9/Vg="
-											},
-											"font": "Arial;13;0",
-											"left": 661,
-											"top": 753,
-											"width": 233,
-											"height": 13,
-											"text": "+Img_Producto: BLOB",
-											"horizontalAlignment": 0
-										},
-										{
-											"_type": "UMLAttributeView",
 											"_id": "AAAAAAF32guKhsnTP4I=",
 											"_parent": {
 												"$ref": "AAAAAAF3aBbYCOzic+g="
@@ -1288,10 +1271,27 @@
 											},
 											"font": "Arial;13;0",
 											"left": 661,
-											"top": 768,
+											"top": 753,
 											"width": 233,
 											"height": 13,
 											"text": "+especificaciones_Producto: VARCHAR",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF3z4SBPxYAYLA=",
+											"_parent": {
+												"$ref": "AAAAAAF3aBbYCOzic+g="
+											},
+											"model": {
+												"$ref": "AAAAAAF3z4SBFRX9/Vg="
+											},
+											"font": "Arial;13;0",
+											"left": 661,
+											"top": 768,
+											"width": 233,
+											"height": 13,
+											"text": "+Img_Producto: BLOB",
 											"horizontalAlignment": 0
 										}
 									],
@@ -2891,7 +2891,7 @@
 											"top": 978,
 											"width": 239,
 											"height": 13,
-											"text": "+Valor_de_Descuento: DECIMAL",
+											"text": "+Valor_de_Descuento: VARCHAR",
 											"horizontalAlignment": 0
 										}
 									],
@@ -4566,7 +4566,7 @@
 											"font": "Arial;13;1",
 											"left": 1101,
 											"top": 439,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "Tbl_Orden_compra"
 										},
@@ -4601,7 +4601,7 @@
 									"font": "Arial;13;0",
 									"left": 1096,
 									"top": 432,
-									"width": 245.92333984375,
+									"width": 250,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3aNOYS2Ars2I="
@@ -4638,7 +4638,7 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 462,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "+Id_orden_com: VARCHAR",
 											"horizontalAlignment": 0
@@ -4655,9 +4655,9 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 477,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
-											"text": "+Cost_productos_orden_com: DECIMAL",
+											"text": "+Cost_productos_orden_com: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4672,7 +4672,7 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 492,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "+Uni_vendidas_orden_com: VARCHAR",
 											"horizontalAlignment": 0
@@ -4689,7 +4689,7 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 507,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "+Fecha_ventas_orden_com: DATE",
 											"horizontalAlignment": 0
@@ -4706,7 +4706,7 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 522,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "+Hora_venta_orden_com: TIME",
 											"horizontalAlignment": 0
@@ -4723,7 +4723,7 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 537,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "+FK_ID_Usuario: VARCHAR",
 											"horizontalAlignment": 0
@@ -4732,7 +4732,7 @@
 									"font": "Arial;13;0",
 									"left": 1096,
 									"top": 457,
-									"width": 245.92333984375,
+									"width": 250,
 									"height": 98
 								},
 								{
@@ -4757,7 +4757,7 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 560,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "+Consultar()",
 											"horizontalAlignment": 0
@@ -4774,7 +4774,7 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 575,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "+Crear()",
 											"horizontalAlignment": 0
@@ -4791,7 +4791,7 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 590,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "+Eliminar()",
 											"horizontalAlignment": 0
@@ -4808,7 +4808,7 @@
 											"font": "Arial;13;0",
 											"left": 1101,
 											"top": 605,
-											"width": 235.92333984375,
+											"width": 240,
 											"height": 13,
 											"text": "+Modificar()",
 											"horizontalAlignment": 0
@@ -4817,7 +4817,7 @@
 									"font": "Arial;13;0",
 									"left": 1096,
 									"top": 555,
-									"width": 245.92333984375,
+									"width": 250,
 									"height": 68
 								},
 								{
@@ -4857,7 +4857,7 @@
 							"containerChangeable": true,
 							"left": 1096,
 							"top": 432,
-							"width": 245.92333984375,
+							"width": 250,
 							"height": 191,
 							"nameCompartment": {
 								"$ref": "AAAAAAF3aNOYS2Aqkjw="
@@ -5024,7 +5024,7 @@
 											"top": 980,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "+Precio_unitario_producto: DECIMAL",
+											"text": "+Precio_unitario_producto: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5041,7 +5041,7 @@
 											"top": 995,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "+Cost_total_venta_producto: DECIMAL",
+											"text": "+Cost_total_venta_producto: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5357,7 +5357,7 @@
 											"top": 708,
 											"width": 224.34521484375,
 											"height": 13,
-											"text": "+Precio_total_compra: DECIMAL",
+											"text": "+Precio_total_compra: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5408,7 +5408,7 @@
 											"top": 753,
 											"width": 224.34521484375,
 											"height": 13,
-											"text": "+Sub_total_compra: DECIMAL",
+											"text": "+Sub_total_compra: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5776,7 +5776,7 @@
 											"top": 361,
 											"width": 188.6904296875,
 											"height": 13,
-											"text": "+Precio_total: DECIMAL",
+											"text": "+Precio_total: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -8937,7 +8937,7 @@
 										"$ref": "AAAAAAF3cs2zYj+Sb3c="
 									},
 									"font": "Arial;13;0",
-									"left": 1408,
+									"left": 1410,
 									"top": 488,
 									"width": 39.62841796875,
 									"height": 13,
@@ -8960,7 +8960,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 1417,
+									"left": 1419,
 									"top": 528,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -8981,7 +8981,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1418,
+									"left": 1420,
 									"top": 483,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -9066,7 +9066,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1366,
+									"left": 1370,
 									"top": 512,
 									"height": 13,
 									"alpha": -0.5235987755982988,
@@ -9086,7 +9086,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 1369,
+									"left": 1373,
 									"top": 526,
 									"height": 13,
 									"alpha": -0.7853981633974483,
@@ -9105,7 +9105,7 @@
 										"$ref": "AAAAAAF3cs2zYj+UoZE="
 									},
 									"font": "Arial;13;0",
-									"left": 1359,
+									"left": 1363,
 									"top": 485,
 									"width": 7.22998046875,
 									"height": 13,
@@ -9156,7 +9156,7 @@
 							"tail": {
 								"$ref": "AAAAAAF3aBWS9+xZxBQ="
 							},
-							"points": "1496:504;1341:504",
+							"points": "1496:504;1345:504",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF3cs2zYz+XTuU="
@@ -11710,7 +11710,7 @@
 								"$ref": "AAAAAAF3aBbYCOzaQqc="
 							},
 							"name": "Precio_Producto",
-							"type": "DECIMAL"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -11723,21 +11723,21 @@
 						},
 						{
 							"_type": "UMLAttribute",
-							"_id": "AAAAAAF3z4SBFRX9/Vg=",
-							"_parent": {
-								"$ref": "AAAAAAF3aBbYCOzaQqc="
-							},
-							"name": "Img_Producto",
-							"type": "BLOB"
-						},
-						{
-							"_type": "UMLAttribute",
 							"_id": "AAAAAAF32guJ+snQAWk=",
 							"_parent": {
 								"$ref": "AAAAAAF3aBbYCOzaQqc="
 							},
 							"name": "especificaciones_Producto",
 							"type": "VARCHAR"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF3z4SBFRX9/Vg=",
+							"_parent": {
+								"$ref": "AAAAAAF3aBbYCOzaQqc="
+							},
+							"name": "Img_Producto",
+							"type": "BLOB"
 						}
 					],
 					"operations": [
@@ -12262,7 +12262,7 @@
 								"$ref": "AAAAAAF3aBw0Yu32oMo="
 							},
 							"name": "Valor_de_Descuento",
-							"type": "DECIMAL"
+							"type": "VARCHAR"
 						}
 					],
 					"operations": [
@@ -12747,7 +12747,7 @@
 								"$ref": "AAAAAAF3aNOYSmAn6Wo="
 							},
 							"name": "Cost_productos_orden_com",
-							"type": "DECIMAL"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12900,7 +12900,7 @@
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
 							"name": "Precio_unitario_producto",
-							"type": "DECIMAL"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12909,7 +12909,7 @@
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
 							"name": "Cost_total_venta_producto",
-							"type": "DECIMAL"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13053,7 +13053,7 @@
 								"$ref": "AAAAAAF3bb9e1DZOBmg="
 							},
 							"name": "Precio_total_compra",
-							"type": "DECIMAL"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13080,7 +13080,7 @@
 								"$ref": "AAAAAAF3bb9e1DZOBmg="
 							},
 							"name": "Sub_total_compra",
-							"type": "DECIMAL"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13202,7 +13202,7 @@
 								"$ref": "AAAAAAF3bcl+wDabFCY="
 							},
 							"name": "Precio_total",
-							"type": "DECIMAL"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",

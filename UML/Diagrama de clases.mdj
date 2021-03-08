@@ -1115,7 +1115,7 @@
 											"font": "Arial;13;1",
 											"left": 661,
 											"top": 655,
-											"width": 215.439453125,
+											"width": 233,
 											"height": 13,
 											"text": "Tbl_Producto"
 										},
@@ -1150,7 +1150,7 @@
 									"font": "Arial;13;0",
 									"left": 656,
 									"top": 648,
-									"width": 225.439453125,
+									"width": 243,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3aBbYCOzeTDA="
@@ -1187,7 +1187,7 @@
 											"font": "Arial;13;0",
 											"left": 661,
 											"top": 678,
-											"width": 215.439453125,
+											"width": 233,
 											"height": 13,
 											"text": "+ID_Producto: VARCHAR",
 											"horizontalAlignment": 0
@@ -1204,9 +1204,9 @@
 											"font": "Arial;13;0",
 											"left": 661,
 											"top": 693,
-											"width": 215.439453125,
+											"width": 233,
 											"height": 13,
-											"text": "+Nombre_Producto: TEXT",
+											"text": "+Nombre_Producto: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1221,9 +1221,9 @@
 											"font": "Arial;13;0",
 											"left": 661,
 											"top": 708,
-											"width": 215.439453125,
+											"width": 233,
 											"height": 13,
-											"text": "+Tipo_Producto: TEXT",
+											"text": "+Tipo_Producto: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1238,7 +1238,7 @@
 											"font": "Arial;13;0",
 											"left": 661,
 											"top": 723,
-											"width": 215.439453125,
+											"width": 233,
 											"height": 13,
 											"text": "+Precio_Producto: DECIMAL",
 											"horizontalAlignment": 0
@@ -1255,7 +1255,7 @@
 											"font": "Arial;13;0",
 											"left": 661,
 											"top": 738,
-											"width": 215.439453125,
+											"width": 233,
 											"height": 13,
 											"text": "+Descripcion_Producto: VARCHAR",
 											"horizontalAlignment": 0
@@ -1272,17 +1272,34 @@
 											"font": "Arial;13;0",
 											"left": 661,
 											"top": 753,
-											"width": 215.439453125,
+											"width": 233,
 											"height": 13,
 											"text": "+Img_Producto: BLOB",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAF32guKhsnTP4I=",
+											"_parent": {
+												"$ref": "AAAAAAF3aBbYCOzic+g="
+											},
+											"model": {
+												"$ref": "AAAAAAF32guJ+snQAWk="
+											},
+											"font": "Arial;13;0",
+											"left": 661,
+											"top": 768,
+											"width": 233,
+											"height": 13,
+											"text": "+especificaciones_Producto: VARCHAR",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 656,
 									"top": 673,
-									"width": 225.439453125,
-									"height": 98
+									"width": 243,
+									"height": 113
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1305,8 +1322,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 661,
-											"top": 776,
-											"width": 215.439453125,
+											"top": 791,
+											"width": 233,
 											"height": 13,
 											"text": "+Consultar()",
 											"horizontalAlignment": 0
@@ -1322,8 +1339,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 661,
-											"top": 791,
-											"width": 215.439453125,
+											"top": 806,
+											"width": 233,
 											"height": 13,
 											"text": "+Crear()",
 											"horizontalAlignment": 0
@@ -1339,8 +1356,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 661,
-											"top": 806,
-											"width": 215.439453125,
+											"top": 821,
+											"width": 233,
 											"height": 13,
 											"text": "+Eliminar()",
 											"horizontalAlignment": 0
@@ -1356,8 +1373,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 661,
-											"top": 821,
-											"width": 215.439453125,
+											"top": 836,
+											"width": 233,
 											"height": 13,
 											"text": "+Actualizar()",
 											"horizontalAlignment": 0
@@ -1365,8 +1382,8 @@
 									],
 									"font": "Arial;13;0",
 									"left": 656,
-									"top": 771,
-									"width": 225.439453125,
+									"top": 786,
+									"width": 243,
 									"height": 68
 								},
 								{
@@ -1406,8 +1423,8 @@
 							"containerChangeable": true,
 							"left": 656,
 							"top": 648,
-							"width": 225.439453125,
-							"height": 191,
+							"width": 243,
+							"height": 206,
 							"nameCompartment": {
 								"$ref": "AAAAAAF3aBbYCOzdTpA="
 							},
@@ -1539,7 +1556,7 @@
 											"top": 1198,
 											"width": 239.5986328125,
 											"height": 13,
-											"text": "+ID_Inventario",
+											"text": "+ID_Inventario: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1624,7 +1641,7 @@
 											"top": 1273,
 											"width": 239.5986328125,
 											"height": 13,
-											"text": "+Canti_inicial_dia: TINYINT",
+											"text": "+Canti_inicial_dia: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1641,7 +1658,7 @@
 											"top": 1288,
 											"width": 239.5986328125,
 											"height": 13,
-											"text": "+Canti_vendida_dia: TINYINT",
+											"text": "+Canti_vendida_dia: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1658,7 +1675,7 @@
 											"top": 1303,
 											"width": 239.5986328125,
 											"height": 13,
-											"text": "+Canti_disponible_dia: TINYINT",
+											"text": "+Canti_disponible_dia: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2732,7 +2749,7 @@
 											"font": "Arial;13;1",
 											"left": 461,
 											"top": 895,
-											"width": 225.5703125,
+											"width": 239,
 											"height": 13,
 											"text": "Tbl_Descuentos"
 										},
@@ -2767,7 +2784,7 @@
 									"font": "Arial;13;0",
 									"left": 456,
 									"top": 888,
-									"width": 235.5703125,
+									"width": 249,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAF3aBw0Y+36FGM="
@@ -2804,7 +2821,7 @@
 											"font": "Arial;13;0",
 											"left": 461,
 											"top": 918,
-											"width": 225.5703125,
+											"width": 239,
 											"height": 13,
 											"text": "+ID_Descuento: VARCHAR",
 											"horizontalAlignment": 0
@@ -2821,9 +2838,9 @@
 											"font": "Arial;13;0",
 											"left": 461,
 											"top": 933,
-											"width": 225.5703125,
+											"width": 239,
 											"height": 13,
-											"text": "+Dias_descuento: DATE",
+											"text": "+Dias_descuento: DATETIME",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2838,9 +2855,9 @@
 											"font": "Arial;13;0",
 											"left": 461,
 											"top": 948,
-											"width": 225.5703125,
+											"width": 239,
 											"height": 13,
-											"text": "+Tipo_Descuento: TEXT",
+											"text": "+Tipo_Descuento: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2855,9 +2872,9 @@
 											"font": "Arial;13;0",
 											"left": 461,
 											"top": 963,
-											"width": 225.5703125,
+											"width": 239,
 											"height": 13,
-											"text": "+Descripción_del_Descuento: TEXT",
+											"text": "+Descripción_del_Descuento: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -2872,7 +2889,7 @@
 											"font": "Arial;13;0",
 											"left": 461,
 											"top": 978,
-											"width": 225.5703125,
+											"width": 239,
 											"height": 13,
 											"text": "+Valor_de_Descuento: DECIMAL",
 											"horizontalAlignment": 0
@@ -2881,7 +2898,7 @@
 									"font": "Arial;13;0",
 									"left": 456,
 									"top": 913,
-									"width": 235.5703125,
+									"width": 249,
 									"height": 83
 								},
 								{
@@ -2906,7 +2923,7 @@
 											"font": "Arial;13;0",
 											"left": 461,
 											"top": 1001,
-											"width": 225.5703125,
+											"width": 239,
 											"height": 13,
 											"text": "+Actualizar()",
 											"horizontalAlignment": 0
@@ -2923,7 +2940,7 @@
 											"font": "Arial;13;0",
 											"left": 461,
 											"top": 1016,
-											"width": 225.5703125,
+											"width": 239,
 											"height": 13,
 											"text": "+Consultar()",
 											"horizontalAlignment": 0
@@ -2932,7 +2949,7 @@
 									"font": "Arial;13;0",
 									"left": 456,
 									"top": 996,
-									"width": 235.5703125,
+									"width": 249,
 									"height": 38
 								},
 								{
@@ -2972,7 +2989,7 @@
 							"containerChangeable": true,
 							"left": 456,
 							"top": 888,
-							"width": 235.5703125,
+							"width": 249,
 							"height": 146,
 							"nameCompartment": {
 								"$ref": "AAAAAAF3aBw0Y+357LM="
@@ -4973,7 +4990,7 @@
 											"top": 950,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "+Id_Detalles_vente",
+											"text": "+Id_Detalles_vente: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -4990,7 +5007,7 @@
 											"top": 965,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "+Unid_vendidas: TINYINT",
+											"text": "+Unid_vendidas: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5058,7 +5075,7 @@
 											"top": 1025,
 											"width": 260.50146484375,
 											"height": 13,
-											"text": "+FK_ID_Inventario",
+											"text": "+FK_ID_Inventario: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5323,7 +5340,7 @@
 											"top": 693,
 											"width": 224.34521484375,
 											"height": 13,
-											"text": "+Total_IVA: INTEGER",
+											"text": "+Total_IVA: VARCHAR",
 											"horizontalAlignment": 0
 										},
 										{
@@ -5776,7 +5793,7 @@
 											"top": 376,
 											"width": 188.6904296875,
 											"height": 13,
-											"text": "+Fecha_de_compra: DATE",
+											"text": "+Fecha_de_compra: DATETIME",
 											"horizontalAlignment": 0
 										},
 										{
@@ -7788,7 +7805,7 @@
 							"tail": {
 								"$ref": "AAAAAAF3aBbYCOzcGkU="
 							},
-							"points": "721:838;721:1264;329:1264",
+							"points": "721:853;721:1264;329:1264",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF3cpzGps1cHyU="
@@ -9195,7 +9212,7 @@
 										"$ref": "AAAAAAF3cxkeGppa1yQ="
 									},
 									"font": "Arial;13;0",
-									"left": 911,
+									"left": 920,
 									"top": 736,
 									"width": 39.62841796875,
 									"height": 13,
@@ -9218,7 +9235,7 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 940,
+									"left": 949,
 									"top": 692,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -9239,7 +9256,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 940,
+									"left": 949,
 									"top": 737,
 									"height": 13,
 									"alpha": -1.5707963267948966,
@@ -9260,7 +9277,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 905,
+									"left": 923,
 									"top": 707,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -9281,7 +9298,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 908,
+									"left": 926,
 									"top": 693,
 									"height": 13,
 									"alpha": 0.7853981633974483,
@@ -9301,7 +9318,7 @@
 										"$ref": "AAAAAAF3cxkeGppbanA="
 									},
 									"font": "Arial;13;0",
-									"left": 881,
+									"left": 899,
 									"top": 731,
 									"width": 9,
 									"height": 13,
@@ -9414,7 +9431,7 @@
 							"tail": {
 								"$ref": "AAAAAAF3aBbYCOzcGkU="
 							},
-							"points": "880:728;1000:728",
+							"points": "898:728;1000:728",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAF3cxkeG5pf4/c="
@@ -11675,7 +11692,7 @@
 								"$ref": "AAAAAAF3aBbYCOzaQqc="
 							},
 							"name": "Nombre_Producto",
-							"type": "TEXT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -11684,7 +11701,7 @@
 								"$ref": "AAAAAAF3aBbYCOzaQqc="
 							},
 							"name": "Tipo_Producto",
-							"type": "TEXT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -11712,6 +11729,15 @@
 							},
 							"name": "Img_Producto",
 							"type": "BLOB"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF32guJ+snQAWk=",
+							"_parent": {
+								"$ref": "AAAAAAF3aBbYCOzaQqc="
+							},
+							"name": "especificaciones_Producto",
+							"type": "VARCHAR"
 						}
 					],
 					"operations": [
@@ -11809,7 +11835,7 @@
 								"$ref": "AAAAAAF3aBb7WO0EUdI="
 							},
 							"name": "ID_Inventario",
-							"type": ""
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -11854,7 +11880,7 @@
 								"$ref": "AAAAAAF3aBb7WO0EUdI="
 							},
 							"name": "Canti_inicial_dia",
-							"type": "TINYINT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -11863,7 +11889,7 @@
 								"$ref": "AAAAAAF3aBb7WO0EUdI="
 							},
 							"name": "Canti_vendida_dia",
-							"type": "TINYINT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -11872,7 +11898,7 @@
 								"$ref": "AAAAAAF3aBb7WO0EUdI="
 							},
 							"name": "Canti_disponible_dia",
-							"type": "TINYINT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12209,7 +12235,7 @@
 								"$ref": "AAAAAAF3aBw0Yu32oMo="
 							},
 							"name": "Dias_descuento",
-							"type": "DATE"
+							"type": "DATETIME"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12218,7 +12244,7 @@
 								"$ref": "AAAAAAF3aBw0Yu32oMo="
 							},
 							"name": "Tipo_Descuento",
-							"type": "TEXT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12227,7 +12253,7 @@
 								"$ref": "AAAAAAF3aBw0Yu32oMo="
 							},
 							"name": "Descripción_del_Descuento",
-							"type": "TEXT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12856,7 +12882,7 @@
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
 							"name": "Id_Detalles_vente",
-							"type": ""
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12865,7 +12891,7 @@
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
 							"name": "Unid_vendidas",
-							"type": "TINYINT"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -12901,7 +12927,7 @@
 								"$ref": "AAAAAAF3bU2e6TVpd8A="
 							},
 							"name": "FK_ID_Inventario",
-							"type": ""
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13018,7 +13044,7 @@
 								"$ref": "AAAAAAF3bb9e1DZOBmg="
 							},
 							"name": "Total_IVA",
-							"type": "INTEGER"
+							"type": "VARCHAR"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -13185,7 +13211,7 @@
 								"$ref": "AAAAAAF3bcl+wDabFCY="
 							},
 							"name": "Fecha_de_compra",
-							"type": "DATE"
+							"type": "DATETIME"
 						},
 						{
 							"_type": "UMLAttribute",

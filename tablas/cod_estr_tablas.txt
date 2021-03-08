@@ -6,18 +6,18 @@ i     * COTECTO
 i     * EDAD                                           
 i-------------------------------------------------i
 CREATE TABLE tbl_Genero(
-  Id_Genero VARCHAR(3) NOT NULL,
+  Id_Genero VARCHAR(5) NOT NULL,
   Nom_genero VARCHAR(50) NOT NULL,
   PRIMARY KEY(Id_Genero)  
 );
 
 CREATE TABLE tbl_Usuario(
-  Id_usuario VARCHAR(50) NOT NULL,
+  Id_usuario VARCHAR(5) NOT NULL,
   Prim_Nom_Usuario VARCHAR(50) NOT NULL,
-  Seg_Nom_Usuario VARCHAR(50) NOT NULL,
+  Seg_Nom_Usuario VARCHAR(50) NULL,
   Prim_Ape_Usuario VARCHAR(50) NOT NULL,
-  Seg_ape_Usuario VARCHAR(50) NOT NULL,
-  FK_Id_Genero VARCHAR(50) NOT NULL,
+  Seg_ape_Usuario VARCHAR(50) NULL,
+  FK_Id_Genero VARCHAR(5) NOT NULL,
   PRIMARY KEY(Id_Usuario),
   CONSTRAINT FK_GeneroUsuario
   FOREIGN KEY(FK_Id_Genero)  
@@ -25,11 +25,11 @@ CREATE TABLE tbl_Usuario(
 );
 
 CREATE TABLE tbl_Contacto(
-  Id_contacto VARCHAR(50) NOT NULL,
+  Id_contacto VARCHAR(5) NOT NULL,
   Direc_Contacto VARCHAR(50) NOT NULL,
   Telefono_Contacto VARCHAR(50) NOT NULL,
   Correo_Contacto VARCHAR(50) NOT NULL,
-  FK_Id_Usuario VARCHAR(50) NOT NULL,
+  FK_Id_Usuario VARCHAR(5) NOT NULL,
   PRIMARY KEY(Id_Contacto),
   CONSTRAINT FK_UsuarioContacto
   FOREIGN KEY(FK_Id_Usuario)  
@@ -37,9 +37,9 @@ CREATE TABLE tbl_Contacto(
 );
 
 CREATE TABLE tbl_Edad(
-  Id_Edad VARCHAR(50) NOT NULL,
-  Fech_Nac_Edad VARCHAR(50) NOT NULL,
-  FK_Id_Usuario VARCHAR(50) NOT NULL,
+  Id_Edad VARCHAR(5) NOT NULL,
+  Fech_Nac_Edad DATE NOT NULL,
+  FK_Id_Usuario VARCHAR(5) NOT NULL,
   PRIMARY KEY(Id_Edad),
   CONSTRAINT FK_UsuarioEdad
   FOREIGN KEY(FK_Id_Usuario)  

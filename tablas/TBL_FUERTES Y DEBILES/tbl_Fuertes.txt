@@ -1,42 +1,41 @@
 CREATE TABLE tbl_Genero(
-  Id_Genero VARCHAR(3) NOT NULL,
+  Id_Genero VARCHAR(5) NOT NULL,
   Nom_genero VARCHAR(50) NOT NULL,
   PRIMARY KEY(Id_Genero)  
 );
 
 CREATE TABLE tbl_Calificacion(
-  Id_Calificacion VARCHAR(50) NOT NULL,
+  Id_Calificacion VARCHAR(5) NOT NULL,
   Tipo_Calificacion VARCHAR(50) NOT NULL,
   Fech_Calificacion DATE NOT NULL,
-  Comentario_Calificacion VARCHAR(50) NOT NULL,
-  PRIMARY KEY(Id_Calificacion),
-   
+  Comentario_Calificacion VARCHAR(100) NOT NULL,
+  PRIMARY KEY(Id_Calificacion), 
 );
 
-
 CREATE TABLE tbl_Producto(
-  Id_Produc,
-  Nombre_Produc,
-  Tipo_Produc,
-  Precio_Produc,
-  Img_Produc,
-  Descrp_Produc,
-  Especificaciones_Producto 
+  Id_Produc VARCHAR(5) NOT NULL,
+  Nombre_Produc VARCHAR(50) NOT NULL,
+  Tipo_Produc VARCHAR(50) NOT NULL,
+  Precio_Produc VARCHAR(50) NOT NULL,
+  Img_Produc VARCHAR(50) NOT NULL,
+  Especificaciones_Producto VARCHAR(50) NOT NULL,
+  Descrp_Produc BLOB NOT NULL,
   PRIMARY KEY(Id_Produc), 
 );
 
 CREATE TABLE tbl_Descuento(
-  Id_Descuento,
-  Dias_Descuento,
-  Tipo_Descuento,
-  Descripcion_Descuento,
-  Valor_Descuento,
+  Id_Descuento VARCHAR(5) NOT NULL,
+  Dias_Descuento DATETIME NOT NULL,
+  Tipo_Descuento VARCHAR(50) NOT NULL,
+  Descripcion_Descuento VARCHAR(50) NOT NULL,
+  Valor_Descuento VARCHAR(50) NOT NULL,
   PRIMARY KEY(Id_Descuento)
 );
 
 CREATE TABLE Tbl_Ciudad (
-  Id_Ciudad,
-  Nombre_ciudad,
-  Localidad_Ciudad,
+  Id_Ciudad VARCHAR(5) NOT NULL,
+  Nombre_ciudad VARCHAR(50) NOT NULL,
+  Localidad_Ciudad VARCHAR(50) NOT NULL,
   PRIMARY KEY (Id_Ciudad),   
 );
+

@@ -10,103 +10,104 @@ i     * DESCUENTO
 i-------------------------------------------------i
 
 CREATE TABLE tbl_Compra_Cliente(
-  Id_Comp_Cli,
-  Cantidad_Comp_cli,
-  Descuento_Comp_Cli,
-  Iva_Comp_Cli,
-  Garantia_Comp_Cli,
-  Precio_Total_Comp_Cli,
-  Fech_Comp_Cli,
-  FK_Id_Usuario,
-  FK_Id_Factura,
+  Id_Comp_Cli VARCHAR(5) NOT NULL,
+  Cantidad_Comp_cli VARCHAR(50) NOT NULL,
+  Descuento_Comp_Cli VARCHAR(50) NULL,
+  Iva_Comp_Cli VARCHAR(50) NOT NULL,
+  Garantia_Comp_Cli VARCHAR(50) NOT NULL,
+  Precio_Total_Comp_Cli VARCHAR(50) NOT NULL,
+  Fech_Comp_Cli DATETIME NOT NULL,
+  FK_Id_Usuario VARCHAR(5) NOT NULL,
+  FK_Id_Factura VARCHAR(5) NOT NULL,
   PRIMARY KEY(Id_Comp_Cli),
   CONSTRAINT FK_UsuarioCompraCLiente
   FOREIGN KEY(FK_Id_Usuario)  
-  REFERENCES tbl_Usuario(FK_Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
+  REFERENCES tbl_Usuario(Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
   CONSTRAINT FK_FacturaCompraCliente
   FOREIGN KEY(FK_Id_Factura)  
-  REFERENCES tbl_Factura(FK_Id_Factura) ON DELETE NO ACTION ON UPDATE CASCADE
+  REFERENCES tbl_Factura(Id_Factura) ON DELETE NO ACTION ON UPDATE CASCADE
 );
 
 CREATE TABLE tbl_Factura(
-  Id_Factu,
-  Total_IVA_Factu,
-  Precio_Total_Comp_Factu,
-  Fech_Facturacion_Factu,
-  Hora_Factu,
-  Sub_Total_Factu
-  FK_Id_Produc,
+  Id_Factu VARCHAR(5) NOT NULL,
+  Total_IVA_Factu VARCHAR(50) NOT NULL,
+  Precio_Total_Comp_Factu VARCHAR(50) NOT NULL,
+  Fech_Facturacion_Factu DATE NOT NULL,
+  Hora_Fact TIME NOT NULL,
+  Sub_Total_Factu VARCHAR(50) NOT NULL,
+  FK_Id_Produc VARCHAR(5) NOT NULL,
   PRIMARY KEY(Id_Factu),
   CONSTRAINT FK_PreoductoFactura
   FOREIGN KEY(FK_Id_Produc)  
-  REFERENCES tbl_Produacto(FK_Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
+  REFERENCES tbl_Produacto(Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
 
 CREATE TABLE tbl_Producto(
-  Id_Produc,
-  Nombre_Produc,
-  Tipo_Produc,
-  Precio_Produc,
-  Img_Produc,
-  Descrp_Produc,
-  Especificaciones_Producto 
+  Id_Produc VARCHAR(5) NOT NULL,
+  Nombre_Produc VARCHAR(50) NOT NULL,
+  Tipo_Produc VARCHAR(50) NOT NULL,
+  Precio_Produc VARCHAR(50) NOT NULL,
+  Img_Produc VARCHAR(50) NOT NULL,
+  Especificaciones_Producto VARCHAR(50) NOT NULL,
+  Descrp_Produc BLOB NOT NULL,
   PRIMARY KEY(Id_Produc), 
 );
 
 CREATE TABLE tbl_Categoria_Productos(
-  Id_Categ_Produc,
-  Tipo_Categ_Produc,
-  Nombre_Categ_Produc,
-  FK_Id_Produc,
+  Id_Categ_Produc VARCHAR(5) NOT NULL,
+  Tipo_Categ_Produc VARCHAR(50) NULL,
+  Nombre_Categ_Produc VARCHAR(50) NOT NULL,
+  FK_Id_Produc VARCHAR(5) NOT NULL,
   PRIMARY KEY(Id_Categ_Produc),
   CONSTRAINT FK_ProductoCategoriaProducto
   FOREIGN KEY(FK_Id_Produc)  
-  REFERENCES tbl_Producto(FK_Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
+  REFERENCES tbl_Producto(Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
 
 CREATE TABLE tbl_Inventario(
-  Id_Inventario,
-  Fech_Entrada_Inventario,
-  Fech_Salida_Inventario,
-  Hora_Entrada_Inventario,
-  Hora_salida_Inventario,
-  Canti_Inicial_Dia_Inventario,
-  Canti_Vendida_Dia_Inventario,
-  Canti_Disponible_Dia_Inventario,
-  FK_Id_Produc,
+  Id_Inventario VARCHAR(50) NOT NULL,
+  Fech_Entrada_Inventario DATE NOT NULL,
+  Fech_Salida_Inventario DATE NOT NULL,
+  Hora_Entrada_Inventario TIME NOT NULL,
+  Hora_salida_Inventario TIME NOT NULL,
+  Canti_Inicial_Dia_Inventario VARCHAR(50) NOT NULL,
+  Canti_Vendida_Dia_Inventario VARCHAR(50) NOT NULL,
+  Canti_Disponible_Dia_Inventario VARCHAR(50) NOT NULL,
+  FK_Id_Produc VARCHAR(5) NOT NULL,
   PRIMARY KEY(Id_Inventario),
   CONSTRAINT FK_ProductoInventario
   FOREIGN KEY(FK_Id_Produc)  
-  REFERENCES tbl_Producto(FK_Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
+  REFERENCES tbl_Producto(Id_Produc) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
 
 CREATE TABLE tbl_Detalles_Venta(
-  Id_Deta_Venta,
-  Unid_Ventdida_Deta_Venta,
-  Precio_Unid_Deta_Venta,
-  Cost_Total_Venta_Deta_Venta,
-  FK_Id_Factu,
-  FK_Id_Inventario,
-  FK_Id_Descuento,
+  Id_Deta_Venta VARCHAR(5) NOT NULL,
+  Unid_Ventdida_Deta_Venta VARCHAR(50) NOT NULL,
+  Precio_Unid_Deta_Venta VARCHAR(50) NOT NULL,
+  Cost_Total_Venta_Deta_Venta VARCHAR(50) NOT NULL,
+  FK_Id_Factu VARCHAR(5) NOT NULL,
+  FK_Id_Inventario VARCHAR(50) NOT NULL,
+  FK_Id_Descuento VARCHAR(5) NULL,
   PRIMARY KEY(Id_Deta_Venta),
 
   CONSTRAINT FK_FacturaDetallesVenta
   FOREIGN KEY(FK_Id_Factu)  
-  REFERENCES tbl_Factura(FK_Id_Factu) ON DELETE NO ACTION ON UPDATE CASCADE 
+  REFERENCES tbl_Factura(Id_Factu) ON DELETE NO ACTION ON UPDATE CASCADE 
 
   CONSTRAINT FK_InventarioDetallesVenta 
   FOREIGN KEY(FK_Id_Inventario)  
-  REFERENCES tbl_Ineventario(FK_Id_Inventario) ON DELETE NO ACTION ON UPDATE CASCADE
+  REFERENCES tbl_Ineventario(Id_Inventario) ON DELETE NO ACTION ON UPDATE CASCADE
 
   CONSTRAINT FK_DescuentoDetallesVenta 
   FOREIGN KEY(FK_Id_Descuento)  
-  REFERENCES tbl_Descuento(FK_Id_Descuento) ON DELETE NO ACTION ON UPDATE CASCADE 
+  REFERENCES tbl_Descuento(Id_Descuento) ON DELETE NO ACTION ON UPDATE CASCADE 
 );
 
 CREATE TABLE tbl_Descuento(
-  Id_Descuento,
-  Dias_Descuento,
-  Tipo_Descuento,
-  Descripcion_Descuento,
-  Valor_Descuento,
-  PRIMARY KEY(Id_Descuento),
+  Id_Descuento VARCHAR(5) NOT NULL,
+  Dias_Descuento DATETIME NOT NULL,
+  Tipo_Descuento VARCHAR(50) NOT NULL,
+  Descripcion_Descuento VARCHAR(50) NOT NULL,
+  Valor_Descuento VARCHAR(50) NOT NULL,
+  PRIMARY KEY(Id_Descuento)
+);

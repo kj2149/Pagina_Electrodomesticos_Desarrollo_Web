@@ -7,48 +7,48 @@ i     * DEPARTAMENTO
 i-------------------------------------------------i
 
 CREATE TABLE Tbl_Pago (
-  Id_Pago,
-  Metodo_Pago,
-  Tipo_Pago,
-  FK_Id_Factu
+  Id_Pago VARCHAR(5) NOT NULL,
+  Metodo_Pago VARCHAR(50) NOT NULL,
+  Tipo_Pago VARCHAR(50) NOT NULL,
+  FK_Id_Factu VARCHAR(5) NOT NULL,
   PRIMARY KEY (Id_Pago),
   CONSTRAINT FK_FacturaPago
   FOREIGN KEY(FK_Id_Factu)  
-  REFERENCIAS Tbl_Factura (FK_Id_Factu) ON DELETE NO ACTION ON UPDATE CASCADE    
+  REFERENCIAS Tbl_Factura (Id_Factu) ON DELETE NO ACTION ON UPDATE CASCADE    
 );
 
 
 CREATE TABLE Tbl_Envio (
-  Id_Envio,
-  Tipo_envio,
-  Dirección_Envio,
+  Id_Envio VARCHAR(5) NOT NULL,
+  Tipo_envio VARCHAR(50) NOT NULL,
+  Dirección_Envio VARCHAR(50) NOT NULL,
+  FK_Id_Pago VARCHAR(5) NOT NULL,
+  FK_Id_Ciudad VARCHAR(5) NOT NULL,
   PRIMARY KEY (Id_Envio),
-  FK_Id_Pago,
-  FK_Id_Ciudad,
   CONSTRAINT FK_PagoEnvio
   FOREIGN KEY(FK_Id_Pago)  
-  REFERENCIAS Tbl_Pago (FK_Id_Pago) ON DELETE NO ACTION ON UPDATE CASCADE 
+  REFERENCIAS Tbl_Pago (Id_Pago) ON DELETE NO ACTION ON UPDATE CASCADE 
 
   CONSTRAINT FK_CiudadEnvio
   FOREIGN KEY(FK_Id_Ciudad)  
-  REFERENCIAS tbl_Ciudad (FK_Id_Ciudad) ON DELETE NO ACTION ON UPDATE CASCADE       
+  REFERENCIAS tbl_Ciudad (Id_Ciudad) ON DELETE NO ACTION ON UPDATE CASCADE       
 );
 
 
 CREATE TABLE Tbl_Ciudad (
-  Id_Ciudad,
-  Nombre_ciudad,
-  Localidad_Ciudad,
+  Id_Ciudad VARCHAR(5) NOT NULL,
+  Nombre_ciudad VARCHAR(50) NOT NULL,
+  Localidad_Ciudad VARCHAR(50) NOT NULL,
   PRIMARY KEY (Id_Ciudad),   
 );
 
 
 CREATE TABLE Tbl_Departamento (
-  Id_Departamento,
-  Nombre_Departamento,
-  FK_Id_Ciudad
+  Id_Departamento VARCHAR(5) NOT NULL,
+  Nombre_Departamento VARCHAR(50) NOT NULL,
+  FK_Id_Ciudad VARCHAR(5) NOT NULL,
   PRIMARY KEY (Id_Departamento),
   CONSTRAINT FK_CiudadDepartamento
   FOREIGN KEY(FK_Id_Ciudad)  
-  REFERENCIAS Tbl_Ciudad (FK_Id_Ciudad) ON DELETE NO ACTION ON UPDATE CASCADE    
+  REFERENCIAS Tbl_Ciudad (Id_Ciudad) ON DELETE NO ACTION ON UPDATE CASCADE    
 );

@@ -7,30 +7,30 @@ i
 i-------------------------------------------------i
 
 CREATE TABLE tbl_Orden_Compra (
-  Id_Orden_Com,
-  Cost_Productos_Orden_Com,
-  Uni_Vendidas_Orden_Com,
-  Fecha_Ventas_Orden_Com,
-  Hora_Venta_Orden_Com,
-  FK_Id_Usuario
+  Id_Orden_Com VARCHAR(5) NOT NULL,
+  Cost_Productos_Orden_Com VARCHAR(50) NOT NULL,
+  Uni_Vendidas_Orden_Com VARCHAR(50) NOT NULL,
+  Fecha_Ventas_Orden_Com DATE NOT NULL,
+  Hora_Venta_Orden_Com TIME NOT NULL,
+  FK_Id_Usuario VARCHAR(5) NOT NULL,
   PRIMARY KEY (Id_Orden_Com),
   CONSTRAINT FK_UsuarioOrdenCompra
   FOREIGN KEY(FK_Id_Usuario)  
-  REFERENCIAS tbl_Usuario (FK_Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE    
+  REFERENCIAS tbl_Usuario (Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE    
 );
 
 
 
 CREATE TABLE tbl_Compra_Proveedor (
-  Id_Comp_Proveedor,
-  Cant_Comp_Proveedor,
-  Precio_Total_Comp_Proveedor,
-  Fecha_Compra_Proveedor,
-  FK_Id_Orden_Com,
+  Id_Comp_Proveedor VARCHAR(5) NOT NULL,
+  Cant_Comp_Proveedor VARCHAR(50) NOT NULL,
+  Precio_Total_Comp_Proveedor VARCHAR(50) NOT NULL,
+  Fecha_Compra_Proveedor DATETIME NOT NULL,
+  FK_Id_Orden_Com VARCHAR(5) NOT NULL,
   PRIMARY KEY (Id_Comp_Proveedor),
   CONSTRAINT FK_OrdenCompraCompraProveedor
   FOREIGN KEY (FK_Id_Orden_Com)  
-  REFERENCIAS tbl_orden_compra (FK_Id_Orden_Com) OON DELETE NO ACTION ON UPDATE CASCADE    
+  REFERENCIAS tbl_orden_compra (Id_Orden_Com) OON DELETE NO ACTION ON UPDATE CASCADE    
 );
 
 

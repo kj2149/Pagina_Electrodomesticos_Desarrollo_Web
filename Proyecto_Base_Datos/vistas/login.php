@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/css.pie.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+        <link rel="stylesheet" href="../css/pie_pag_login.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
         <link rel="stylesheet" href="../css/iniciosecion.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +16,19 @@
         <title>Unlimited Tecnhology-Iniciar Sesion</title>
     </head>  
 
-     <body>
-        
+     <body id="fondo2"><!
+     <section>   
     <div class="boxe">
         
         <img id="img" src="../imagenes/user_icon.png" alt="icono-usiario">
-        <br><br><br>
+        
 
         <h1>Iniciar Sesion</h1>
     <span>or <a href="registro.php">Registrarse</a></span>
 
         <form action="login.php" method="POST">
                <input name="email" type="text" class="field" placeholder="Correo Electronico" required>
-               <input name="password" type="password" class="field" placeholder="Contraseña" required ><br>
+               <input name="password" type="password" class="field" placeholder="Contraseña" required >
                <input type="checkbox" class="check-box" ><span>Recordar contraseña</span>
                
         
@@ -37,9 +37,9 @@
         <div class="cajabotones">
             <input type="submit" value="Iniciar Sesion"  class="botones">
         </div>
-        <br><br><br>
+       
             <p id="terminos-condiciones" ><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p>
-<br><br><br>
+
             <p><center>| © 2021 todos los derechos reservados |</center></p>
 
 
@@ -48,7 +48,9 @@
     
     </form>
     </div>
-            <br><br><br><br><br><br><br>
+     </section>
+
+
 
 
     <!-- FOOTER DE LA PAGINA -->

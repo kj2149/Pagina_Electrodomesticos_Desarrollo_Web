@@ -1,0 +1,164 @@
+
+
+/*pie de pagina*/
+
+footer{
+    padding: 1%; 
+    height: 320px;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /*letra*/ 
+    font-size: 14px;
+    color: #EBF8E5;
+    text-align: justify;
+    line-height: 5px;
+    -moz-box-shadow: #2C2C2C;
+    background: rgb(69,72,77); 
+    background: -moz-linear-gradient(top,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); 
+    background: -webkit-linear-gradient(top,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); 
+    background: linear-gradient(to bottom,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); 
+    clear: both;
+    margin-bottom: 2px;  
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.redes{
+  
+    margin: 2px 3% 0px 3% ;
+    line-height: 14px;
+    padding: 20px;
+    
+}
+
+
+.terminos{
+    
+    font-size: 14px;
+    margin: 1%;
+    line-height: 20px;
+    text-align: center;
+}
+
+#face{
+    width: 29px;
+    height: 29px;
+    margin: 6px;
+}
+
+#twit{
+    width: 29px;
+    height: 29px;
+    margin: 6px;
+}
+
+#gml{
+    width: 30px;
+    height: 29px;
+    margin: 6px;
+    border-radius: 0%;
+}
+
+#phon{
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+    margin-left: 0%;
+}
+
+#pin{
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    margin-left: 0%;
+}
+
+#copyright{
+    font-size: 14px;
+    margin-top:40px ;
+    line-height: 15px;
+    margin: 30px;
+    text-align: center;
+}
+
+.contactenos{
+    margin: auto;
+    text-size-adjust: 5px;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 14px;
+    list-style-type: none;
+    text-align: center;
+}
+.contactenos,li{
+    list-style-type: none;
+}
+
+
+
+@media only screen and  (max-width: 1500px){
+    .terminos{width: 20%;
+       
+       }
+    }
+
+@media only screen and  (max-width: 1300px){
+    .terminos{width: 16%;
+       
+       }
+    }
+
+
+ @media only screen and  (max-width: 1400px){
+    .contactenos {width: 25%;
+       
+       }
+    }
+
+@media only screen and  (max-width: 1400px){
+     .redes {width: 25%;
+       
+       }
+    }
+
+ @media only screen and  (max-width: 900px){
+    .terminos{width: 100%;
+              line-height: 2px;
+       
+       }
+    }
+
+
+ @media only screen and  (max-width: 900px){
+    .contactenos {width: 100%;
+       
+       }
+    }
+
+@media only screen and  (max-width: 900px){
+     .redes {width: 100%;
+             text-align: center;
+             line-height: 8px;
+       
+       }
+    }
+
+
+@media only screen and  (max-width: 900px){
+    footer { height: 620px;
+        margin-bottom: 20px;  
+       }
+    }
+
+@media only screen and  (max-width: 500px){
+    footer { height: 620px;
+             wisth: 500px;
+             ' 
+       }
+    }
+
+   

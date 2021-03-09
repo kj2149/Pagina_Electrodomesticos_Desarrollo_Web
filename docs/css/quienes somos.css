@@ -243,7 +243,7 @@ header{
     margin-bottom: 1%;
     margin-top: 220px;
     color: white;
-    background-color: rgba(36, 108, 170, 0.507);
+    background-color:  rgba(54, 53, 53, 0.863);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     text-align: justify;
@@ -260,7 +260,7 @@ header{
     margin-bottom: 1%;
     margin-top: -354px;
     color: white;
-    background-color: rgba(36, 108, 170, 0.507);
+    background-color:  rgba(54, 53, 53, 0.863);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     text-align: justify;
@@ -277,7 +277,7 @@ header{
     margin-bottom: 1%;
     margin-top: 15px;
     color:white;
-    background-color: rgba(36, 108, 170, 0.507);
+    background-color:  rgba(54, 53, 53, 0.863);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     text-align: justify;
@@ -293,7 +293,7 @@ header{
     margin-bottom: 1%;
     margin-top: 20px;
     color:white;
-    background-color: rgba(36, 108, 170, 0.507);
+    background-color:  rgba(54, 53, 53, 0.863);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     text-align: justify;
@@ -311,7 +311,7 @@ header{
     margin-bottom: 5%;
     margin-top: -400px;
     color: white;
-    background-color: rgba(36, 108, 170, 0.507);
+    background-color: rgba(54, 53, 53, 0.863);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     text-align: justify;
@@ -328,12 +328,13 @@ header{
     margin-bottom: 1%;
     margin-top: -60px;
     color:white;
-    background-color: rgba(36, 108, 170, 0.507);
+    background-color:  rgba(54, 53, 53, 0.863);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: large;
     text-align: justify;
     position: relative;   
 }
+
 
 .contac {
     width: 35%;

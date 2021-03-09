@@ -1,0 +1,44 @@
+#menu_bar{
+    display: none;
+}
+div label{
+    
+    float: left;
+    font-size: 500px;
+    margin: 4px 6px;
+    padding: 3px 10px;
+    margin-top: -5px;
+    color: #04faff;
+    cursor: pointer;
+    
+}
+
+
+.menu a :hover{
+    background: rgb(94, 222, 232);
+    color: floralwhite;
+}
+
+#menu_bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+.menu{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 12%;
+    height: 100vh;
+    background: rgba(75, 95, 109, 0.823);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.menu a{
+    display: block;
+    color: #04faff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: cornsilk;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="../imagenes/mifavicon.png"/>
+
+	<script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="../css/css.pie.css" type="text/css" />
+	<style type="text/css">
+		._css3m {
+			display: none
+		}
+
+	</style>
+	<link rel="stylesheet" href="../css/estilos_pago.css" type="text/css" />
+	<style type="text/css">
+		._css3m {
+			display: none
+		}
+		
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+	<meta name="keyswords" content="html5, css3">
+	<script src="https://use.fontawesome.com/56837f1421.js"></script>
+   <!-- <link rel="stylesheet" type="text/css" href="../css/icono.css">  -->   
+        <!--tipografia Josefin Sans-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+	<!--IMPLEMENTANDO BOOTSTRAP - Ajax -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Unlimited Tecnhology-Haz tu pago</title>
+</head>
+<body>
+ <header>
+
+ 	
+  	<div class="content-til">
+         
+          <img class="logo" src="../imagenes/2.png" alt="ima-empresa">
+  		  <h1> Realiza tu Pago</h1>
+  		
+  	</div>
+
+  
+ </header>
+<!--antes-->
+    <div class="til-formulario"> <h2>Pago seguro</h2> <img class="imag-pago" src="../imagenes/proteger.png" alt="ima-empresa"></div>
+
+    <div class="content-for-pago">
+
+        <h3>Opciones de pago</h3>
+
+        <div class="btn-opc-pago">
+           <input type="radio" name="Tipopago" value="i" id="Tarjeta">
+           <label for="Tarjeta">Tarjeta de credito</label>  
+ 	       <img  for="Tarjeta" class="ima-opc-pago" src="../imagenes/tarjeta.png" alt="ima-empresa">
+ 	 
+             <form action="" class="content-formulario">
+ 	    	    <p>Numero de tarjeta*:</p> <input type="text" name="Direccion"required class="casilla-for"><br>
+        	    <p>Fecha de vencimiento*:</p> <input type="Fecha" name="Fecha"required class="casilla-for"><br>
+        	    <p>Codigo cvv*:</p> <input type="text" name="Codigo-tarjeta"required class="casilla-for"><br>
+                <p>Direccion*:</p> <input type="text" name="Direccion"required class="casilla-for"><br>
+        		<p>Nombre*:</p> <input type="text" name="nombre"required class="casilla-for"><br>
+        		<p>Apellido*:</p> <input type="text" name="Apellido"required class="casilla-for"><br>
+        		<p>Telefono*:</p> <input type="Telefono" name="Telefono"required class="casilla-for"><br>
+        		<p>Celular:</p> <input type="text" name="Celular" class="casilla-for"><br>
+        		<p>email:</p> <input type="email" name="correo" class="casilla-for"><br>
+        		<p>Cedula*:</p> <input type="text" name="Cedula"required class="casilla-for"><br>
+        		<p>Codigo postal:</p> <input type="text" name="Codigo postal" class="casilla-for"><br>
+
+        	    <input type="submit" name="ENVIAR" class="btn-enviar">
+        	</form>	
+        </div>
+         
+
+        <div class="btn-opc-pago">
+            <input type="radio" name="Tipopago" value="i" id="Paypal">
+            <label for="Paypal">PayPal</label>
+            <img for="Paypal" class="ima-opc-pago" src="../imagenes/Paypal-Logo.png" alt="ima-empresa">
+      
+        
+     
+        	<form action="" class="content-formulario2">
+                
+            
+        		<p>Email*:</p> <input type="email" name="correo"required class="casilla-for"><br>
+        		<p>Codigo postal:</p> <input type="text" name="Codigo postal"required class="casilla-for"><br>
+
+
+        	    <input type="submit" name="ENVIAR"class="btn-enviar">
+        	</form>	
+        </div>
+
+        <div class="btn-opc-pago">
+            <input type="radio" name="Tipopago" value="i" id="Transferencia-bancaria">
+            <label for="Transferencia-bancaria">Transferencia bancaria</label>
+            <img  for="Transferencia-bancaria" class="ima-opc-pago" src="../imagenes/transferencia-bancaria.png" alt="ima-empresa">
+
+        	<form action="" class="content-formulario3">    
+                <p>Direccion*:</p> <input type="text" name="Direccion"required class="casilla-for"><br>
+        		<p>Nombre*:</p> <input type="text" name="nombre"required class="casilla-for"><br>
+        		<p>Apellido*:</p> <input type="text" name="Apellido"required class="casilla-for"><br>
+        		<p>Telefono*:</p> <input type="Telefono" name="Telefono"required class="casilla-for"><br>
+        		<p>Celular:</p> <input type="text" name="Celular" class="casilla-for"><br>
+        		<p>Email:</p> <input type="email" name="correo" class="casilla-for"><br>
+        		<p>Cedula*:</p> <input type="text" name="Cedula"required class="casilla-for"><br>
+        		<p>Codigo postal:</p> <input type="text" name="Codigo postal" class="casilla-for"><br>
+
+        	    <input type="submit" name="ENVIAR" class="btn-enviar">
+        	</form>	
+        </div>
+
+     </div>
+  
+
+  <script type="text/javascript">
+	$(function(){
+
+    $('.content-formulario').hide();
+    $('.content-formulario2').hide();
+    $('.content-formulario3').hide();
+     
+
+    $('#Tarjeta').click(function(){
+        $('.content-formulario').show();
+        $('.content-formulario2').hide();
+        $('.content-formulario3').hide();
+
+    });
+    $('#Paypal').click(function(){
+        $('.content-formulario').hide();
+        $('.content-formulario2').show();
+        $('.content-formulario3').hide();
+
+    });
+
+    $('#Transferencia-bancaria').click(function(){
+        $('.content-formulario').hide();
+        $('.content-formulario2').hide();
+        $('.content-formulario3').show();
+
+    });
+    
+ } );
+</script>
+
+
+</body>
+</html>

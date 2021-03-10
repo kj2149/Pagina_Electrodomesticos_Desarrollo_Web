@@ -97,6 +97,8 @@ header{
 .lista-cate{
     margin-top: auto;
     width: 100%;
+    position: absolute;
+    height: 100%;
 }
 
 .barra-btn-buscar{
@@ -404,6 +406,11 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 .text-white{
     font-family: 'Josefin Sans', sans-serif;
 }
+@media (max-width: 750px){
+    header{ position: absolute;       
+    }
+}
+
 /*
 .buscar:hover input{
     width: 240px;

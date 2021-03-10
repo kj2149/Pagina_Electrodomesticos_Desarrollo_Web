@@ -1,44 +1,173 @@
 #menu_bar{
     display: none;
 }
-div label{
-    
-    float: left;
-    font-size: 500px;
-    margin: 4px 6px;
-    padding: 3px 10px;
+
+#menu_bar_label{
+    position: relative;
+    float: top;
+    font-size: 30px;
     margin-top: -5px;
+    margin: 5px;
     color: #04faff;
     cursor: pointer;
-    
+    display: none;
 }
 
 
-.menu a :hover{
-    background: rgb(94, 222, 232);
-    color: floralwhite;
-}
 
-#menu_bar:checked ~ .menu{
-    transform: translateX(0%);
-}
+
+/*#menu_bar:checked ~ .menu{
+    transform: translateX(-101%);
+}*/
 
 .menu{
     position: absolute;
-    top: 200px;
+    top: 10px;
     left: 0;
-    width: 12%;
-    height: 100vh;
-    background: rgba(75, 95, 109, 0.823);
+    width: 13%;
+    background: rgba(75, 95, 109, 0.83);
     transition: all 0.5s;
+    /*transform: translateX(1%);*/
+    overflow: hidden;
+}
+
+.accordion_trigger{
+    padding: 13px 25px;
+    background: rgb(48 158 208);
+    border-bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    margin-bottom: 2px; 
+    border-radius: 3px;
+    width: 100%; 
+ 
+}
+
+.accordion_container{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:rgb(23 215 234 / 15%);
+    
+}
+
+.accordion_container2{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:rgb(23 215 234 / 15%);
+    
+}
+
+.accordion_container3{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:rgb(23 215 234 / 15%);
+    
+}
+
+.accordion_container4{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:rgb(23 215 234 / 15%);
+    
+}
+
+.accordion_container5{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:rgb(23 215 234 / 15%);
+    
+}
+
+.accordion_container6{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:rgb(23 215 234 / 15%);
+    
+}
+
+
+.accordion_container ul li{
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+
+}
+.menu ul li a{
+    line-height: 10px;
+    margin: 10px;
+    color: rgb(255 255 255);
+    margin-top: 30px; 
+}
+.ac_hide{
+    display: none;
+    position: absolute;
+}
+.accordion_trigger:hover{
+     background: rgb(23 108 234 / 65%);
+}
+
+#at1:checked ~ .accordion_container{
+    height: 250px;
+}
+#at2:checked ~ .accordion_container2{
+    height: 200px;
+}
+#at3:checked ~ .accordion_container3{
+    height: 220px;
+}
+#at4:checked ~ .accordion_container4{
+
+    height: 200px;
+}
+#at5:checked ~ .accordion_container5{
+    height: 150px;
+}
+#at6:checked ~ .accordion_container6{
+    height: 150px;
+}
+
+@media (max-width: 850px){
+    .menu{   
+        top: 20px;
+        width: 75%;
+        left: -76%;
+        transform: translateX(-100%);
+   
+    }
+#menu_bar:checked ~ .menu{
+    transform: translateX( 101%);
+    }
+#menu_bar_label{
+    display: block;
+    }
+
+}
+@media (max-width: 750px){
+    .menu{   
+      
+        
+    }
+}
+
+@media (max-width: 600px){
+    .menu{   
+    top: 200px;
+    width: 100%;
+    left: -101%;
     transform: translateX(-100%);
 }
-.menu a{
-    display: block;
-    color: #04faff;
-    height: 50px;
-    text-decoration: none;
-    padding: 15px;
-    border-bottom: cornsilk;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#menu_bar:checked ~ .menu{
+    transform: translateX( 101%);
+}
+
+
 }

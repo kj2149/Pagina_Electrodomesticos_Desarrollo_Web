@@ -120,8 +120,38 @@ header{
 }
 
 .casilla-for{
+	outline: none;
+	padding: 0.5%;
+	-webkit-box-shadow: 1px 1px  1px 2px rgb(220, 220, 220);
 	margin: 10px;
+	width: 40%;
+	border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px; 
 }
+.con-tipo-doc{
+	width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    -webkit-box-shadow: 0px 3px  0px 0px rgb(220, 220, 220);
+}
+
+
+.con-tipo-doc p{
+	width: 30%;
+	margin: 20px;
+}
+.con-tipo-doc h6{
+    text-align: left;
+    font-size: 13px;
+	width: 100%;
+	margin: 20px 0px 20px 0px;
+}
+
+
+
 
 .btn-enviar{
 	margin: 50px ;
@@ -141,6 +171,7 @@ header{
 @media (max-width: 800px){
 	.content-for-pago{
 		width: 100%;
+		-webkit-box-shadow: none;
 	}
 	.imag-pago{
 		width: 20%;
@@ -148,4 +179,42 @@ header{
 	.logo{
 		width: 20%;
 	}
+	.casilla-for{
+		width: 90%;
+	}
+	.content-formulario p{
+	    width: 88%;
+        text-align: left;
+        margin: 20px;
+    }
+    .content-formulario2 p{
+	    width: 88%;
+        text-align: left;
+        margin: 20px;
+    }
+    .content-formulario3 p{
+	    width: 88%;
+        text-align: left;
+        margin: 20px;
+    }
+    .con-tipo-doc{
+    	width: 100%;
+    	display: block;
+    	margin: 0;
+    }
+    .con-tipo-doc p{
+    	width: 25%;
+
+    }
+    .con-tipo-doc h6{
+	
+	   margin: 20px;
+    }
+
 }
+@media (max-width: 520px){
+	
+	.imag-pago{
+		width: 20%;
+		margin: auto;
+	}

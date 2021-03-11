@@ -15,19 +15,51 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Unlimited Tecnhology-Iniciar Sesion</title>
     </head>
-  <body>
+  <body id="fondo2">
 
-  <div class="boxe">
+  <div class="boxes">
     <center>
     <h1>Registrarse</h1>
     <span>or <a href="login.php">Iniciar Sesion</a></span>
     </center>
 
     <form action="signup.php" method="POST">
+      <label for="nombre">Nombre :</label>
+      <input class="field" type="text"name="nombre" id="nombre" placeholder="Nombre">
+
+      <label for="apellido">Apellido :</label>
+      <input class="field" type="text" name="apellido" id="apellido" placeholder="Apellido">
+
+      <label for="correo" >Correo electronico :</label>
       <input class="field" name="email" type="text" placeholder="Correo electronico">
+
       <input class="field" name="password" type="password" placeholder="Contraseña">
       <input class="field" name="confirm_password" type="password" placeholder="Confirmar contraseña">
+
+       <label for="dia">Fecha de nacimiento :</label>
+
+                <select name="dia" id="dia" >
+                    <option>dia</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                
+                <select name="mes" id="mes">
+                    <option>mes</option>
+                    <option>enero</option>
+                    <option>febrero</option>
+                    <option>marzo</option>
+                </select>
+
+                <select name="anio" id="anio">
+                    <option>año</option>
+                    <option>2018</option>
+                    <option>2019</option>
+                    <option>2020</option>
+                </select>
       <center>
+        <br><br>
       <input class="botones" type="submit" value="Registrarse"></center>
     </form>
 

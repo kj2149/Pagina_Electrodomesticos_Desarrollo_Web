@@ -16,21 +16,21 @@
         <title>Unlimited Tecnhology-Iniciar Sesion</title>
     </head>  
 
-     <body id="fondo2"><!
+     <body id="fondo2">
      <section>   
     <div class="boxe">
         
         <img id="img" src="../imagenes/user_icon.png" alt="icono-usiario">
         
 
-        <h1>Iniciar Sesion</h1>
-    <span>or <a href="registro.php">Registrarse</a></span>
+    <center><h1>Iniciar Sesion</h1></center>
+    <center><span>or <a href="registro.php">Registrarse</a></span></center>
 
         <form action="login.php" method="POST">
                <input name="email" type="text" class="field" placeholder="Correo Electronico" required>
                <input name="password" type="password" class="field" placeholder="Contraseña" required >
                <input type="checkbox" class="check-box" ><span>Recordar contraseña</span>
-               
+               <br><br><br><br>
         
 
 
@@ -39,7 +39,7 @@
         </div>
        
             <p id="terminos-condiciones" ><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p>
-
+            <br><br>
             <p><center>| © 2021 todos los derechos reservados |</center></p>
 
 

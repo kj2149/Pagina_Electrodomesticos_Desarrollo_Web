@@ -45,11 +45,11 @@
       
      <!--LOGO DE LA EMPRESA-->
 	  
-		<img class="logo" src="../imagenes/2.png" alt="logoempresa">	
+		<img class="logo" href="index.php" src="../imagenes/2.png" alt="logoempresa">	
 	
      <!--TITULO ULIMITED TECNHOLOGY-->
 
-		  <img class="titulo1" src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY">
+		<a href="index.php"><img class="titulo1"  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"></a>
 
      <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
 
@@ -60,8 +60,8 @@
 				<i class="fas fa-search icon"></i>
 			  </div>
 		      </div>
-		      <a class="iniciar1" href="../vista/login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
-		      <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
+		      <a class="iniciar1" href="login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
+		      <a class="registrar1" href="registro.php" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
 
 

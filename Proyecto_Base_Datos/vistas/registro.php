@@ -215,6 +215,7 @@
   <body id="fondo2">
 
   <div class="boxes">
+  <img id="img" src="../imagenes/registro.png" alt="icono-usiario">
     <center>
     <h1>Registrarse</h1>
     <span>or <a href="login.php">Iniciar Sesion</a></span>

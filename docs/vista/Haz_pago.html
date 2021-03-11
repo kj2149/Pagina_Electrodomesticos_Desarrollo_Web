@@ -61,17 +61,17 @@
  	       <img  for="Tarjeta" class="ima-opc-pago" src="../imagenes/tarjeta.png" alt="ima-empresa">
  	 
              <form action="" class="content-formulario">
- 	    	    <p>Numero de tarjeta*:</p> <input type="text" name="Direccion"required class="casilla-for"><br>
-        	    <p>Fecha de vencimiento*:</p> <input type="Fecha" name="Fecha"required class="casilla-for"><br>
+ 	    	    <p>Numero de tarjeta*:</p> <input type="text" name="Numero de Tarjeta"required class="casilla-for" placeholder=""><br>
+        	    <p>Fecha de vencimiento*:</p> <input type="Fecha" name="Fecha de vencimiento"required class="casilla-for" placeholder=""><br>
         	    <p>Codigo cvv*:</p> <input type="text" name="Codigo-tarjeta"required class="casilla-for"><br>
-                <p>Direccion*:</p> <input type="text" name="Direccion"required class="casilla-for"><br>
-        		<p>Nombre*:</p> <input type="text" name="nombre"required class="casilla-for"><br>
-        		<p>Apellido*:</p> <input type="text" name="Apellido"required class="casilla-for"><br>
-        		<p>Telefono*:</p> <input type="Telefono" name="Telefono"required class="casilla-for"><br>
-        		<p>Celular:</p> <input type="text" name="Celular" class="casilla-for"><br>
-        		<p>email:</p> <input type="email" name="correo" class="casilla-for"><br>
-        		<p>Cedula*:</p> <input type="text" name="Cedula"required class="casilla-for"><br>
-        		<p>Codigo postal:</p> <input type="text" name="Codigo postal" class="casilla-for"><br>
+                <p>Direccion*:</p> <input type="text" name="Direccion"required class="casilla-for" placeholder=""><br>
+        		<p>Nombre*:</p> <input type="text" name="nombre"required class="casilla-for" placeholder=""><br>
+        		<p>Apellido*:</p> <input type="text" name="Apellido"required class="casilla-for" placeholder=""><br>
+        		<p>Telefono*:</p> <input type="Telefono" name="Telefono"required class="casilla-for" placeholder=""><br>
+        		<p>Celular:</p> <input type="text" name="Celular" class="casilla-for" placeholder=""><br>
+        		<p>email:</p> <input type="email" name="correo" class="casilla-for" placeholder=""><br>
+        		<p>Cedula*:</p> <input type="text" name="Cedula"required class="casilla-for" placeholder=""><br>
+        		<p>Codigo postal:</p> <input type="text" name="Codigo postal" class="casilla-for" placeholder=""><br>
 
         	    <input type="submit" name="ENVIAR" class="btn-enviar">
         	</form>	
@@ -81,7 +81,7 @@
         <div class="btn-opc-pago">
             <input type="radio" name="Tipopago" value="i" id="Paypal">
             <label for="Paypal">PayPal</label>
-            <img for="Paypal" class="ima-opc-pago" src="../imagenes/Paypal-Logo.png" alt="ima-empresa">
+            <img for="Paypal" class="ima-opc-pago" src="../imagenes/paypal.png" alt="ima-empresa">
       
         
      
@@ -101,15 +101,22 @@
             <label for="Transferencia-bancaria">Transferencia bancaria</label>
             <img  for="Transferencia-bancaria" class="ima-opc-pago" src="../imagenes/transferencia-bancaria.png" alt="ima-empresa">
 
-        	<form action="" class="content-formulario3">    
-                <p>Direccion*:</p> <input type="text" name="Direccion"required class="casilla-for"><br>
+        	<form action="" class="content-formulario3"> 
+
+                <p>Apellido*:</p> <input type="text" name="Apellido"required class="casilla-for"><br>
         		<p>Nombre*:</p> <input type="text" name="nombre"required class="casilla-for"><br>
-        		<p>Apellido*:</p> <input type="text" name="Apellido"required class="casilla-for"><br>
-        		<p>Telefono*:</p> <input type="Telefono" name="Telefono"required class="casilla-for"><br>
-        		<p>Celular:</p> <input type="text" name="Celular" class="casilla-for"><br>
-        		<p>Email:</p> <input type="email" name="correo" class="casilla-for"><br>
-        		<p>Cedula*:</p> <input type="text" name="Cedula"required class="casilla-for"><br>
-        		<p>Codigo postal:</p> <input type="text" name="Codigo postal" class="casilla-for"><br>
+                
+                <div class="con-tipo-doc">
+                    <h6>Tipo de documento:</h6>
+                    <p><input type="radio" name="Tipo de documento"required> NIT</p>
+                    <p><input type="radio" name="Tipo de documento"required> Pasaporte</p>
+                    <p><input type="radio" name="Tipo de documento"required> C.C.</p>
+                    <p><input type="radio" name="Tipo de documento"required> Canet de Extranjeria</p>
+                </div>
+                <p>Numero de documento*:</p><input type="text" name="Cedula"required class="casilla-for" placeholder="1234567899"><br> 
+        		<p>Email:</p> <input type="email" name="correo" class="casilla-for" placeholder="email@example.com"><br>
+        		<p>Direccion*:</p> <input type="text" name="Direccion"required class="casilla-for" placeholder="Ingrese Direccion"><br>
+        		<p>Codigo bancario:</p> <input type="text" name="Codigo bancario" class="casilla-for" placeholder="p.ej. 002"><br>
 
         	    <input type="submit" name="ENVIAR" class="btn-enviar">
         	</form>	

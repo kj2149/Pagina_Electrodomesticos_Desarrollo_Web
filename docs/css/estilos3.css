@@ -237,26 +237,30 @@ header{
 }
 
 /*estilo para contenido*/
-
-.col {
-    display: block;
-    width: 100px;
-    margin: 20px;
-    padding: 0px;
-    right: -180px;
-    background: #CEDADA;
-    font-family: 'Josefin Sans', sans-serif;
+.container-index-contenido{
+    width: 80%;
+    margin: auto auto auto 15%;
     
 }
 
-.til{
+.container-index-contenido article{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    font-family: 'Josefin Sans', sans-serif;
-    display: block;
-    width: 70%;
+
+.colimag {
+    width: 20%;  
+    background: #CEDADA;
+    display:inline-block;
+    margin: 3% 2%;
+}
+
+
+#til{
+    width: 75%;
     margin: auto;
-    padding: 3px;
-    text-align: center;
+
     border: 1px solid #1F618D;
     background-image: url(../imagenes/pl1.jpg);
     background-repeat: repeat;
@@ -264,6 +268,27 @@ header{
     background-attachment: fixed;
     padding-left: 20%;
     padding-right: 20%; 
+}
+
+
+@media(max-width: 900px){
+    #til{
+        width: 90%;
+    }
+    .colimag {
+        width: 40%;
+        margin: 3% 4%;
+
+    }   
+    
+
+}
+@media(max-width: 570px){
+    .colimag {
+        width: 70%;
+        margin: 3%  12%;
+    }    
+
 }
 
 /*Scroll-barra de desplazamiento*/

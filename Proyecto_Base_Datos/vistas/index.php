@@ -49,7 +49,7 @@
 	
      <!--TITULO ULIMITED TECNHOLOGY-->
 
-		<a href="index.php"><img class="titulo1"  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"></a>
+		<img class="titulo1"  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY">
 
      <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
 

@@ -218,45 +218,31 @@
   <img id="img" src="../imagenes/registro.png" alt="icono-usiario">
     <center>
     <h1>Registrarse</h1>
-    <span>or <a href="login.php">Iniciar Sesion</a></span>
+    <span>ó <a href="login.php">Iniciar Sesion</a></span>
     </center>
 
     <form action="registro.php" method="POST">
-      <section for="nombre">Nombre :</section>
-      <input class="field" type="text"name="nombre" id="nombre" placeholder="Nombre">
+      <h4><section for="nombre">Nombre :</section></h4>
+      <input class="field" type="text"name="nombre" id="nombre" placeholder="Nombre" required>
 
-      <section for="apellido">Apellido :</section>
-      <input class="field" type="text" name="apellido" id="apellido" placeholder="Apellido">
+      <h4><section for="apellido">Apellido :</section></h4>
+      <input class="field" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
 
-      <section for="correo" >Correo electronico :</section>
-      <input class="field" name="email" type="text" placeholder="Correo electronico">
+      <h4><section for="correo" >Correo electronico :</section></h4>
+      <input class="field" name="email" type="text" placeholder="Correo electronico" required>
 
-      <input class="field" name="password" type="password" placeholder="Contraseña">
-      <input class="field" name="confirm_password" type="password" placeholder="Confirmar contraseña">
 
-       <section for="dia">Fecha de nacimiento :</section>
+	  <h4><section for="contraseña" >Estableca una contraseña :</section></h4>
+      <input class="field" name="contraseña" type="password" placeholder="Contraseña" required>
 
-                <select name="dia" id="dia" >
-                    <option>dia</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                </select>
-                
-                <select name="mes" id="mes">
-                    <option>mes</option>
-                    <option>enero</option>
-                    <option>febrero</option>
-                    <option>marzo</option>
-                </select>
+      <input class="field" name="confirm_password" type="password" placeholder="Confirmar contraseña" required>
 
-                <select name="anio" id="anio">
-                    <option>año</option>
-                    <option>2018</option>
-                    <option>2019</option>
-                    <option>2020</option>
-                </select>
-      <center>
+      <h4><section for="dia">Fecha de nacimiento :</section></h4>
+     
+         
+        <input type="date" class="field">
+              
+      
         <br><br>
       <input class="botones" type="submit" value="Registrarse"></center>
     </form>

@@ -221,7 +221,7 @@
         
 
     <center><h1>Iniciar Sesion</h1></center>
-    <center><span>or <a href="registro.php">Registrarse</a></span></center>
+    <center><span>ó <a href="registro.php">Registrarse</a></span></center>
 
         <form action="login.php" method="POST">
                <input name="email" type="text" class="field" placeholder="Correo Electronico" required>

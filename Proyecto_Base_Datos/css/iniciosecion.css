@@ -48,7 +48,7 @@
 .boxes{
     
     top: 200px;
-    height: 820px;
+    height: 1040px;
     width: 400px;
     margin: auto;
     position: relative;
@@ -91,12 +91,13 @@
   border-top: 0;
 }
 
+
 .submit{
     width: 30%;
     padding:7px 10px;
     margin: 20px 100px 20px 125px;
     cursor: pointer;
-    display: block;
+    display: block;rgb(188, 216, 219)
     margin-left: 120px;
     background:linear-gradient( to right, #64dcec,#8fc3f3 ) ;
     border: 0;
@@ -118,7 +119,7 @@
 }
 
 /* Input Forms*/
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="password"], input[type="date"]{
     outline: none;
     padding: 10px;
     display: block;

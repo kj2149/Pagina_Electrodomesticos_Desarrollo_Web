@@ -1,3 +1,10 @@
+<<?php 
+ include("../conexion/conexion.php");
+
+ if(!emply($_POST['email']) && !emply($_POST['password']) && !emply($_POST['nombre']) && !emply($_POST['apellido'])){
+	 $sql = "INSERT INTO users (email, password, )"
+ }
+?>
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -233,14 +240,14 @@
 
 
 	  <h4><section for="contraseña" >Estableca una contraseña :</section></h4>
-      <input class="field" name="contraseña" type="password" placeholder="Contraseña" required>
+      <input class="field" name="password" type="password" placeholder="Contraseña" required>
 
       <input class="field" name="confirm_password" type="password" placeholder="Confirmar contraseña" required>
 
       <h4><section for="dia">Fecha de nacimiento :</section></h4>
      
          
-        <input type="date" class="field">
+        <input type="date" name="fecha" class="field">
               
       
         <br><br>

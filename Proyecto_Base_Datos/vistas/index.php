@@ -73,7 +73,7 @@
 		   
 			<div >
 				<input type="checkbox" id="menu_bar">
-				<label class="fa fa-bars fa-2x"  for="menu_bar" ></label>
+				<label class="fa fa-bars fa-2x"     ></label>
 				
 				
 				<nav class="menu">

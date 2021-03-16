@@ -1,9 +1,27 @@
-<<?php 
+<?php 
  include("../conexion/conexion.php");
+ require '../conexion/conexion.php';
 
- if(!emply($_POST['email']) && !emply($_POST['password']) && !emply($_POST['nombre']) && !emply($_POST['apellido'])){
-	 $sql = "INSERT INTO users (email, password, )"
+ $message = '';
+
+
+
+
+ if(!empty($_POST['email']) && !empty($_POST['password'])){
+	 $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+	$stmt = $pdo->prepare($sql);
+	$stmt->bindParam(':email', $_POST['email']);
+	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+	$stmt->bindParam(':password', $password);
+
+
+	if ($stmt->execute()) {
+		$message = 'Su usuario ha sido cerado exitosamente';
+	  } else {
+		$message = 'lo siento, error el usuario no ha podido ser creado ';
+	  }
  }
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -220,6 +238,12 @@
 	</header>
 <!--**************************** FIN ---- HEADER    *************************************************-->
   <body id="fondo2">
+
+
+  <?php if(!empty($message)): ?>
+      <p> <?= $message ?></p>
+    <?php endif; ?>
+
 
   <div class="boxes">
   <img id="img" src="../imagenes/registro.png" alt="icono-usiario">

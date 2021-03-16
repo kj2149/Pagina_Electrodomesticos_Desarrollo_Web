@@ -13,7 +13,11 @@
     display: none;
 }
 
-
+.lista-cate{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
 
 
 /*#menu_bar:checked ~ .menu{
@@ -22,9 +26,8 @@
 
 .menu{
     position: absolute;
-    top: 10px;
     left: 0;
-    width: 13%;
+    width: 15%;
     background: rgba(75, 95, 109, 0.83);
     transition: all 0.5s;
     /*transform: translateX(1%);*/
@@ -138,8 +141,8 @@
 @media (max-width: 850px){
     .menu{   
         top: 20px;
-        width: 75%;
-        left: -76%;
+        width: 80%;
+        left: -81%;
         transform: translateX(-100%);
    
     }

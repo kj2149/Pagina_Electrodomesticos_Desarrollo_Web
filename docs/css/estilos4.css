@@ -170,92 +170,32 @@ header{
     }
 
  
-/*estilo slider*/
-      
-
-.slider{
-    width: 75%;
-    margin-left: 15%;
-    margin-top: 220px;
-    margin-right:5%; 
-    overflow:hidden;
- 
- 
-}
-
-.slider ul{
-    display: flex;
-    padding: 0%;
-    width: 400%;
-
-    animation: cambio 6s infinite
-}
-
-.slider ul:hover{
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-.slider li{
-    width: 100%;
-    list-style: none;
-}
-
-.slider img{
-    width: 100%;
-}
-
-
-@media only screen and  (max-width: 1200px){
-     .slider{ margin-top: 210px;
-                
-       }
-    }
-
-@media only screen and  (max-width: 750px){
-     .slider{ margin-top: 300px;
-                
-       }
-    }
-
-
-
-@keyframes cambio{
-    0%{ margin-left: 0%;}
-    20%{ margin-left: 0%;}
-
-    25% { margin-left: -100%;}
-    45% { margin-left: -100%;}
-
-    50% { margin-left: -200%;}
-    70% { margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
 
 /*estilo para contenido*/
 
-.col {
-    display: block;
-    width: 100px;
-    margin: 30px;
-    padding: 0px;
-    right: -180px;
-    background: #CEDADA;
-    font-family: 'Josefin Sans', sans-serif;
+.container-index-contenido{
+    width: 80%;
+    margin: auto auto auto 15%;
+    
 }
 
-.til{
+.container-index-contenido article{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    font-family: 'Josefin Sans', sans-serif;
-    display: block;
-    width: 1010px;
-    margin-left: 200px;
-    margin-right: 300px;
-    margin-top: 15%;
-    padding: 5px;
-    text-align: center;
+
+.colimag {
+    width: 20%;  
+    background: #CEDADA;
+    display:inline-block;
+    margin: 3% 2%;
+}
+
+
+#til{
+    width: 75%;
+    margin: auto;
     border: 1px solid #1F618D;
     background-image: url(../imagenes/pl1.jpg);
     background-repeat: repeat;
@@ -263,6 +203,27 @@ header{
     background-attachment: fixed;
     padding-left: 20%;
     padding-right: 20%; 
+}
+
+
+@media(max-width: 900px){
+    #til{
+        width: 90%;
+    }
+    .colimag {
+        width: 40%;
+        margin: 3% 4%;
+
+    }   
+    
+
+}
+@media(max-width: 570px){
+    .colimag {
+        width: 70%;
+        margin: 3%  12%;
+    }    
+
 }
 
 /*Scroll-barra de desplazamiento*/
@@ -400,11 +361,17 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 @media only screen and  (max-width: 750px){
      .buscar1{ width: 50%;        
        }
-    }
+}
 
 .text-white{
     font-family: 'Josefin Sans', sans-serif;
 }
+
+@media (max-width: 800px){
+    header{ position: absolute;       
+    }
+}
+
 /*
 .buscar:hover input{
     width: 240px;
@@ -415,10 +382,4 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 
 
 /*
-.slider img {
-    width: 1100px;
-    height: 300px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;   
-}*/
+

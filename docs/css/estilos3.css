@@ -94,12 +94,7 @@ header{
 }
 
 
-.lista-cate{
-    margin-top: auto;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-}
+
 
 .barra-btn-buscar{
     width: auto;
@@ -431,7 +426,7 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 .text-white{
     font-family: 'Josefin Sans', sans-serif;
 }
-@media (max-width: 750px){
+@media (max-width: 800px){
     header{ position: absolute;       
     }
 }
@@ -446,10 +441,4 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 
 
 /*
-.slider img {
-    width: 1100px;
-    height: 300px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;   
-}*/
+

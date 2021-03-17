@@ -1,6 +1,9 @@
 <?php 
  include("../conexion/conexion.php");
- require '../conexion/conexion.php';
+ 
+?>
+
+<?php
 
  $message = '';
 
@@ -8,7 +11,7 @@
 
 
  if(!empty($_POST['email']) && !empty($_POST['password'])){
-	 $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+	 $sql = "INSERT INTO tbl_usuario (email, password) VALUES (:email, :password)";
 	$stmt = $pdo->prepare($sql);
 	$stmt->bindParam(':email', $_POST['email']);
 	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -16,7 +19,7 @@
 
 
 	if ($stmt->execute()) {
-		$message = 'Su usuario ha sido cerado exitosamente';
+		$message = 'Su usuario ha sido creado exitosamente';
 	  } else {
 		$message = 'lo siento, error el usuario no ha podido ser creado ';
 	  }
@@ -253,10 +256,10 @@
     </center>
 
     <form action="registro.php" method="POST">
-      <h4><section for="nombre">Nombre :</section></h4>
+      <h4><section for="nombre">Nombres :</section></h4>
       <input class="field" type="text"name="nombre" id="nombre" placeholder="Nombre" required>
 
-      <h4><section for="apellido">Apellido :</section></h4>
+      <h4><section for="apellido">Apellidos :</section></h4>
       <input class="field" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
 
       <h4><section for="correo" >Correo electronico :</section></h4>
@@ -271,10 +274,28 @@
       <h4><section for="dia">Fecha de nacimiento :</section></h4>
      
          
-        <input type="date" name="fecha" class="field">
-              
-      
-        <br><br>
+        <input type="date" name="fecha" class="field" required>
+
+	<h4><section for="genero">Genero :</section></h4>
+
+     <label class="containers">Hombre
+	        <input type="checkbox" checked="checked" >
+			<span class="checkmark"></span>
+       </label>	
+     
+     
+	   <label class="containers">Mujer
+	        <input type="checkbox" checked="checked" >
+			<span class="checkmark"></span>
+       </label>
+    
+	   <label class="containers">Otro
+	        <input type="checkbox" checked="checked" >
+			<span class="checkmark"></span>
+       </label> 
+        
+</select> 
+        <br><br><br><br>
       <input class="botones" type="submit" value="Registrarse"></center>
     </form>
 

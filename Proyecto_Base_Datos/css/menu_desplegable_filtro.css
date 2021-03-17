@@ -1,6 +1,6 @@
 #menu_bar{
     display: none;
-}
+}/*
 div label{
     
     float: left;
@@ -11,7 +11,7 @@ div label{
     color: #04faff;
     cursor: pointer;
     
-}
+}*/
 
 
 .menu a :hover{

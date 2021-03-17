@@ -29,6 +29,7 @@ CREATE TABLE tbl_Contacto(
   Direc_Contacto VARCHAR(50) NOT NULL,
   Telefono_Contacto VARCHAR(50) NOT NULL,
   Correo_Contacto VARCHAR(50) NOT NULL,
+  Fech_Nac_Edad DATE NOT NULL,
   FK_Id_Usuario VARCHAR(5) NOT NULL,
   PRIMARY KEY(Id_Contacto),
   CONSTRAINT FK_UsuarioContacto
@@ -36,15 +37,6 @@ CREATE TABLE tbl_Contacto(
   REFERENCES tbl_Usuario(Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
 );
 
-CREATE TABLE tbl_Edad(
-  Id_Edad VARCHAR(5) NOT NULL,
-  Fech_Nac_Edad DATE NOT NULL,
-  FK_Id_Usuario VARCHAR(5) NOT NULL,
-  PRIMARY KEY(Id_Edad),
-  CONSTRAINT FK_UsuarioEdad
-  FOREIGN KEY(FK_Id_Usuario)  
-  REFERENCES tbl_Usuario(Id_Usuario) ON DELETE NO ACTION ON UPDATE CASCADE  
-);
 
 
 

@@ -97,7 +97,7 @@
     padding:7px 10px;
     margin: 20px 100px 20px 125px;
     cursor: pointer;
-    display: block;rgb(188, 216, 219)
+    display: block;
     margin-left: 120px;
     background:linear-gradient( to right, #64dcec,#8fc3f3 ) ;
     border: 0;
@@ -144,4 +144,72 @@ input[type="text"], input[type="password"], input[type="date"]{
   }
   input[type="submit"]:hover {
     background-color: #00b8eb;
+  }
+ /* estilo de los chectbox */
+
+.containers {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: rgba(61, 63, 63, 0.844);
+    float: left
+  }
+  
+ 
+  .containers input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+
+  .containers:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+
+  .containers input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+ 
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+
+  .containers input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  
+  .containers .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
   }

@@ -93,7 +93,11 @@ header{
    
 }
 
-
+@media (max-width: 800px){
+    header{ position: absolute;       
+    }
+     
+}
 
 .barra-btn-buscar{
     width: auto;
@@ -165,96 +169,39 @@ header{
        }
     }
 
- 
-/*estilo slider*/
-      
-
-.slider{
-    width: 75%;
-    margin-left: 15%;
-    margin-top: 220px;
-    margin-right:5%; 
-    overflow:hidden;
- 
- 
-}
-
-.slider ul{
-    display: flex;
-    padding: 0%;
-    width: 400%;
-
-    animation: cambio 6s infinite
-}
-
-.slider ul:hover{
-    animation-play-state: paused;
-    cursor: pointer;
-}
-
-.slider li{
-    width: 100%;
-    list-style: none;
-}
-
-.slider img{
-    width: 100%;
-}
-
-
-@media only screen and  (max-width: 1200px){
-     .slider{ margin-top: 210px;
-                
-       }
-    }
-
-@media only screen and  (max-width: 750px){
-     .slider{ margin-top: 300px;
-                
-       }
-    }
-
-
-
-@keyframes cambio{
-    0%{ margin-left: 0%;}
-    20%{ margin-left: 0%;}
-
-    25% { margin-left: -100%;}
-    45% { margin-left: -100%;}
-
-    50% { margin-left: -200%;}
-    70% { margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
-}
 
 /*estilo para contenido*/
 
-.container-contenido{
-    margin-top: 190PX;
+
+.container-contenido {
     width: 80%;
-    margin:15%;
-    
+    margin:14%;    
 }
 
-.container-index-contenido article{
+.container-contenido article{
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }
 
 
 .colimag {
-    width: 20%;  
+    width: 20%;
     background: #CEDADA;
     display:inline-block;
     margin: 3% 2%;
+
+}
+.colimag p{
+    width: 70%;
+    margin: 5% 5%;
+
 }
 
 
-#til{
-    width: 75%;
+
+#til {
+    width: 85%;
     margin: auto;
     
     border: 1px solid #1F618D;
@@ -267,23 +214,42 @@ header{
 }
 
 
+@media(max-width: 1400px){
+ 
+    .container-contenido{
+        margin-top: 20%; 
+    }
+
+}
 @media(max-width: 900px){
     #til{
         width: 90%;
+        margin: auto;
     }
     .colimag {
         width: 40%;
         margin: 3% 4%;
-
     }   
-    
+    .container-contenido{
+        margin-top: 25%; 
+    }
+}
 
+
+@media(max-width: 750px){
+    .container-contenido{
+        margin-top: 50%; 
+    }
 }
 @media(max-width: 570px){
     .colimag {
         width: 70%;
         margin: 3%  12%;
     }    
+
+    .container-contenido{
+        margin-top: 60%; 
+    }
 
 }
 
@@ -431,10 +397,7 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media (max-width: 800px){
-    header{ position: absolute;       
-    }
-}
+
 
 
 

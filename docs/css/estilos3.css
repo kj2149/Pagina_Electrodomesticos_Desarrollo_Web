@@ -169,7 +169,7 @@ header{
 
 .slider{
     width: 75%;
-    margin-left: 15%;
+    margin-left: 16%;
     margin-top: 220px;
     margin-right:5%; 
     overflow:hidden;
@@ -228,7 +228,6 @@ header{
     100% {margin-left: -300%;}
 	
     0% {margin-left: -300%;}
-    100% {margin-left: -300%;}
 }
 
 /*estilo para contenido*/

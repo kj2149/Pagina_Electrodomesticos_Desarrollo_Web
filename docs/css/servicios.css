@@ -5,16 +5,6 @@
     box-sizing: border-box;
     
 }
-/*estilo del logo*//*
-.logo{
-    float: left;
-    width: 40%;
-    height: 500px;
-    padding: 8px;
-    margin-top: 30px;
-    margin-right:480px;
-    margin-bottom: 30px;
-}*/
 
 /*estilo para el parallax*/
 #parallax {
@@ -93,12 +83,6 @@ header{
    
 }
 
-
-.lista-cate{
-    margin-top: 2% auto;
-    width: 100%;
-}
-
 .barra-btn-buscar{
     width: 2% auto;
 
@@ -107,7 +91,7 @@ header{
 .iniciar1{
     margin-right: 4%;
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     color: rgb(50, 190, 214);
     border: 2px outset#04faff;
     font-family: 'Josefin Sans', sans-serif;
@@ -122,17 +106,16 @@ header{
     background:none ;
     border: none;
     outline: none;
-    width: 30%;
+    width: 35%;
     margin-bottom: 5%;
     overflow: hidden;
 
 }
 
 
-
 .registrar1{
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     color: rgb(50, 190, 214);
     border: 2px inset#04faff;
     font-family: 'Josefin Sans',arial sans-serif;
@@ -170,13 +153,19 @@ header{
     }
 
  
-/* Quienes somos*/
-      
+/*estilos servicios*/
+
+.container-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20% auto 4%;
+    width: 80%;
+}
+
 .ponchado {
-    width: 35%;
-    height: 30%;
-    padding: 1%;
-    margin: 220px auto 2%;
+    width: 55%;
+    padding: 4%;
+    margin: 0px auto 2%;
     margin-left: 16%;
     color: white;
     background-color:  rgba(54, 53, 53, 0.863);
@@ -188,10 +177,9 @@ header{
 
 
 .mantenimiento {
-    width: 35%;
+    width: 42%;
     padding: 3%;
-    margin: -608px auto 2%;
-    margin-right: 12%;
+    margin: 0px auto 2%;
     color: white;
     background-color:  rgba(54, 53, 53, 0.863);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -203,10 +191,9 @@ header{
 
 
 .proyectos{
-    width: 72%;
-    padding: 2%;
+    width: 99%;
+    padding: 4%;
     margin: 2% auto;
-    margin-right: 12%;
     color:white;
     background-color:  rgba(54, 53, 53, 0.863);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -220,16 +207,13 @@ header{
     margin-top: 220px;
     margin-right:5%; 
     overflow:hidden;
- 
- 
 }
 
 .servicios {
-	width: 110%;
+	width: 100%;
 	margin: auto;
 	overflow: hidden;
-    margin-top: 1%;
-
+        margin-top: 1%;
 }
 
 .servicios ul {
@@ -247,7 +231,7 @@ header{
 
 .servicios img {
 	width: 90%;
-    height: 90%;
+        height: 90%;
 }
 
 
@@ -266,6 +250,20 @@ header{
     100% {margin-left: -100%;}
 }
 
+@media (max-width: 850px){
+    header{ 
+        position: relative;
+        margin-bottom: 3%;        
+    }
+    .container-servicios{
+        margin: 0px auto 5%;
+   }
+   .ponchado {
+        width: 99%;
+   }
 
+   .mantenimiento {
+        width: 99%;
+   }
 
 

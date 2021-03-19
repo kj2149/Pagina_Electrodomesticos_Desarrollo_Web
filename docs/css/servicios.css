@@ -166,7 +166,6 @@ header{
     width: 55%;
     padding: 4%;
     margin: 0px auto 2%;
-    margin-left: 16%;
     color: white;
     background-color:  rgba(54, 53, 53, 0.863);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -178,7 +177,7 @@ header{
 
 .mantenimiento {
     width: 42%;
-    padding: 3%;
+    padding: 4%;
     margin: 0px auto 2%;
     color: white;
     background-color:  rgba(54, 53, 53, 0.863);

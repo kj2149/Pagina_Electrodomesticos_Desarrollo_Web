@@ -14,7 +14,7 @@
 .especificartermino1{
     width: 80%;
     padding: 4%;
-    margin: 230px 2% 8.8%;
+    margin: 230px 8.8% 2%;
     color:#000000;
     background-color: rgba(206 218 218 / 90%);
     font-family: 'Josefin Sans', sans-serif;
@@ -31,10 +31,7 @@
 
 @media(max-width: 800px){
     .especificartermino1{
-        margin-top:290px;
-        margin-bottom: 2%;
-        margin-left:auto;
-        margin-right: auto;
+        margin:0px auto 2%;
         padding: 7%;
         width: 90%;
     }

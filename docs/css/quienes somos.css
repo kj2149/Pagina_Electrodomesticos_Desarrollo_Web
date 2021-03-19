@@ -5,16 +5,6 @@
     box-sizing: border-box;
     
 }
-/*estilo del logo*//*
-.logo{
-    float: left;
-    width: 40%;
-    height: 500px;
-    padding: 8px;
-    margin-top: 30px;
-    margin-right:480px;
-    margin-bottom: 30px;
-}*/
 
 /*estilo para el parallax*/
 #parallax {
@@ -40,13 +30,6 @@
     margin-top: 2.3%
 }
 
-@media only screen and  (max-width: 750px){
-        .logo{       margin: 3% 3% 0%;
-                     width: 15%;
-                     height: 50px;
-       }
-    }
-
 
 #imagen{
     width: 85%;
@@ -71,10 +54,16 @@
     margin: 2% 2% auto 0% ;
 }
 
-@media only screen and  (max-width: 750px){
-        .titulo1{      margin: 3%  0.3% 1%  6% ;
-                       width: 63%;
+@media (max-width: 750px){
+        .titulo1{      
+		margin: 3%  0.3% 1%  6% ;    
+		width: 63%;
                     
+       }
+	.logo{      
+	       margin: 3% 3% 0%;    
+	       width: 15%;      
+	       height: 50px;
        }
     }
 
@@ -93,12 +82,6 @@ header{
    
 }
 
-
-.lista-cate{
-    margin-top: 2% auto;
-    width: 100%;
-}
-
 .barra-btn-buscar{
     width: 2% auto;
 
@@ -107,7 +90,7 @@ header{
 .iniciar1{
     margin-right: 4%;
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     color: rgb(50, 190, 214);
     border: 2px outset#04faff;
     font-family: 'Josefin Sans', sans-serif;
@@ -122,7 +105,7 @@ header{
     background:none ;
     border: none;
     outline: none;
-    width: 30%;
+    width: 35%;
     margin-bottom: 5%;
     overflow: hidden;
 
@@ -132,7 +115,7 @@ header{
 
 .registrar1{
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     color: rgb(50, 190, 214);
     border: 2px inset#04faff;
     font-family: 'Josefin Sans',arial sans-serif;
@@ -234,31 +217,9 @@ header{
 }
 
 
-@media(max-width: 800px){
-    .mision-vision {
-        margin-top: auto;
-        width: 95%;
-        padding: 4%;
-    }
-
-    .valor{
-        width: 95%;
-        padding: 4%;
-    }
-    .objetivo{
-       padding: 4%;
-    }
-    .politica {
-        width: 95%; 
-        padding: 4%; 
-    }
-    header{
-        position: relative;
-    }
-
-}
 
 /*ESTILOS DE CONTACTENOS*/
+
 .container-contactenos{
     margin-top: 120px;
     display: flex;
@@ -335,6 +296,9 @@ header{
 }
 
 @media(max-width: 800px){
+     header{
+        position: relative;
+    }
     .con-tel-hor{
         margin:auto;
         width: 95%;
@@ -346,4 +310,25 @@ header{
         width: 95%;
         padding: 4%;
     }
+
+    .mision-vision {
+        margin-top: auto;
+        width: 95%;
+        padding: 4%;
+    }
+
+    .valor{
+        width: 95%;
+        padding: 4%;
+    }
+    .objetivo{
+       padding: 4%;
+    }
+    .politica {
+        width: 95%; 
+        padding: 4%; 
+    }
+    
 }
+
+

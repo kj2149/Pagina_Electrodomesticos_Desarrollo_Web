@@ -317,7 +317,7 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 	ul#css3menu1 > li {
 		position: initial;}
 	ul#css3menu1 ul .submenu,ul#css3menu1 li > ul {
-		left: 0; right:auto; top: 100%;}
+		left: 0; right:auto; top: 85%;}
 	ul#css3menu1 .submenu,ul#css3menu1 ul,ul#css3menu1 .column {
 		-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding-right: 0;width: 100% !important;}
 }
@@ -376,7 +376,7 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
     font-family: 'Josefin Sans', sans-serif;
 }
 
-@media (max-width: 800px){
+@media (max-width: 850px){
     header{ 
         position: relative;
         margin-bottom: 5%;       

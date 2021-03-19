@@ -40,14 +40,6 @@
     margin-top: 2.3%
 }
 
-@media only screen and  (max-width: 750px){
-        .logo{       margin: 3% 3% 0%;
-                     width: 15%;
-                     height: 50px;
-       }
-    }
-
-
 #imagen{
     width: 85%;
     height: 10%;
@@ -71,10 +63,14 @@
     margin: 2% auto 0% ;
 }
 
-@media only screen and  (max-width: 750px){
+@media (max-width: 750px){
         .titulo1{      margin: 3%  0.3% 1%  6% ;
                        width: 63%;
                     
+       }
+	.logo{       margin: 3% 3% 0%;
+                     width: 15%;
+                     height: 50px;
        }
     }
 
@@ -93,21 +89,14 @@ header{
    
 }
 
-@media (max-width: 800px){
-    header{ position: absolute;       
-    }
-     
-}
-
 .barra-btn-buscar{
     width: auto;
-
 }
 
 .iniciar1{
     margin-right: 4%;
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     color: rgb(50, 190, 214);
     border: 2px outset#04faff;
     font-family: 'Josefin Sans', sans-serif;
@@ -122,7 +111,7 @@ header{
     background:none ;
     border: none;
     outline: none;
-    width: 30%;
+    width: 35%;
     margin-bottom: 5%;
     overflow: hidden;
 
@@ -132,7 +121,7 @@ header{
 
 .registrar1{
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     color: rgb(50, 190, 214);
     border: 2px inset#04faff;
     font-family: 'Josefin Sans',arial sans-serif;
@@ -215,7 +204,6 @@ header{
 
 
 @media(max-width: 1400px){
- 
     .container-contenido{
         margin-top: 20%; 
     }
@@ -236,21 +224,12 @@ header{
 }
 
 
-@media(max-width: 750px){
-    .container-contenido{
-        margin-top: 50%; 
-    }
-}
+
 @media(max-width: 570px){
     .colimag {
         width: 70%;
         margin: 3%  12%;
     }    
-
-    .container-contenido{
-        margin-top: 60%; 
-    }
-
 }
 
 /*Scroll-barra de desplazamiento*/
@@ -397,10 +376,31 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
     font-family: 'Josefin Sans', sans-serif;
 }
 
+@media (max-width: 800px){
+    header{ 
+        position: relative;
+        margin-bottom: 5%;       
+    }
+    .container-contenido {
+        margin-top:0px;    
+}
+}
 
-
-
-
+@media (max-width: 375px){
+   .logo{       
+        margin: 3% auto 2%;
+        width: 20%;
+        height: 50px;
+    }
+    .titulo1{     
+        margin: 2%  auto  63;
+        width: 90%;                
+    }
+    .buscar1 {
+        width: 70%;
+        margin: 3%  auto 30px ;  
+    }
+}
 /*
 .buscar:hover input{
     width: 240px;
@@ -408,6 +408,5 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 .buscar input:focus{
     width: 240px;
 }*/
-
 
 /*

@@ -405,7 +405,7 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 
 @media (max-width: 850px){
     header{ 
-        position: relative;
+        position: initial;
         margin-bottom: 5%;       
     }
     .slider{
@@ -431,8 +431,16 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
         width: 70%;
         margin: 3%  auto 30px ;  
     }
+	header{ 
+        margin-bottom: 19%;       
+    }
 }
-
+@media (max-width: 290px){
+    header{ 
+        margin-bottom: 22%;       
+    }
+        
+}
 /*
 .buscar:hover input{
     width: 240px;

@@ -116,7 +116,7 @@ header{
 
 .btn-opc-pago{
 	width: 95%;
-	margin: 10px;
+	margin:8% 30px;
 }
 
 .casilla-for{
@@ -176,9 +176,13 @@ header{
 	.imag-pago{
 		width: 20%;
 	}
+	
 	.logo{
 		width: 20%;
 	}
+	.btn-opc-pago{
+	    margin: 15% 40px;
+        }
 	.casilla-for{
 		width: 90%;
 	}

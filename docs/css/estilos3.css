@@ -237,7 +237,7 @@ header{
 
 
 #til{
-    width: 75%;
+    width: 95%;
     margin: auto;
     border: 1px solid #1F618D;
     background-image: url(../imagenes/pl1.jpg);
@@ -246,6 +246,10 @@ header{
     background-attachment: fixed;
     padding-left: 20%;
     padding-right: 20%; 
+}
+
+#til img{
+    width: 100%;
 }
 
 @media(max-width: 900px){

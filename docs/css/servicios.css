@@ -30,6 +30,9 @@
     margin-top: 2.3%
 }
 
+.logo img{
+    width: 100%;
+}
 @media only screen and  (max-width: 750px){
         .logo{       margin: 3% 3% 0%;
                      width: 15%;

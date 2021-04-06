@@ -1,4 +1,4 @@
-<?php 
+<?php /*
 class conexion{
 
     private $usuario = "root";
@@ -6,6 +6,7 @@ class conexion{
     private $host= "localhost";
     private $db= "u_t_base";
 
+    
     function conectar(){
 
         try{
@@ -21,4 +22,16 @@ class conexion{
 
 $nuevaconexion = new conexion;
 $nuevaconexion->conectar();
+?>*/
+
+
+	
+	$mysqli=new mysqli("localhost","root","","u_t_base"); //servidor, usuario de base de datos, contraseña del usuario, nombre de base de datos
+	
+	if(mysqli_connect_errno()){
+		echo 'Conexion Fallida : ', mysqli_connect_error();
+		exit();
+	}
+	
 ?>
+

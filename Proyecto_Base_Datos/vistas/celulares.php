@@ -1,109 +1,44 @@
-<?php 
- include("../conexion/conexion.php");
- include("../conexion/funcs.php");
-?>
-<?php
-  $errors = array();
-
-  if(!empty($_POST)){
-	  
-	$nombre = $mysqli->real_escape_string($_POST['nombre']);
-	$apellido = $mysqli->real_escape_string($_POST['apellido']);
-	$email = $mysqli->real_escape_string($_POST['email']);
-	$password = $mysqli->real_escape_string($_POST['password']);
-	$confirm_password = $mysqli->real_escape_string($_POST['confirm_password']);
-	
-
-	$activo = 0;
-	$genero = 0;
-	$perfil = 2;
-	
-	if(isNull($nombre, $apellido, $password, $confirm_password, $email))
-	{
-		$errors[] = "Debe llenar todos los campos";
-	}
-
-	if(!isEmail($email))
-	{
-		$errors[] = "Direccion de correo invalida";
-	}
-
-	if(!validaPassword($password, $confirm_password))
-	{
-		$errors[] = "Las contraseñas no coinciden";
-	}
-
-	if(emailExiste($email))
-	{
-		$errors[] = "El correo electronico $email ya existe";
-	}
-
-	if(count($errors) == 0)
-	{
-	 $pass_hash = hashPassword($password);
-	 $token = generateToken();
-	 
-	 $registro = registraUsuario($nombre, $apellido, $pass_hash, $email, $activo, $token, $FK_Id_Genero);
-
-	 if($registro > 0)
-	 {
-		 $url = 'http://'.$_SERVER["SERVER_NAME"].
-		'/login/activar.php?id='.$registro.'&val='.$token;
-
-
-		$asunto = 'Activar cuenta - Sistema de usuarios';
-		$cuerpo = "Estimado $nombre: <br /><br />Para continuar con el
-		proceso de registro, es indisepnsable de dar click
-		en la siguiente  link <a href='$url'>Activar cuenta</a>";
-
-		if(enviarEmail($email, $nombre, $asunto, $cuerpo)){
-
-			echo "Para terminar el proceso de registro siga las
-			instrucciones que le hemos enviado a la direccion de correo
-			electronico: $email";
-
-			echo"<br><a href='login.php'>Iniciar sesion</a>";
-			exit;
-		}
-
-
-	 }else{
-		 $errors[] = "Error al registrarse";
-	 }
-
-	}else{
-
-	}
-
-  }
-
-?>
-
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../css/css.pie.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
-        <link rel="stylesheet" href="../css/iniciosecion.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
-        <link rel="stylesheet" href="../css/estilos3.css" type="text/css" /><style type="text/css">._css3m {display: none;}}</style>
-        <link rel="stylesheet" type="text/css" href="../css/estilos3.css">
-        <link rel="stylesheet" type="text/css" href="../css/menu_desplegable_filtro.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keyswords" content="html5, css3">
-         <!-- <link rel="stylesheet" type="text/css" href="../css/icono.css">  -->   
+
+<head>
+        <link rel="shortcut icon" href="../imagenes/mifavicon.png"/>
+
+	<script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../css/estilos3.css" type="text/css" />
+	<style type="text/css">
+		._css3m {
+			display: none
+		}
+	 </style>
+	<link rel="stylesheet" href="../css/css.pie.css" type="text/css" />
+	<style type="text/css">
+		._css3m {
+			display: none
+		}
+	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keyswords" content="html5, css3">
+	<link rel="stylesheet" type="text/css" href="../css/estilos4.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+	<script src="https://use.fontawesome.com/56837f1421.js"></script>
+   <!-- <link rel="stylesheet" type="text/css" href="../css/icono.css">  -->   
         <!--tipografia Josefin Sans-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-        
-            <!--IMPLEMENTANDO BOOTSTRAP - Ajax -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <title>Unlimited Tecnhology-Iniciar Sesion</title>
-    </head>  
-    <!--***********************-------   HEADER  -----------*************************************************-->
+
+	<!--IMPLEMENTANDO BOOTSTRAP - Ajax -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>Unlimited Tecnhology</title>
+</head>
+
+<body id="parallax" class="text-white">
+	
+<!--***********************-------   HEADER  -----------*************************************************-->
 	<header>
            <div class="container-head">
 	  
@@ -120,12 +55,13 @@
 
 	 <div class="buscar1">
 			<div class=" barra-btn-buscar">
-			   <input type="" placeholder="Buscar" required>
+			   <input type="text" placeholder="Buscar" required>
 			   <div class="btn">
 				<i class="fas fa-search icon"></i>
 			  </div>
 		      </div>
-		     
+		      <a class="iniciar1" href="../vista/login.html" ><button type="button" class="bot-log-reg">Acceder</button></a> 
+		      <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
 
 
@@ -137,7 +73,7 @@
 		   
 			<div >
 				<input type="checkbox" id="menu_bar">
-				<section class="fa fa-bars fa-2x"  for="menu_bar" ></section>
+				<label class="fa fa-bars fa-2x"  for="menu_bar" ></label>
 				
 				
 				<nav class="menu">
@@ -145,7 +81,7 @@
 					<div class="filtro">
 		
 						<a href=""><h3 class="text-white">Celulares</h3></a>
-						<a>36.744 resultados</a>
+						<p>36.744 resultados</p>
 		
 						<a href=""><h4 class="text-white">Tiendas oficiales</h4></a>
 						<a href="#"><span>Solo tiendas oficiales</span>
@@ -238,7 +174,7 @@
 		<!--Fin del div antes de aside-->
 
 		<ul id="css3menu1" class="topmenu">
-			<li class="topmenu"><a href="inicio.html" target="marco" style="height:28px;line-height:22px;">Inicio</a>
+			<li class="topmenu"><a href="index.html" target="marco" style="height:28px;line-height:22px;">Inicio</a>
 			</li>
 			<li class="toproot"><a href="#" target="marco"style="height:28px;line-height:22px;"><span>Productos</span></a>
 				<ul>
@@ -274,99 +210,69 @@
 			<li class="toproot"><a href="#" target="marco"
 					style="height:28px;line-height:22px;"><span>Servicios</span></a>
 				<ul>
-					<li><a href="#" target="marco">Instalaciones</a></li>
-					<li><a href="#" target="marco">Mantenimientos</a></li>
-					<li><a href="#" target="marco">Proyectos</a></li>
+					<li><a href="#" target="marco">instalaciones</a></li>
+					<li><a href="#" target="marco">mantenimiento</a></li>
+					<li><a href="#" target="marco">proyectos</a></li>
 				</ul>
 			</li>
 			
-			<li class="toproot"><a href="#" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
-				<ul>
-					<li><a href="#" target="marco">Vision & Mision</a></li>
-					<li><a href="#" target="marco">Valores Calidad</a></li>
-					<li><a href="#" target="marco">Que hacemos?</a></li>
-				</ul>
-			</li>
+			<li class="toproot"><a href="quienes_somos.html" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a></li>
 			<li class="toplast"><a href="#" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
 		</ul>
 		
 	   </div>
 	</header>
 <!--**************************** FIN ---- HEADER    *************************************************-->
-  <body id="fondo2">
+	
+<!--/////////////          HEAD           //////////////-->
 
+	<section>
+		<article>
+		    <img class="til" src="../imagenes/tit-cel.png" alt="celulares">
 
+	            <P>
+					<ul>
+						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen1.png">
+							   <h3>Celular samsung galaxy a01 32gb rojo + Seguro gratis</h3>
+							   <h4>$369,900</h4></li>
+								
+						   <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen3.png">
+							   <h3>Celular Samsung Galaxy a01 32gb rojo + seguro</h3>
+							   <h4>$369,900</h4></li>
+						   <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen4.png">	
+							   <h3>Celular huawey Y5 neo 16gb ds azul + seguro gratis</h3>
+							   <h4>$320,000</h4></li>
+						   <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen5.png">
+							   <h3>Celular samsung galaxy m31 128gb rojo cover negro</h3>
+							   <h4>$990,900</h4></li>
+						   <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen6.png">	
+							   <h3>Celular samsung galaxy a71 128gb plateado + Seguro gratis</h3>
+								   <h4>$1,699,000</h4></li>
+						   <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen7.png">	
+							   <h3>Celular samsung galaxy a71 128gb plateado + Seguro gratis</h3>
+								   <h4>$1,299,900</h4>	</li>
+						   <li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen8.png">	
+							   <h3>Celular samsung galaxy a51 128gb plateado + Seguro gratis</h3>
+								   <h4>$1,499,000</h4></li>
+							<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/imagen2.png">	
+							   <h3>Huawey Y5P 4G Con Obsequio</h3>    
+							   <h4>$341,900</h4></li> 
+		   
+		   </article>
+	   </section>
+	
 
-
-  <div class="boxes">
-  <img id="img" src="../imagenes/registro.png" alt="icono-usiario">
-    <center>
-    <h1>Registrarse</h1>
-    <span>ó <a href="login.php">Iniciar Sesion</a></span>
-    </center>
-
-    <form name="test" action="<?php $_SERVER["PHP_SELF"]?>" method="post">
-	<div id="signupalert" style="display:none" class="alert alert-danger">
-								<p>Error:</p>
-								<span></span>
-							</div>
-      <h4><section for="nombre">Nombres :</section></h4>
-      <input class="field" type="text"name="nombre" id="nombre" placeholder="Nombre" value="<?php if(isset($nombre)) echo $nombre; ?>" required>
-
-      <h4><section for="apellido">Apellidos :</section></h4>
-      <input class="field" type="text" name="apellido" id="apellido" placeholder="Apellido" value="<?php if(isset($apellido)) echo $apellido; ?>" required>
-
-      <h4><section for="correo" >Correo electronico :</section></h4>
-      <input class="field" name="email" type="text" placeholder="Correo electronico" value="<?php if(isset($email)) echo $email; ?>" required>
-
-
-	  <h4><section for="contraseña" >Estableca una contraseña :</section></h4>
-      <input class="field" name="password" type="password" placeholder="Contraseña" required>
-
-      <input class="field" name="confirm_password" type="password" placeholder="Confirmar contraseña" required>
-
-      <h4><section for="dia">Fecha de nacimiento :</section></h4>
-     
-         
-        <input type="date" name="fecha" class="field" required>
-
-	<h4><section name="genero" for="genero">Genero :</section></h4>
-
-     <label class="containers">Hombre
-	        <input type="checkbox" checked="checked" >
-			<span class="checkmark"></span>
-       </label>	
-     
-     
-	   <label class="containers">Mujer
-	        <input type="checkbox" checked="checked" >
-			<span class="checkmark"></span>
-       </label>
-    
-	   <label class="containers">Otro
-	        <input type="checkbox" checked="checked" >
-			<span class="checkmark"></span>
-       </label> 
-        
-</select> 
-        <br><br><br><br>
-      <input class="botones" type="submit" value="Registrarse"><br><br>
-	  <input type="reset" class="botones" value="Borrar"></center>
-    </form>
-<?php echo resultBlock($errors); ?>
-    </div>
-
- <!-- FOOTER DE LA PAGINA -->
+    <!-- FOOTER DE LA PAGINA -->
 
  
     
- <footer>
+    <footer>
     	<div class="box">
 	    <div class="redes">
 	       <p>Buscanos en</p><br>
 	          <div><a><img id="face" src="../imagenes/facebook.png">UNLIMITED TECNOLOGY</a></div><br>
 	          <div><a><img id="twit" src="../imagenes/twitter.png"> @UNLIMITED_TECNOLOGY</a></div><br>
-	          <div><a><img id="gml" src="../imagenes/instagram.png">unlimited.tec2021</a></div>
+	          <div><a><img id="gml" src="../imagenes/gmail.png">unlimited.tec2021@gmail.com</a></div>
 	    </div>
 
 	    <div class="contactenos">
@@ -385,5 +291,6 @@
 	      </div>
 	</div>
    </footer>
-  </body>
+
+</body>
 </html>

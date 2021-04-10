@@ -40,11 +40,9 @@
     margin-top: 2.3%
 }
 
-@media only screen and  (max-width: 750px){
-        .logo{       margin: 3% 3% 0%;
-                     width: 15%;
-                     height: 50px;
-       }
+.logo img{
+    width: 100%;
+}
     }
 
 
@@ -70,13 +68,20 @@
     text-shadow: 0px 0 rgb(14, 73, 209), 0 0px rgb(14, 73, 209), 1px 0  rgb(14, 73, 209), 0 -1px  rgb(14, 73, 209), -2px 2px 0  rgb(14, 73, 209), 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
     margin: 2% auto 0% ;
 }
-
-@media only screen and  (max-width: 750px){
-        .titulo1{      margin: 3%  0.3% 1%  6% ;
-                       width: 63%;
-                    
+.titulo1 img{
+    width: 100%;
+}
+@media (max-width: 750px){
+        .logo{      
+			margin: 3% 3% 0%;
+            width: 15%;
+            height: 50px;
        }
-    }
+	   .titulo1{     
+		   margin: 3%  0.3% 1%  6% ;          
+		   width: 63%;           
+       }
+}
 
 header{
    /* background-color: rgba(12, 12, 12, 0.89);*/
@@ -93,12 +98,6 @@ header{
    
 }
 
-
-.lista-cate{
-    margin-top: auto;
-    width: 100%;
-}
-
 .barra-btn-buscar{
     width: auto;
 
@@ -107,7 +106,7 @@ header{
 .iniciar1{
     margin-right: 4%;
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     color: rgb(50, 190, 214);
     border: 2px outset#04faff;
     font-family: 'Josefin Sans', sans-serif;
@@ -125,14 +124,11 @@ header{
     width: 30%;
     margin-bottom: 5%;
     overflow: hidden;
-
 }
-
-
 
 .registrar1{
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     color: rgb(50, 190, 214);
     border: 2px inset#04faff;
     font-family: 'Josefin Sans',arial sans-serif;
@@ -151,7 +147,6 @@ header{
     background: rgba(240, 127, 15, 0.664);
     color: #ebe5e5;
 }
-
 
 
 
@@ -180,7 +175,6 @@ header{
     margin-right:5%; 
     overflow:hidden;
  
- 
 }
 
 .slider ul{
@@ -205,21 +199,6 @@ header{
     width: 100%;
 }
 
-
-@media only screen and  (max-width: 1200px){
-     .slider{ margin-top: 210px;
-                
-       }
-    }
-
-@media only screen and  (max-width: 750px){
-     .slider{ margin-top: 300px;
-                
-       }
-    }
-
-
-
 @keyframes cambio{
     0%{ margin-left: 0%;}
     20%{ margin-left: 0%;}
@@ -236,25 +215,21 @@ header{
 
 /*estilo para contenido*/
 
-.col {
-    display: block;
-    width: 100px;
-    margin: 20px;
-    padding: 0px;
-    right: -180px;
-    background: #CEDADA;
-    font-family: 'Josefin Sans', sans-serif;
+.container-index-contenido{
+    width: 80%;
+    margin: auto auto auto 15%;
     
 }
 
-.til{
+.container-index-contenido article{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    font-family: 'Josefin Sans', sans-serif;
-    display: block;
-    width: 70%;
+
+#til{
+    width: 95%;
     margin: auto;
-    padding: 3px;
-    text-align: center;
     border: 1px solid #1F618D;
     background-image: url(../imagenes/pl1.jpg);
     background-repeat: repeat;
@@ -263,7 +238,25 @@ header{
     padding-left: 20%;
     padding-right: 20%; 
 }
+#til img{
+    width: 100%;
+}
+@media(max-width: 900px){
+    #til{
+        width: 90%;
+    }
+    .colimag {
+        width: 40%;
+        margin: 3% 4%;
+    }  
+	
+@media(max-width: 570px){
+    .colimag {
+        width: 70%;
+        margin: 3%  12%;
+    }    
 
+}	
 /*Scroll-barra de desplazamiento*/
 body::-webkit-scrollbar{
     width: 12px;
@@ -349,7 +342,7 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 	ul#css3menu1 > li {
 		position: initial;}
 	ul#css3menu1 ul .submenu,ul#css3menu1 li > ul {
-		left: 0; right:auto; top: 100%;}
+		left: 0; right:auto; top: 35%;}
 	ul#css3menu1 .submenu,ul#css3menu1 ul,ul#css3menu1 .column {
 		-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;padding-right: 0;width: 100% !important;}
 }
@@ -404,6 +397,55 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 .text-white{
     font-family: 'Josefin Sans', sans-serif;
 }
+
+@media (max-width: 850px){
+    header{ 
+        position: initial;
+        margin-bottom: 5%;       
+    }
+	ul#css3menu1{
+        width:93%;
+    }
+    .slider{
+        margin: 0px  auto 20px;
+    }
+}
+
+@media (max-width: 499px){
+    ul#css3menu1{
+       width:100%;
+    }
+
+@media (max-width: 375px){
+    .slider{
+        width: 85%;
+        
+    }
+   .logo{       
+        margin: 3% auto 2%;
+        width: 20%;
+        height: 50px;
+    }
+    .titulo1{     
+        margin: 2%  auto  63;
+        width: 90%;                
+    }
+    .buscar1 {
+        width: 70%;
+        margin: 3%  auto 30px ;  
+    }
+	header{ 
+        margin-bottom: 19%;       
+    }
+}
+@media (max-width: 290px){
+    header{ 
+        margin-bottom: 22%;       
+    }
+        
+}	
+	
+	
 /*
 .buscar:hover input{
     width: 240px;
@@ -414,10 +456,4 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 
 
 /*
-.slider img {
-    width: 1100px;
-    height: 300px;
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: 5px;   
-}*/
+

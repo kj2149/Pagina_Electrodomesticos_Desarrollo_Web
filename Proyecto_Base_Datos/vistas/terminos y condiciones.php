@@ -46,19 +46,19 @@
   
      <!--TITULO ULIMITED TECNHOLOGY-->
 
-      <a href="../vista/index.html" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
+        <a href="../vista/index.html" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
 
      <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
 
-   <div class="buscar1">
-      <div class=" barra-btn-buscar">
-         <input type="text" placeholder="Buscar" required>
-         <div class="btn">
-        <i class="fas fa-search icon"></i>
-        </div>
-          </div>
-          <a class="iniciar1" href="../vista/login.html" ><button type="button" class="bot-log-reg">Acceder</button></a> 
-          <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
+        <div class="buscar1">
+             <div class=" barra-btn-buscar">
+                <input type="text" placeholder="Buscar" required>
+                <div class="btn">
+                    <i class="fas fa-search icon"></i>
+                </div>
+            </div>
+            <a class="iniciar1" href="../vista/login.html" ><button type="button" class="bot-log-reg">Acceder</button></a> 
+            <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
 
 
@@ -222,29 +222,29 @@
 
     <footer>
       <div class="box">
-      <div class="redes">
-         <p>Buscanos en</p><br>
-            <div><a><img id="face" src="../imagenes/facebook.png">UNLIMITED TECNOLOGY</a></div><br>
-            <div><a><img id="twit" src="../imagenes/twitter.png"> @UNLIMITED_TECNOLOGY</a></div><br>
-            <div><a><img id="gml" src="../imagenes/instagram.png">unlimited.tec2021</a></div>
-      </div>
+          <div class="redes">
+                <p>Buscanos en</p><br>
+                <div><a><img id="face" src="../imagenes/facebook.png">UNLIMITED TECNOLOGY</a></div><br>
+                <div><a><img id="twit" src="../imagenes/twitter.png"> @UNLIMITED_TECNOLOGY</a></div><br>
+                <div><a><img id="gml" src="../imagenes/instagram.png">unlimited.tec2021</a></div>
+          </div>
 
-      <div class="contactenos">
+          <div class="contactenos">
           <div><img id="phon" src="../imagenes/Phone.png">Contactenos</div> <br>  
-      <ul>
-                            <li> Ingeniero de Sistemas: editoz@hotmail.com - editozz@gmail.com </li> <br>
-          <li> Celular: 310 619 91 97 </li><br>
-          <li> Servicios a domicilio de mantenimiento y soporte: 🔧<br><br>316 514 0646 – 301 366 7023 </li> <br>
-                <img id="pin" src="../imagenes/pin.png">Calle 167 C No. 54C-36 Piso 3 - Bogotá D. C. - Colombia<br>
-            </ul>
-         </div>
+               <ul>
+                  <li> Ingeniero de Sistemas: editoz@hotmail.com - editozz@gmail.com </li> <br>
+                  <li> Celular: 310 619 91 97 </li><br>
+                  <li> Servicios a domicilio de mantenimiento y soporte: 🔧<br><br>316 514 0646 – 301 366 7023 </li> <br>
+                  <img id="pin" src="../imagenes/pin.png">Calle 167 C No. 54C-36 Piso 3 - Bogotá D. C. - Colombia<br>
+              </ul>
+           </div>
 
-             <div class="terminos">
-       <p><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
-       <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
-        </div>
-  </div>
-   </footer>
+           <div class="terminos">
+               <p><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
+               <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
+           </div>
+    </div>
+ </footer>
 
 </body>
 </html>

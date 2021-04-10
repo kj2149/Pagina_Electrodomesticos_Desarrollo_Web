@@ -45,11 +45,11 @@
       
      <!--LOGO DE LA EMPRESA-->
 	  
-		<img class="logo" href="index.php" src="../imagenes/2.png" alt="logoempresa">	
+		<a href="../vista/index.html"class="logo"> <img  src="../imagenes/2.png" alt="logoempresa">	</a>	
 	
      <!--TITULO ULIMITED TECNHOLOGY-->
 
-		<img class="titulo1"  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY">
+		<a href="../vista/index.html" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
 
      <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
 
@@ -64,115 +64,7 @@
 		      <a class="registrar1" href="registro.php" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
 
-
-		
-
-     <!--LISTA DE CATEGORIAS-->
-	 
-       <div class="lista-cate"></div>
-		   
-			<div >
-				<input type="checkbox" id="menu_bar">
-				<label class="fa fa-bars fa-2x"     ></label>
-				
-				
-				<nav class="menu">
-		
-					<div class="filtro">
-		
-						<a href=""><h3 class="text-white">Celulares</h3></a>
-						<a>36.744 resultados</a>
-		
-						<a href=""><h4 class="text-white">Tiendas oficiales</h4></a>
-						<a href="#"><span>Solo tiendas oficiales</span>
-							<span>(200)</span></a>
-		
-						<a href=""><h4 class="text-white">Marcas</h4></a>
-		
-						<ul>
-							<li><a href="#">Iphone <span>(10.400)</span></a></li>
-							<li><a href="#">Redmi <span>(5.200)</span></a></li>
-							<li><a href="#">Galaxy A <span>(1.200)</span></a></li>
-							<li><a href="#">Galaxy <span>(1.800)</span></a></li>
-							<li><a href="#">P Series <span>(950)</span></a></li>
-							<li><a href="#">Y Series <span>(875)</span></a></li>
-							<li><a href="#">Galaxy S <span>(800)</span></a></li>
-							<li><a href="#">Galaxy J <span>(450)</span></a></li>
-							<li><a href="#">Moto <span>(1.500)</span></a></li>
-		
-							<li><a href="#" data-toggle="modal" data-target="#myModal">Ver todos</a></li>
-						</ul>
-		
-						<a href=""><h4 class="text-white">Modelos</h4></a>
-		
-						<ul>
-							<li><a href="#">Iphone 7 <span>(500)</span></a></li>
-							<li><a href="#">Iphone 7 Plus<span>(546)</span></a></li>
-							<li><a href="#">Iphone 8 Plus <span>(300)</span></a></li>
-							<li><a href="#">Iphone 11 <span>(400)</span></a></li>
-							<li><a href="#">Iphone X <span>(950)</span></a></li>
-		
-							<li><a href="#">Ver todos</a></li>
-						</ul>
-		
-						<a href=""><h4 class="text-white">Capacidades</h4></a>
-		
-						<ul>
-		
-							<li><a href="#">16GB RAM / 256GB ROM <span>(800)</span></a></li>
-							<li><a href="#">8GB RAM / 128GB ROM <span>(750)</span></a></li>
-							<li><a href="#">4GB RAM / 64GB ROM <span>(340)</span></a></li>
-							<li><a href="#">2GB RAM / 32GB ROM<span>(750)</span></a></li>
-							<li><a href="#">1GB RAM / 16GB ROM <span>(100)</span></a></li>
-		
-							<li><a href="#">Ver todos</a></li>
-						</ul>
-		
-						<a href=""><h4 class="text-white">Descuentos</h4></a>
-		
-						<ul>
-		
-							<li><a href="#">Desde 5% OFF  <span>(137)</span></a></li>
-							<li><a href="#">Desde 10% OFF <span>(50)</span></a></li>
-							<li><a href="#">Desde 15% OFF <span>(140)</span></a></li>
-							<li><a href="#">Desde 20% OFF <span>(250)</span></a></li>
-							<li><a href="#">Desde 25% OFF <span>(160)</span></a></li>
-							<li><a href="#">Desde 30% OFF <span>(161)</span></a></li>
-		
-							<li><a href="#">Ver todos</a></li>
-						</ul>
-		
-						<a href=""><h4 class="text-white">Otras caracteristicas</h4></a>
-		
-						<ul>
-		
-							<li><a href="#">Es Dual SIM <span>(139)</span></a></li>
-							<li><a href="#">Resistente al agua <span>(80)</span></a></li>
-							<li><a href="#">Reconocimiento facial <span>(540)</span></a></li>
-							<li><a href="#">Lector de huella digital <span>(50)</span></a></li>
-		
-							<li><a href="#">Ver todos</a></li>
-						</ul>				
-		
-		
-						<a href=""><h4 class="text-white">Red</h4></a>
-		
-						<ul>
-							<li><a href="#">2G <span>(10.400)</span></a></li>
-							<li><a href="#">3G <span>(5.200)</span></a></li>
-							<li><a href="#">4G <span>(1.200)</span></a></li>
-							<li><a href="#">5G <span>(1.800)</span></a></li>
-							<li><a href="#">4G/LTE <span>(950)</span></a></li>
-		
-							<li><a href="#" data-toggle="modal" data-target="#myModal">Ver todos</a></li>
-						</ul>
-		
-					</div> 
-		
-				</nav>
-			</div>	
-		<!--Fin del div antes de aside-->
-
+ <!--Menu Header-->
 		<ul id="css3menu1" class="topmenu">
 			<li class="topmenu"><a href="inicio.html" target="marco" style="height:28px;line-height:22px;">Inicio</a>
 			</li>
@@ -229,6 +121,119 @@
 	   </div>
 	</header>
 <!--**************************** FIN ---- HEADER    *************************************************-->
+	<!--LISTA DE CATEGORIAS-->
+	<aside class="lista-cate">
+		   
+			
+			<input type="checkbox" id="menu_bar">
+			<label class="fa fa-bars fa-2x"  for="menu_bar" id="menu_bar_label"></label>
+				
+			<nav class="menu">
+
+	            <label class="accordion_trigger" for="at1">
+		            Marcas
+	            </label>
+	            <input class="ac_hide" type="checkbox" id="at1"  name="x1">
+	            <div class="accordion_container">
+		           <ul>
+    				     <li><a href="#">Iphone <span>(10.400)</span></a></li>
+					     <li><a href="#">Redmi <span>(5.200)</span></a></li>
+		                 <li><a href="#">Galaxy A <span>(1.200)</span></a></li>
+					     <li><a href="#">Galaxy <span>(1.800)</span></a></li>
+					     <li><a href="#">P Series <span>(950)</span></a></li>
+					     <li><a href="#">Y Series <span>(875)</span></a></li>
+					     <li><a href="#">Galaxy S <span>(800)</span></a></li>
+					     <li><a href="#">Galaxy J <span>(450)</span></a></li>
+					     <li><a href="#">Moto <span>(1.500)</span></a></li><br>
+					     <li><a href="#">Ver todos</a></li>  
+    	           </ul>
+	            </div>
+
+	            <label class="accordion_trigger" for="at2">
+		            Modelos
+	            </label>
+	            <input class="ac_hide" type="checkbox" id="at2" name="x2">
+	            <div class="accordion_container2">
+		            <ul>
+					   <li><a href="#">Iphone 7 <span>(500)</span></a></li>
+					   <li><a href="#">Iphone 7 Plus<span>(546)</span></a></li>
+					   <li><a href="#">Iphone 8 Plus <span>(300)</span></a></li>
+					   <li><a href="#">Iphone 11 <span>(400)</span></a></li>
+					   <li><a href="#">Iphone X <span>(950)</span></a></li><br>
+					   <li><a href="#">Ver todos</a></li>  
+    	            </ul>
+	            </div>
+
+
+	            <label class="accordion_trigger" for="at3">
+		            Capacidades
+	            </label>
+	            <input class="ac_hide" type="checkbox" id="at3" name="x3">
+	            <div class="accordion_container3">
+		            <ul>
+    				   <li><a href="#">16GB RAM / 256GB ROM <span>(800)</span></a></li>
+					   <li><a href="#">8GB RAM / 128GB ROM <span>(750)</span></a></li>
+					   <li><a href="#">4GB RAM / 64GB ROM <span>(340)</span></a></li>
+					   <li><a href="#">2GB RAM / 32GB ROM<span>(750)</span></a></li>
+					   <li><a href="#">1GB RAM / 16GB ROM <span>(100)</span></a></li><br>
+		
+					   <li><a href="#">Ver todos</a></li>
+    	            </ul>
+	            </div>
+
+
+                <label class="accordion_trigger" for="at4">
+		            Descuentos
+	            </label>
+	            <input class="ac_hide" type="checkbox" id="at4" name="x4">
+	            <div class="accordion_container4">
+		            <ul>
+                       <li><a href="#">Desde 5% OFF  <span>(137)</span></a></li>
+				       <li><a href="#">Desde 10% OFF <span>(50)</span></a></li>
+				       <li><a href="#">Desde 15% OFF <span>(140)</span></a></li>
+				       <li><a href="#">Desde 20% OFF <span>(250)</span></a></li>
+				       <li><a href="#">Desde 25% OFF <span>(160)</span></a></li>
+				       <li><a href="#">Desde 30% OFF <span>(161)</span></a></li><br>
+		
+				       <li><a href="#">Ver todos</a></li>   				
+    			    </ul>
+	            </div>
+
+
+
+	            <label class="accordion_trigger" for="at5" >
+		            Otras caracteristicas
+	            </label>
+	            <input class="ac_hide" type="checkbox" id="at5" name="x5">
+	            <div class="accordion_container5">
+		       <ul>
+                        <li><a href="#">Es Dual SIM <span>(139)</span></a></li>
+			<li><a href="#">Resistente al agua <span>(80)</span></a></li>
+			<li><a href="#">Reconocimiento facial <span>(540)</span></a></li>
+			<li><a href="#">Lector de huella digital <span>(50)</span></a></li><br>
+		
+			<li><a href="#">Ver todos</a></li>
+    	                </ul>	
+	            </div>
+
+
+	            <label class="accordion_trigger" for="at6">
+		            Red
+	            </label>
+	            <input class="ac_hide" type="checkbox" id="at6" name="x6">
+	            <div class="accordion_container6">
+		            <ul>
+                               <li><a href="#">2G <span>(10.400)</span></a></li>
+			       <li><a href="#">3G <span>(5.200)</span></a></li>
+			       <li><a href="#">4G <span>(1.200)</span></a></li>
+			       <li><a href="#">5G <span>(1.800)</span></a></li>
+			       <li><a href="#">4G/LTE <span>(950)</span></a></li><br>
+			       <li><a href="#" data-toggle="modal" data-target="#myModal">Ver todos</</li>  			
+    	                 </ul>	
+	            </div>
+            </nav>				
+</aside>	 
+      
 	<div>
 		<div class="slider">
 			<ul>
@@ -240,121 +245,98 @@
 		</div>
 	
   
-<!--/////////////          HEAD           //////////////-->
+<!--/////////////          contenido         //////////////-->
 
-	<section>
+	<section class="container-index-contenido">
 		<article>
-		    <img class="til" src="../imagenes/tit-cel.png" alt="celulares">
-
-	            <P>
-			         <ul>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod1.png">
-							</li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod2.png">	
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod3.png">
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod4.png">	
-							</li>
-						
-					 </ul>
-	            </P>
+		    <a href="../vista/celulares.html" id="til"> <img  src="../imagenes/tit-cel.png" alt="Celulares"> </a>
+			    <ul>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod1.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod2.png">	
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod3.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod4.png">	
+					</li>		
+			    </ul>	    
 		</article>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<article>
-		    <img class="til" src="../imagenes/tit-compu.png" alt="computadores">
 
-	            <P>
-			         
-			         <ul>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod11.png">
-							</li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod12.png">	
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod13.png">
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod14.png">	
-							</li>
-						
-					 </ul>
-	            </P>
-		</article>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<article>
-		    		    <img class="til" src="../imagenes/tit-herr.png" alt="herramientas">
 
-	            <P>
-			         
-			         <ul>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod21.png">
-							</li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod22.png">	
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod23.png">
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod24.png">	
-							</li>
-						
-					 </ul>
-	            </P>
-		</article>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<article>
-		     <img class="til" src="../imagenes/tit-com.png" alt="celulares">
-
-	            <P>
+		    <a href="../vista/computadores.html" id="til"> <img  src="../imagenes/tit-compu.png" alt="Computadores"> </a>
 			         
-			         <ul>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod29.png">
-							</li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod30.png">	
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod31.png">
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod32.png">	
-							</li>
-						
-					 </ul>
-	            </P>
+			    <ul>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod11.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod12.png">	
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod13.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod14.png">	
+					</li>	
+			    </ul>
 		</article>
 	
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<article>
-		      <img class="til" src="../imagenes/tit-rep.png" alt="repuestos">
 
-	            <P>
-			         
-			         <ul>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod33.png">
-							</li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod34.png">	
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod35.png">
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod36.png">	
-							</li>
-						
-					 </ul>
-		</article>
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		<article>
-    		     <img class="til" src="../imagenes/tit-cab.png" alt="cableado">
-
-	            <P>
-			         
-			         <ul>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod41.png">
-							</li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod42.png">	
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod43.png">
-						        </li>
-						<li class="col col-sm-2"><img class="img-fluid" id="imagen" src="../imagenes/prod44.png">	
-							</li>
-						
-					 </ul>
-	            </P>
+		    <a href="../vista/herramientas.html" id="til"> <img  src="../imagenes/tit-herr.png" alt="herramientas"> </a>
+			    <ul>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod21.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod22.png">	
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod23.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod24.png">	
+					</li>		
+			    </ul>
 		</article>
+
+
+		<article>
+		    <a href="../vista/componentes.html" id="til"> <img  src="../imagenes/tit-com.png" alt="Componentes"> </a>
+			    <ul>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod29.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod30.png">	
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod31.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod32.png">	
+					</li>	
+				</ul>
+		</article>
+
+		<article>
+		    <a href="../vista/repuestos.html" id="til"> <img  src="../imagenes/tit-rep.png" alt="Repuestos"> </a>
+			    <ul>
+				        <li class="colimag"><img id="imagen" src="../imagenes/prod33.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod34.png">	
+				        </li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod35.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod36.png">	
+					</li>
+						
+			   </ul>
+		</article>
+
+
+		<article>
+			<a href="../vista/cableado.html" id="til"> <img  src="../imagenes/tit-cab.png" alt="Cableado"> </a>
+			    <ul>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod41.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod42.png">	
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod43.png">
+					</li>
+					<li class="colimag"><img id="imagen" src="../imagenes/prod44.png">	
+					</li>			
+			    </ul>
+	       </article>
 	</section>
 	
 

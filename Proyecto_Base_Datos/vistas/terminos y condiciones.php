@@ -42,11 +42,11 @@
 
      <!--LOGO DE LA EMPRESA-->
     
-    <img class="logo" src="../imagenes/2.png" alt="logoempresa">  
+      	<a href="../vista/index.html"class="logo"> <img  src="../imagenes/2.png" alt="logoempresa"></a>
   
      <!--TITULO ULIMITED TECNHOLOGY-->
 
-      <img class="titulo1" src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY">
+      <a href="../vista/index.html" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
 
      <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
 
@@ -62,15 +62,8 @@
         </div>
 
 
+       <!------MENU HEADER----->
 
-
-    
-
-     <!--LISTA DE CATEGORIAS-->
-
-
-
-   
        <ul id="css3menu1" class="topmenu">
       <li class="topmenu"><a href="inicio.html" target="marco" style="height:28px;line-height:22px;">Inicio</a>
       </li>
@@ -133,22 +126,22 @@
 
     
  <div class="especificartermino1">
-     <center><h1>Política de Términos y Condiciones</h1> <br> <br>
+     <center><h1>Política de Términos y Condiciones</h1></center><br> <br>
       
      <p>
         Esta página web es propiedad y está operado por 
         [nombre del operador de tu página web].
         Estos Términos establecen los términos y condiciones bajo los cuales tu puedes 
-        usar nuestra página web y servicios ofrecidos por nosotros. 
+        usar nuestra página web y servicios ofrecidos por nosotros. <br> <br>
         Esta página web ofrece a los visitantes [descripción de lo que se ofrece en tu sitio web]. 
         Al acceder o usar la página web de nuestro servicio, usted aprueba que haya leído, 
         entendido y
          aceptado estar sujeto a estos Términos:
-     </p></center>
+     </p>
  </div>
 
  <div class="especificartermino">
-    <center><h2>Cuenta</h2> <br> <br>
+    <center><h2>Cuenta</h2> </center><br> <br>
     <p>
         Para usar nuestro página web y / o recibir nuestros servicios, debes tener al menos 
         [agregar número] años de edad, o la mayoría de edad legal en tu jurisdicción, y poseer 
@@ -156,15 +149,15 @@
         acuerdo vinculante. No tienes permitido utilizar esta página web y / o recibir servicios 
         i hacerlo está prohibido en tu país o en virtud de cualquier ley o regulación aplicable 
         a tu caso.
-    </p></center>
+    </p>
 </div>
 
 
 <div class="especificartermino">
-    <center><h2>Compra de productos o servicios</h2> <br> <br>
+    <center><h2>Compra de productos o servicios</h2></center> <br> <br>
     <p>
         Al comprar un artículo, aceptas que: (i) eres responsable de leer el listado completo 
-        del artículo antes de comprometerte a comprarlo: 
+        del artículo antes de comprometerte a comprarlo:  <br> <br>
         
         (ii) celebras un contrato legalmente 
         inculante para comprar un artículo cuando te comprometed a comprar un artículo y 
@@ -173,46 +166,48 @@
         productos se enumeran en  la página web. Nos reservamos el derecho de cambiar nuestros 
         precios para los productos que se muestran en cualquier momento y de corregir los 
         errores de precios que pueden ocurrir inadvertidamente. Información adicional sobre 
-        precios e impuestos sobre las ventas está disponible en la página de pagos. 
+        precios e impuestos sobre las ventas está disponible en la página de pagos.         Información adicional sobre precios e impuestos sobre las ventas está disponible en la página de pagos.   <br> <br>  
+
        
        "La tarifa por los servicios y cualquier otro cargo que pueda incurrir en relación con tu uso del servicio, como los impuestos y las posibles tarifas de transacción, se cobrarán mensualmente a tu método de pago.
-    </p></center>
+    </p>
 </div>
 
 
 <div class="especificartermino">
-    <center><h2>Devolucion de compra</h2> <br> <br>
+    <center><h2>Devolucion de compra</h2></center> <br> <br>
     <p>
         Para cualquier producto no dañado, simplemente devuélvelo  con los accesorios y el 
         paquete incluidos junto con el recibo original (o recibo de regalo) dentro de 
         los 14 días posteriores a la fecha que recibiste el producto, y lo cambiaremos o te 
         ofreceremos un reembolso basado en el método de pago original . Además, ten en cuenta 
-        lo siguiente: (i) Los productos solo se pueden devolver en el país en el que se compraron 
-        originalmente; y (ii) 
-        los siguientes productos no son elegibles para la devolución: [lista de artículos].
-    </p></center>
+        lo siguiente: <br> <br>
+        (i) Los productos solo se pueden devolver en el país en el que se compraron 
+        originalmente; y (ii) <br> <br>
+        los siguientes productos no son elegibles para la devolución:<br> <br>[lista de artículos].
+    </p>
 </div>
 
 
 <div class="especificartermino">
-    <center><h2>Garantías y responsabilidad por servicios y productos</h2> <br> <br>
+    <center><h2>Garantías y responsabilidad por servicios y productos</h2></center> <br> <br>
     <p>
         Cuando recibimos un reclamo de garantía válido de un producto que vendemos, repararemos
         el defecto relevante o reemplazaremos el producto. Si no podemos reparar o reemplazar 
         el producto dentro de un tiempo razonable, el cliente tendrá derecho a un reembolso 
         total cuando nos devuelva el producto. Pagaremos el envío de los productos reparados o 
         reemplazados al cliente y el cliente será responsable de devolvernos el producto.
-    </p></center>
+    </p>
 
 </div>
     <div class="especificartermino">
-    <center><h2>Limitación de responsabilidad</h2> <br> <br>
+    <center><h2>Limitación de responsabilidad</h2> </center><br> <br>
     <p>
         En la máxima medida permitida por la ley aplicable, en ningún caso el [propietario 
         de la página web] será responsable por daños indirectos, punitivos, incidentales, 
         especiales, consecuentes o ejemplares, incluidos, entre otros, daños por pérdida de
         beneficios, buena voluntad, uso, datos. u otras pérdidas intangibles, que surjan de o 
-        stén relacionadas con el uso o la imposibilidad de utilizar el servicio. 
+        stén relacionadas con el uso o la imposibilidad de utilizar el servicio. <br> <br>
 
         En la máxima medida permitida por la ley aplicable, [el propietario la página web] no 
         asume responsabilidad alguna por (i) errores, errores o inexactitudes de contenido; (ii) 
@@ -220,7 +215,7 @@
         resultado de tu acceso o uso de nuestro servicio; y (iii) cualquier acceso no autorizado
         o uso de nuestros servidores seguros y / o toda la información personal almacenada en 
         los mismos.
-    </p></center>
+    </p>
    </div>
 
 <!-- FOOTER DE LA PAGINA -->

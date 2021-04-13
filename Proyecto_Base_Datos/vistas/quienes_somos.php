@@ -21,7 +21,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keyswords" content="html5, css3">
 	<link rel="stylesheet" type="text/css" href="../css/quienes somos.css">
-	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu_desplegable_filtro.css">
 	<script src="https://use.fontawesome.com/56837f1421.js"></script>
    <!-- <link rel="stylesheet" type="text/css" href="../css/icono.css">  -->   
         <!--tipografia Josefin Sans-->
@@ -33,7 +33,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<title>¿Quienes Somos? - Unlimited Tecnhology</title>
+	<title>¿Quienes somos?</title>
 </head>
 
 <body id="parallax" class="text-white">
@@ -45,30 +45,30 @@
       
      <!--LOGO DE LA EMPRESA-->
 	  
-		    <a href="../vista/index.html"class="logo"> <img  src="../imagenes/2.png" alt="logoempresa">	</a>
+		<a href="../vista/index.html"class="logo"> <img  src="../imagenes/2.png" alt="logoempresa">	</a>
 	
      <!--TITULO ULIMITED TECNHOLOGY-->
 
-		    <a href="../vista/index.html" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
+	 	<a href="../vista/index.html" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
 
      <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
 
-	    <div class="buscar1">
-			    <div class=" barra-btn-buscar">
-			       <input type="text" placeholder="Buscar" required>
-			       <div class="btn">
-				      <i class="fas fa-search icon"></i>
-			        </div>
-		        </div>
-		        <a class="iniciar1" href="../vista/login.html" ><button type="button" class="bot-log-reg">Acceder</button></a> 
-		        <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
+	 <div class="buscar1">
+			<div class=" barra-btn-buscar">
+			   <input type="text" placeholder="Buscar" required>
+			   <div class="btn">
+				<i class="fas fa-search icon"></i>
+			  </div>
+		      </div>
+		      <a class="iniciar1" href="../vista/login.html" ><button type="button" class="bot-log-reg">Acceder</button></a> 
+		      <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
 
 
-	<!------MENU HEADER----->
+		
 
 		<ul id="css3menu1" class="topmenu">
-			<li class="topmenu"><a href="inicio.html" target="marco" style="height:28px;line-height:22px;">Inicio</a>
+			<li class="topmenu"><a href="../vista/index.html" target="marco" style="height:28px;line-height:22px;">Inicio</a>
 			</li>
 			<li class="toproot"><a href="#" target="marco"style="height:28px;line-height:22px;"><span>Productos</span></a>
 				<ul>
@@ -87,42 +87,30 @@
 					<li><a href="../vista/boards.html" target="marco">Boards</a></li>
 					<li><a href="../vista/tarjetas graficas.html" target="marco">Tarjetas Graficas</a></li>
 					<li><a href="../vista/procesadores.html" target="marco">Procesadores</a></li>
-					<li><a href="../vistas/gabinetes.php" target="marco">Gabinetes</a></li>
-					<li><a href="../vistas/fuentes de poder.php" target="marco">Fuentes De Poder</a></li>
-					<li><a href="../vistas/impresoras.php" target="marco">Impresoras</a>
-					<li><a href="../vistas/herramientas.php" target="marco">herramientas</a>
+					<li><a href="../vista/gabinetes.html" target="marco">Gabinetes</a></li>
+					<li><a href="../vista/fuentes de poder.html" target="marco">Fuentes De Poder</a></li>
+					<li><a href="../vista/impresoras.html" target="marco">Impresoras</a>
+					<li><a href="../vista/herramientas.html" target="marco">herramientas</a>
 			
 
 					<ul style="left:150px;">	
-					    <li><a href="../vistas/componentes.php">Componentes</a></li>
-						<li><a href="../vistas/repuestos.php">Repuestos</a></li>
-						<li><a href="../vistas/cableado.php">Cableado</a></li>
+					    <li><a href="../vista/componentes.html">Componentes</a></li>
+						<li><a href="../vista/repuestos.html">Repuestos</a></li>
+						<li><a href="../vista/cableado.html">Cableado</a></li>
                         </ul>
 						</li>
 				</ul>
 			</li>
-			<li class="toproot"><a href="#" target="marco"
-					style="height:28px;line-height:22px;"><span>Servicios</span></a>
-				<ul>
-					<li><a href="#" target="marco">Instalaciones</a></li>
-					<li><a href="#" target="marco">Mantenimientos</a></li>
-					<li><a href="#" target="marco">Proyectos</a></li>
-				</ul>
-			</li>
+			<li class="toproot"><a href="servicio.html" target="marco"style="height:28px;line-height:22px;"><span>Servicios</span></a></li>
 			
-			<li class="toproot"><a href="#" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
-				<ul>
-					<li><a href="#" target="marco">Vision & Mision</a></li>
-					<li><a href="#" target="marco">Valores Calidad</a></li>
-					<li><a href="#" target="marco">Que hacemos?</a></li>
-				</ul>
-			</li>
-			<li class="toplast"><a href="#" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
+			<li class="toproot"><a href="../vista/quienes_somos.html" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
+				
+			<li class="toplast"><a href="contactenos.html" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
 		</ul>
 		
 	   </div>
 	</header>
-<!--**************************** FIN ---- HEADER    *************************************************-->
+<!-----------------------------------------------FIN HEADER-------------------------------->
 <div class="container-quienes-somos">
 
     <div class="mision-vision">
@@ -194,7 +182,6 @@
     </div>
     
 </div>
-</div>
 
 <!-- FOOTER DE LA PAGINA -->
 
@@ -202,28 +189,28 @@
     
 <footer>
     <div class="box">
-          <div class="redes">
-               <p>Buscanos en</p><br>
-               <div><a><img id="face" src="../imagenes/facebook.png">UNLIMITED TECNOLOGY</a></div><br>
-               <div><a><img id="twit" src="../imagenes/twitter.png"> @UNLIMITED_TECNOLOGY</a></div><br>
-               <div><a><img id="gml" src="../imagenes/instagram.png">unlimited.tec2021</a></div>
-          </div>
+    <div class="redes">
+       <p>Buscanos en</p><br>
+          <div><a><img id="face" src="../imagenes/facebook.png">UNLIMITED TECNOLOGY</a></div><br>
+          <div><a><img id="twit" src="../imagenes/twitter.png"> @UNLIMITED_TECNOLOGY</a></div><br>
+          <div><a><img id="gml" src="../imagenes/instagram.png">unlimited.tec2021</a></div>
+    </div>
 
-          <div class="contactenos">
+    <div class="contactenos">
           <div><img id="phon" src="../imagenes/Phone.png">Contactenos</div> <br>	
-             <ul>
-                   <li> Ingeniero de Sistemas: editoz@hotmail.com - editozz@gmail.com </li> <br>
-                   <li> Celular: 310 619 91 97 </li><br>
-                   <li> Servicios a domicilio de mantenimiento y soporte:<br><br>316 514 0646 – 301 366 7023 </li> <br>
-                   <img id="pin" src="../imagenes/pin.png">Calle 167 C No. 54C-36 Piso 3 - Bogotá D. C. - Colombia<br>
-             </ul>
+        <ul>
+                        <li> Ingeniero de Sistemas: editoz@hotmail.com - editozz@gmail.com </li> <br>
+            <li> Celular: 310 619 91 97 </li><br>
+            <li> Servicios a domicilio de mantenimiento y soporte:<br><br>316 514 0646 – 301 366 7023 </li> <br>
+                <img id="pin" src="../imagenes/pin.png">Calle 167 C No. 54C-36 Piso 3 - Bogotá D. C. - Colombia<br>
+            </ul>
          </div>
 
          <div class="terminos">
-              <p><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
-              <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
-        </div>
-  </div>
+       <p><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
+       <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
+      </div>
+</div>
 </footer>
 
 </body>

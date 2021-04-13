@@ -1,7 +1,7 @@
 #menu_bar{
     display: none;
 }
-    
+
 #menu_bar_label{
     position:absolute;
     float: top;
@@ -12,19 +12,25 @@
     cursor: pointer;
     display: none;
 }
+
 .lista-cate{
     width: 100%;
     position: absolute;
+  
 }
+
+
+/*#menu_bar:checked ~ .menu{
+    transform: translateX(-101%);
+}*/
 
 .menu{
     position: absolute;
     left: 0;
     width: 15%;
-    height: 100vh;
-    background: rgba(75, 95, 109, 0.823);
+    background: rgba(75, 95, 109, 0.83);
     transition: all 0.5s;
-    /*transform: translateX(-100%);*/
+    /*transform: translateX(1%);*/
     overflow: hidden;
 }
 

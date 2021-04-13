@@ -5,16 +5,9 @@
     box-sizing: border-box;
     
 }
-/*estilo del logo*//*
-.logo{
-    float: left;
-    width: 40%;
-    height: 500px;
-    padding: 8px;
-    margin-top: 30px;
-    margin-right:480px;
-    margin-bottom: 30px;
-}*/
+
+
+
 
 /*estilo para el parallax*/
 #parallax {
@@ -39,11 +32,11 @@
     margin: auto;
     margin-top: 2.3%
 }
-
 .logo img{
     width: 100%;
 }
-    }
+
+
 
 
 #imagen{
@@ -94,13 +87,11 @@ header{
     background-attachment: fixed; 
     top: 0;
     z-index: 100;
-    position: fixed;
-   
+    position: fixed; 
 }
 
 .barra-btn-buscar{
     width: auto;
-
 }
 
 .iniciar1{
@@ -121,10 +112,13 @@ header{
     background:none ;
     border: none;
     outline: none;
-    width: 30%;
+    width: 35%;
     margin-bottom: 5%;
     overflow: hidden;
+
 }
+
+
 
 .registrar1{
     width: 100%;
@@ -150,6 +144,7 @@ header{
 
 
 
+
 @media only screen and  (max-width: 1000px){
      .bot-log-reg{ width: 23%;
 	           font-size: 12px;
@@ -167,21 +162,18 @@ header{
  
 /*estilo slider*/
       
-
 .slider{
     width: 75%;
-    margin-left: 15%;
+    margin-left: 17%;
     margin-top: 220px;
     margin-right:5%; 
     overflow:hidden;
- 
 }
 
 .slider ul{
     display: flex;
     padding: 0%;
     width: 400%;
-
     animation: cambio 15s infinite
 }
 
@@ -199,6 +191,7 @@ header{
     width: 100%;
 }
 
+
 @keyframes cambio{
     0%{ margin-left: 0%;}
     20%{ margin-left: 0%;}
@@ -211,10 +204,11 @@ header{
 
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
+	
+    0% {margin-left: -300%;}
 }
 
 /*estilo para contenido*/
-
 .container-index-contenido{
     width: 80%;
     margin: auto auto auto 15%;
@@ -224,6 +218,14 @@ header{
 .container-index-contenido article{
     display: flex;
     flex-wrap: wrap;
+}
+
+
+.colimag {
+    width: 20%;  
+    background: #CEDADA;
+    display:inline-block;
+    margin: 3% 2%;
 }
 
 
@@ -238,9 +240,11 @@ header{
     padding-left: 20%;
     padding-right: 20%; 
 }
+
 #til img{
     width: 100%;
 }
+
 @media(max-width: 900px){
     #til{
         width: 90%;
@@ -248,15 +252,19 @@ header{
     .colimag {
         width: 40%;
         margin: 3% 4%;
-    }  
-	
+
+    }   
+    
+
+}
 @media(max-width: 570px){
     .colimag {
         width: 70%;
         margin: 3%  12%;
     }    
 
-}	
+}
+
 /*Scroll-barra de desplazamiento*/
 body::-webkit-scrollbar{
     width: 12px;
@@ -272,7 +280,7 @@ body::-webkit-scrollbar-thumb{
 }
 /*estilo del menu desplegable*/
 ul#css3menu1,ul#css3menu1 ul{
-	margin:0;list-style:none;padding:0;background-color:none;border-width:0;border-style:solid;border-color: none; }
+	margin:0;list-style:none;padding:0;border-width:0;border-style:solid;}
 ul#css3menu1 ul{
 	width: 100%; display:none;position:absolute;left:50;top:100%;background-color:#111010;border-radius:0 0 10px 10px;-moz-border-radius:0 0 10px 10px;-webkit-border-radius:0;-webkit-border-bottom-rgitight-radius:10px;-webkit-border-bottom-left-radius:10px;padding:0 0 10px;}
 ul#css3menu1 li:hover>*{
@@ -282,8 +290,8 @@ ul#css3menu1 li{
 ul#css3menu1 li:hover{
 	z-index:1;}
 ul#css3menu1{
-	font-size:0;width:99%;z-index:999;position:relative;display:inline-block;zoom:1;padding:5px 10% -5px 0%;margin:0 0%;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;
-	*display:inline;*padding-right:1.68%;}
+	font-size:0;width:99%;z-index:999;position:relative;display:inline-block;zoom:1;margin:0 0%;border-radius:0px;-moz-border-radius:0px;-webkit-border-radius:0px;
+	padding-right:1.68%;}
 * html ul#css3menu1 li a{
 	display:inline-block;}
 ul#css3menu1>li{
@@ -392,7 +400,7 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 @media only screen and  (max-width: 750px){
      .buscar1{ width: 50%;        
        }
-    }
+}
 
 .text-white{
     font-family: 'Josefin Sans', sans-serif;
@@ -443,9 +451,7 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
         margin-bottom: 22%;       
     }
         
-}	
-	
-	
+}
 /*
 .buscar:hover input{
     width: 240px;
@@ -453,7 +459,6 @@ ul#css3menu1>li:nth-of-type(1){width:24%;margin:0 0% 10px 1%;}ul#css3menu1>li:nt
 .buscar input:focus{
     width: 240px;
 }*/
-
 
 /*
 

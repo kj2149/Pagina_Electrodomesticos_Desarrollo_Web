@@ -1,0 +1,242 @@
+/*ENCABEZADO DE LA PAGINA DE TERMINOS Y CONDICIONES*/
+
+
+.especificartermino{
+    width: 80%;
+    height: 100%;
+    padding: 4%;
+    margin: 2% 9%;
+    color:#000000;
+    background-color: rgba(206 218 218 / 90%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large; 
+}
+
+.especificartermino1{
+    width: 80%;
+    height: 1000px;
+    padding: 4%;
+    margin: 230px 9% 2%;
+    color:#000000;
+    background-color: rgba(206 218 218 / 90%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: large; 
+}
+
+.especificartermino h2{
+    -webkit-box-shadow: -1px 4px 1px -2px rgb(21 97 103);
+}
+
+.especificartermino1 h1{
+    -webkit-box-shadow: -1px 4px 1px -2px rgb(21 97 103);
+}
+
+@media(max-width: 800px){
+    .especificartermino1{
+        margin:0px auto 2%;
+        padding: 7%;
+        width: 90%;
+    }
+    .especificartermino{
+        padding: 7%; 
+        width: 90%; 
+        margin: 2% auto;
+    }
+}
+
+.producto{
+    width: 53%;
+    height: 76%;
+    background-image: url(../imagenes/lado1.png);
+    float: left;
+    margin-bottom: 35px;
+}
+
+.info_producto{
+    width: 44%;
+    height: 76%;
+    padding:10px;
+    padding-top: 50px;
+    margin-bottom: 35px;
+    background-color: #cedada;
+    float: right;
+    padding-left: 20px;
+
+}
+
+
+
+.caja_precio{
+    margin: 2.625rem 0;
+
+    
+
+}
+
+.precio_viejo{
+    margin: 4px 0;
+    color: #6f6e6e;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+.precio_especial{
+    color: red;
+    font-weight: bold;
+    font-size:35px;
+}
+
+.Envio{
+    padding-left: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.disponibilidad{
+  font-size:18px;    
+}
+
+
+
+.add_carrito{
+    float: left;
+    width: 100%;
+    margin: 0.925rem 0;
+    
+    
+
+}
+
+.cantidad{
+    font-size: 1.55rem;
+    color: black;
+    border: 1px solid black;   
+    border-radius: 5px;    
+    background-clip: padding-box;
+    padding: 0.4125rem 2.2rem;
+    background-image: url(../imagenes/flecha.png);
+    background-repeat: no-repeat;
+    background-position: right 0.625rem center;
+    appearance: none;
+}
+
+.seguro{
+    color: blue;
+    font-weight: bold;
+}
+
+.boton_carrito{
+    width: 60%;
+    height: 4.125rem;
+    padding: 5;
+    border-radius: 10px;
+    border-color: black;
+    font-size: 1.725rem;
+    margin: 1.625rem 0;
+    background: #00f8fc;
+    color: #251b00;
+    margin-left: 100px;
+    
+
+}
+
+.boton_carrito:hover{
+    width: 60%;
+    height: 4.125rem;
+    padding: 5;
+    border-radius: 10px;
+    border-color: #00f8fc;
+    font-size: 1.725rem;
+    margin: 1.625rem 0;
+    background: black;
+    color: #00f8fc;
+    margin-left: 100px;
+   
+}
+
+
+.Opciones_entrega{
+    width: 100%;
+    padding-top: 35%;
+}
+
+
+.camion_emtrega{
+    margin: 0.625rem 0;
+    display: inline-block;
+    float: left;
+    width: 0%;
+    height:0;
+}
+
+.camion{
+    padding-left: 50px;
+}
+
+.tittle{
+
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #004c99;
+    display: inline-block;
+    width: 100%
+}
+
+
+
+.detalles_producto{
+    width: 100%;
+    height: 95%;
+    background-color: rgba(206 218 218 / 0%);
+    float: button;
+    text-align: center;
+}
+
+
+
+/*-------------------------------*/
+
+
+.tab-content {
+    width:80%;
+    margin: 40px 9% 2%;
+
+
+    padding: 30px 25px;
+    background: #bbc6c7;
+    border: 1px solid #c4c4c4;
+    font-size: 12px;
+}
+
+
+
+.tede{
+    background: white;
+    color: #3f3f3f;
+    font-size: 1.5rem;
+    padding: 0.875rem 1.25rem;
+    border: none;
+    border-top: 1px solid #d9dadd;
+
+}
+
+.tit_especificaciones{
+    font-size: 20px;
+    text-align:center;
+    color: #777;
+}
+
+.teache{
+    background: #ebebeb;
+    color: #000;
+    font-size: 1.6rem;
+    padding: 10px;
+    border: none;
+    padding-left: 10px;
+    border-top: 1px solid #d9dadd;
+    width: 40rem;
+    white-space: normal;
+    font-weight: bold;
+
+}

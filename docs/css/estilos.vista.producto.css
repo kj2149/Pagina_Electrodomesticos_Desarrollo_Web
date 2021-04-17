@@ -3,7 +3,6 @@
 
 .especificartermino{
     width: 80%;
-    height: 100%;
     padding: 4%;
     margin: 2% 9%;
     color:#000000;
@@ -14,7 +13,8 @@
 
 .especificartermino1{
     width: 80%;
-    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 4%;
     margin: 230px 9% 2%;
     color:#000000;
@@ -28,6 +28,9 @@
 }
 
 .especificartermino1 h1{
+    text-align: center;
+    margin:30px auto ;
+    width: 95%;
     -webkit-box-shadow: -1px 4px 1px -2px rgb(21 97 103);
 }
 
@@ -46,15 +49,15 @@
 
 .producto{
     width: 53%;
-    height: 76%;
     background-image: url(../imagenes/lado1.png);
-    float: left;
-    margin-bottom: 35px;
+}
+
+.producto img{
+    width: 99%;
 }
 
 .info_producto{
     width: 46%;
-    height: 76%;
     padding:10px;
     padding-top: 50px;
     margin-bottom: 35px;
@@ -65,12 +68,8 @@
 }
 
 
-
 .caja_precio{
     margin: 2.625rem 0;
-
-    
-
 }
 
 .precio_viejo{
@@ -187,13 +186,24 @@
 
 .detalles_producto{
     width: 100%;
-    height: 95%;
     background-color: rgba(206 218 218 / 0%);
-    float: button;
     text-align: center;
 }
 
-
+@media(max-width: 1110px){
+    .info_producto{
+        width: 42%;
+    }
+}
+@media(max-width: 999px){
+    .info_producto{
+        width: 100%;
+    }
+    .producto{
+        width: 80%;
+        margin: auto
+    }
+}
 
 /*-------------------------------*/
 

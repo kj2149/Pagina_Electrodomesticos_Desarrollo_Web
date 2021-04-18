@@ -60,7 +60,7 @@
 				    <i class="fas fa-search icon"></i>
 			    </div>
 		    </div>
-		    <a class="iniciar1" href="../vista/login.html" ><button type="button" class="bot-log-reg">Acceder</button></a> 
+		    <a class="iniciar1" href="../vista/login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
 		    <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
 

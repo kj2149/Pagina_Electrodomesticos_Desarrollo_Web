@@ -41,7 +41,7 @@
 
   	<div class="content-til">
          
-          <a href="../vista/index.html" class="logo"> <img  src="../imagenes/2.png" alt="logoempresa"></a>
+          <a href="../vista/index.php" class="logo"> <img  src="../imagenes/2.png" alt="logoempresa"></a>
   		  <h1> Realiza tu Pago</h1>
   		
   	</div>

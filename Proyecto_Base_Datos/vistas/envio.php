@@ -1,18 +1,20 @@
 <?php
     include("../conexion/conexion.php");
-	include("../controlador/categoria_producto_controlador.php");	
+	include("../controlador/envio_controlador.php");	
 ?>
 <?php 
 $objeto = new Usuario();
 if($_POST){
-	$objeto->codigoCategoriaProducto = $_POST['codigoCategoriaProducto'];
-	$objeto->nombreCategoria = $_POST['nombreCategoria'];
-	$objeto->tipoCategoria = $_POST['tipoCategoria'];
+	$objeto->Id_Envio = $_POST['Id_Envio'];
+	$objeto->Tipo_envio = $_POST['Tipo_envio'];
+	$objeto->Dirección_Envio = $_POST['Dirección_Envio'];
+	$objeto->Id_Pago = $_POST['Id_Pago'];
+	$objeto->Id_Ciudad = $_POST['Id_Ciudad'];
 	$objeto->codigoRol = $_POST['codigoRol'];
 }
 ?>
 <?php
-$ocorrerPagina = $_SERVER["PHP_SELF"];gf
+$correrPagina = $_SERVER["PHP_SELF"];
 $maximoDatos = 5;
 $paginaNumero = 0;
 
@@ -29,7 +31,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from categoria_producto where codigoCategoriaProducto='$obj->codigoCategoriaProducto' ";
+										$c = "select Id_Envio, Tipo_envio, Dirección_Envio, Id_Pago, Id_Ciudad, codigoRol from envio where Id_Envio='$obj->Id_Envio' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -39,7 +41,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from categoria_producto ";
+										$c ="select Id_Envio, Tipo_envio, Dirección_Envio, Id_Pago, Id_Ciudad, codigoRol from envio ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -58,7 +60,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCategoriaProducto, nombreCategoria, codigoRol from categoria_producto ";
+										$c ="select Id_Envio, Tipo_envio,Dirección_Envio, Id_Pago, Id_Ciudad, codigoRol from envio ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -105,14 +107,14 @@ $cargarPagina = sprintf("&totalArreglo=%d%s", $totalArreglo, $cargarPagina);
 <script language="javascript">
 function validar(form){
 	
- if(form.nombreCategoria.value.length==0)
+ if(form.Tipo_envio.value.length==0)
    	{
-    alert("Digite El Nombre de la categoria");
-    form.nombreCategoria.focus();
+    alert("Digite el tipo de envio ");
+    form.Tipo_envio.focus();
     return(false);
 	}
 	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.nombreCategoria.value;
+    var cadena=form.Tipo_envio.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -130,19 +132,19 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite tipo de Categoria");
-	  form.nombreCategoria.focus();
+	  alert("Digite el tipo de envio");
+	  form.Tipo_envio.focus();
 	  return (false);
 	  }
 	
-	if(form.tipoCategoria.value.length==0)
+	if(form.Dirección_Envio.value.length==0)
    	{
-    alert("Digite tipo de Categoria");
-    form.tipoCategoria.focus();
+    alert("Digite la Direccion de envio");
+    form.Dirección_Envio.focus();
     return(false);
 	}
-	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.tipoCategoria.value;
+	var letra="1234567890-_*/ + abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
+    var cadena=form.Dirección_Envio.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -160,8 +162,8 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite tipo de Categoria");
-	  form.tipoCategoria.focus();
+	  alert("Digite la Direccion de envio");
+	  form.Dirección_Envio.focus();
 	  return (false);
 	  }
 	
@@ -187,7 +189,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>categoria_producto</title>
+		<title>envio</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -199,15 +201,19 @@ function validar(form){
 	    </section>
 
 	
-	    <form name="categoria_producto" class="contenedor_registro"  action="" method="POST">
-		<h1>categoria_producto</h1>
+	    <form name="envio" class="contenedor_registro"  action="" method="POST">
+		<h1>envio</h1>
 		<div>
-		<label for="codigoCategoriaProducto">Codigo de Catrgoria Producto</label>
-		<input type="text" id="codigoCategoriaProducto" name="codigoCategoriaProducto" value="<?php echo $objeto->codigoCategoriaProducto?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="nombreCategoria">Nombre de Catrgoria</label>
-		<input type="text" id="nombreCategoria" name="nombreCategoria" value="<?php echo $objeto->nombreCategoria?>" placeholder="Digite el nombre de Catrgoria"></input>
-		<label for="tipoCategoria"> tipoCategoriasuario</label>
-		<input type="text" id="tipoCategoria" name="tipoCategoria" value="<?php echo $objeto->tipoCategoria?>" placeholder="Digite el tipo de categoria"></input>
+		<label for="Id_Envio">Codigo de envio</label>
+		<input type="text" id="Id_Envio" name="Id_Envio" value="<?php echo $objeto->Id_Envio?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
+		<label for="Tipo_envio">Tipo de envio</label>
+		<input type="text" id="Tipo_envio" name="Tipo_envio" value="<?php echo $objeto->Tipo_envio?>" placeholder="Digite el tipo de envio"></input>
+		<label for="Dirección_Envio">Direccion de envio</label>
+		<input type="text" id="Dirección_Envio" name="Dirección_Envio" value="<?php echo $objeto->Dirección_Envio?>" placeholder="Digite la Direccion de envio"></input>
+		<label for="Id_Pago">Codigo de Pago</label>
+		<input type="text" id="Id_Pago" name="Id_Pago" value="<?php echo $objeto->Id_Pago?>" placeholder="Digite el Codigo de Pago"></input>
+		<label for="Id_Ciudad">Codigo de la ciudad</label>
+		<input type="text" id="Id_Ciudad" name="Id_Pago" value="<?php echo $objeto->Id_Ciudad?>" placeholder="Digite el Codigo de la ciudad"></input>
 		<label for="codigoRol">Codigo de rol</label>
 
 		<div>
@@ -253,19 +259,20 @@ function validar(form){
 		<input type="submit" name="elimina" value="Eliminar" onClick="return validar(this.form)"></input>
 		<input type="submit" name="consulta" value="Consultar" onClick="return validar(this.form)"></input>
 		<input type="submit" name="ver" value="Mostrar" ></input>
-		
-		
+
     <table width="544" border="0">
         <tr>
             <td><b>Código<b></td>
-            <td><b>Nombre<b></td>
-		    <td><b>Tipo<b></td>
+            <td><b>Tipo de envio<b></td>
+		    <td><b>Direccion de envio<b></td>
+		    <td><b>Codigo de Pago<b></td>
+		    <td><b>Codigo de la ciudad<b></td>S
 		    <td><b>Rol<b></td>
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from categoria_producto  ";
+		                            $c1 = "select Id_Envio, Tipo_envio, Dirección_Envio, Id_Pago, Id_Ciudad, codigoRol from envio  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -274,7 +281,9 @@ function validar(form){
 		    <td><?php echo $arreglo[0]?></td>
 			<td><?php echo $arreglo[1]?></td>
 			<td><?php echo $arreglo[2]?></td>
-			<td><?php echo $arreglo[3] ?></td>
+			<td><?php echo $arreglo[3]?></td>
+			<td><?php echo $arreglo[4]?></td>
+			<td><?php echo $arreglo[5]?></td>
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));
@@ -294,10 +303,10 @@ function validar(form){
                 <td><?php  
                     if($paginaNumero > 0){
                 ?> <a href="<?php printf("%s?paginaNumero=%d%s",$correrPagina, max(0,$paginaNumero-1),$cargarPagina) ?>" id="paginador" > << Atras </a> <?php }?></td>
-            <td><?php 
+                <td><?php 
                     if($paginaNumero < $totalPagina ){
                 ?> <a href="<?php printf("%s?paginaNumero=%d%s",$correrPagina, min($totalPagina,$paginaNumero+1),$cargarPagina) ?>" id="paginador">  Siguiente >> </a> <?php }?></td>
-            <td><?php 
+                <td><?php 
                     if($paginaNumero < $totalPagina ){
                 ?> <a href="<?php printf("%s?paginaNumero=%d%s",$correrPagina, $totalPagina,$cargarPagina) ?>" id="paginador"> Final ></a> <?php } ?></td>
             

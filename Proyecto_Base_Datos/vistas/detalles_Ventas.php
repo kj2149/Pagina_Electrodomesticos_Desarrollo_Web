@@ -1,18 +1,22 @@
 <?php
     include("../conexion/conexion.php");
-	include("../controlador/categoria_producto_controlador.php");	
+	include("../controlador/detalles_Venta_controlador.php");	
 ?>
 <?php 
 $objeto = new Usuario();
 if($_POST){
-	$objeto->codigoCategoriaProducto = $_POST['codigoCategoriaProducto'];
-	$objeto->nombreCategoria = $_POST['nombreCategoria'];
-	$objeto->tipoCategoria = $_POST['tipoCategoria'];
+	$objeto->Id_Deta_Venta = $_POST['Id_Deta_Venta'];
+	$objeto->Unid_Ventdida_Deta_Venta = $_POST['Unid_Ventdida_Deta_Venta'];
+	$objeto->Precio_Unid_Deta_Venta = $_POST['Precio_Unid_Deta_Venta'];
+	$objeto->Cost_Total_Venta_Deta_Venta = $_POST['Cost_Total_Venta_Deta_Venta'];
+	$objeto->Id_Factu = $_POST['Id_Factu'];
+	$objeto->Id_Inventario = $_POST['Id_Inventario'];
+	$objeto->Id_Descuento = $_POST['Id_Descuento'];
 	$objeto->codigoRol = $_POST['codigoRol'];
 }
 ?>
 <?php
-$ocorrerPagina = $_SERVER["PHP_SELF"];gf
+$correrPagina = $_SERVER["PHP_SELF"];
 $maximoDatos = 5;
 $paginaNumero = 0;
 
@@ -29,7 +33,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from categoria_producto where codigoCategoriaProducto='$obj->codigoCategoriaProducto' ";
+										$c = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento, codigoRol from detalles_Venta where Id_Deta_Venta='$obj->Id_Deta_Venta' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -39,7 +43,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from categoria_producto ";
+										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento, codigoRol from detalles_Venta ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -58,7 +62,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCategoriaProducto, nombreCategoria, codigoRol from categoria_producto ";
+										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento, codigoRol from detalles_Venta ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -105,14 +109,14 @@ $cargarPagina = sprintf("&totalArreglo=%d%s", $totalArreglo, $cargarPagina);
 <script language="javascript">
 function validar(form){
 	
- if(form.nombreCategoria.value.length==0)
+ if(form.Unid_Ventdida_Deta_Venta.value.length==0)
    	{
-    alert("Digite El Nombre de la categoria");
-    form.nombreCategoria.focus();
+    alert("Digite la Unidades Ventdidas, Detalles de Venta");
+    form.Unid_Ventdida_Deta_Venta.focus();
     return(false);
 	}
-	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.nombreCategoria.value;
+	var letra="1234567890";
+    var cadena=form.Unid_Ventdida_Deta_Venta.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -130,19 +134,19 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite tipo de Categoria");
-	  form.nombreCategoria.focus();
+	  alert("Digite las Unidades Ventdidas, Detalles de Venta");
+	  form.Unid_Ventdida_Deta_Venta.focus();
 	  return (false);
 	  }
 	
-	if(form.tipoCategoria.value.length==0)
+	if(form.Precio_Unid_Deta_Venta.value.length==0)
    	{
-    alert("Digite tipo de Categoria");
-    form.tipoCategoria.focus();
+    alert("Digite El Precio de Unid, Detalles de Venta");
+    form.Precio_Unid_Deta_Venta.focus();
     return(false);
 	}
-	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.tipoCategoria.value;
+	var letra="1234567890";
+    var cadena=form.Precio_Unid_Deta_Venta.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -160,8 +164,8 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite tipo de Categoria");
-	  form.tipoCategoria.focus();
+	  alert("Digite el Precio de Unid, Detalles de Venta");
+	  form.Precio_Unid_Deta_Venta.focus();
 	  return (false);
 	  }
 	
@@ -187,7 +191,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>categoria_producto</title>
+		<title>detalles_Venta</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -199,15 +203,23 @@ function validar(form){
 	    </section>
 
 	
-	    <form name="categoria_producto" class="contenedor_registro"  action="" method="POST">
-		<h1>categoria_producto</h1>
+	    <form name="detalles_Venta" class="contenedor_registro"  action="" method="POST">
+		<h1>detalles_Venta</h1>
 		<div>
-		<label for="codigoCategoriaProducto">Codigo de Catrgoria Producto</label>
-		<input type="text" id="codigoCategoriaProducto" name="codigoCategoriaProducto" value="<?php echo $objeto->codigoCategoriaProducto?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="nombreCategoria">Nombre de Catrgoria</label>
-		<input type="text" id="nombreCategoria" name="nombreCategoria" value="<?php echo $objeto->nombreCategoria?>" placeholder="Digite el nombre de Catrgoria"></input>
-		<label for="tipoCategoria"> tipoCategoriasuario</label>
-		<input type="text" id="tipoCategoria" name="tipoCategoria" value="<?php echo $objeto->tipoCategoria?>" placeholder="Digite el tipo de categoria"></input>
+		<label for="Id_Deta_Venta">Codigo de detalles ventas</label>
+		<input type="text" id="Id_Deta_Venta" name="Id_Deta_Venta" value="<?php echo $objeto->Id_Deta_Venta?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
+		<label for="Unid_Ventdida_Deta_Venta">Unidades Ventdidas, Detalles de Venta</label>
+		<input type="text" id="Unid_Ventdida_Deta_Venta" name="Unid_Ventdida_Deta_Venta" value="<?php echo $objeto->Unid_Ventdida_Deta_Venta?>" placeholder="Digite la Unidades Ventdidas, Detalles Venta"></input>
+		<label for="Precio_Unid_Deta_Venta">Precio de Unid, Detalles de Venta</label>
+		<input type="text" id="Precio_Unid_Deta_Venta" name="Precio_Unid_Deta_Venta" value="<?php echo $objeto->Precio_Unid_Deta_Venta?>" placeholder="Digite el Precio Unid Detalles de Venta<"></input>
+		<label for="Cost_Total_Venta_Deta_Venta">Costo Total de Ventas, Detalles Venta</label>
+		<input type="text" id="Cost_Total_Venta_Deta_Venta" name="Cost_Total_Venta_Deta_Venta" value="<?php echo $objeto->Cost_Total_Venta_Deta_Venta?>" placeholder="Digite el Costo Total de Ventas"></input>
+		<label for="Id_Factu">codigo de Factura</label>
+		<input type="text" id="Id_Factu" name="Cost_Total_Venta_Deta_Venta" value="<?php echo $objeto->Id_Factu?>" placeholder="Digite el codigo de Factura"></input>
+		<label for="Id_Inventario">codigo de Inventario </label>
+		<input type="text" id="precio Total" name="Cost_Total_Venta_Deta_Venta" value="<?php echo $objeto->Id_Inventario?>" placeholder="Digite el Id_Inventario"></input>
+		<label for="Id_Descuento">codigo de descuento</label>
+		<input type="text" id="Id_Descuento" name="Id_Descuento" value="<?php echo $objeto->Id_Descuento?>" placeholder="Digite el codigo de descuento"></input>
 		<label for="codigoRol">Codigo de rol</label>
 
 		<div>
@@ -253,19 +265,22 @@ function validar(form){
 		<input type="submit" name="elimina" value="Eliminar" onClick="return validar(this.form)"></input>
 		<input type="submit" name="consulta" value="Consultar" onClick="return validar(this.form)"></input>
 		<input type="submit" name="ver" value="Mostrar" ></input>
-		
-		
+
     <table width="544" border="0">
         <tr>
             <td><b>Código<b></td>
-            <td><b>Nombre<b></td>
-		    <td><b>Tipo<b></td>
+            <td><b>UnidadesVentdidas, Detalles de Venta<b></td>
+		    <td><b>Precio Unid Detalles de Venta<b></td>
+		    <td><b>Costo Total deVenta,Detalles de Venta<b></td>
+		    <td><b>Codigo de Factura<b></td>
+		    <td><b>codigo de Inventario<b></td>
+		    <td><b>codigo de descuento<b></td>
 		    <td><b>Rol<b></td>
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from categoria_producto  ";
+		                            $c1 = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento, codigoRol from detalles_Venta  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -274,7 +289,11 @@ function validar(form){
 		    <td><?php echo $arreglo[0]?></td>
 			<td><?php echo $arreglo[1]?></td>
 			<td><?php echo $arreglo[2]?></td>
-			<td><?php echo $arreglo[3] ?></td>
+			<td><?php echo $arreglo[3]?></td>
+			<td><?php echo $arreglo[4]?></td>
+			<td><?php echo $arreglo[5]?></td>
+			<td><?php echo $arreglo[6]?></td>
+			<td><?php echo $arreglo[7] ?></td>
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));
@@ -294,10 +313,10 @@ function validar(form){
                 <td><?php  
                     if($paginaNumero > 0){
                 ?> <a href="<?php printf("%s?paginaNumero=%d%s",$correrPagina, max(0,$paginaNumero-1),$cargarPagina) ?>" id="paginador" > << Atras </a> <?php }?></td>
-            <td><?php 
+                <td><?php 
                     if($paginaNumero < $totalPagina ){
                 ?> <a href="<?php printf("%s?paginaNumero=%d%s",$correrPagina, min($totalPagina,$paginaNumero+1),$cargarPagina) ?>" id="paginador">  Siguiente >> </a> <?php }?></td>
-            <td><?php 
+                <td><?php 
                     if($paginaNumero < $totalPagina ){
                 ?> <a href="<?php printf("%s?paginaNumero=%d%s",$correrPagina, $totalPagina,$cargarPagina) ?>" id="paginador"> Final ></a> <?php } ?></td>
             

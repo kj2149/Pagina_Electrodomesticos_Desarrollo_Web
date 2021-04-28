@@ -48,12 +48,14 @@
 }
 
 .producto{
-    width: 53%;
-    background-image: url(../imagenes/lado1.png);
+    width: 52%;
+    height: 0%;
+    background-image: url(../imagenes/fondo.png);
+    margin-right: 1%;
 }
 
 .producto img{
-    width: 99%;
+    width: 95%;
 }
 
 .info_producto{

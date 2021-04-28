@@ -5,16 +5,9 @@
     box-sizing: border-box;
     
 }
-/*estilo del logo*//*
-.logo{
-    float: left;
-    width: 40%;
-    height: 500px;
-    padding: 8px;
-    margin-top: 30px;
-    margin-right:480px;
-    margin-bottom: 30px;
-}*/
+
+
+
 
 /*estilo para el parallax*/
 #parallax {

@@ -48,14 +48,12 @@
 }
 
 .producto{
-    width: 52%;
-    height: 0%;
-    background-image: url(../imagenes/fondo.png);
-    margin-right: 1%;
+    width: 53%;
+    background-image: url(../imagenes/lado1.png);
 }
 
 .producto img{
-    width: 95%;
+    width: 99%;
 }
 
 .info_producto{
@@ -172,8 +170,7 @@
 }
 
 .camion{
-    padding-left: 20px;
-    width: 29%;
+    padding-left: 50px;
 }
 
 .tittle{

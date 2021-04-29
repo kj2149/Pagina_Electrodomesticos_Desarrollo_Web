@@ -64,7 +64,7 @@
         </div>
     <!--Menu Header-->
 		<ul id="css3menu1" class="topmenu">
-			<li class="topmenu"><a href="inicio.php" target="marco" style="height:28px;line-height:22px;">Inicio</a>
+			<li class="topmenu"><a href="index.php" target="marco" style="height:28px;line-height:22px;">Inicio</a>
 			</li>
 			<li class="toproot"><a href="#" target="marco"style="height:28px;line-height:22px;"><span>Productos</span></a>
 				<ul>

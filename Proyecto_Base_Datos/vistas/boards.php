@@ -231,23 +231,23 @@
 
 				<ul>
 						
-                    <li class="colimag"><img id="imagen" src="../imagenes/imagen50.png">
+                   <a href="../vistas/vista_producto_50.php" class="colimag"><img id="imagen" src="../imagenes/imagen50.png">
 					    <p>Board Gigabyte A320m<br><br>
 					    $280,000</p>
-					</li>
+					</li></a>
 
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen53.png">
+					<a href="../vistas/vista_producto_53.php" class="colimag"><img id="imagen" src="../imagenes/imagen53.png">
 					    <p>Board Asus Rog Strix B450 F Gaming Amd<br>
 					    $640,000</p>
-					</li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen54.png">
+					</li></a>
+					<a href="../vista/vista_producto_54.php" class="colimag"><img id="imagen" src="../imagenes/imagen54.png">
 					    <p> Board Asus Rog Strix B450-f Gaming<br>
 					    $620,000</p>
-					</li>
-                    <li class="colimag"><img id="imagen" src="../imagenes/imagen55.png">
+					</li></a>
+                    <a href="../vistas/vista_producto_55.php" class="colimag"><img id="imagen" src="../imagenes/imagen55.png">
 					    <p>Combo Intel 10th Gen I3 10100 + Board B460 <br>
 					    $1,450,000</p>
-					</li>
+					</li></a>
 					<li class="colimag"><img id="imagen" src="../imagenes/imagen52.png">
 					    <p>Tarjeta Madre G41 Socket 775 Ddr3 4usb Vga Nueva Garantia<br>
 					    $184,000</p>

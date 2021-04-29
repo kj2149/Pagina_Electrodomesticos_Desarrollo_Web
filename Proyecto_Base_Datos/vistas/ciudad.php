@@ -5,9 +5,9 @@
 <?php 
 $objeto = new Usuario();
 if($_POST){
-	$objeto->codigoCiudad = $_POST['codigoCiudad'];
-	$objeto->nombreCiudad = $_POST['nombreCiudad'];
-	$objeto->localidad = $_POST['localidad'];
+	$objeto->Id_Ciudad = $_POST['Id_Ciudad'];
+	$objeto->Nombre_ciudad = $_POST['Nombre_ciudad'];
+	$objeto->Localidad_Ciudad = $_POST['Localidad_Ciudad'];
 
 }
 ?>
@@ -29,7 +29,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select codigoCiudad, nombreCiudad, localidad from tbl_ciudad where codigoCiudad='$obj->codigoCiudad' ";
+										$c = "select Id_Ciudad, Nombre_ciudad, Localidad_Ciudad from tbl_ciudad where Id_Ciudad='$obj->Id_Ciudad' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -39,7 +39,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCiudad, nombreCiudad, localidad from tbl_ciudad ";
+										$c ="select Id_Ciudad, Nombre_ciudad, Localidad_Ciudad from tbl_ciudad ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -58,7 +58,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCiudad, nombreCiudad from tbl_ciudad ";
+										$c ="select Id_Ciudad, Nombre_ciudad from tbl_ciudad ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -105,14 +105,14 @@ $cargarPagina = sprintf("&totalArreglo=%d%s", $totalArreglo, $cargarPagina);
 <script language="javascript">
 function validar(form){
 	
- if(form.nombreCiudad.value.length==0)
+ if(form.Nombre_ciudad.value.length==0)
    	{
     alert("Digite El Nombre de la Ciudad");
-    form.nombreCiudad.focus();
+    form.Nombre_ciudad.focus();
     return(false);
 	}
 	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.nombreCiudad.value;
+    var cadena=form.Nombre_ciudad.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -131,18 +131,18 @@ function validar(form){
    if(!valida)
       {
 	  alert("Digite Solo Letras en el campo Nombre");
-	  form.nombreCiudad.focus();
+	  form.Nombre_ciudad.focus();
 	  return (false);
 	  }
 	
-	if(form.localidad.value.length==0)
+	if(form.Localidad_Ciudad.value.length==0)
    	{
-    alert("Digite la localidad del Usuario");
-    form.localidad.focus();
+    alert("Digite la Localidad_Ciudad del Usuario");
+    form.Localidad_Ciudad.focus();
     return(false);
 	}
 	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.localidad.value;
+    var cadena=form.Localidad_Ciudad.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -160,8 +160,8 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite la localidad del Usuario");
-	  form.localidad.focus();
+	  alert("Digite la Localidad_Ciudad del Usuario");
+	  form.Localidad_Ciudad.focus();
 	  return (false);
 	  }
 	
@@ -202,12 +202,12 @@ function validar(form){
 	    <form name="ciudad" class="contenedor_registro"  action="" method="POST">
 		<h1>Ciudad</h1>
 		<div>
-		<label for="codigoCiudad">Codigo de la ciudad</label>
-		<input type="text" id="codigoCiudad" name="codigoCiudad" value="<?php echo $objeto->codigoCiudad?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="nombreCiudad">Nombre de la ciudad</label>
-		<input type="text" id="nombreCiudad" name="nombreCiudad" value="<?php echo $objeto->nombreCiudad?>" placeholder="Digite el nombre de la ciudad"></input>
-		<label for="localidad">locaidad</label>
-		<input type="text" id="localidad" name="localidad" value="<?php echo $objeto->localidad?>" placeholder="Digite la localidad"></input>
+		<label for="Id_Ciudad">Codigo de la ciudad</label>
+		<input type="text" id="Id_Ciudad" name="Id_Ciudad" value="<?php echo $objeto->Id_Ciudad?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
+		<label for="Nombre_ciudad">Nombre de la ciudad</label>
+		<input type="text" id="Nombre_ciudad" name="Nombre_ciudad" value="<?php echo $objeto->Nombre_ciudad?>" placeholder="Digite el nombre de la ciudad"></input>
+		<label for="Localidad_Ciudad">locaidad</label>
+		<input type="text" id="Localidad_Ciudad" name="Localidad_Ciudad" value="<?php echo $objeto->Localidad_Ciudad?>" placeholder="Digite la Localidad_Ciudad"></input>
 		
 
 		<div>
@@ -259,13 +259,13 @@ function validar(form){
         <tr>
             <td><b>Código<b></td>
             <td><b>Nombre<b></td>
-		    <td><b>Localidad<b></td>
+		    <td><b>Localidad_Ciudad<b></td>
 		    
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select codigoCiudad, nombreCiudad, localidad from tbl_ciudad  ";
+		                            $c1 = "select Id_Ciudad, Nombre_ciudad, Localidad_Ciudad from tbl_ciudad  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{

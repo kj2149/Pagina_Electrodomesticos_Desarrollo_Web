@@ -1,17 +1,16 @@
-Cantidad de la compra cl<?php
+<?php
     include("../conexion/conexion.php");
-	include("../controlador/compra_cliente_controlador.php");	
+	include("../controlador/orden_compra_controlador.php");	
 ?>
 <?php 
 $objeto = new Usuario();
 if($_POST){
-	$objeto->Id_Comp_Cli = $_POST['Id_Comp_Cli'];
-	$objeto->Cantidad_Comp_cli = $_POST['Cantidad_Comp_cli'];
-	$objeto->Descuento_Comp_Cli = $_POST['Descuento_Comp_Cli'];
-	$objeto->Iva_Comp_Cli = $_POST['Iva_Comp_Cli'];
-	$objeto->Garantia_Comp_Cli = $_POST['Garantia_Comp_Cli'];
-	$objeto->Precio_Total_Comp_Cli = $_POST['Precio_Total_Comp_Cli'];
-	$objeto->Fech_Comp_Cli = $_POST['Fech_Comp_Cli'];
+	$objeto->Id_Orden_Com = $_POST['Id_Orden_Com'];
+	$objeto->Cost_Productos_Orden_Com = $_POST['Cost_Productos_Orden_Com'];
+	$objeto->Precio_UnId_Orden_Com = $_POST['Precio_UnId_Orden_Com'];
+	$objeto->Uni_Vendidas_Orden_Com = $_POST['Uni_Vendidas_Orden_Com'];
+	$objeto->Fecha_Ventas_Orden_Com = $_POST['Fecha_Ventas_Orden_Com'];
+	$objeto->Hora_Venta_Orden_Com = $_POST['Hora_Venta_Orden_Com'];
 }
 ?>
 <?php
@@ -32,7 +31,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente where Id_Comp_Cli='$obj->Id_Comp_Cli' ";
+										$c = "select Id_Orden_Com, Cost_Productos_Orden_Com, Precio_UnId_Orden_Com, Uni_Vendidas_Orden_Com, Fecha_Ventas_Orden_Com, Hora_Venta_Orden_Com from tbl_orden_compra where Id_Orden_Com='$obj->Id_Orden_Com' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -42,7 +41,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente ";
+										$c ="select Id_Orden_Com, Cost_Productos_Orden_Com, Precio_UnId_Orden_Com, Uni_Vendidas_Orden_Com, Fecha_Ventas_Orden_Com, Hora_Venta_Orden_Com from tbl_orden_compra ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -61,7 +60,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente ";
+										$c ="select Id_Orden_Com, Cost_Productos_Orden_Com, Precio_UnId_Orden_Com, Uni_Vendidas_Orden_Com, Fecha_Ventas_Orden_Com, Hora_Venta_Orden_Com from tbl_orden_compra ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -108,44 +107,14 @@ $cargarPagina = sprintf("&totalArreglo=%d%s", $totalArreglo, $cargarPagina);
 <script language="javascript">
 function validar(form){
 	
- if(form.Cantidad_Comp_cli.value.length==0)
+ if(form.Cost_Productos_Orden_Com.value.length==0)
    	{
-    alert("Digite la Cantidad_Comp_cli de compra");
-    form.Cantidad_Comp_cli.focus();
-    return(false);
-	}
-	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.Cantidad_Comp_cli.value;
-    var valida=true;
-
-    for(i=0;i<cadena.length; i++)
-     {
-     	ch=cadena.charAt(i);
-     	for(j=0; j<letra.length; j++)
-     	if(ch==letra.charAt(j))
-     	break;
-     	if(j==letra.length)
-       		{
-       		valida = false;
-        	break;
-        	break;
-        	}
-   	}
-   if(!valida)
-      {
-	  alert("Digite una Cantidad_Comp_cli");
-	  form.Cantidad_Comp_cli.focus();
-	  return (false);
-	  }
-	
-	if(form.Descuento_Comp_Cli.value.length==0)
-   	{
-    alert("Digite El Descuento_Comp_Cli");
-    form.Descuento_Comp_Cli.focus();
+    alert("Digite la Unidades Ventdidas, Detalles de Venta");
+    form.Cost_Productos_Orden_Com.focus();
     return(false);
 	}
 	var letra="1234567890";
-    var cadena=form.Descuento_Comp_Cli.value;
+    var cadena=form.Cost_Productos_Orden_Com.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -163,8 +132,38 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite el Descuento_Comp_Cli");
-	  form.Descuento_Comp_Cli.focus();
+	  alert("Digite los costos de los productos");
+	  form.Cost_Productos_Orden_Com.focus();
+	  return (false);
+	  }
+	
+	if(form.Precio_UnId_Orden_Com.value.length==0)
+   	{
+    alert("Digite El Precio de Unid, orden de compra");
+    form.Precio_UnId_Orden_Com.focus();
+    return(false);
+	}
+	var letra="1234567890";
+    var cadena=form.Precio_UnId_Orden_Com.value;
+    var valida=true;
+
+    for(i=0;i<cadena.length; i++)
+     {
+     	ch=cadena.charAt(i);
+     	for(j=0; j<letra.length; j++)
+     	if(ch==letra.charAt(j))
+     	break;
+     	if(j==letra.length)
+       		{
+       		valida = false;
+        	break;
+        	break;
+        	}
+   	}
+   if(!valida)
+      {
+	  alert("Digite el Precio de Unid, orden de compra");
+	  form.Precio_UnId_Orden_Com.focus();
 	  return (false);
 	  }
 	
@@ -190,7 +189,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>Compra Cliente</title>
+		<title>Orden de Compra</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -202,24 +201,22 @@ function validar(form){
 	    </section>
 
 	
-	    <form name="compra cliente" class="contenedor_registro"  action="" method="POST">
-		<h1>Compra Cliente</h1>
+	    <form name="Orden de compra" class="contenedor_registro"  action="" method="POST">
+		<h1>Orden de Compra</h1>
 		<div>
-		<label for="Id_Comp_Cli">Codigo de compra del cliente</label>
-		<input type="text" id="Id_Comp_Cli" name="Id_Comp_Cli" value="<?php echo $objeto->Id_Comp_Cli?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="Cantidad_Comp_cli">Cantidad de la compra cliente</label>
-		<input type="text" id="Cantidad_Comp_cli" name="Cantidad_Comp_cli" value="<?php echo $objeto->Cantidad_Comp_cli?>" placeholder="Digite la Cantidad de la compra cliente"></input>
-		<label for="Descuento_Comp_Cli">Descuento compra cliente</label>
-		<input type="text" id="Descuento_Comp_Cli" name="Descuento_Comp_Cli" value="<?php echo $objeto->Descuento_Comp_Cli?>" placeholder="Digite el Descuento de la compra cliente "></input>
-		<label for="Iva_Comp_Cli">Iva Compra</label>
-		<input type="text" id="Iva_Comp_Cli" name="Iva_Comp_Cli" value="<?php echo $objeto->Iva_Comp_Cli?>" placeholder="Digite el Iva de la compra cliente"></input>
-		<label for="Garantia_Comp_Cli">Garantia Compra</label>
-		<input type="text" id="Garantia_Comp_Cli" name="Garantia_Comp_Cli" value="<?php echo $objeto->Garantia_Comp_Cli?>" placeholder="Digite la Garantia de la compra cliente"></input>
-		<label for="Precio_Total_Comp_Cli">Precio total de la compra</label>
-		<input type="text" id="precio Total" name="Precio_Total_Comp_Cli" value="<?php echo $objeto->Precio_Total_Comp_Cli?>" placeholder="Digite el Precio Total de la compra"></input>
-		<label for="Fech_Comp_Cli">Fecha de la Compra</label>
-		<input type="text" id="Fech_Comp_Cli" name="Fech_Comp_Cli" value="<?php echo $objeto->Fech_Comp_Cli?>" placeholder="Digite la fecha de Compra"></input>1
-
+		<label for="Id_Orden_Com">Codigo de Orden de Compra</label>
+		<input type="text" id="Id_Orden_Com" name="Id_Orden_Com" value="<?php echo $objeto->Id_Orden_Com?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
+		<label for="Cost_Productos_Orden_Com">Costos de Producto</label>
+		<input type="text" id="Cost_Productos_Orden_Com" name="Cost_Productos_Orden_Com" value="<?php echo $objeto->Cost_Productos_Orden_Com?>" placeholder="Digite los Costos de Producto"></input>
+		<label for="Precio_UnId_Orden_Com">Precio por Unidad</label>
+		<input type="text" id="Precio_UnId_Orden_Com" name="Precio_UnId_Orden_Com" value="<?php echo $objeto->Precio_UnId_Orden_Com?>" placeholder="Digite el Precio por Unidad<"></input>
+		<label for="Uni_Vendidas_Orden_Com">Unidades vendidas</label>
+		<input type="text" id="Uni_Vendidas_Orden_Com" name="Uni_Vendidas_Orden_Com" value="<?php echo $objeto->Uni_Vendidas_Orden_Com?>" placeholder="Digite las Unidades vendidas"></input>
+		<label for="Fecha_Ventas_Orden_Com">Fecha de ventas</label>
+		<input type="text" id="Fecha_Ventas_Orden_Com" name="Uni_Vendidas_Orden_Com" value="<?php echo $objeto->Fecha_Ventas_Orden_Com?>" placeholder="Digite Fecha de ventas"></input>
+		<label for="Hora_Venta_Orden_Com">Hora de venta Orden de Compra</label>
+		<input type="text" id="precio Total" name="Hora_Venta_Orden_Com" value="<?php echo $objeto->Hora_Venta_Orden_Com?>" placeholder="Digite la Hora de venta"></input>
+	
 
 		<div>
 		    <select name="codigoRol" id="$objeto->codigoRol">
@@ -268,19 +265,17 @@ function validar(form){
     <table width="544" border="0">
         <tr>
             <td><b>Código<b></td>
-            <td><b>Cantidad Compra clientr<b></td>
-		    <td><b>Descuento compra Cliente<b></td>
-		    <td><b>Iva Compra Cliente<b></td>
-		    <td><b>Garantia Compra Cliente<b></td>
-		    <td><b>Precio Total<b></td>
-		    <td><b>Fecha de Compra<b></td>
-		    
+            <td><b>Costos de Producto<b></td>
+		    <td><b>Precio por Unidad<b></td>
+		    <td><b>Unidades vendidas <b></td>
+		    <td><b>Fecha de ventas<b></td>
+		    <td><b>Hora de venta Orden de Compra<b></td>
 
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente  ";
+		                            $c1 = "select Id_Orden_Com, Cost_Productos_Orden_Com, Precio_UnId_Orden_Com, Uni_Vendidas_Orden_Com, Fecha_Ventas_Orden_Com, Hora_Venta_Orden_Com from tbl_orden_compra  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -292,7 +287,6 @@ function validar(form){
 			<td><?php echo $arreglo[3]?></td>
 			<td><?php echo $arreglo[4]?></td>
 			<td><?php echo $arreglo[5]?></td>
-			<td><?php echo $arreglo[6]?></td>
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));

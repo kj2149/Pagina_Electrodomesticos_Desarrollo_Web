@@ -5,9 +5,9 @@
 <?php 
 $objeto = new Usuario();
 if($_POST){
-	$objeto->codigoCategoriaProducto = $_POST['codigoCategoriaProducto'];
-	$objeto->nombreCategoria = $_POST['nombreCategoria'];
-	$objeto->tipoCategoria = $_POST['tipoCategoria'];
+	$objeto->Id_Categ_Produc = $_POST['Id_Categ_Produc'];
+	$objeto->Nombre_Categ_Produc = $_POST['Nombre_Categ_Produc'];
+	$objeto->Tipo_Categ_Produc = $_POST['Tipo_Categ_Produc'];
 }
 ?>
 <?php
@@ -28,7 +28,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria from tbl_categoria_producto where codigoCategoriaProducto='$obj->codigoCategoriaProducto' ";
+										$c = "select Id_Categ_Produc, Nombre_Categ_Produc, Tipo_Categ_Produc from tbl_categoria_producto where Id_Categ_Produc='$obj->Id_Categ_Produc' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -38,7 +38,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCategoriaProducto, nombreCategoria, tipoCategoria from tbl_categoria_producto ";
+										$c ="select Id_Categ_Produc, Nombre_Categ_Produc, Tipo_Categ_Produc from tbl_categoria_producto ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -57,7 +57,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCategoriaProducto, nombreCategoria from tbl_categoria_producto ";
+										$c ="select Id_Categ_Produc, Nombre_Categ_Produc from tbl_categoria_producto ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -104,14 +104,14 @@ $cargarPagina = sprintf("&totalArreglo=%d%s", $totalArreglo, $cargarPagina);
 <script language="javascript">
 function validar(form){
 	
- if(form.nombreCategoria.value.length==0)
+ if(form.Nombre_Categ_Produc.value.length==0)
    	{
     alert("Digite El Nombre de la categoria");
-    form.nombreCategoria.focus();
+    form.Nombre_Categ_Produc.focus();
     return(false);
 	}
 	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.nombreCategoria.value;
+    var cadena=form.Nombre_Categ_Produc.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -130,18 +130,18 @@ function validar(form){
    if(!valida)
       {
 	  alert("Digite tipo de Categoria");
-	  form.nombreCategoria.focus();
+	  form.Nombre_Categ_Produc.focus();
 	  return (false);
 	  }
 	
-	if(form.tipoCategoria.value.length==0)
+	if(form.Tipo_Categ_Produc.value.length==0)
    	{
     alert("Digite tipo de Categoria");
-    form.tipoCategoria.focus();
+    form.Tipo_Categ_Produc.focus();
     return(false);
 	}
 	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.tipoCategoria.value;
+    var cadena=form.Tipo_Categ_Produc.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -160,7 +160,7 @@ function validar(form){
    if(!valida)
       {
 	  alert("Digite tipo de Categoria");
-	  form.tipoCategoria.focus();
+	  form.Tipo_Categ_Produc.focus();
 	  return (false);
 	  }
 	
@@ -201,12 +201,12 @@ function validar(form){
 	    <form name="categoria_producto" class="contenedor_registro"  action="" method="POST">
 		<h1>Categoria Producto</h1>
 		<div>
-		<label for="codigoCategoriaProducto">Codigo de Categoria Producto</label>
-		<input type="text" id="codigoCategoriaProducto" name="codigoCategoriaProducto" value="<?php echo $objeto->codigoCategoriaProducto?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="nombreCategoria">Nombre de la Categoria</label>
-		<input type="text" id="nombreCategoria" name="nombreCategoria" value="<?php echo $objeto->nombreCategoria?>" placeholder="Digite el nombre de Catrgoria"></input>
-		<label for="tipoCategoria"> Tipo de Categoria </label>
-		<input type="text" id="tipoCategoria" name="tipoCategoria" value="<?php echo $objeto->tipoCategoria?>" placeholder="Digite el tipo de categoria"></input>
+		<label for="Id_Categ_Produc">Codigo de Categoria Producto</label>
+		<input type="text" id="Id_Categ_Produc" name="Id_Categ_Produc" value="<?php echo $objeto->Id_Categ_Produc?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
+		<label for="Nombre_Categ_Produc">Nombre de la Categoria</label>
+		<input type="text" id="Nombre_Categ_Produc" name="Nombre_Categ_Produc" value="<?php echo $objeto->Nombre_Categ_Produc?>" placeholder="Digite el nombre de Catrgoria"></input>
+		<label for="Tipo_Categ_Produc"> Tipo de Categoria </label>
+		<input type="text" id="Tipo_Categ_Produc" name="Tipo_Categ_Produc" value="<?php echo $objeto->Tipo_Categ_Produc?>" placeholder="Digite el tipo de categoria"></input>
 		
 
 		<div>
@@ -263,7 +263,7 @@ function validar(form){
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from tbl_categoria_producto  ";
+		                            $c1 = "select Id_Categ_Produc, Nombre_Categ_Produc, Tipo_Categ_Produc, codigoRol from tbl_categoria_producto  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{

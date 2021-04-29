@@ -1,6 +1,6 @@
 <?php
     include("../conexion/conexion.php");
-	include("../controlador/detalles_venta_controlador.php");	
+	include("../controlador/factura_controlador.php");	
 ?>
 <?php 
 $objeto = new Usuario();
@@ -42,7 +42,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Factu, Total_IVA_Factu, Precio_Total_Comp_Factu, Fech_Facturacion_Factu, Hora_Fact, Sub_Total_Factu, Id_Produc from detalles_Venta ";
+										$c ="select Id_Factu, Total_IVA_Factu, Precio_Total_Comp_Factu, Fech_Facturacion_Factu, Hora_Fact, Sub_Total_Factu, Id_Produc from tbl_factura ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -202,7 +202,7 @@ function validar(form){
 	    </section>
 
 	
-	    <form name="detalles_Venta" class="contenedor_registro"  action="" method="POST">
+	    <form name="Factura" class="contenedor_registro"  action="" method="POST">
 		<h1>Factura</h1>
 		<div>
 		<label for="Id_Factu">Codigo de Factura</label>
@@ -210,14 +210,14 @@ function validar(form){
 		<label for="Total_IVA_Factu">Total de IVA Factura</label>
 		<input type="text" id="Total_IVA_Factu" name="Total_IVA_Factu" value="<?php echo $objeto->Total_IVA_Factu?>" placeholder="Digite el total de IVA Factura"></input>
 		<label for="Precio_Total_Comp_Factu">Precio total de IVA Factura</label>
-		<input type="text" id="Precio_Total_Comp_Factu" name="Precio_Total_Comp_Factu" value="<?php echo $objeto->Precio_Total_Comp_Factu?>" placeholder="Digite el Preciototal de IVA Factura <"></input>
+		<input type="text" id="Precio_Total_Comp_Factu" name="Precio_Total_Comp_Factu" value="<?php echo $objeto->Precio_Total_Comp_Factu?>" placeholder="Digite el Precio total Factura <"></input>
 		<label for="Fech_Facturacion_Factu">Fecha de facturacion</label>
 		<input type="text" id="Fech_Facturacion_Factu" name="Fech_Facturacion_Factu" value="<?php echo $objeto->Fech_Facturacion_Factu?>" placeholder="Digite la Fecha de facturacion"></input>
 		<label for="Hora_Fact">Hora de Facturacion</label>
 		<input type="text" id="Hora_Fact" name="Fech_Facturacion_Factu" value="<?php echo $objeto->Hora_Fact?>" placeholder="Digite la hora de Factura"></input>
 		<label for="Sub_Total_Factu">Sub total de factura</label>
 		<input type="text" id="precio Total" name="Fech_Facturacion_Factu" value="<?php echo $objeto->Sub_Total_Factu?>" placeholder="Digite el sud total de Factura"></input>
-		<label for="Id_Produc">codigo de producto</label>
+		<label for="Id_Produc">Codigo de producto</label>
 		<input type="text" id="Id_Produc" name="Id_Produc" value="<?php echo $objeto->Id_Produc?>" placeholder="Digite el codigo de producto"></input>
 
 		<div>

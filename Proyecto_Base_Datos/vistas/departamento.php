@@ -202,7 +202,7 @@ function validar(form){
 		<div>
 		<label for="Id_departamento">Codigo de departamento</label>
 		<input type="text" id="Id_departamento" name="Id_departamento" value="<?php echo $objeto->Id_departamento?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="Direc_departamento">Direccion drdepartamento</label>
+		<label for="Direc_departamento">Direccion de departamento</label>
 		<input type="text" id="Direc_departamento" name="Direc_departamento" value="<?php echo $objeto->Direc_departamento?>" placeholder="Digite la Direccion de departamento"></input>
 
 		<div>

@@ -5,10 +5,10 @@
 <?php 
 $objeto = new Usuario();
 if($_POST){
-	$objeto->codigoCalificacion = $_POST['codigoCalificacion'];
-	$objeto->tipoCalificacion = $_POST['tipoCalificacion'];
-	$objeto->fechaCalificacion = $_POST['fechaCalificacion'];
-	$objeto->comentarioCalificacion = $_POST['comentarioCalificacion'];
+	$objeto->Id_Calificacion = $_POST['Id_Calificacion'];
+	$objeto->Tipo_Calificacion = $_POST['Tipo_Calificacion'];
+	$objeto->Fech_Calificacion = $_POST['Fech_Calificacion'];
+	$objeto->Comentario_Calificacion = $_POST['Comentario_Calificacion'];
 
 }
 ?>
@@ -30,7 +30,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select codigoCalificacion, tipoCalificacion, fechaCalificacion, comentarioCalificacion from tbl_calificacion where codigoCalificacion='$obj->codigoCalificacion' ";
+										$c = "select Id_Calificacion, Tipo_Calificacion, Fech_Calificacion, Comentario_Calificacion from tbl_calificacion where Id_Calificacion='$obj->Id_Calificacion'";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -40,7 +40,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCalificacion, tipoCalificacion, fechaCalificacion, comentarioCalificacion from tbl_calificacion ";
+										$c ="select Id_Calificacion, Tipo_Calificacion, Fech_Calificacion, Comentario_Calificacion from tbl_calificacion ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -59,7 +59,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCalificacion, tipoCalificacion, comentarioCalificacion from tbl_calificacion ";
+										$c ="select Id_Calificacion, Tipo_Calificacion, Comentario_Calificacion from tbl_calificacion ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -106,14 +106,14 @@ $cargarPagina = sprintf("&totalArreglo=%d%s", $totalArreglo, $cargarPagina);
 <script language="javascript">
 function validar(form){
 	
- if(form.tipoCalificacion.value.length==0)
+ if(form.Tipo_Calificacion.value.length==0)
    	{
     alert("Digite tipo de calificacion");
-    form.tipoCalificacion.focus();
+    form.Tipo_Calificacion.focus();
     return(false);
 	}
 	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.tipoCalificacion.value;
+    var cadena=form.Tipo_Calificacion.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -132,18 +132,18 @@ function validar(form){
    if(!valida)
       {
 	  alert("Digite el tipo de calificacion");
-	  form.tipoCalificacion.focus();
+	  form.Tipo_Calificacion.focus();
 	  return (false);
 	  }
 	
-	if(form.fechaCalificacion.value.length==0)
+	if(form.Fech_Calificacion.value.length==0)
    	{
     alert("Digite la fecha de calificacion");
-    form.fechaCalificacion.focus();
+    form.Fech_Calificacion.focus();
     return(false);
 	}
 	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.fechaCalificacion.value;
+    var cadena=form.Fech_Calificacion.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -162,14 +162,14 @@ function validar(form){
    if(!valida)
       {
 	  alert("Digite fecha de calificacion");
-	  form.fechaCalificacion.focus();
+	  form.Fech_Calificacion.focus();
 	  return (false);
 	  }
 	
-	if(form.comentarioCalificacion.value.length==0)
+	if(form.Comentario_Calificacion.value.length==0)
    	{
     alert("Seleccione el Rol del Usuario");
-    form.comentarioCalificacion.focus();
+    form.Comentario_Calificacion.focus();
     return(false);
 	} 
 	
@@ -203,22 +203,22 @@ function validar(form){
 	    <form name="calificacion" class="contenedor_registro"  action="" method="POST">
 		<h1>Calificacion</h1>
 		<div>
-		<label for="codigoCalificacion">Codigo de calificacion</label>
-		<input type="text" id="codigoCalificacion" name="codigoCalificacion" value="<?php echo $objeto->codigoCalificacion?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="tipoCalificacion">Tipo de calificacion</label>
-		<input type="text" id="tipoCalificacion" name="tipoCalificacion" value="<?php echo $objeto->tipoCalificacion?>" placeholder="Digite el tipo de calificacion"></input>
-		<label for="fechaCalificacion"> Fecha de calificacion</label>
-		<input type="text" id="fechaCalificacion" name="fechaCalificacion" value="<?php echo $objeto->fechaCalificacion?>" placeholder="Digite fecha de calificacion"></input>
-		<label for="comentarioCalificacion">Comentario</label>
-        <input type="text" id="comentario" name="comentario" value="<?php echo $objeto->comentario?>" placeholder="Digite comentario"></input>
+		<label for="Id_Calificacion">Codigo de calificacion</label>
+		<input type="text" id="Id_Calificacion" name="Id_Calificacion" value="<?php echo $objeto->Id_Calificacion?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
+		<label for="Tipo_Calificacion">Tipo de calificacion</label>
+		<input type="text" id="Tipo_Calificacion" name="Tipo_Calificacion" value="<?php echo $objeto->Tipo_Calificacion?>" placeholder="Digite el tipo de calificacion"></input>
+		<label for="Fech_Calificacion"> Fecha de calificacion</label>
+		<input type="text" id="Fech_Calificacion" name="Fech_Calificacion" value="<?php echo $objeto->Fech_Calificacion?>" placeholder="Digite fecha de calificacion"></input>
+		<label for="Comentario_Calificacion">Comentario</label>
+        <input type="text" id="Comentario_Calificacion" name="Comentario_Calificacion" value="<?php echo $objeto->Comentario_Calificacion?>" placeholder="Digite comentario"></input>
 		<div> 
 
 
 
-		    <select name="comentarioCalificacion" id="$objeto->comentarioCalificacion">
+		    <select name="Comentario_Calificacion" id="$objeto->Comentario_Calificacion">
 			<option>
 					 <?php
-						$s4 = "select nombreRol from roles where comentarioCalificacion ='$objeto->comentarioCalificacion'";
+						$s4 = "select nombreRol from roles where Comentario_Calificacion ='$objeto->Comentario_Calificacion'";
 							$r4 = mysqli_query($con,$s4)or die(mysql_error());
 							$res4 = mysqli_fetch_array($r4);
 							echo $res4[0];
@@ -228,9 +228,9 @@ function validar(form){
 					</option>
 			<?php
 			do{
-			    $cadena = $arreglo['comentarioCalificacion'];
+			    $cadena = $arreglo['Comentario_Calificacion'];
 				$arre = $arreglo['nombreRol'];
-				if($cadena == $objeto->comentarioCalificacion){
+				if($cadena == $objeto->Comentario_Calificacion){
 					echo"<option value= $cadena=>$arre";
 				}else{
 					echo"<option value= $cadena>$arre";
@@ -269,7 +269,7 @@ function validar(form){
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select codigoCalificacion, tipoCalificacion, fechaCalificacion, comentarioCalificacion from tbl_calificacion  ";
+		                            $c1 = "select Id_Calificacion, Tipo_Calificacion, Fech_Calificacion, Comentario_Calificacion from tbl_calificacion  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{

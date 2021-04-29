@@ -10,7 +10,6 @@ if($_POST){
 	$objeto->Tipo_Descuento = $_POST['Tipo_Descuento'];
 	$objeto->Descripcion_Descuento = $_POST['Descripcion_Descuento'];
 	$objeto->Valor_Descuento = $_POST['Valor_Descuento'];
-	$objeto->codigoRol = $_POST['codigoRol'];
 }
 ?>
 <?php
@@ -31,7 +30,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select Id_Descuento, Dias_Descuento, Tipo_Descuento, Descripcion_Descuento,Valor_Descuento, codigoRol from descuento where Id_Descuento='$obj->Id_Descuento' ";
+										$c = "select Id_Descuento, Dias_Descuento, Tipo_Descuento, Descripcion_Descuento,Valor_Descuento from tbl_descuento where Id_Descuento='$obj->Id_Descuento' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -41,7 +40,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Descuento, Dias_Descuento, Tipo_Descuento, Descripcion_Descuento, Valor_Descuento, codigoRol from descuento ";
+										$c ="select Id_Descuento, Dias_Descuento, Tipo_Descuento, Descripcion_Descuento, Valor_Descuento from tbl_descuento ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -60,7 +59,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Descuento, Dias_Descuento, Tipo_Descuento, Descripcion_Descuento, codigoRol from descuento ";
+										$c ="select Id_Descuento, Dias_Descuento, Tipo_Descuento, Descripcion_Descuento from tbl_descuento ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -189,7 +188,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>descuento</title>
+		<title>Descuento</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -202,19 +201,18 @@ function validar(form){
 
 	
 	    <form name="descuento" class="contenedor_registro"  action="" method="POST">
-		<h1>descuento</h1>
+		<h1>Descuento</h1>
 		<div>
 		<label for="Id_Descuento">Codigo de compre del cliente</label>
 		<input type="text" id="Id_Descuento" name="Id_Descuento" value="<?php echo $objeto->Id_Descuento?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
 		<label for="Dias_Descuento">Dias de Descuento</label>
-		<input type="text" id="Dias_Descuento" name="Dias_Descuento" value="<?php echo $objeto->Dias_Descuento?>" placeholder="Digite la Dias de Descuento"></input>
+		<input type="text" id="Dias_Descuento" name="Dias_Descuento" value="<?php echo $objeto->Dias_Descuento?>" placeholder="Digite lOA Dias de Descuento"></input>
 		<label for="Tipo_Descuento">Tipo de Descuento</label>
 		<input type="text" id="Tipo_Descuento" name="Tipo_Descuento" value="<?php echo $objeto->Tipo_Descuento?>" placeholder="Digite el Tipo de Descuento"></input>
 		<label for="Descripcion_Descuento">Descripcion del Descuento</label>
 		<input type="text" id="Descripcion_Descuento" name="Descripcion_Descuento" value="<?php echo $objeto->Descripcion_Descuento?>" placeholder="Digite la Descripcion del Descuento"></input>
 		<label for="Valor_Descuento">Valor del Descuento</label>
-		<input type="text" id="Valor_Descuento" name="Descripcion_Descuento" value="<?php echo $objeto->Valor_Descuento?>" placeholder="Digite el Valor Descuento"></input>
-		<label for="codigoRol">Codigo de rol</label>
+		<input type="text" id="Valor_Descuento" name="Valor_Descuento" value="<?php echo $objeto->Valor_Descuento?>" placeholder="Digite el Valor del Descuento"></input>
 
 		<div>
 		    <select name="codigoRol" id="$objeto->codigoRol">
@@ -267,12 +265,11 @@ function validar(form){
 		    <td><b>Tipo de Descuento<b></td>
 		    <td><b>Descripcion del Descuento<b></td>
 		    <td><b>Valor del descuento<b></td>
-		    <td><b>Rol<b></td>
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select Id_Descuento, Dias_Descuento, Tipo_Descuento, Descripcion_Descuento, Valor_Descuento. codigoRol from descuento  ";
+		                            $c1 = "select Id_Descuento, Dias_Descuento, Tipo_Descuento, Descripcion_Descuento, Valor_Descuento from tbl_descuento  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -283,7 +280,6 @@ function validar(form){
 			<td><?php echo $arreglo[2]?></td>
 			<td><?php echo $arreglo[3]?></td>
 			<td><?php echo $arreglo[4]?></td>
-			<td><?php echo $arreglo[5]?></td>
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));

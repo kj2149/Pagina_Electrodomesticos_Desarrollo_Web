@@ -1,17 +1,18 @@
-Cantidad de la compra cl<?php
+<?php
     include("../conexion/conexion.php");
-	include("../controlador/compra_cliente_controlador.php");	
+	include("../controlador/inventario_controlador.php");	
 ?>
 <?php 
 $objeto = new Usuario();
 if($_POST){
-	$objeto->Id_Comp_Cli = $_POST['Id_Comp_Cli'];
-	$objeto->Cantidad_Comp_cli = $_POST['Cantidad_Comp_cli'];
-	$objeto->Descuento_Comp_Cli = $_POST['Descuento_Comp_Cli'];
-	$objeto->Iva_Comp_Cli = $_POST['Iva_Comp_Cli'];
-	$objeto->Garantia_Comp_Cli = $_POST['Garantia_Comp_Cli'];
-	$objeto->Precio_Total_Comp_Cli = $_POST['Precio_Total_Comp_Cli'];
-	$objeto->Fech_Comp_Cli = $_POST['Fech_Comp_Cli'];
+	$objeto->Id_Inventario = $_POST['Id_Inventario'];
+	$objeto->Fech_Entrada_Inventario = $_POST['Fech_Entrada_Inventario'];
+	$objeto->Fech_Salida_Inventario = $_POST['Fech_Salida_Inventario'];
+	$objeto->Hora_Entrada_Inventario = $_POST['Hora_Entrada_Inventario'];
+	$objeto->Hora_salida_Inventario = $_POST['Hora_salida_Inventario'];
+	$objeto->Canti_Inicial_Dia_Inventario = $_POST['Canti_Inicial_Dia_Inventario'];
+	$objeto->Canti_Vendida_Dia_Inventario = $_POST['Canti_Vendida_Dia_Inventario'];
+	$objeto->Canti_Disponible_Dia_Inventario = $_POST['Canti_Disponible_Dia_Inventario'];
 }
 ?>
 <?php
@@ -32,7 +33,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente where Id_Comp_Cli='$obj->Id_Comp_Cli' ";
+										$c = "select Id_Inventario, Fech_Entrada_Inventario, Fech_Salida_Inventario, Hora_Entrada_Inventario, Hora_salida_Inventario, Canti_Inicial_Dia_Inventario, Canti_Vendida_Dia_Inventario,Canti_Disponible_Dia_Inventario from tbl_inventario where Id_Inventario='$obj->Id_Inventario' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -42,7 +43,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente ";
+										$c ="select Id_Inventario, Fech_Entrada_Inventario, Fech_Salida_Inventario, Hora_Entrada_Inventario, Hora_salida_Inventario, Canti_Inicial_Dia_Inventario, Canti_Vendida_Dia_Inventario, Canti_Disponible_Dia_Inventario from tbl_inventario ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -61,7 +62,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente ";
+										$c ="select Id_Inventario, Fech_Entrada_Inventario, Fech_Salida_Inventario, Hora_Entrada_Inventario, Hora_salida_Inventario, Canti_Inicial_Dia_Inventario, Canti_Vendida_Dia_Inventario, Canti_Disponible_Dia_Inventario from tbl_inventario ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -108,14 +109,14 @@ $cargarPagina = sprintf("&totalArreglo=%d%s", $totalArreglo, $cargarPagina);
 <script language="javascript">
 function validar(form){
 	
- if(form.Cantidad_Comp_cli.value.length==0)
+ if(form.Fech_Entrada_Inventario.value.length==0)
    	{
-    alert("Digite la Cantidad_Comp_cli de compra");
-    form.Cantidad_Comp_cli.focus();
+    alert("Digite la Fech_Entrada_Inventario de compra");
+    form.Fech_Entrada_Inventario.focus();
     return(false);
 	}
 	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.Cantidad_Comp_cli.value;
+    var cadena=form.Fech_Entrada_Inventario.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -133,19 +134,19 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite una Cantidad_Comp_cli");
-	  form.Cantidad_Comp_cli.focus();
+	  alert("Digite una Fech_Entrada_Inventario");
+	  form.Fech_Entrada_Inventario.focus();
 	  return (false);
 	  }
 	
-	if(form.Descuento_Comp_Cli.value.length==0)
+	if(form.Fech_Salida_Inventario.value.length==0)
    	{
-    alert("Digite El Descuento_Comp_Cli");
-    form.Descuento_Comp_Cli.focus();
+    alert("Digite El Fech_Salida_Inventario");
+    form.Fech_Salida_Inventario.focus();
     return(false);
 	}
 	var letra="1234567890";
-    var cadena=form.Descuento_Comp_Cli.value;
+    var cadena=form.Fech_Salida_Inventario.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -163,8 +164,8 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite el Descuento_Comp_Cli");
-	  form.Descuento_Comp_Cli.focus();
+	  alert("Digite el Fech_Salida_Inventario");
+	  form.Fech_Salida_Inventario.focus();
 	  return (false);
 	  }
 	
@@ -190,7 +191,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>Compra Cliente</title>
+		<title>Inventario</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -202,23 +203,26 @@ function validar(form){
 	    </section>
 
 	
-	    <form name="compra cliente" class="contenedor_registro"  action="" method="POST">
-		<h1>Compra Cliente</h1>
+	    <form name="Inventario" class="contenedor_registro"  action="" method="POST">
+		<h1>Inventario</h1>
 		<div>
-		<label for="Id_Comp_Cli">Codigo de compra del cliente</label>
-		<input type="text" id="Id_Comp_Cli" name="Id_Comp_Cli" value="<?php echo $objeto->Id_Comp_Cli?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="Cantidad_Comp_cli">Cantidad de la compra cliente</label>
-		<input type="text" id="Cantidad_Comp_cli" name="Cantidad_Comp_cli" value="<?php echo $objeto->Cantidad_Comp_cli?>" placeholder="Digite la Cantidad de la compra cliente"></input>
-		<label for="Descuento_Comp_Cli">Descuento compra cliente</label>
-		<input type="text" id="Descuento_Comp_Cli" name="Descuento_Comp_Cli" value="<?php echo $objeto->Descuento_Comp_Cli?>" placeholder="Digite el Descuento de la compra cliente "></input>
-		<label for="Iva_Comp_Cli">Iva Compra</label>
-		<input type="text" id="Iva_Comp_Cli" name="Iva_Comp_Cli" value="<?php echo $objeto->Iva_Comp_Cli?>" placeholder="Digite el Iva de la compra cliente"></input>
-		<label for="Garantia_Comp_Cli">Garantia Compra</label>
-		<input type="text" id="Garantia_Comp_Cli" name="Garantia_Comp_Cli" value="<?php echo $objeto->Garantia_Comp_Cli?>" placeholder="Digite la Garantia de la compra cliente"></input>
-		<label for="Precio_Total_Comp_Cli">Precio total de la compra</label>
-		<input type="text" id="precio Total" name="Precio_Total_Comp_Cli" value="<?php echo $objeto->Precio_Total_Comp_Cli?>" placeholder="Digite el Precio Total de la compra"></input>
-		<label for="Fech_Comp_Cli">Fecha de la Compra</label>
-		<input type="text" id="Fech_Comp_Cli" name="Fech_Comp_Cli" value="<?php echo $objeto->Fech_Comp_Cli?>" placeholder="Digite la fecha de Compra"></input>1
+		<label for="Id_Inventario">Codigo de compra del cliente</label>
+		<input type="text" id="Id_Inventario" name="Id_Inventario" value="<?php echo $objeto->Id_Inventario?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
+		<label for="Fech_Entrada_Inventario">Fecha de Entrada al Inventario</label>
+		<input type="text" id="Fech_Entrada_Inventario" name="Fech_Entrada_Inventario" value="<?php echo $objeto->Fech_Entrada_Inventario?>" placeholder="Digite la Fecha de Entrada al Inventario"></input>
+		<label for="Fech_Salida_Inventario">Fecha de Salida al Inventario</label>
+		<input type="text" id="Fech_Salida_Inventario" name="Fech_Salida_Inventario" value="<?php echo $objeto->Fech_Salida_Inventario?>" placeholder="Digite Fecha de Salida al Inventario"></input>
+		<label for="Hora_Entrada_Inventario">Hora de Entrada al Inventario</label>
+		<input type="text" id="Hora_Entrada_Inventario" name="Hora_Entrada_Inventario" value="<?php echo $objeto->Hora_Entrada_Inventario?>" placeholder="Digite la Hora Entrada al Inventario"></input>
+		<label for="Hora_salida_Inventario">Hora de salida del Inventario</label>
+		<input type="text" id="Hora_salida_Inventario" name="Hora_salida_Inventario" value="<?php echo $objeto->Hora_salida_Inventario?>" placeholder="Digite la Hora de salida del Inventario"></input>
+		<label for="Canti_Inicial_Dia_Inventario">Cantidad inicial del dia inventario</label>
+		<input type="text" id="precio Total" name="Canti_Inicial_Dia_Inventario" value="<?php echo $objeto->Canti_Inicial_Dia_Inventario?>" placeholder="Digite Cantidad inicial del inventario"></input>
+		<label for="Canti_Vendida_Dia_Inventario"> Cantidad vendida por dia</label>
+		<input type="text" id="precio Total" name="Canti_Vendida_Dia_Inventario" value="<?php echo $objeto->Canti_Vendida_Dia_Inventario?>" placeholder="Digite Cantidad vendida por dia"></input>
+		<label for="Canti_Disponible_Dia_Inventario"> Cantidad disponible por dia</label>
+		<input type="text" id="precio Total" name="Canti_Disponible_Dia_Inventario" value="<?php echo $objeto->Canti_Disponible_Dia_Inventario?>" placeholder="Digite Cantidad disponible por dia"></input>
+	
 
 
 		<div>
@@ -268,19 +272,20 @@ function validar(form){
     <table width="544" border="0">
         <tr>
             <td><b>Código<b></td>
-            <td><b>Cantidad Compra clientr<b></td>
-		    <td><b>Descuento compra Cliente<b></td>
-		    <td><b>Iva Compra Cliente<b></td>
-		    <td><b>Garantia Compra Cliente<b></td>
-		    <td><b>Precio Total<b></td>
-		    <td><b>Fecha de Compra<b></td>
-		    
+            <td><b>Fecha de Entrada al Inventario<b></td>
+		    <td><b>Fecha de Salida al Inventario<b></td>
+		    <td><b>Hora de Entrada al Inventario<b></td>
+		    <td><b>Hora de salida del Inventario<b></td>
+		    <td><b>Cantidad inicial del dia inventario<b></td>
+		     <td><b>Cantidad vendida por dia<b></td>
+		    <td><b>Cantidad disponible por dia<b></td>
+		   
 
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente  ";
+		                            $c1 = "select Id_Inventario, Fech_Entrada_Inventario, Fech_Salida_Inventario, Hora_Entrada_Inventario, Hora_salida_Inventario, Canti_Inicial_Dia_Inventario, Canti_Vendida_Dia_Inventario, Canti_Disponible_Dia_Inventario from tbl_inventario  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -292,6 +297,7 @@ function validar(form){
 			<td><?php echo $arreglo[3]?></td>
 			<td><?php echo $arreglo[4]?></td>
 			<td><?php echo $arreglo[5]?></td>
+			<td><?php echo $arreglo[6]?></td>
 			<td><?php echo $arreglo[6]?></td>
 		</tr>
 		<?php

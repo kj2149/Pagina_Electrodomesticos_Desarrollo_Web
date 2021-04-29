@@ -1,17 +1,12 @@
-Cantidad de la compra cl<?php
+<?php
     include("../conexion/conexion.php");
-	include("../controlador/compra_cliente_controlador.php");	
+	include("../controlador/genero_controlador.php");	
 ?>
 <?php 
 $objeto = new Usuario();
 if($_POST){
-	$objeto->Id_Comp_Cli = $_POST['Id_Comp_Cli'];
-	$objeto->Cantidad_Comp_cli = $_POST['Cantidad_Comp_cli'];
-	$objeto->Descuento_Comp_Cli = $_POST['Descuento_Comp_Cli'];
-	$objeto->Iva_Comp_Cli = $_POST['Iva_Comp_Cli'];
-	$objeto->Garantia_Comp_Cli = $_POST['Garantia_Comp_Cli'];
-	$objeto->Precio_Total_Comp_Cli = $_POST['Precio_Total_Comp_Cli'];
-	$objeto->Fech_Comp_Cli = $_POST['Fech_Comp_Cli'];
+	$objeto->Id_Genero = $_POST['Id_Genero'];
+	$objeto->Nom_genero = $_POST['Nom_genero'];
 }
 ?>
 <?php
@@ -32,7 +27,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente where Id_Comp_Cli='$obj->Id_Comp_Cli' ";
+										$c = "select Id_Genero, Nom_genero from tbl_genero where Id_Genero='$obj->Id_Genero' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -42,7 +37,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente ";
+										$c ="select Id_Genero, Nom_genero from tbl_genero ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -61,9 +56,9 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente ";
+										$c ="select Id_Genero, Nom_genero from tbl_genero ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
-										$resultado = mysqli_query($con,$limite);
+										$resultado = mysqli_query($con,$limite); 
 										$arreglo=mysqli_fetch_row($resultado);
 }
 
@@ -108,14 +103,14 @@ $cargarPagina = sprintf("&totalArreglo=%d%s", $totalArreglo, $cargarPagina);
 <script language="javascript">
 function validar(form){
 	
- if(form.Cantidad_Comp_cli.value.length==0)
+ if(form.Nom_genero.value.length==0)
    	{
-    alert("Digite la Cantidad_Comp_cli de compra");
-    form.Cantidad_Comp_cli.focus();
+    alert("Digite el Genero ");
+    form.Nom_genero.focus();
     return(false);
 	}
 	var letra="abcdefeghijklmnopqrstuvwxyz@-_*/ + ABCDEFGHIJKLMNOPQRSTUVWX@-_*/";
-    var cadena=form.Cantidad_Comp_cli.value;
+    var cadena=form.Nom_genero.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -133,19 +128,19 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite una Cantidad_Comp_cli");
-	  form.Cantidad_Comp_cli.focus();
+	  alert("Digite el Genero");
+	  form.Nom_genero.focus();
 	  return (false);
 	  }
 	
-	if(form.Descuento_Comp_Cli.value.length==0)
+	if(form.Nom_genero.value.length==0)
    	{
-    alert("Digite El Descuento_Comp_Cli");
-    form.Descuento_Comp_Cli.focus();
+    alert("Digite el Genero");
+    form.Nom_genero.focus();
     return(false);
 	}
 	var letra="1234567890";
-    var cadena=form.Descuento_Comp_Cli.value;
+    var cadena=form.Nom_genero.value;
     var valida=true;
 
     for(i=0;i<cadena.length; i++)
@@ -163,8 +158,8 @@ function validar(form){
    	}
    if(!valida)
       {
-	  alert("Digite el Descuento_Comp_Cli");
-	  form.Descuento_Comp_Cli.focus();
+	  alert("Digite el Genero");
+	  form.Nom_genero.focus();
 	  return (false);
 	  }
 	
@@ -190,7 +185,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>Compra Cliente</title>
+		<title>Genero</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -202,24 +197,13 @@ function validar(form){
 	    </section>
 
 	
-	    <form name="compra cliente" class="contenedor_registro"  action="" method="POST">
-		<h1>Compra Cliente</h1>
+	    <form name="Genero" class="contenedor_registro"  action="" method="POST">
+		<h1>Genero</h1>
 		<div>
-		<label for="Id_Comp_Cli">Codigo de compra del cliente</label>
-		<input type="text" id="Id_Comp_Cli" name="Id_Comp_Cli" value="<?php echo $objeto->Id_Comp_Cli?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="Cantidad_Comp_cli">Cantidad de la compra cliente</label>
-		<input type="text" id="Cantidad_Comp_cli" name="Cantidad_Comp_cli" value="<?php echo $objeto->Cantidad_Comp_cli?>" placeholder="Digite la Cantidad de la compra cliente"></input>
-		<label for="Descuento_Comp_Cli">Descuento compra cliente</label>
-		<input type="text" id="Descuento_Comp_Cli" name="Descuento_Comp_Cli" value="<?php echo $objeto->Descuento_Comp_Cli?>" placeholder="Digite el Descuento de la compra cliente "></input>
-		<label for="Iva_Comp_Cli">Iva Compra</label>
-		<input type="text" id="Iva_Comp_Cli" name="Iva_Comp_Cli" value="<?php echo $objeto->Iva_Comp_Cli?>" placeholder="Digite el Iva de la compra cliente"></input>
-		<label for="Garantia_Comp_Cli">Garantia Compra</label>
-		<input type="text" id="Garantia_Comp_Cli" name="Garantia_Comp_Cli" value="<?php echo $objeto->Garantia_Comp_Cli?>" placeholder="Digite la Garantia de la compra cliente"></input>
-		<label for="Precio_Total_Comp_Cli">Precio total de la compra</label>
-		<input type="text" id="precio Total" name="Precio_Total_Comp_Cli" value="<?php echo $objeto->Precio_Total_Comp_Cli?>" placeholder="Digite el Precio Total de la compra"></input>
-		<label for="Fech_Comp_Cli">Fecha de la Compra</label>
-		<input type="text" id="Fech_Comp_Cli" name="Fech_Comp_Cli" value="<?php echo $objeto->Fech_Comp_Cli?>" placeholder="Digite la fecha de Compra"></input>1
-
+		<label for="Id_Genero">Codigo de genero</label>
+		<input type="text" id="Id_Genero" name="Id_Genero" value="<?php echo $objeto->Id_Genero?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
+		<label for="Nom_genero">Nombre de genero</label>
+		<input type="text" id="Nom_genero" name="Nom_genero" value="<?php echo $objeto->Nom_genero?>" placeholder="Digite EL Nombre de Genero"></input>
 
 		<div>
 		    <select name="codigoRol" id="$objeto->codigoRol">
@@ -268,19 +252,12 @@ function validar(form){
     <table width="544" border="0">
         <tr>
             <td><b>Código<b></td>
-            <td><b>Cantidad Compra clientr<b></td>
-		    <td><b>Descuento compra Cliente<b></td>
-		    <td><b>Iva Compra Cliente<b></td>
-		    <td><b>Garantia Compra Cliente<b></td>
-		    <td><b>Precio Total<b></td>
-		    <td><b>Fecha de Compra<b></td>
-		    
-
+            <td><b>Nombre de Genero<b></td>
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select Id_Comp_Cli, Cantidad_Comp_cli, Descuento_Comp_Cli, Iva_Comp_Cli, Garantia_Comp_Cli, Precio_Total_Comp_Cli, Fech_Comp_Cli from tbl_compra_cliente  ";
+		                            $c1 = "select Id_Genero, Nom_genero from tbl_genero  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -288,11 +265,6 @@ function validar(form){
 		<tr>
 		    <td><?php echo $arreglo[0]?></td>
 			<td><?php echo $arreglo[1]?></td>
-			<td><?php echo $arreglo[2]?></td>
-			<td><?php echo $arreglo[3]?></td>
-			<td><?php echo $arreglo[4]?></td>
-			<td><?php echo $arreglo[5]?></td>
-			<td><?php echo $arreglo[6]?></td>
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));

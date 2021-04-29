@@ -1,6 +1,6 @@
 <?php
     include("../conexion/conexion.php");
-	include("../controlador/detalles_venta_controlador.php");	
+	include("../controlador/detalles_Venta_controlador.php");	
 ?>
 <?php 
 $objeto = new Usuario();
@@ -32,7 +32,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_venta where Id_Deta_Venta='$obj->Id_Deta_Venta' ";
+										$c = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_Venta where Id_Deta_Venta='$obj->Id_Deta_Venta' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -42,7 +42,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from detalles_Venta ";
+										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_Venta ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -61,7 +61,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_venta ";
+										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_Venta ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -190,7 +190,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>Detalles deVenta</title>
+		<title>Detalles de Venta</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -202,7 +202,7 @@ function validar(form){
 	    </section>
 
 	
-	    <form name="detalles_Venta" class="contenedor_registro"  action="" method="POST">
+	    <form name="Detalles de Venta" class="contenedor_registro"  action="" method="POST">
 		<h1>Detalles de Venta</h1>
 		<div>
 		<label for="Id_Deta_Venta">Codigo de detalles ventas</label>
@@ -214,9 +214,9 @@ function validar(form){
 		<label for="Cost_Total_Venta_Deta_Venta">Costo Total de Ventas, Detalles Venta</label>
 		<input type="text" id="Cost_Total_Venta_Deta_Venta" name="Cost_Total_Venta_Deta_Venta" value="<?php echo $objeto->Cost_Total_Venta_Deta_Venta?>" placeholder="Digite el Costo Total de Ventas"></input>
 		<label for="Id_Factu">codigo de Factura</label>
-		<input type="text" id="Id_Factu" name="Cost_Total_Venta_Deta_Venta" value="<?php echo $objeto->Id_Factu?>" placeholder="Digite el codigo de Factura"></input>
+		<input type="text" id="Id_Factu" name="Id_Factu" value="<?php echo $objeto->Id_Factu?>" placeholder="Digite el codigo de Factura"></input>
 		<label for="Id_Inventario">codigo de Inventario </label>
-		<input type="text" id="precio Total" name="Cost_Total_Venta_Deta_Venta" value="<?php echo $objeto->Id_Inventario?>" placeholder="Digite el Id_Inventario"></input>
+		<input type="text" id="Id_Inventario" name="Id_Inventario" value="<?php echo $objeto->Id_Inventario?>" placeholder="Digite el codigo del Inventario"></input>
 		<label for="Id_Descuento">codigo de descuento</label>
 		<input type="text" id="Id_Descuento" name="Id_Descuento" value="<?php echo $objeto->Id_Descuento?>" placeholder="Digite el codigo de descuento"></input>
 
@@ -269,7 +269,7 @@ function validar(form){
             <td><b>Código<b></td>
             <td><b>UnidadesVentdidas, Detalles de Venta<b></td>
 		    <td><b>Precio Unid Detalles de Venta<b></td>
-		    <td><b>Costo Total deVenta,Detalles de Venta<b></td>
+		    <td><b>Costo Total de Venta,Detalles de Venta<b></td>
 		    <td><b>Codigo de Factura<b></td>
 		    <td><b>codigo de Inventario<b></td>
 		    <td><b>codigo de descuento<b></td>
@@ -277,7 +277,7 @@ function validar(form){
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_venta  ";
+		                            $c1 = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_Venta  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{

@@ -277,8 +277,9 @@ function validar(form){
 		<tr>
 		    <td><?php echo $arreglo[0]?></td>
 			<td><?php echo $arreglo[1]?></td>
-			<td><?php echo $arreglo[2]?></td>S
+			<td><?php echo $arreglo[2]?></td>
 			<td><?php echo $arreglo[3]?></td>
+			<td><?php echo $arreglo[4]?></td>
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));

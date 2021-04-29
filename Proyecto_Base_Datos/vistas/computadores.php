@@ -226,13 +226,13 @@
 		<article>
 		    <img id="til" src="../imagenes/tit-compu.png" alt="computadores">
 				<ul>
-					<a href="../vista/vista_producto_11.php" class="colimag"><img id="imagen" src="../imagenes/prod11.png">
+					<a href="../vistas/vista_producto_11.php" class="colimag"><img id="imagen" src="../imagenes/prod11.png">
 					</li></a>
-					<a href="../vista/vista_producto_12.php" class="colimag"><img id="imagen" src="../imagenes/prod12.png">	
+					<a href="../vistas/vista_producto_12.php" class="colimag"><img id="imagen" src="../imagenes/prod12.png">	
 					</li></a>
-					<a href="../vista/vista_producto_13.php" class="colimag"><img id="imagen" src="../imagenes/prod13.png">
+					<a href="../vistas/vista_producto_13.php" class="colimag"><img id="imagen" src="../imagenes/prod13.png">
 					</li></a>
-					<a href="../vista/vista_producto_14.php" class="colimag"><img id="imagen" src="../imagenes/prod14.png">	
+					<a href="../vistas/vista_producto_14.php" class="colimag"><img id="imagen" src="../imagenes/prod14.png">	
 					</li></a>
 					<li class="colimag"><img id="imagen" src="../imagenes/imagen16.png">	
 						<p>Portátil LENOVO IdeaPad 3 14" Pulgadas Intel Celeron 4GB<br>

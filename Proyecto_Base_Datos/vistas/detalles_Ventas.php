@@ -1,6 +1,6 @@
 <?php
     include("../conexion/conexion.php");
-	include("../controlador/detalles_Venta_controlador.php");	
+	include("../controlador/detalles_venta_controlador.php");	
 ?>
 <?php 
 $objeto = new Usuario();
@@ -12,7 +12,6 @@ if($_POST){
 	$objeto->Id_Factu = $_POST['Id_Factu'];
 	$objeto->Id_Inventario = $_POST['Id_Inventario'];
 	$objeto->Id_Descuento = $_POST['Id_Descuento'];
-	$objeto->codigoRol = $_POST['codigoRol'];
 }
 ?>
 <?php
@@ -33,7 +32,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento, codigoRol from detalles_Venta where Id_Deta_Venta='$obj->Id_Deta_Venta' ";
+										$c = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_venta where Id_Deta_Venta='$obj->Id_Deta_Venta' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -43,7 +42,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento, codigoRol from detalles_Venta ";
+										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from detalles_Venta ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -62,7 +61,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento, codigoRol from detalles_Venta ";
+										$c ="select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_venta ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -191,7 +190,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>detalles_Venta</title>
+		<title>Detalles deVenta</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -204,7 +203,7 @@ function validar(form){
 
 	
 	    <form name="detalles_Venta" class="contenedor_registro"  action="" method="POST">
-		<h1>detalles_Venta</h1>
+		<h1>Detalles de Venta</h1>
 		<div>
 		<label for="Id_Deta_Venta">Codigo de detalles ventas</label>
 		<input type="text" id="Id_Deta_Venta" name="Id_Deta_Venta" value="<?php echo $objeto->Id_Deta_Venta?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
@@ -220,7 +219,6 @@ function validar(form){
 		<input type="text" id="precio Total" name="Cost_Total_Venta_Deta_Venta" value="<?php echo $objeto->Id_Inventario?>" placeholder="Digite el Id_Inventario"></input>
 		<label for="Id_Descuento">codigo de descuento</label>
 		<input type="text" id="Id_Descuento" name="Id_Descuento" value="<?php echo $objeto->Id_Descuento?>" placeholder="Digite el codigo de descuento"></input>
-		<label for="codigoRol">Codigo de rol</label>
 
 		<div>
 		    <select name="codigoRol" id="$objeto->codigoRol">
@@ -275,12 +273,11 @@ function validar(form){
 		    <td><b>Codigo de Factura<b></td>
 		    <td><b>codigo de Inventario<b></td>
 		    <td><b>codigo de descuento<b></td>
-		    <td><b>Rol<b></td>
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento, codigoRol from detalles_Venta  ";
+		                            $c1 = "select Id_Deta_Venta, Unid_Ventdida_Deta_Venta, Precio_Unid_Deta_Venta, Cost_Total_Venta_Deta_Venta, Id_Factu, Id_Inventario, Id_Descuento from tbl_detalles_venta  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -293,7 +290,6 @@ function validar(form){
 			<td><?php echo $arreglo[4]?></td>
 			<td><?php echo $arreglo[5]?></td>
 			<td><?php echo $arreglo[6]?></td>
-			<td><?php echo $arreglo[7] ?></td>
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));

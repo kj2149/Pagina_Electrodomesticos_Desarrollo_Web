@@ -7,7 +7,6 @@ $objeto = new Usuario();
 if($_POST){
 	$objeto->Id_departamento = $_POST['Id_departamento'];
 	$objeto->Direc_departamento = $_POST['Direc_departamento'];
-	$objeto->codigoRol = $_POST['codigoRol'];
 }
 ?>
 <?php
@@ -28,7 +27,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select Id_departamento, Direc_departamento, codigoRol from departamento where Id_departamento='$obj->Id_departamento' ";
+										$c = "select Id_departamento, Direc_departamento from tbl_departamento where Id_departamento='$obj->Id_departamento' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -38,7 +37,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_departamento, Direc_departamento, codigoRol from departamento ";
+										$c ="select Id_departamento, Direc_departamento from tbl_departamento ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -57,7 +56,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_departamento, Direc_departamento, codigoRol from departamento ";
+										$c ="select Id_departamento, Direc_departamento from tbl_departamento ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite); 
 										$arreglo=mysqli_fetch_row($resultado);
@@ -186,7 +185,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>departamento</title>
+		<title>Departamento</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -199,13 +198,12 @@ function validar(form){
 
 	
 	    <form name="departamento" class="contenedor_registro"  action="" method="POST">
-		<h1>departamento</h1>
+		<h1>Departamento</h1>
 		<div>
 		<label for="Id_departamento">Codigo de departamento</label>
 		<input type="text" id="Id_departamento" name="Id_departamento" value="<?php echo $objeto->Id_departamento?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
 		<label for="Direc_departamento">Direccion drdepartamento</label>
 		<input type="text" id="Direc_departamento" name="Direc_departamento" value="<?php echo $objeto->Direc_departamento?>" placeholder="Digite la Direccion de departamento"></input>
-		<label for="codigoRol">Codigo de rol</label>
 
 		<div>
 		    <select name="codigoRol" id="$objeto->codigoRol">
@@ -255,12 +253,11 @@ function validar(form){
         <tr>
             <td><b>Código<b></td>
             <td><b>Direccion de departamento<b></td>
-		    <td><b>Rol<b></td>
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select Id_departamento, Direc_departamento, codigoRol from departamento  ";
+		                            $c1 = "select Id_departamento, Direc_departamento from tbl_departamento  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -268,7 +265,6 @@ function validar(form){
 		<tr>
 		    <td><?php echo $arreglo[0]?></td>
 			<td><?php echo $arreglo[1]?></td>
-			<td><?php echo $arreglo[2]?></td>
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));

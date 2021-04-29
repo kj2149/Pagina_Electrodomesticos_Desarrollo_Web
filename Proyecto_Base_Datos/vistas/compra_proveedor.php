@@ -9,7 +9,6 @@ if($_POST){
 	$objeto->cantidadCompraProveedor = $_POST['cantidadCompraProveedor'];
 	$objeto->precioTotal = $_POST['precioTotal'];
 	$objeto->fechaCompraProveedor = $_POST['fechaCompraProveedor'];
-	$objeto->codigoRol = $_POST['codigoRol'];
 }
 ?>
 <?php
@@ -30,7 +29,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor, codigoRol from compra_proveedor where codigoCompraprovedor='$obj->codigoCompraprovedor' ";
+										$c = "select codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor from tbl_compra_proveedor where codigoCompraprovedor='$obj->codigoCompraprovedor' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -40,7 +39,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor, codigoRol from compra_proveedor ";
+										$c ="select codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor from tbl_compra_proveedor ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -59,7 +58,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor, codigoRol from compra_proveedor ";
+										$c ="select codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor from tbl_compra_proveedor ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -188,7 +187,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>compra_proveedor</title>
+		<title> Compra Proveedor</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -201,15 +200,15 @@ function validar(form){
 
 	
 	    <form name="compra_proveedor" class="contenedor_registro"  action="" method="POST">
-		<h1>compra_proveedor</h1>
+		<h1> Compra Proveedor</h1>
 		<div>
 		<label for="codigoCompraprovedor">Codigo de compra del cliente</label>
 		<input type="text" id="codigoCompraprovedor" name="codigoCompraprovedor" value="<?php echo $objeto->codigoCompraprovedor?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="cantidadCompraProveedor">cantidad Compra Proveedor</label>
+		<label for="cantidadCompraProveedor">Cantidad Compra Proveedor</label>
 		<input type="text" id="cantidadCompraProveedor" name="cantidadCompraProveedor" value="<?php echo $objeto->cantidadCompraProveedor?>" placeholder="Digite la cantidad Compra proveedor"></input>
-		<label for="precioTotal">precio Total</label>
+		<label for="precioTotal">Precio Total</label>
 		<input type="text" id="precioTotal" name="precioTotal" value="<?php echo $objeto->precioTotal?>" placeholder="Digite el precio Total"></input>
-		<label for="fechaCompraProveedor">fecha de Compra Proveedor</label>
+		<label for="fechaCompraProveedor">Fecha de Compra Proveedor</label>
 		<input type="text" id="fechaCompraProveedor" name="fechaCompraProveedor" value="<?php echo $objeto->fechaCompraProveedor?>" placeholder="Digite el fecha Compra Proveedor"></input>
 		<label for="garantia">Garantia</label>
 		<input type="text" id="garantia" name="fechaCompraProveedor" value="<?php echo $objeto->garantia?>" placeholder="Digite la garantia"></input>
@@ -217,7 +216,7 @@ function validar(form){
 		<input type="text" id="precioTotal" name="fechaCompraProveedor" value="<?php echo $objeto->precioTotal?>" placeholder="Digite el precioTotal"></input>
 		<label for="fechaCompra">Fecha de la Compra</label>
 		<input type="text" id="fechaCompra" name="fechaCompra" value="<?php echo $objeto->fechaCompra?>" placeholder="Digite la fecha de Compra"></input>
-		<label for="codigoRol">Codigo de rol</label>
+		
 
 		<div>
 		    <select name="codigoRol" id="$objeto->codigoRol">
@@ -266,15 +265,15 @@ function validar(form){
     <table width="544" border="0">
         <tr>
             <td><b>Código<b></td>
-            <td><b>cantidad Compra del Proveedor<b></td>
-		    <td><b>precio Total<b></td>
-		    <td><b>fecha Compra Proveedor<b></td>
-		    <td><b>Rol<b></td>
+            <td><b>Cantidad Compra del Proveedor<b></td>
+		    <td><b>Precio Total<b></td>
+		    <td><b>Fecha de Compra Proveedor<b></td>
+		    
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor, codigoRol from compra_proveedor  ";
+		                            $c1 = "select codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor from tbl_compra_proveedor  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -284,7 +283,7 @@ function validar(form){
 			<td><?php echo $arreglo[1]?></td>
 			<td><?php echo $arreglo[2]?></td>
 			<td><?php echo $arreglo[3]?></td>
-			<td><?php echo $arreglo[4]?></td>
+
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));

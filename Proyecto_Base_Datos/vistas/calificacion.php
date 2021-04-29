@@ -30,7 +30,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select codigoCalificacion, tipoCalificacion, fechaCalificacion, comentarioCalificacion from calificacion where codigoCalificacion='$obj->codigoCalificacion' ";
+										$c = "select codigoCalificacion, tipoCalificacion, fechaCalificacion, comentarioCalificacion from tbl_calificacion where codigoCalificacion='$obj->codigoCalificacion' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -40,7 +40,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCalificacion, tipoCalificacion, fechaCalificacion, comentarioCalificacion from calificacion ";
+										$c ="select codigoCalificacion, tipoCalificacion, fechaCalificacion, comentarioCalificacion from tbl_calificacion ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -59,7 +59,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCalificacion, tipoCalificacion, comentarioCalificacion from calificacion ";
+										$c ="select codigoCalificacion, tipoCalificacion, comentarioCalificacion from tbl_calificacion ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -201,17 +201,20 @@ function validar(form){
 
 	
 	    <form name="calificacion" class="contenedor_registro"  action="" method="POST">
-		<h1>calificacion</h1>
+		<h1>Calificacion</h1>
 		<div>
-		<label for="codigoCalificacion">Codigo de Calificacion</label>
+		<label for="codigoCalificacion">Codigo de calificacion</label>
 		<input type="text" id="codigoCalificacion" name="codigoCalificacion" value="<?php echo $objeto->codigoCalificacion?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="tipoCalificacion">tipo de Calificacion</label>
-		<input type="text" id="tipoCalificacion" name="tipoCalificacion" value="<?php echo $objeto->tipoCalificacion?>" placeholder="Digite el tipo de Calificacion"></input>
-		<label for="fechaCalificacion"> fecha de Calificacion</label>
-		<input type="text" id="fechaCalificacion" name="fechaCalificacion" value="<?php echo $objeto->fechaCalificacion?>" placeholder="Digite fecha de Calificacion"></input>
-		<label for="comentarioCalificacion">comentario</label>
+		<label for="tipoCalificacion">Tipo de calificacion</label>
+		<input type="text" id="tipoCalificacion" name="tipoCalificacion" value="<?php echo $objeto->tipoCalificacion?>" placeholder="Digite el tipo de calificacion"></input>
+		<label for="fechaCalificacion"> Fecha de calificacion</label>
+		<input type="text" id="fechaCalificacion" name="fechaCalificacion" value="<?php echo $objeto->fechaCalificacion?>" placeholder="Digite fecha de calificacion"></input>
+		<label for="comentarioCalificacion">Comentario</label>
         <input type="text" id="comentario" name="comentario" value="<?php echo $objeto->comentario?>" placeholder="Digite comentario"></input>
-		<div>
+		<div> 
+
+
+
 		    <select name="comentarioCalificacion" id="$objeto->comentarioCalificacion">
 			<option>
 					 <?php
@@ -266,7 +269,7 @@ function validar(form){
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select codigoCalificacion, tipoCalificacion, fechaCalificacion, comentarioCalificacion from calificacion  ";
+		                            $c1 = "select codigoCalificacion, tipoCalificacion, fechaCalificacion, comentarioCalificacion from tbl_calificacion  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{

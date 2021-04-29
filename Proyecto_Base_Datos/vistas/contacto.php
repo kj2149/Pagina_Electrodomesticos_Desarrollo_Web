@@ -10,7 +10,6 @@ if($_POST){
 	$objeto->Telefono_contacto = $_POST['Telefono_contacto'];
 	$objeto->Correo_contacto = $_POST['Correo_contacto'];
 	$objeto->Fech_Nac_Edad = $_POST['Fech_Nac_Edad'];
-	$objeto->codigoRol = $_POST['codigoRol'];
 }
 ?>
 <?php
@@ -31,7 +30,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select Id_contacto, Direc_contacto, Telefono_contacto, Correo_contacto, Fech_Nac_Edad, codigoRol from contacto where Id_contacto='$obj->Id_contacto' ";
+										$c = "select Id_contacto, Direc_contacto, Telefono_contacto, Correo_contacto, Fech_Nac_Edad from tbl_contacto where Id_contacto='$obj->Id_contacto' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -41,7 +40,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_contacto, Direc_contacto, Telefono_contacto, Correo_contacto, Fech_Nac_Edad, codigoRol from contacto ";
+										$c ="select Id_tbl_contacto, Direc_contacto, Telefono_contacto, Correo_contacto, Fech_Nac_Edad from tbl_contacto ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -60,7 +59,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select Id_contacto, Direc_contacto,Telefono_contacto, Correo_contacto, Fech_Nac_Edad, codigoRol from contacto ";
+										$c ="select Id_contacto, Direc_contacto,Telefono_contacto, Correo_contacto, Fech_Nac_Edad from contacto ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -189,7 +188,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>contacto</title>
+		<title>Contacto</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -202,7 +201,7 @@ function validar(form){
 
 	
 	    <form name="contacto" class="contenedor_registro"  action="" method="POST">
-		<h1>contacto</h1>
+		<h1>Contacto</h1>
 		<div>
 		<label for="Id_contacto">Codigo de contacto</label>
 		<input type="text" id="Id_contacto" name="Id_contacto" value="<?php echo $objeto->Id_contacto?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
@@ -214,7 +213,6 @@ function validar(form){
 		<input type="text" id="Correo_contacto" name="Correo_contacto" value="<?php echo $objeto->Correo_contacto?>" placeholder="Digite el Correo de contacto"></input>
 		<label for="Fech_Nac_Edad">Fecha de Nacimiento Edad</label>
 		<input type="text" id="Fech_Nac_Edad" name="Correo_contacto" value="<?php echo $objeto->Fech_Nac_Edad?>" placeholder="Digite la Fecha de Nacimiento"></input>
-		<label for="codigoRol">Codigo de rol</label>
 
 		<div>
 		    <select name="codigoRol" id="$objeto->codigoRol">
@@ -266,13 +264,12 @@ function validar(form){
             <td><b>Direccion de contacto<b></td>
 		    <td><b>Telefono de contacto<b></td>
 		    <td><b>Correo de contacto<b></td>
-		    <td><b>Fech_Nac_Edad<b></td>S
-		    <td><b>Rol<b></td>
+		    <td><b>Fecha de Nacacimiento Edad<b></td>S
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select Id_contacto, Direc_contacto, Telefono_contacto, Correo_contacto, Fech_Nac_Edad, codigoRol from contacto  ";
+		                            $c1 = "select Id_contacto, Direc_contacto, Telefono_contacto, Correo_contacto, Fech_Nac_Edad from tbl_contacto  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -280,10 +277,8 @@ function validar(form){
 		<tr>
 		    <td><?php echo $arreglo[0]?></td>
 			<td><?php echo $arreglo[1]?></td>
-			<td><?php echo $arreglo[2]?></td>
+			<td><?php echo $arreglo[2]?></td>S
 			<td><?php echo $arreglo[3]?></td>
-			<td><?php echo $arreglo[4]?></td>
-			<td><?php echo $arreglo[5]?></td>
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));

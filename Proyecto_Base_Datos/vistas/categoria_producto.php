@@ -8,7 +8,6 @@ if($_POST){
 	$objeto->codigoCategoriaProducto = $_POST['codigoCategoriaProducto'];
 	$objeto->nombreCategoria = $_POST['nombreCategoria'];
 	$objeto->tipoCategoria = $_POST['tipoCategoria'];
-	$objeto->codigoRol = $_POST['codigoRol'];
 }
 ?>
 <?php
@@ -29,7 +28,7 @@ if(isset($_POST['guardar'])){
 if(isset($_POST['consulta'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from categoria_producto where codigoCategoriaProducto='$obj->codigoCategoriaProducto' ";
+										$c = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria from tbl_categoria_producto where codigoCategoriaProducto='$obj->codigoCategoriaProducto' ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);	
@@ -39,7 +38,7 @@ if(isset($_POST['consulta'])){
 
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from categoria_producto ";
+										$c ="select codigoCategoriaProducto, nombreCategoria, tipoCategoria from tbl_categoria_producto ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -58,7 +57,7 @@ if(isset($_POST['nuevo'])){
 if(isset($_POST['ver'])){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$c ="select codigoCategoriaProducto, nombreCategoria, codigoRol from categoria_producto ";
+										$c ="select codigoCategoriaProducto, nombreCategoria from tbl_categoria_producto ";
 										$limite =sprintf("%s limit %d, %d",$c, $inicia, $maximoDatos);
 										$resultado = mysqli_query($con,$limite);
 										$arreglo=mysqli_fetch_row($resultado);
@@ -187,7 +186,7 @@ function validar(form){
     <head>
 	    <meta charset="uft-8">
 		<meta name="viewport" content="css, php, html">
-		<title>categoria_producto</title>
+		<title>Categoria Producto</title>
 		<link rel="stylesheet" href="../css/estilos.css">
 		<link rel="stylesheet" href="../css/estilos5.css">
 	</head>
@@ -200,15 +199,15 @@ function validar(form){
 
 	
 	    <form name="categoria_producto" class="contenedor_registro"  action="" method="POST">
-		<h1>categoria_producto</h1>
+		<h1>Categoria Producto</h1>
 		<div>
-		<label for="codigoCategoriaProducto">Codigo de Catrgoria Producto</label>
+		<label for="codigoCategoriaProducto">Codigo de Categoria Producto</label>
 		<input type="text" id="codigoCategoriaProducto" name="codigoCategoriaProducto" value="<?php echo $objeto->codigoCategoriaProducto?>" placeholder="El Codigo es Asignado por el Sistema" readOnly></input>
-		<label for="nombreCategoria">Nombre de Catrgoria</label>
+		<label for="nombreCategoria">Nombre de la Categoria</label>
 		<input type="text" id="nombreCategoria" name="nombreCategoria" value="<?php echo $objeto->nombreCategoria?>" placeholder="Digite el nombre de Catrgoria"></input>
-		<label for="tipoCategoria"> tipoCategoriasuario</label>
+		<label for="tipoCategoria"> Tipo de Categoria </label>
 		<input type="text" id="tipoCategoria" name="tipoCategoria" value="<?php echo $objeto->tipoCategoria?>" placeholder="Digite el tipo de categoria"></input>
-		<label for="codigoRol">Codigo de rol</label>
+		
 
 		<div>
 		    <select name="codigoRol" id="$objeto->codigoRol">
@@ -260,12 +259,11 @@ function validar(form){
             <td><b>Código<b></td>
             <td><b>Nombre<b></td>
 		    <td><b>Tipo<b></td>
-		    <td><b>Rol<b></td>
 		</tr>
 		<?php
 		                            $c = new Conexion();
 		                            $con = $c->conectarServidor();
-		                            $c1 = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from categoria_producto  ";
+		                            $c1 = "select codigoCategoriaProducto, nombreCategoria, tipoCategoria, codigoRol from tbl_categoria_producto  ";
 		                            $resultado1 = mysqli_query($con, $limite);
 		                            $arreglo= mysqli_fetch_row ($resultado1);
 		do{
@@ -274,7 +272,7 @@ function validar(form){
 		    <td><?php echo $arreglo[0]?></td>
 			<td><?php echo $arreglo[1]?></td>
 			<td><?php echo $arreglo[2]?></td>
-			<td><?php echo $arreglo[3] ?></td>
+
 		</tr>
 		<?php
 		}while($arreglo=mysqli_fetch_row($resultado1));

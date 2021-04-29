@@ -1,0 +1,89 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+ #fondo2{
+    width: 100%; 
+    content:'';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-image: url(../imagenes/pl1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    background-size: center;
+    
+}
+
+
+
+input[type="reset"]:hover {
+  background-color: #00b8eb;
+}
+
+
+
+form{
+  width: 85%;
+  padding: 5%;
+  margin: 5% auto ;
+  font-family: arial sans-serif;
+  -webkit-box-shadow: -2px 4px 4px 3px rgb(220, 220, 220);
+
+}
+
+form h1{
+	width: 90%;
+    margin-bottom: 50px;
+    font-family: arial; 
+}
+
+
+.submit{
+    width: 30%;
+    padding:7px 10px;
+    margin: 20px 100px 20px 125px;
+    cursor: pointer;
+    display: block;
+    margin-left: 120px;
+    background:linear-gradient( to right, #64dcec,#8fc3f3 ) ;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+
+/* Input Forms*/
+input[type="text"], input[type="password"], input[type="date"]{
+    outline: none;
+    padding: 10px;
+    display: block;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 20px 170px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px;
+    color: #fff;
+    background: #0098cb;
+    width: 120px;
+    margin: 10px;
+    margin-top: 0;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #00b8eb;
+  }
+ /* estilo de los chectbox */
+

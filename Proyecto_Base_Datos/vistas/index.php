@@ -99,7 +99,7 @@
 			</li>
 			<li class="toproot"><a href="servicio.php" target="marco"style="height:28px;line-height:22px;"><span>Servicios</span></a></li>
 			
-			<li class="toproot"><a href="quienes somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
+			<li class="toproot"><a href="quienes_somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
 			</li>
 			<li class="toplast"><a href="contactenos.php" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
 		</ul>

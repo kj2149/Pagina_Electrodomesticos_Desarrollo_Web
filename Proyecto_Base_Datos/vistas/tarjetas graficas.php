@@ -224,7 +224,7 @@
 		<article>
 		    <img id="til" src="../imagenes/tit-Tarj.png" alt="tarjetas graficas">
 				<ul>
-					a href="../vistas/vista_producto_96.php" class="colimag"><img id="imagen" src="../imagenes/imagen96.png">
+					<a href="../vistas/vista_producto_96.php" class="colimag"><img id="imagen" src="../imagenes/imagen96.png">
 						<p>Tarjeta De Video Gigabyte Geforce Gt710 Ddr5<br>
 						$275.000</p></li></a>
 						<a href="../vistas/vista_producto_100.php" class="colimag"><img id="imagen" src="../imagenes/imagen100.png">

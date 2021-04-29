@@ -45,11 +45,11 @@
       
      <!--LOGO DE LA EMPRESA-->
 	  
-		<a href="../vista/index.php"class="logo"> <img  src="../imagenes/2.png" alt="logoempresa">	</a>
+		<a href="../vistas/index.php"class="logo"> <img  src="../imagenes/2.png" alt="logoempresa">	</a>
 	
      <!--TITULO ULIMITED TECNHOLOGY-->
 
-	 	<a href="../vista/index.php" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
+	 	<a href="../vistas/index.php" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
 
      <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
 
@@ -60,13 +60,13 @@
 				        <i class="fas fa-search icon"></i>
 			         </div>
 		          </div>
-		          <a class="iniciar1" href="../vista/login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
-		          <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
+		          <a class="iniciar1" href="../vistas/login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
+		          <a class="registrar1" href="../vistas/registro.php" > <button type="button" class="bot-log-reg">Registrarse</button></a>
              </div>	
 
     <!--Menu Header-->
 		<ul id="css3menu1" class="topmenu">
-			<li class="topmenu"><a href="inicio.php" target="marco" style="height:28px;line-height:22px;">Inicio</a>
+			<li class="topmenu"><a href="index.php" target="marco" style="height:28px;line-height:22px;">Inicio</a>
 			</li>
 			<li class="toproot"><a href="#" target="marco"style="height:28px;line-height:22px;"><span>Productos</span></a>
 				<ul>
@@ -101,7 +101,7 @@
 			</li>
 			<li class="toproot"><a href="servicio.php" target="marco"style="height:28px;line-height:22px;"><span>Servicios</span></a></li>
 			
-			<li class="toproot"><a href="quienes somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
+			<li class="toproot"><a href="quienes_somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
 			</li>
 			<li class="toplast"><a href="contactenos.php" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
 		</ul>

@@ -225,18 +225,18 @@
 		<article>
 		    <img id="til" src="../imagenes/tit-fuen.png" alt="fuentes de poder">
 				<ul>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen111.png">
+					<a href="../vistas/vista_producto_111.php" class="colimag"><img id="imagen" src="../imagenes/imagen111.png">
 							<p>Fuente De Poder Cougar Vtc 600 80 Plus White<br>
-							$280.000</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen112.png">	
+							$280.000</p></li></a>
+							<a href="../vistas/vista_producto_112.php" class="colimag"><img id="imagen" src="../imagenes/imagen112.png">	
 							<p>Fuente De Poder Xpg Core Reactor 850w 80 Plus Gold<br>
-							$641,900</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen113.png">
-						    <p>Fuente De Poder Antec 1000w Hcg-1000 Extreme 80 Plus Gold<br>
-							$369,900</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen114.png">	
-							<p>Thermaltake Toughpower Irgb Plus 1200w Platinum Fuente Poder<br>
-							$320,000</p></li>
+							$641,900</p></li></a>
+							<a href="../vistas/vista_producto_113.php" class="colimag"><img id="imagen" src="../imagenes/imagen113.png">
+						    <p>Fuente Evga Super Nova 1000g5 80 Plus Gold 1000w Modular<br>
+							$1.799.000</p></li></a>
+							<a href="../vistas/vista_producto_114.php" class="colimag"><img id="imagen" src="../imagenes/imagen114.png">	
+							<p>Thermaltake Toughpower Irgb Plus 1200w Platinum <br>
+							$2.049.000</p></li></a>
 					<li class="colimag"><img id="imagen" src="../imagenes/imagen115.jpg">
 							<p>Fuente De Poder Evga 1000W Gq Gold Modular<br>
 							$990,900</p></li>

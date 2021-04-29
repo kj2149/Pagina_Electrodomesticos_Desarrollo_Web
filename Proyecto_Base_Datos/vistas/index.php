@@ -60,7 +60,7 @@
 			  </div>
 		      </div>
 		      <a class="iniciar1" href="../vistas/login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
-		      <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
+		      <a class="registrar1" href="../vistas/registro.php" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
     <!--Menu Header-->
 		<ul id="css3menu1" class="topmenu">
@@ -234,40 +234,42 @@
 	
   
 <!--/////////////      CONTENIDO       //////////////-->
+<!--/////////////      CONTENIDO       //////////////-->
 <section class="container-index-contenido">
 		<article>
-		    <a href="../vistas/celulares.html" id="til"> <img  src="../imagenes/tit-cel.png" alt="Celulares"> </a>
+		    <a href="../vistas/celulares.php" id="til"> <img  src="../imagenes/tit-cel.png" alt="Celulares"> </a>
 			    <ul>
-					<li class="colimag"><img id="imagen" src="../imagenes/prod1.png">
-					</li>
-					<li class="colimag"><img id="imagen" src="../imagenes/prod2.png">	
-					</li>
-					<li class="colimag"><img id="imagen" src="../imagenes/prod3.png">
-					</li>
-					<li class="colimag"><img id="imagen" src="../imagenes/prod4.png">	
-					</li>		
+					<a href="../vistas/vista_producto_1.php" li class="colimag"><img id="imagen" src="../imagenes/prod1.png" >
+					</li></a>
+					<a href="../vistas/vista_producto_2.php" class="colimag"><img id="imagen" src="../imagenes/prod2.png">	
+					</li></a>
+					<a href="../vistas/vista_producto_3.php" class="colimag"><img id="imagen" src="../imagenes/producto3.PNG">
+					</li></a>
+					<a href="../vistas/vista_producto_4.php" class="colimag"><img id="imagen" src="../imagenes/producto4.PNG">
+					</li></a>		
 			    </ul>	    
 		</article>
 
 
 		<article>
-		    <a href="../vistas/computadores.html" id="til"> <img  src="../imagenes/tit-compu.png" alt="Computadores"> </a>
+		    <a href="../vistas/computadores.php" id="til"> <img  src="../imagenes/tit-compu.png" alt="Computadores"> </a>
 			         
 			    <ul>
-					<li class="colimag"><img id="imagen" src="../imagenes/prod11.png">
-					</li>
-					<li class="colimag"><img id="imagen" src="../imagenes/prod12.png">	
-					</li>
-					<li class="colimag"><img id="imagen" src="../imagenes/prod13.png">
-					</li>
-					<li class="colimag"><img id="imagen" src="../imagenes/prod14.png">	
-					</li>	
+					<a href="../vistas/vista_producto_11.php" class="colimag"><img id="imagen" src="../imagenes/prod11.png">
+					</li></a>
+					<a href="../vistas/vista_producto_12.php" class="colimag"><img id="imagen" src="../imagenes/prod12.png">	
+					</li></a>
+					<a href="../vistas/vista_producto_13.php" class="colimag"><img id="imagen" src="../imagenes/prod13.png">
+					</li></a>
+					<a href="../vistas/vista_producto_14.php" class="colimag"><img id="imagen" src="../imagenes/prod14.png">	
+					</li></a>	
 			    </ul>
 		</article>
 	
+	
 
 		<article>
-		    <a href="../vistas/herramientas.html" id="til"> <img  src="../imagenes/tit-herr.png" alt="herramientas"> </a>
+		    <a href="../vistas/herramientas.php" id="til"> <img  src="../imagenes/tit-herr.png" alt="herramientas"> </a>
 			    <ul>
 					<li class="colimag"><img id="imagen" src="../imagenes/prod21.png">
 					</li>
@@ -282,7 +284,7 @@
 
 
 		<article>
-		    <a href="../vistas/componentes.html" id="til"> <img  src="../imagenes/tit-com.png" alt="Componentes"> </a>
+		    <a href="../vistas/componentes.php" id="til"> <img  src="../imagenes/tit-com.png" alt="Componentes"> </a>
 			    <ul>
 					<li class="colimag"><img id="imagen" src="../imagenes/prod29.png">
 					</li>
@@ -296,7 +298,7 @@
 		</article>
 
 		<article>
-		    <a href="../vistas/repuestos.html" id="til"> <img  src="../imagenes/tit-rep.png" alt="Repuestos"> </a>
+		    <a href="../vistas/repuestos.php" id="til"> <img  src="../imagenes/tit-rep.png" alt="Repuestos"> </a>
 			    <ul>
 				        <li class="colimag"><img id="imagen" src="../imagenes/prod33.png">
 					</li>
@@ -312,7 +314,7 @@
 
 
 		<article>
-			<a href="../vistas/cableado.html" id="til"> <img  src="../imagenes/tit-cab.png" alt="Cableado"> </a>
+			<a href="../vistas/cableado.php" id="til"> <img  src="../imagenes/tit-cab.png" alt="Cableado"> </a>
 			    <ul>
 					<li class="colimag"><img id="imagen" src="../imagenes/prod41.png">
 					</li>

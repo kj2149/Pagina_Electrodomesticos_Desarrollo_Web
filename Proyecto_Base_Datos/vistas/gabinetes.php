@@ -227,18 +227,18 @@
 		    <img id="til" src="../imagenes/tit-gab.png" alt="gabinetes">
 
 				<ul>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen88.png">
+					<a href="../vistas/vista_producto_88.php" class="colimag"><img id="imagen" src="../imagenes/imagen88.png">
 					    <p>Caja Gabinete Iceberg Flux Blanca Rgb Vidrio Templado<br>
-					    $369,900</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen89.png">	
+					    $369,900</p></li></a>
+						<a href="../vistas/vista_producto_89.php" class="colimag"><img id="imagen" src="../imagenes/imagen89.png">	
 					    <p>Caja Gabinete Cooler Master Masterbox Td500 Mesh White<br>
-						$587,900</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen90.png">
+						$587,900</p></li></a>
+						<a href="../vistas/vista_producto_90.php" class="colimag"><img id="imagen" src="../imagenes/imagen90.png">
 						<p>Musetex Gaming Pc Chasis Con 6 Ventiladores Led Argb 120mm<br>
-					    $593.990</p></li>
-                    <li class="colimag"><img id="imagen" src="../imagenes/imagen92.jpg">
+					    $593.990</p></li></a>
+						<a href="../vistas/vista_producto_92.php" class="colimag"><img id="imagen" src="../imagenes/imagen92.png">
 					    <p>Caja Gabinete Iceberg Crystal G9 Atx - 4 Ventiladores Rgb<br>
-					    $373.000</p></li>  
+					    $373.000</p></li></a>  
 					<li class="colimag"><img id="imagen" src="../imagenes/imagen91.png">	
 					    <p>Caja Gabinete Gamer Iceberg Flux Tira Rgb + Ventilador 120mm<br>
 					    $320,000</p></li>

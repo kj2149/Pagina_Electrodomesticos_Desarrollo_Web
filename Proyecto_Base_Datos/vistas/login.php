@@ -203,10 +203,92 @@
 						<li><a href="../vistas/equipos todo en uno.php">Equipos Todo En Uno</a></li>
                         </ul>
 						</li>
+				 <!--***********************-------   HEADER  -----------*************************************************-->
+	<header>
+           <div class="container-head">
+	  
+      
+     <!--LOGO DE LA EMPRESA-->
+	  
+		<img class="logo" src="../imagenes/2.png" alt="logoempresa">	
+	
+     <!--TITULO ULIMITED TECNHOLOGY-->
+
+		  <img class="titulo1" src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY">
+
+     <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
+
+	 <div class="buscar1">
+			<div class=" barra-btn-buscar">
+			   <input type="" placeholder="Buscar" required>
+			   <div class="btn">
+				<i class="fas fa-search icon"></i>
+			  </div>
+		      </div>
+		     
+        </div>
+
+
+		
+
+     
+
+		<ul id="css3menu1" class="topmenu">
+			<li class="topmenu"><a href="inicio.html" target="marco" style="height:28px;line-height:22px;">Inicio</a>
+			</li>
+			<li class="toproot"><a href="#" target="marco"style="height:28px;line-height:22px;"><span>Productos</span></a>
+				<ul>
+					<li><a href="../vista/celulares.html" target="marco">Celulares</a></li>
+					<li><a href="../vista/computadores.html" target="marco">Computadores</a>
+
+					    <ul style="left:150px;">
+							
+					    <li><a href="../vista/combo teclado + mouse.html">Combo teclado + Mouse</a></li>
+						<li><a href="../vista/portatiles.html">Portatiles</a></li>
+						<li><a href="../vista/equipos de escritorio.html">Equipos De Escritorio</a></li>
+						<li><a href="../vista/equipos todo en uno.html">Equipos Todo En Uno</a></li>
+                        </ul>
+						</li>
 				
-					<li><a href="../vistas/boards.php" target="marco">Boards</a></li>
-					<li><a href="../vistas/tarjetas graficas.php" target="marco">Tarjetas Graficas</a></li>
-					<li><a href="../vistas/procesadores.php" target="marco">Procesadores</a></li>
+					<li><a href="../vista/boards.html" target="marco">Boards</a></li>
+					<li><a href="../vista/tarjetas graficas.html" target="marco">Tarjetas Graficas</a></li>
+					<li><a href="../vista/procesadores.html" target="marco">Procesadores</a></li>
+					<li><a href="../vistas/gabinetes.php" target="marco">Gabinetes</a></li>
+					<li><a href="../vistas/fuentes de poder.php" target="marco">Fuentes De Poder</a></li>
+					<li><a href="../vistas/impresoras.php" target="marco">Impresoras</a>
+					<li><a href="../vistas/herramientas.php" target="marco">herramientas</a>
+			
+
+					<ul style="left:150px;">	
+					    <li><a href="../vistas/componentes.php">Componentes</a></li>
+						<li><a href="../vistas/repuestos.php">Repuestos</a></li>
+						<li><a href="../vistas/cableado.php">Cableado</a></li>
+                        </ul>
+						</li>
+				</ul>
+			</li>
+			<li class="toproot"><a href="#" target="marco"
+					style="height:28px;line-height:22px;"><span>Servicios</span></a>
+				<ul>
+					<li><a href="#" target="marco">Instalaciones</a></li>
+					<li><a href="#" target="marco">Mantenimientos</a></li>
+					<li><a href="#" target="marco">Proyectos</a></li>
+				</ul>
+			</li>
+			
+			<li class="toproot"><a href="#" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
+				<ul>
+					<li><a href="#" target="marco">Vision & Mision</a></li>
+					<li><a href="#" target="marco">Valores Calidad</a></li>
+					<li><a href="#" target="marco">Que hacemos?</a></li>
+				</ul>
+			</li>
+			<li class="toplast"><a href="#" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
+		</ul>
+		
+	   </div>
+	</header>
+<!--**************************** FIN ---- HEADER    *************************************************-->rco">Procesadores</a></li>
 					<li><a href="../vistas/gabinetes.php" target="marco">Gabinetes</a></li>
 					<li><a href="../vistas/fuentes de poder.php" target="marco">Fuentes De Poder</a></li>
 					<li><a href="../vistas/impresoras.php" target="marco">Impresoras</a>

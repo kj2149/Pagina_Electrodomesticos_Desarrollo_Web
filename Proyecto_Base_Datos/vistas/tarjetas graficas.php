@@ -224,18 +224,18 @@
 		<article>
 		    <img id="til" src="../imagenes/tit-Tarj.png" alt="tarjetas graficas">
 				<ul>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen96.png">
-						<p>Tarjeta De Video Gigabyte Gt 710 2gb Ddr5 Gold<br>
-						$249.000</p></li>
-                    <li class="colimag"><img id="imagen" src="../imagenes/imagen100.png">
+					a href="../vistas/vista_producto_96.php" class="colimag"><img id="imagen" src="../imagenes/imagen96.png">
+						<p>Tarjeta De Video Gigabyte Geforce Gt710 Ddr5<br>
+						$275.000</p></li></a>
+						<a href="../vistas/vista_producto_100.php" class="colimag"><img id="imagen" src="../imagenes/imagen100.png">
 						<p>Tarjeta Video Msi Gt 710 2gb Ddr3 Low Profile Pci-e 2.0<br>
-						$290,900</p></li>    
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen98.png">
-						<p>Tarjeta De Vídeo Gigabyte Gt 1030 2gb Oc Ddr5<br>
-						$420.000</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen99.png">	
+						$290,900</p></li></a>    
+						<a href="../vistas/vista_producto_98.php" class="colimag"><img id="imagen" src="../imagenes/imagen98.png">
+						<p>Tarjeta De Video Maxsun Gt 1030 2gb Gddr5 Nvidia Geforce<br>
+						$420.000</p></li></a>
+						<a href="../vistas/vista_producto_99.php" class="colimag"><img id="imagen" src="../imagenes/imagen99.png">	
 						<p>Tarjeta Grafica Asrock Phantom Rx 550 2gb Ddr5<br>
-						$480,000</p></li>
+						$480,000</p></li></a>
 					<li class="colimag"><img id="imagen" src="../imagenes/imagen97.png">	
 						<p>Tarjeta Video Gigabyte Gtx 1050 Ti 4gb Ddr5 Oc Lp 1. Fan<br>
 						$940.000</p></li>

@@ -13,7 +13,7 @@ class tbl_genero{
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Usuario ya existe en el Sistema')</script>";
 										}else{
-											$guardar = "insert into ciudad values('$this->Id_Genero ','$this->Nom_genero ')";
+											$guardar = "insert into tbl_genero values('$this->Id_Genero ','$this->Nom_genero ')";
 											mysqli_query($con,$guardar);
 											echo "<script>alert('Genero Fue Creada en el Sistema')</script>";
 										

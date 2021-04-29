@@ -18,7 +18,7 @@ class tbl_detalles_venta{
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Detalle venta ya existe en el Sistema')</script>";
 										}else{
-											$guardar = "insert into Departamento values('$this->Id_Deta_Venta','$this->Unid_Ventdida_Deta_Venta','$this->Precio_Unid_Deta_Venta','$this->Cost_Total_Venta_Deta_Venta','$this->Id_Factu','$this->Id_Inventario','$this->Dias_Descuento','$this->Id_Descuento')";
+											$guardar = "insert into tbl_detalles_venta values('$this->Id_Deta_Venta','$this->Unid_Ventdida_Deta_Venta','$this->Precio_Unid_Deta_Venta','$this->Cost_Total_Venta_Deta_Venta','$this->Id_Factu','$this->Id_Inventario','$this->Dias_Descuento','$this->Id_Descuento')";
 											mysqli_query($con,$guardar);
 											echo "<script>alert('El detlle venta Fue Creado en el Sistema')</script>";
 										
@@ -53,7 +53,7 @@ class tbl_detalles_venta{
 										if($arreglo=mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Detalle venta ya existe en el sistema')</script>";
 										}else{
-											$mod ="update ciudad set Id_Deta_Venta='$this->Id_Deta_Venta',
+											$mod ="update tbl_detalles_venta set Id_Deta_Venta='$this->Id_Deta_Venta',
                                             Unid_Ventdida_Deta_Venta='$this->Unid_Ventdida_Deta_Venta'
                                             Precio_Unid_Deta_Venta='$this->Precio_Unid_Deta_Venta'
                                             Cost_Total_Venta_Deta_Venta='$this-> Cost_Total_Venta_Deta_Venta'

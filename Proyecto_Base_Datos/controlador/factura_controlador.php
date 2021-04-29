@@ -18,7 +18,7 @@ class tbl_factura{
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('La Factura ya existe en el Sistema')</script>";
 										}else{
-											$guardar = "insert into Departamento values('$this->Id_Factu ','$this->Total_IVA_Factu ','$this->Precio_Total_Comp_Factu ','$this->Fech_Facturacion_Factu ','$this->Hora_Fact ','$this->Sub_Total_Factu ','$this->Dias_Descuento','$this->Id_Produc ')";
+											$guardar = "insert into tbl_factura values('$this->Id_Factu ','$this->Total_IVA_Factu ','$this->Precio_Total_Comp_Factu ','$this->Fech_Facturacion_Factu ','$this->Hora_Fact ','$this->Sub_Total_Factu ','$this->Dias_Descuento','$this->Id_Produc ')";
 											mysqli_query($con,$guardar);
 											echo "<script>alert(La Factura Fue Creada en el Sistema')</script>";
 										
@@ -51,9 +51,9 @@ class tbl_factura{
 										$pregunta ="SELECT * FROM tbl_factura WHERE Id_Factu ,Total_IVA_Factu ,Precio_Total_Comp_Factu ,Fech_Facturacion_Factu ,Hora_Fact ,Sub_Total_Factu ,Id_Produc  = '$this->Id_Produc ','$this->Dias_Descuento','$this->Tipo_Descuento','$this->Descripcion_Descuento','$this->Valor_Descuento'";
 										$resultado = mysqli_query($con,$pregunta);
 										if($arreglo=mysqli_fetch_array($resultado)){
-											echo "<script>alert('El Detalle venta ya existe en el sistema')</script>";
+											echo "<script>alert('La Factura ya existe en el sistema')</script>";
 										}else{
-											$mod ="update ciudad set Id_Factu ='$this->Id_Factu ',
+											$mod ="update tbl_factura set Id_Factu ='$this->Id_Factu ',
                                             Total_IVA_Factu ='$this->Total_IVA_Factu '
                                             Precio_Total_Comp_Factu ='$this->Precio_Total_Comp_Factu '
                                             Fech_Facturacion_Factu ='$this-> Fech_Facturacion_Factu '

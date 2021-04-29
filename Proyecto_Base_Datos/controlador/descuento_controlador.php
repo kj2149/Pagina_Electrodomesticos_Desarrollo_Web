@@ -1,5 +1,5 @@
 <?php
-class tbl_sescuento{
+class tbl_descuento{
 					public $Id_Descuento;
 					public $Dias_Descuento;
                     public $Tipo_Descuento;
@@ -11,12 +11,12 @@ class tbl_sescuento{
 					function agregar(){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM tbl_Descuento WHERE Id_Descuento,Dias_Descuento,Tipo_Descuento,Descripcion_Descuento,Valor_Descuento, = '$this->Id_Descuento','$this->Dias_Descuento','$this->Tipo_Descuento','$this->Descripcion_Descuento','$this->Valor_Descuento';
+										$pregunta ="SELECT * FROM tbl_Descuento WHERE Id_Descuento,Dias_Descuento,Tipo_Descuento,Descripcion_Descuento,Valor_Descuento, = '$this->Id_Descuento','$this->Dias_Descuento','$this->Tipo_Descuento','$this->Descripcion_Descuento','$this->Valor_Descuento'";
 										$resultado = mysqli_query($con,$pregunta);
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Descuento ya existe en el Sistema')</script>";
 										}else{
-											$guardar = "insert into Departamento values('$this->Id_Descuento','$this->Dias_Descuento','$this->Tipo_Descuento','$this->Descripcion_Descuento','$this->Valor_Descuento')";
+											$guardar = "insert into tbl_departamento values('$this->Id_Descuento','$this->Dias_Descuento','$this->Tipo_Descuento','$this->Descripcion_Descuento','$this->Valor_Descuento')";
 											mysqli_query($con,$guardar);
 											echo "<script>alert('Descuento Fue Creado en el Sistema')</script>";
 										
@@ -49,7 +49,7 @@ class tbl_sescuento{
 										if($arreglo=mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Descuento ya existe en el sistema')</script>";
 										}else{
-											$mod ="update ciudad set Id_Descuento='$this->Id_Descuento',
+											$mod ="update tbl_descuento set Id_Descuento='$this->Id_Descuento',
                                             Dias_Descuento='$this->Dias_Descuento'
                                             Tipo_Descuento='$this->Tipo_Descuento'
                                             Descripcion_Descuento='$this-> Descripcion_Descuento'

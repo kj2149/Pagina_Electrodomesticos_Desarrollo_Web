@@ -11,14 +11,14 @@ class tbl_envio{
 					function agregar(){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM Tbl_Envio WHERE Id_Envio,Tipo_envio,Dirección_Envio,Id_Pago,Id_Ciudad= '$this->Id_Envio',$this->Tipo_envio,$this->Dirección_Envio,$this->Id_Pago,$this->Id_Ciudad'";
+										$pregunta ="SELECT * FROM tbl_envio WHERE Id_Envio,Tipo_envio,Dirección_Envio,Id_Pago,Id_Ciudad= '$this->Id_Envio',$this->Tipo_envio,$this->Dirección_Envio,$this->Id_Pago,$this->Id_Ciudad'";
 										$resultado = mysqli_query($con,$pregunta);
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Envio ya existe en el Sistema')</script>";
 										}else{
-											$guardar = "insert into usuarios values($this->Id_Envio',$this->Tipo_envio,$this->Dirección_Envio,$this->Id_Pago,$this->Id_Ciudad')";
+											$guardar = "insert into tbl_envio values($this->Id_Envio',$this->Tipo_envio,$this->Dirección_Envio,$this->Id_Pago,$this->Id_Ciudad')";
 											mysqli_query($con,$guardar);
-											echo "<script>alert('El Contacto Fue Creado en el Sistema')</script>";
+											echo "<script>alert('El envio Fue Creado en el Sistema')</script>";
 										
 										}	
 					
@@ -27,7 +27,7 @@ class tbl_envio{
                     function consultas(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT Id_Envio,Tipo_envio,Dirección_Envio,Id_Pago,Id_Ciudad FROM tbl_Envio where Id_Envio,Tipo_envio,Dirección_Envio,Id_Pago,Id_Ciudad = '$this->Id_Envio',$this->Tipo_envio,$this->Dirección_Envio,$this->Id_Pago,$this->Id_Ciudad'";
+										$pregunta ="SELECT Id_Envio,Tipo_envio,Dirección_Envio,Id_Pago,Id_Ciudad FROM tbl_envio where Id_Envio,Tipo_envio,Dirección_Envio,Id_Pago,Id_Ciudad = '$this->Id_Envio',$this->Tipo_envio,$this->Dirección_Envio,$this->Id_Pago,$this->Id_Ciudad'";
 										$resultado = mysqli_query($con,$pregunta);
 										if($arreglo=mysqli_fetch_array($resultado)){
 											$this->Id_Envio = $arreglo['Id_Envio'];
@@ -44,16 +44,16 @@ class tbl_envio{
 					function actualizar(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM tbl_Envio WHERE Id_Envio,Tipo_envio,Dirección_Envio,Id_Pago,Id_Ciudad = '$this->Id_Envio',$this->Tipo_envio,$this->Dirección_Envio,$this->Id_Pago,$this->Id_Ciudad'";
+										$pregunta ="SELECT * FROM tbl_envio WHERE Id_Envio,Tipo_envio,Dirección_Envio,Id_Pago,Id_Ciudad = '$this->Id_Envio',$this->Tipo_envio,$this->Dirección_Envio,$this->Id_Pago,$this->Id_Ciudad'";
 										$resultado = mysqli_query($con,$pregunta);
 										if($arreglo=mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Envio ya existe en el sistema')</script>";
 										}else{
-											$mod ="update usuarios set Id_contacto='$this->Id_contacto',
+											$mod ="update tbl_envio set Id_contacto='$this->Id_contacto',
 											Id_Envio='$this->Id_Envio'
 											Tipo_envio='$this->Tipo_envio'
 											Dirección_Envio='$this->Dirección_Envio'
-											Id_Pago='$this->Id_Pago';
+											Id_Pago='$this->Id_Pago'";
 																			
 											echo $mod;
 											mysqli_query($con,$mod);

@@ -13,9 +13,9 @@ class tbl_pago{
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Usuario ya existe en el Sistema')</script>";
 										}else{
-											$guardar = "insert into compraProveedor values('$this->Id_Pago ','$this->Metodo_Pago ','$this->Tipo_Pago ','$this->Id_Factu')";
+											$guardar = "insert into tbl_pago values('$this->Id_Pago ','$this->Metodo_Pago ','$this->Tipo_Pago ','$this->Id_Factu')";
 											mysqli_query($con,$guardar);
-											echo "<script>alert('El pago Fue Creado en el Sistema')</script>";
+											echo "<script>alert('El pago ya Fue Creado en el Sistema')</script>";
 										
 										}	
 					

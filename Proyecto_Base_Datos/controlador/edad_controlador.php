@@ -13,11 +13,11 @@ class tbl_edad{
 										$pregunta ="SELECT * FROM tbl_edad WHERE Id_Edad ,Fech_Nac_Edad,Id_Usuario = '$this->Id_Edad ',$this->Fech_Nac_Edad,$this->Id_Usuario '";
 										$resultado = mysqli_query($con,$pregunta);
 										if(mysqli_fetch_array($resultado)){
-											echo "<script>alert('El Envio ya existe en el Sistema')</script>";
+											echo "<script>alert('La edad ya existe en el Sistema')</script>";
 										}else{
-											$guardar = "insert into usuarios values($this->Id_Edad ',$this->Fech_Nac_Edad,$this->Id_Usuario ')";
+											$guardar = "insert into tbl_edad values($this->Id_Edad ',$this->Fech_Nac_Edad,$this->Id_Usuario ')";
 											mysqli_query($con,$guardar);
-											echo "<script>alert('El Contacto Fue Creado en el Sistema')</script>";
+											echo "<script>alert('La edad Fue Creada en el Sistema')</script>";
 										
 										}	
 					

@@ -16,7 +16,7 @@ class tbl_contacto{
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Contacto ya existe en el Sistema')</script>";
 										}else{
-											$guardar = "insert into usuarios values('$this->Id_contacto','$this->Direc_contacto','$this->Telefono_contacto','$this->Correo_contacto','$this->Fech_Nac_Edad')";
+											$guardar = "insert into tbl_contacto values('$this->Id_contacto','$this->Direc_contacto','$this->Telefono_contacto','$this->Correo_contacto','$this->Fech_Nac_Edad')";
 											mysqli_query($con,$guardar);
 											echo "<script>alert('El Contacto Fue Creado en el Sistema')</script>";
 										
@@ -49,11 +49,11 @@ class tbl_contacto{
 										if($arreglo=mysqli_fetch_array($resultado)){
 											echo "<script>alert('El contacto ya existe en el sistema')</script>";
 										}else{
-											$mod ="update usuarios set Id_contacto='$this->Id_contacto',
+											$mod ="update tbl_contacto set Id_contacto='$this->Id_contacto',
 											Direc_contacto='$this->Direc_contacto'
 											telefono_contacto='$this->telefono_contacto'
 											correo_contacto='$this->correo_contacto'
-											Fech_Nac_Edad='$this->Fech_Nac_Edad';
+											Fech_Nac_Edad='$this->Fech_Nac_Edad'";
 																			
 											echo $mod;
 											mysqli_query($con,$mod);

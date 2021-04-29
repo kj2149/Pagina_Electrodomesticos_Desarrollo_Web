@@ -9,12 +9,12 @@ class tbl_departamento{
 					function agregar(){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM tbl_Departamento WHERE Id_Departamento,Nombre_Departamento,Id_Ciudad = '$this->Id_Departamento','$this->Id_Departamento','$this->Id_Ciudad';
+										$pregunta ="SELECT * FROM tbl_Departamento WHERE Id_Departamento,Nombre_Departamento,Id_Ciudad = '$this->Id_Departamento','$this->Id_Departamento','$this->Id_Ciudad'";
 										$resultado = mysqli_query($con,$pregunta);
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Departamento ya existe en el Sistema')</script>";
 										}else{
-											$guardar = "insert into Departamento values('$this->Id_Departamento','$this->Id_Departamento','$this->Id_Ciudad')";
+											$guardar = "insert into tbl_departamento values('$this->Id_Departamento','$this->Id_Departamento','$this->Id_Ciudad')";
 											mysqli_query($con,$guardar);
 											echo "<script>alert('Departamento Fue Creado en el Sistema')</script>";
 										
@@ -45,7 +45,7 @@ class tbl_departamento{
 										if($arreglo=mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Departamento ya existe en el sistema')</script>";
 										}else{
-											$mod ="update ciudad set codigoCiudad='$this->Id_Departamento',
+											$mod ="update tbl_departamento set codigoCiudad='$this->Id_Departamento',
                                                                             Nombre_Departamento='$this->Nombre_Departamento'
                                                                             Id_Ciudad='$this->Id_Ciudad'
 																			where Id_Departamento='$this->Id_Departamento'";

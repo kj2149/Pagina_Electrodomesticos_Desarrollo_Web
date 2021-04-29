@@ -45,11 +45,11 @@
       
      <!--LOGO DE LA EMPRESA-->
 	  
-		<a href="../vista/index.php"class="logo"> <img  src="../imagenes/2.png" alt="logoempresa">	</a>
+		<a href="../vistas/index.php"class="logo"> <img  src="../imagenes/2.png" alt="logoempresa">	</a>
 	
      <!--TITULO ULIMITED TECNHOLOGY-->
 
-	 	<a href="../vista/index.php" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
+	 	<a href="../vistas/index.php" class="titulo1"> <img  src="../imagenes/titulo.png" alt="UNLIMITED TECNHOLOGY"> </a>
 
      <!--BUSCADOR-BOTONES INICIO , REGISTRAR-->
 
@@ -60,49 +60,49 @@
 				    <i class="fas fa-search icon"></i>
 			    </div>
 		    </div>
-		    <a class="iniciar1" href="../vista/login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
+		    <a class="iniciar1" href="../vistas/login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
 		    <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
 
 
 
 		<ul id="css3menu1" class="topmenu">
-			<li class="topmenu"><a href="../vista/index.php" target="marco" style="height:28px;line-height:22px;">Inicio</a>
+			<li class="topmenu"><a href="../vistas/index.php" target="marco" style="height:28px;line-height:22px;">Inicio</a>
 			</li>
 			<li class="toproot"><a href="#" target="marco"style="height:28px;line-height:22px;"><span>Productos</span></a>
 				<ul>
-					<li><a href="../vista/celulares.php" target="marco">Celulares</a></li>
-					<li><a href="../vista/computadores.php" target="marco">Computadores</a>
+					<li><a href="../vistas/celulares.php" target="marco">Celulares</a></li>
+					<li><a href="../vistas/computadores.php" target="marco">Computadores</a>
 
 					    <ul style="left:150px;">
 							
-					    <li><a href="../vista/combo teclado + mouse.php">Combo teclado + Mouse</a></li>
-						<li><a href="../vista/portatiles.php">Portatiles</a></li>
-						<li><a href="../vista/equipos de escritorio.php">Equipos De Escritorio</a></li>
-						<li><a href="../vista/equipos todo en uno.php">Equipos Todo En Uno</a></li>
+					    <li><a href="../vistas/combo teclado + mouse.php">Combo teclado + Mouse</a></li>
+						<li><a href="../vistas/portatiles.php">Portatiles</a></li>
+						<li><a href="../vistas/equipos de escritorio.php">Equipos De Escritorio</a></li>
+						<li><a href="../vistas/equipos todo en uno.php">Equipos Todo En Uno</a></li>
                         </ul>
 						</li>
 				
-					<li><a href="../vista/boards.php" target="marco">Boards</a></li>
-					<li><a href="../vista/tarjetas graficas.php" target="marco">Tarjetas Graficas</a></li>
-					<li><a href="../vista/procesadores.php" target="marco">Procesadores</a></li>
-					<li><a href="../vista/gabinetes.php" target="marco">Gabinetes</a></li>
-					<li><a href="../vista/fuentes de poder.php" target="marco">Fuentes De Poder</a></li>
-					<li><a href="../vista/impresoras.php" target="marco">Impresoras</a>
-					<li><a href="../vista/herramientas.php" target="marco">herramientas</a>
+					<li><a href="../vistas/boards.php" target="marco">Boards</a></li>
+					<li><a href="../vistas/tarjetas graficas.php" target="marco">Tarjetas Graficas</a></li>
+					<li><a href="../vistas/procesadores.php" target="marco">Procesadores</a></li>
+					<li><a href="../vistas/gabinetes.php" target="marco">Gabinetes</a></li>
+					<li><a href="../vistas/fuentes de poder.php" target="marco">Fuentes De Poder</a></li>
+					<li><a href="../vistas/impresoras.php" target="marco">Impresoras</a>
+					<li><a href="../vistas/herramientas.php" target="marco">herramientas</a>
 			
 
 					<ul style="left:150px;">	
-					    <li><a href="../vista/componentes.php">Componentes</a></li>
-						<li><a href="../vista/repuestos.php">Repuestos</a></li>
-						<li><a href="../vista/cableado.php">Cableado</a></li>
+					    <li><a href="../vistas/componentes.php">Componentes</a></li>
+						<li><a href="../vistas/repuestos.php">Repuestos</a></li>
+						<li><a href="../vistas/cableado.php">Cableado</a></li>
                         </ul>
 						</li>
 				</ul>
 			</li>
 			<li class="toproot"><a href="servicio.php" target="marco"style="height:28px;line-height:22px;"><span>Servicios</span></a></li>
 			
-			<li class="toproot"><a href="quienes_somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
+			<li class="toproot"><a href="quienes_somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</spans></a>
 				
 			<li class="toplast"><a href="contactenos.php" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
 		</ul>
@@ -296,7 +296,7 @@
 		    </div>
 
             <div class="terminos">
-		        <p><a href="../vista/terminos y condiciones.php">Terminos y Condiciones</a></p><br>
+		        <p><a href="../vistas/terminos y condiciones.php">Terminos y Condiciones</a></p><br>
 		        <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
 	        </div>
 	    </div>

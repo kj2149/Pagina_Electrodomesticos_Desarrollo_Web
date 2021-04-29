@@ -226,18 +226,18 @@
 		    <img id="til" src="../imagenes/tit-proc.png" alt="procesadores">
 
 				<ul>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen104.png">
+					<a href="../vistas/vista_producto_104.php" class="colimag"><img id="imagen" src="../imagenes/imagen104.png">
 						<p>Procesador Amd Ryzen 5 3600 6 Núcleos 12 Hilos<br>
-						$869,900</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen107.png">
-						<p>Procesador Celeron G4930 9na Gen<br>
-						$258.000</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen108.png">	
+						$869,900</p></li></a>
+						<a href="../vistas/vista_producto_107.php" class="colimag"><img id="imagen" src="../imagenes/imagen107.png">
+						<p>Procesador Celeron G4930 9na Gen<br><br>
+						$258.000</p></li></a>
+						<a href="../vistas/vista_producto_108.php" class="colimag"><img id="imagen" src="../imagenes/imagen108.png">	
 						<p>Procesador Intel Core I5 10400 2.9ghz 6 Nucleos 12 H<br>
-						$371.000</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen109.png">	
-						<p>Procesador Amd Athlon 3000g 3.5ghz Am4<br>
-						$1,299,900</p></li>
+						$371.000</p></li></a>
+						<a href="../vistas/vista_producto_109.php" class="colimag"><img id="imagen" src="../imagenes/imagen109.png">	
+						<p>Procesador Amd Athlon 3000g 3.5ghz Am4<br><br>
+						$1,299,900</p></li></a>
                     <li class="colimag"><img id="imagen" src="../imagenes/imagen106.png">
 						<p>Intel Core I5-9400f - Procesador Sobremesa 6 Núcleos, 4ghz<br>
 						$649.999</p></li>

@@ -226,18 +226,14 @@
 		<article>
 		    <img id="til" src="../imagenes/tit-compu.png" alt="computadores">
 				<ul>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen11.png">
-						<p>Convertible 2en1 hp 14dh0017la intel pentium<br>
-						$1,779,000</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen12.png">
-						<p>Portatil hp intel core i3 14 pulgadas <br><br>
-						$1,599,000</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen13.png">
-						<p>Portatil hp 14 pulgadas 14cf1045la intel<br><br>
-						$1,449,000</p></li>
-					<li class="colimag"><img id="imagen" src="../imagenes/imagen14.png">
-						<p>All in one hp 24dd0000la intel pentium<br>
-						$1,779,000</p></li>
+					<a href="../vista/vista_producto_11.php" class="colimag"><img id="imagen" src="../imagenes/prod11.png">
+					</li></a>
+					<a href="../vista/vista_producto_12.php" class="colimag"><img id="imagen" src="../imagenes/prod12.png">	
+					</li></a>
+					<a href="../vista/vista_producto_13.php" class="colimag"><img id="imagen" src="../imagenes/prod13.png">
+					</li></a>
+					<a href="../vista/vista_producto_14.php" class="colimag"><img id="imagen" src="../imagenes/prod14.png">	
+					</li></a>
 					<li class="colimag"><img id="imagen" src="../imagenes/imagen16.png">	
 						<p>Portátil LENOVO IdeaPad 3 14" Pulgadas Intel Celeron 4GB<br>
 						$1,200,000</p></li>

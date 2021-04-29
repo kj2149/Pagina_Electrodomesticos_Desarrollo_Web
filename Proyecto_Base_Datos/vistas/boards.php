@@ -64,10 +64,9 @@
 		    <a class="registrar1" href="#" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
 
-
-
+<!--Menu Header-->
 		<ul id="css3menu1" class="topmenu">
-			<li class="topmenu"><a href="../vistas/index.php" target="marco" style="height:28px;line-height:22px;">Inicio</a>
+			<li class="topmenu"><a href="inicio.php" target="marco" style="height:28px;line-height:22px;">Inicio</a>
 			</li>
 			<li class="toproot"><a href="#" target="marco"style="height:28px;line-height:22px;"><span>Productos</span></a>
 				<ul>
@@ -102,14 +101,14 @@
 			</li>
 			<li class="toproot"><a href="servicio.php" target="marco"style="height:28px;line-height:22px;"><span>Servicios</span></a></li>
 			
-			<li class="toproot"><a href="quienes_somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</spans></a>
-				
+			<li class="toproot"><a href="quienes somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
+			</li>
 			<li class="toplast"><a href="contactenos.php" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
 		</ul>
 		
 	   </div>
 	</header>
-<!--*******************************  FIN ---- HEADER    *************************************************-->
+<!--**************************** FIN ---- HEADER    *************************************************-->
 	
 <!--LISTA DE CATEGORIAS-->
 <aside class="lista-cate">

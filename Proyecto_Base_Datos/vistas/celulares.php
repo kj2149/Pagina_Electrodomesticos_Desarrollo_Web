@@ -226,24 +226,23 @@
 	
 <!--/////////////    Contenido       //////////////-->
 
-	
 	<section class="container-contenido">
 		<article>
 		    <img id="til" src="../imagenes/tit-cel.png" alt="celulares">
 				<ul>
-					<a href="../vista/vista_producto_1.html"><li class="colimag" href="../vista/index.html"><img id="imagen" src="../imagenes/imagen1.png">
+					<a href="../vistas/vista_producto_1.php"><li class="colimag" href="../vista/index.php"><img id="imagen" src="../imagenes/imagen1.png">
 						<p>Celular samsung galaxy a01 32gb rojo + Seguro gratis<br>
 							   $369,900
 							</p></li></a>						
-					<a href="../vista/vista_producto_2.html"><li class="colimag"><img id="imagen" src="../imagenes/imagen2.png">
+					<a href="../vistas/vista_producto_2.php"><li class="colimag"><img id="imagen" src="../imagenes/imagen2.png">
 						 <p>Huawey Y5P 4G Con Obsequio<br><br>    
 							   $341,900 
 							</p></li></a>
-					<a href="../vista/vista_producto_3.html"><li class="colimag"><img id="imagen" src="../imagenes/imagen3.png">
+					<a href="../vistas/vista_producto_3.php"><li class="colimag"><img id="imagen" src="../imagenes/imagen3.png">
 						<p>Celular XIAOMI REDMI Note 8 <br><br>
 							   $ 689.900
 							</p></li></a>
-				    <a href="../vista/vista_producto_4.html"><li class="colimag"><img id="imagen" src="../imagenes/imagen4.png">	<p>Celular huawey Y5 neo 16gb ds azul + seguro gratis<br>
+				    <a href="../vistas/vista_producto_4.php"><li class="colimag"><img id="imagen" src="../imagenes/imagen4.png">	<p>Celular huawey Y5 neo 16gb ds azul + seguro gratis<br>
 							   $320,000
 							</p></li></a>
 					<li class="colimag"><img id="imagen" src="../imagenes/imagen5.png">
@@ -265,7 +264,6 @@
 				</ul>    
 		</article>
 	</section>
-	
 	
 
     <!-- FOOTER DE LA PAGINA -->

@@ -223,7 +223,7 @@
 
 	<section class="container-contenido">
 		<article>
-		    <img id="til" src="../imagenes/tit-cel.png" alt="repuestos">
+		    <img id="til" src="../imagenes/tit-rep.png" alt="repuestos">
 
 				<ul>
 					<li class="colimag"><img id="imagen" src="../imagenes/imagen33.jpg">	

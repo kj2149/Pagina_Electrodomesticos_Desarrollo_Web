@@ -1,5 +1,5 @@
 <?php
-class tbl_CompraProveedor{
+class tbl_compra_proveedor{
 					public $codigoCompraprovedor;
 					public $cantidadCompraProveedor;
 					public $precioTotal;
@@ -9,7 +9,7 @@ class tbl_CompraProveedor{
 					function agregar(){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM tbl_compraProveedor WHERE cantidadCompraProveedor= '$this->cantidadCompraProveedor'";
+										$pregunta ="SELECT * FROM tbl_compra_proveedor WHERE cantidadCompraProveedor= '$this->cantidadCompraProveedor'";
 										$resultado = mysqli_query($con,$pregunta);
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Usuario ya existe en el Sistema')</script>";
@@ -25,7 +25,7 @@ class tbl_CompraProveedor{
                     function consultas(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor FROM tbl_compraProveedor where cantidadCompraProveedor = '$this->cantidadCompraProveedor'";
+										$pregunta ="SELECT codigoCompraprovedor, cantidadCompraProveedor, precioTotal, fechaCompraProveedor FROM tbl_compra_proveedor where cantidadCompraProveedor = '$this->cantidadCompraProveedor'";
 										$resultado = mysqli_query($con,$pregunta);
 										if($arreglo=mysqli_fetch_array($resultado)){
 											$this->codigoCompraprovedor = $arreglo['codigoCompraprovedor'];
@@ -41,12 +41,12 @@ class tbl_CompraProveedor{
 					function actualizar(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM tbl_compraProveedor WHERE cantidadCompraProveedor = '$this->cantidadCompraProveedor'";
+										$pregunta ="SELECT * FROM tbl_compra_proveedor WHERE cantidadCompraProveedor = '$this->cantidadCompraProveedor'";
 										$resultado = mysqli_query($con,$pregunta);
 										if($arreglo=mysqli_fetch_array($resultado)){
 											echo "<script>alert('La compra proveedor  ya existe en el sistema')</script>";
 										}else{
-											$mod ="update compraProveedor set codigoCompraprovedor='$this->codigoCompraprovedor',
+											$mod ="update tbl_compra_proveedor set codigoCompraprovedor='$this->codigoCompraprovedor',
 											                                cantidadCompraProveedor='$this->cantidadCompraProveedor'
 																			precioTotal='$this->precioTotal'
 																			fechaCompraProveedor'$this->fechaCompraProveedor'
@@ -62,7 +62,7 @@ class tbl_CompraProveedor{
 					function estado(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$ejecutar =" DELETE FROM tbl_compraProveedor WHERE codigoCompraprovedor = '$this->codigoCompraprovedor'";
+										$ejecutar =" DELETE FROM tbl_compra_proveedor WHERE codigoCompraprovedor = '$this->codigoCompraprovedor'";
 										if(mysqli_query($con, $ejecutar)) {
 											echo "<script>alert('La compra proveedor fue eliminada del sistema')</script>";
 										}else{

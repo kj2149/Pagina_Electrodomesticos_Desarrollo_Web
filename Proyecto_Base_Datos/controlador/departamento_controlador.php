@@ -1,5 +1,5 @@
 <?php
-class tbl_Departamento{
+class tbl_departamento{
 					public $Id_Departamento;
 					public $Nombre_Departamento;
                     public $Id_Ciudad;

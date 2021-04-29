@@ -1,5 +1,5 @@
 <?php
-class tbl_CategoriaProducto{
+class tbl_categoria_producto{
 					public $codigoCategoriaProducto;
 					public $nombreCategoria;
 					public $tipoCategoria;
@@ -8,7 +8,7 @@ class tbl_CategoriaProducto{
 					function agregar(){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM tbl_categoriaProductos WHERE nombreCategoria= '$this->nombreCategoria'";
+										$pregunta ="SELECT * FROM tbl_categoria_producto WHERE nombreCategoria= '$this->nombreCategoria'";
 										$resultado = mysqli_query($con,$pregunta);
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('La categoria del Producto ya existe en el Sistema')</script>";
@@ -24,7 +24,7 @@ class tbl_CategoriaProducto{
                     function consultas(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT codigoCategoriaProducto, nombreCategoria, tipoCategoria  FROM tbl_categoriaProductos where nombreCategoria = '$this->nombreCategoria'";
+										$pregunta ="SELECT codigoCategoriaProducto, nombreCategoria, tipoCategoria  FROM tbl_categoria_producto where nombreCategoria = '$this->nombreCategoria'";
 										$resultado = mysqli_query($con,$pregunta);
 										if($arreglo=mysqli_fetch_array($resultado)){
 											$this->codigoCategoriaProducto = $arreglo['codigoCategoriaProducto'];
@@ -40,7 +40,7 @@ class tbl_CategoriaProducto{
 					function actualizar(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM tbl_categoriaProductos WHERE nombreCategoria = '$this->nombreCategoria'";
+										$pregunta ="SELECT * FROM tbl_categoria_producto WHERE nombreCategoria = '$this->nombreCategoria'";
 										$resultado = mysqli_query($con,$pregunta);
 										if($arreglo=mysqli_fetch_array($resultado)){
 											echo "<script>alert('La categoria del Producto ya existe en el sistema')</script>";
@@ -60,7 +60,7 @@ class tbl_CategoriaProducto{
 					function estado(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$ejecutar =" DELETE FROM tbl_categoriaProductos WHERE codigoCategoriaProducto = '$this->codigoCategoriaProducto'";
+										$ejecutar =" DELETE FROM tbl_categoria_producto WHERE codigoCategoriaProducto = '$this->codigoCategoriaProducto'";
 										if(mysqli_query($con, $ejecutar)) {
 											echo "<script>alert('La categoria del Producto fue eliminada del sistema')</script>";
 										}else{

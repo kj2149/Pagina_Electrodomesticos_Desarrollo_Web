@@ -1,5 +1,5 @@
 <?php
-class tbl_CompraCliente{
+class tbl_compra_cliente{
 					public $codigoCompracliente;
 					public $cantidad;
 					public $descuento;
@@ -7,12 +7,11 @@ class tbl_CompraCliente{
 					public $garantia;
 					public $precioTotal;
 					public $fechaCompra;
-					public $codigoRol;
 					
 					function agregar(){
 										$c = new Conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM tbl_compraCliente WHERE cantidad= '$this->cantidad'";
+										$pregunta ="SELECT * FROM tbl_compra_cliente WHERE cantidad= '$this->cantidad'";
 										$resultado = mysqli_query($con,$pregunta);
 										if(mysqli_fetch_array($resultado)){
 											echo "<script>alert('El Usuario ya existe en el Sistema')</script>";
@@ -28,7 +27,7 @@ class tbl_CompraCliente{
                     function consultas(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT codigoCompracliente, cantidad, descuento, IVA, garantia, precioTotal, fechaCompra  FROM tbl_compraCliente where cantidad = '$this->cantidad'";
+										$pregunta ="SELECT codigoCompracliente, cantidad, descuento, IVA, garantia, precioTotal, fechaCompra  FROM tbl_compra_cliente where cantidad = '$this->cantidad'";
 										$resultado = mysqli_query($con,$pregunta);
 										if($arreglo=mysqli_fetch_array($resultado)){
 											$this->codigoCompracliente = $arreglo['codigoCompracliente'];
@@ -48,7 +47,7 @@ class tbl_CompraCliente{
 					function actualizar(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$pregunta ="SELECT * FROM tbl_compraCliente WHERE cantidad = '$this->cantidad'";
+										$pregunta ="SELECT * FROM tbl_compra_cliente WHERE cantidad = '$this->cantidad'";
 										$resultado = mysqli_query($con,$pregunta);
 										if($arreglo=mysqli_fetch_array($resultado)){
 											echo "<script>alert('La compra del cliente ya existe en el sistema')</script>";
@@ -72,7 +71,7 @@ class tbl_CompraCliente{
 					function estado(){
 						                $c = new conexion();
 										$con = $c->conectarServidor();
-										$ejecutar =" DELETE FROM tbl_CompraCliente WHERE codigoCompracliente = '$this->codigoCompracliente'";
+										$ejecutar =" DELETE FROM tbl_compra_cliente WHERE codigoCompracliente = '$this->codigoCompracliente'";
 										if(mysqli_query($con, $ejecutar)) {
 											echo "<script>alert('La compra del cliente fue eliminada del sistema')</script>";
 										}else{

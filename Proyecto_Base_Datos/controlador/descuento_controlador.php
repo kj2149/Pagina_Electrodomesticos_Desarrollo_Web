@@ -1,5 +1,5 @@
 <?php
-class tbl_Descuento{
+class tbl_sescuento{
 					public $Id_Descuento;
 					public $Dias_Descuento;
                     public $Tipo_Descuento;

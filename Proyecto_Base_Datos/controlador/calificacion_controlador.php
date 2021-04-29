@@ -1,5 +1,5 @@
 <?php
-class tbl_Calificacion{
+class tbl_calificacion{
 					public $codigoCalificacion;
 					public $tipoCalificacion;
 					public $fechaCalificacion;

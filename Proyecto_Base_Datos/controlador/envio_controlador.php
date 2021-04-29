@@ -1,5 +1,5 @@
 <?php
-class Tbl_Envio{
+class tbl_envio{
 					public $Id_Envio;
 					public $Tipo_envio;
 					public $Dirección_Envio;

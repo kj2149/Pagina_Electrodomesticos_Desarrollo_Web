@@ -196,8 +196,8 @@ header{
 
 
 #til {
-    width: 170%;
-    margin: auto;
+    width: 100%;
+    margin:  auto  auto 2% 16%;
     
     border: 1px solid #1F618D;
     background-image: url(../imagenes/pl1.jpg);

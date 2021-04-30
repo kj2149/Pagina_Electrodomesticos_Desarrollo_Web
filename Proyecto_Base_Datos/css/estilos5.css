@@ -6,30 +6,9 @@
     
 }
 
- #fondo2{
-    width: 100%; 
-    content:'';
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    background-image: url(../imagenes/pl1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;  
-    background-size: center;
-    
-}
 
 
-
-input[type="reset"]:hover {
-  background-color: #00b8eb;
-}
-
-
-
-form{
+ .contenedor_registro{
   width: 85%;
   padding: 5%;
   margin: 5% auto ;
@@ -37,31 +16,16 @@ form{
   -webkit-box-shadow: -2px 4px 4px 3px rgb(220, 220, 220);
 
 }
-
-form h1{
-	width: 90%;
+ .contenedor_registro h1{
+   width: 90%;
     margin-bottom: 50px;
     font-family: arial; 
 }
 
 
-.submit{
-    width: 30%;
-    padding:7px 10px;
-    margin: 20px 100px 20px 125px;
-    cursor: pointer;
-    display: block;
-    margin-left: 120px;
-    background:linear-gradient( to right, #64dcec,#8fc3f3 ) ;
-    border: 0;
-    border-radius: 10px;
-    outline: none;
-}
-
-
 
 /* Input Forms*/
-input[type="text"], input[type="password"], input[type="date"]{
+ .contenedor_registro input[type="text"], input[type="password"], input[type="date"]{
     outline: none;
     padding: 10px;
     display: block;
@@ -71,7 +35,7 @@ input[type="text"], input[type="password"], input[type="date"]{
     margin: 20px 170px;
   }
   
-  input[type="submit"] {
+  .contenedor_registro input[type="submit"] {
     padding: 10px;
     color: #fff;
     background: #0098cb;
@@ -82,8 +46,315 @@ input[type="text"], input[type="password"], input[type="date"]{
     border-radius: 3px;
     cursor: pointer;
   }
-  input[type="submit"]:hover {
+  .contenedor_registro input[type="submit"]:hover {
     background-color: #00b8eb;
   }
- /* estilo de los chectbox */
+/*¨¨¨¨¨¨¨¨ menu despñlegable ¨¨¨¨*/
+
+  #menu_bar{
+    display: none;
+}
+
+#menu_bar_label{
+    position:absolute;
+    float: top;
+    font-size: 30px;
+    margin-top: -5px;
+    margin: 5px;
+    color: #e9f1f1;
+    cursor: pointer;
+    display: none;
+}
+
+.lista-cate{
+    width: 98%;
+    position: absolute;
+    margin:215px  auto;
+    padding: 1%
+  
+}
+
+
+/*#menu_bar:checked ~ .menu{
+    transform: translateX(-101%);
+}*/
+
+.menu{
+    position: relative;
+    margin: 11px ;
+    width: 100%;
+    background: rgba(255, 255, 255);
+    transition: all 0.5s;
+    /*transform: translateX(1%);*/
+    overflow: hidden;
+}
+
+.accordion_trigger{
+    padding: 13px 25px;
+    background: rgb(48 158 208);
+    border-bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    margin-bottom: 2px; 
+    border-radius: 3px;
+    width: 100%; 
+ 
+}
+.accordion_trigger a{
+    outline: none;
+    color: #fff;
+   
+ 
+}
+
+/*Contenedores de arcordeon*/
+.accordion_container{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background: #fff;
+    
+}
+
+.accordion_container2{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:#fff;
+    
+}
+
+.accordion_container3{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:#fff;
+    
+}
+
+.accordion_container4{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:#fff;
+    
+}
+
+.accordion_container5{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:#fff;
+    
+}
+
+.accordion_container6{
+    transition: all 0.3s ease-in-out;
+    height:0;
+    overflow: hidden;
+    background:#fff;
+    
+}
+
+.accordion_container7{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container8{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container9{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container10{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container11{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container12{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container13{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container14{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container15{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container16{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_containe17{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container18{
+  transition: all 0.3s ease-in-out;
+  height:0;
+  overflow: hidden;
+  background:#fff;
+  
+}
+
+.accordion_container19{
+transition: all 0.3s ease-in-out;
+height:0;
+overflow: hidden;
+background:#fff;
+
+}
+
+/*Contenedores de arcordeon*/
+
+
+
+.accordion_container ul li{
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+
+}
+.menu ul li a{
+    line-height: 10px;
+    margin: 10px;
+    color: rgb(180 191 199 / 83%);
+    
+}
+.ac_hide{
+    display: none;
+    position: absolute;
+}
+.accordion_trigger:hover{
+     background: rgb(23 108 234 / 65%);
+}
+
+#at1:checked ~ .accordion_container{
+    height: auto;
+}
+#at2:checked ~ .accordion_container2{
+    height: auto;
+}
+#at3:checked ~ .accordion_container3{
+    height: auto;
+}
+#at4:checked ~ .accordion_container4{
+
+    height: auto;
+}
+#at5:checked ~ .accordion_container5{
+    height: auto;
+}
+#at6:checked ~ .accordion_container6{
+    height: auto;
+}
+
+#at7:checked ~ .accordion_container7{
+  height: auto;
+}
+#at8:checked ~ .accordion_container8{
+  height: auto;
+}
+#at9:checked ~ .accordion_container9{
+  height: auto;
+}
+#at10:checked ~ .accordion_container10{
+  height: auto;
+}
+#at11:checked ~ .accordion_container11{
+  height: auto;
+}
+#at12:checked ~ .accordion_container12{
+  height: auto;
+}
+#at13:checked ~ .accordion_container13{
+    height: auto;
+}
+#at14:checked ~ .accordion_container14{
+    height: auto;
+}
+#at15:checked ~ .accordion_container15{
+
+    height: auto;
+}
+#at16:checked ~ .accordion_container16{
+    height: auto;
+}
+#at17:checked ~ .accordion_container17{
+    height: auto;
+}
+
+#at18:checked ~ .accordion_container18{
+  height: auto;
+}
+#at19:checked ~ .accordion_container19{
+  height: autos;
+}
+
+
+
+@media (max-width: 850px){
+    .lista-cate{
+         margin-top: auto;
+    }
+}
+
 

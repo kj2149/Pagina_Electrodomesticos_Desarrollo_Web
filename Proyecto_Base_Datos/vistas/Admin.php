@@ -157,7 +157,7 @@
 	            <input class="ac_hide" type="checkbox" id="at15" name="x15">
 	    
 
-	            <label class="accordion_trigger" for="at1"><a href="../vistas´pago.php"> Pago </a></label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/pago.php"> Pago </a></label>
 	            <input class="ac_hide" type="checkbox" id="at16" name="x16">
 	      
 

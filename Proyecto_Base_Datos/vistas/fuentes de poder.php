@@ -99,11 +99,11 @@
 						</li>
 				</ul>
 			</li>
-			<li class="toproot"><a href="servicio.php" target="marco"style="height:28px;line-height:22px;"><span>Servicios</span></a></li>
+			<li class="toproot"><a href=""../vistas/servicio.php" target="marco"style="height:28px;line-height:22px;"><span>Servicios</span></a></li>
 			
-			<li class="toproot"><a href="quienes_somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
+			<li class="toproot"><a href=""../vistas/quienes_somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
 			</li>
-			<li class="toplast"><a href="contactenos.php" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
+			<li class="toplast"><a href=""../vistas/contactenos.php" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
 		</ul>
 		
 	   </div>
@@ -279,7 +279,7 @@
 		     </div>
 
              <div class="terminos">
-		       <p><a href="../vista/terminos y condiciones.php">Terminos y Condiciones</a></p><br>
+		       <p><a href="../vistas/terminos y condiciones.php">Terminos y Condiciones</a></p><br>
 		       <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
 	        </div>
 	  </div>

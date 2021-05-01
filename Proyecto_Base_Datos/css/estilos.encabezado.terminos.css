@@ -13,7 +13,7 @@
     height: 0%;
     left: 1.5%;
     right: 80%;
-    padding: 1%;
+    padding: 4%;
     margin: 8.8%;
     margin-bottom: 2%;
     margin-top: 1%;
@@ -31,7 +31,7 @@
     height: 0%;
     left: 1.5%;
     right: 80%;
-    padding: 1%;
+    padding: 4%;
     margin: 8.8%;
     margin-bottom: 2%;
     margin-top: 230px;
@@ -43,17 +43,3 @@
     position: relative;   
 }
 
- .aside{
-    display: block;
-    width: 12.5%;
-    background: rgba(97, 94, 94, 0.226);
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 10px;
-    float: left;
-    height: 1800px;
-    margin-left: 2px;
-    margin-top: 14px;
-    margin-bottom: 0px;
-    border: 0px solid rgb(17, 17, 17);
-
- }

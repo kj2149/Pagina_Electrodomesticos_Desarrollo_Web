@@ -103,6 +103,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Unlimited Tecnhology-Iniciar Sesion</title>
     </head>  
+	 <body class="text-white">
       <!--***********************-------   HEADER  -----------*************************************************-->
 		<header>
            <div class="container-head">
@@ -120,13 +121,12 @@
 
 	 <div class="buscar1">
 			<div class=" barra-btn-buscar">
-			  <input type="text" placeholder="Buscar" required>
+			  <input type="" placeholder="Buscar" required>
 			  <div class="btn">
 				<i class="fas fa-search icon"></i>
 			  </div>
 		      </div>
-		      <a class="iniciar1" href="../vistas/login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
-		      <a class="registrar1" href="../vistas/registro.php" > <button type="button" class="bot-log-reg">Registrarse</button></a>
+		
         </div>
 		
     <!--Menu Header-->
@@ -164,12 +164,12 @@
 						</li>
 				</ul>
 			</li>
-			<li class="toproot"><a href=""../vistas/servicio.php" target="marco"style="height:28px;line-height:22px;"><span>Servicios</span></a></li>
+			<li class="toproot"><a href="../vistas/servicio.php" target="marco"style="height:28px;line-height:22px;"><span>Servicios</span></a></li>
 			
-			<li class="toproot"><a href=""../vistas/quienes_somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
+			<li class="toproot"><a href="../vistas/quienes_somos.php" target="marco" style="height:28px;line-height:22px;"><span>Quienes somos?</span></a>
 			</li>
-			<li class="toplast"><a href=""../vistas/contactenos.php" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
-			<li class="toplast"><a href=""../vistas/Admin.php" target="marco" style="height:26px;line-height:22px;">Admin</a></li>
+			<li class="toplast"><a href="../vistas/contactenos.php" target="marco" style="height:26px;line-height:22px;">Contactenos</a></li>
+			
 		</ul>
 		
 	   </div>

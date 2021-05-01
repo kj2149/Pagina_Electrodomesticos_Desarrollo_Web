@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <title>Unlimited Tecnhology producto 89</title>
+  <title>Unlimited Tecnhology - producto 89</title>
 </head>
 
 <body id="parallax" class="text-white">
@@ -254,7 +254,7 @@
            </div>
 
              <div class="terminos">
-                <p><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
+                <p><a href="../vistas/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
                 <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
             </div>
      </div>

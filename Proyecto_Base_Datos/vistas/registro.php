@@ -262,7 +262,7 @@
 		     </div>
 
              <div class="terminos">
-		
+		   <p><a href="../vistas/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
 		   <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
 	      </div>
 	</div>

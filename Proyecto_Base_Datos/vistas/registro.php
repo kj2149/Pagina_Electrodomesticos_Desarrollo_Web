@@ -101,7 +101,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <title>Unlimited Tecnhology-Iniciar Sesion</title>
+        <title>Registrarse</title>
     </head>  
 	 <body class="text-white">
       <!--***********************-------   HEADER  -----------*************************************************-->
@@ -262,7 +262,7 @@
 		     </div>
 
              <div class="terminos">
-		   <p><a href="../vistas/terminos y condiciones.php">Terminos y Condiciones</a></p><br>
+		
 		   <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
 	      </div>
 	</div>

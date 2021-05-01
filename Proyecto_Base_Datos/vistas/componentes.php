@@ -264,7 +264,7 @@
 		      </div>
 
               <div class="terminos">
-		               <p><a href="../vista/terminos y condiciones.php">Terminos y Condiciones</a></p><br>
+		               <p><a href="../vistas/terminos y condiciones.php">Terminos y Condiciones</a></p><br>
 		               <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
 	          </div>
 	    </div>

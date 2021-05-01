@@ -100,140 +100,78 @@
 
 	            <label class="accordion_trigger" for="at1"><a href="../vistas/calificacion.php"> Calificacion </a></label>
 	            <input class="ac_hide" type="checkbox" id="at1"  name="x1">
-	            <div class="accordion_container">
-	            		   
+	         
 
-	            </div>
-
-	            <label class="accordion_trigger" for="at2"><a href="../vistas/Categoria_producto.php"> Categoria Producto</a></label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/Categoria_producto.php"> Categoria Producto</a></label>
 	            <input class="ac_hide" type="checkbox" id="at2" name="x2">
-	            <div class="accordion_container2">
-
-	    
-	            </div>
 
 
-	            <label class="accordion_trigger" for="at3"><a href="../vistas/ciudad.php"> Ciudad</a> </label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/ciudad.php"> Ciudad</a> </label>
 	            <input class="ac_hide" type="checkbox" id="at3" name="x3">
-	            <div class="accordion_container3">
-	            </div>
-
-
-                <label class="accordion_trigger" for="at4"><a href="../vistas/Compra_cliente.php"> Compra Cliente</a></label>
-	            <input class="ac_hide" type="checkbox" id="at4" name="x4">
-	            <div class="accordion_container4">
-	            
-	            </div>
-
-
-
-	            <label class="accordion_trigger" for="at5"><a href="../vistas/compra_proveedor.php"> Compra Proveedor</a> </label>
-	            <input class="ac_hide" type="checkbox" id="at5" name="x5">
-	            <div class="accordion_container5">
-             	
-	            </div>
-
-
-	            <label class="accordion_trigger" for="at6"><a href="../vistas/contacto.php"> Contacto</a></label>
-	            <input class="ac_hide" type="checkbox" id="at6" name="x6">
-	            <div class="accordion_container6">
 	
-	            </div>
 
-	             <label class="accordion_trigger" for="at7"><a href="../vistas/departamento.php"> Departamento</a> </label>
+                <label class="accordion_trigger" for="at1"><a href="../vistas/Compra_cliente.php"> Compra Cliente</a></label>
+	            <input class="ac_hide" type="checkbox" id="at4" name="x4">
+
+
+
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/compra_proveedor.php"> Compra Proveedor</a> </label>
+	            <input class="ac_hide" type="checkbox" id="at5" name="x5">
+
+
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/contacto.php"> Contacto</a></label>
+	            <input class="ac_hide" type="checkbox" id="at6" name="x6">
+	       
+
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/departamento.php"> Departamento</a> </label>
 	            <input class="ac_hide" type="checkbox" id="at7"  name="x7">
-	            <div class="accordion_container7">
+	         
 
-	            </div>
-
-	            <label class="accordion_trigger" for="at8"><a href="../vistas/descuento.php"> Descuento</a> </label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/descuento.php"> Descuento</a> </label>
 	            <input class="ac_hide" type="checkbox" id="at8" name="x8">
-	            <div class="accordion_container8">
-		 
-	            </div>
+	    
 
-
-	            <label class="accordion_trigger" for="at9"><a href="../vistas/detalles_Ventas.php"> Destalles Venta</a> </label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/detalles_Ventas.php"> Destalles Venta</a> </label>
 	            <input class="ac_hide" type="checkbox" id="at9" name="x9">
-	            <div class="accordion_container9">
-		         
-	            </div>
-                
+	                 
 
-                <label class="accordion_trigger" for="at10"><a href="../vistas/edad.php"> Edad </a></label>
+                <label class="accordion_trigger" for="at1"><a href="../vistas/edad.php"> Edad </a></label>
 	            <input class="ac_hide" type="checkbox" id="at10" name="x10">
-	            <div class="accordion_container10">
-		         
-	            </div>
-
-                <label class="accordion_trigger " for="at11"><a href="../vistas/envio.php"> Envio</a></label>
+	      
+                <label class="accordion_trigger " for="at1"><a href="../vistas/envio.php"> Envio</a></label>
 	            <input class="ac_hide" type="checkbox" id="at11" name="x11">
-	            <div class="accordion_container11">
+	   
 
-	            </div>
-
-
-
-	            <label class="accordion_trigger" for="at12"><a href="../vistas/factura.php"> Factura</a> </label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/factura.php"> Factura</a> </label>
 	            <input class="ac_hide" type="checkbox" id="at12" name="x12">
-	            <div class="accordion_container12">
-             	
-	            </div>
+	   
 
-
-	            <label class="accordion_trigger" for="at13"><a href="../vistas/genero.php"> Genero</a></label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/genero.php"> Genero</a></label>
 	            <input class="ac_hide" type="checkbox" id="at13" name="x13">
-	            <div class="accordion_container13">
-
-
-                </div>
-
-	            <label class="accordion_trigger" for="at14"><a href="../vistas/inventario.php"> Inventario </a></label>
+	         
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/inventario.php"> Inventario </a></label>
 	            <input class="ac_hide" type="checkbox" id="at14"  name="x14">
-	            <div class="accordion_container14">
+	       
 
-	            </div>
-
-	            <label class="accordion_trigger" for="at15"><a href="../vistas/orden_compra.php">  Orden Compra</a></label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/orden_compra.php">  Orden Compra</a></label>
 	            <input class="ac_hide" type="checkbox" id="at15" name="x15">
-	            <div class="accordion_container15">
-		
-	            </div>
+	    
 
-
-	            <label class="accordion_trigger" for="at16"><a href="../vistas´pago.php"> Pago </a></label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas´pago.php"> Pago </a></label>
 	            <input class="ac_hide" type="checkbox" id="at16" name="x16">
-	            <div class="accordion_container16">
-		         
-	            </div>
+	      
 
-
-                <label class="accordion_trigger" for="at17"><a href="../vistas/perfil.php"> Perfil</a></label>
+                <label class="accordion_trigger" for="at1"><a href="../vistas/perfil.php"> Perfil</a></label>
 	            <input class="ac_hide" type="checkbox" id="at17" name="x17">
-	            <div class="accordion_container17">
-               
+	      
 
-
-		
-	            </div>
-
-
-
-	            <label class="accordion_trigger" for="at18"><a href="../vistas/producto.php"> Producto</a> </label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/producto.php"> Producto</a> </label>
 	            <input class="ac_hide" type="checkbox" id="at18" name="x18">
-	            <div class="accordion_container18">
-             	
-	            </div>
+	 
 
-
-	            <label class="accordion_trigger" for="at19"><a href="../vistas/usuarios.php"> Usuario</a></label>
+	            <label class="accordion_trigger" for="at1"><a href="../vistas/usuarios.php"> Usuario</a></label>
 	            <input class="ac_hide" type="checkbox" id="at19" name="x19S">
-	            <div class="accordion_container19">
 
-	             
-		            
-		            
-	            </div>
             </nav>
           				
 </aside>	

@@ -199,7 +199,7 @@
             <input type="submit" value="Iniciar Sesion"  class="botones">
         </div>
        
-            <p id="terminos-condiciones" ><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p>
+            <p id="terminos-condiciones" ><a href="../vistas/terminos y condiciones.html">Terminos y Condiciones</a></p>
             <br><br>
             <p><center>| © 2021 todos los derechos reservados |</center></p>
 
@@ -238,7 +238,7 @@
 		     </div>
 
              <div class="terminos">
-		   <p><a href="../vistas/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
+		  
 		   <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
 	      </div>
 	</div>

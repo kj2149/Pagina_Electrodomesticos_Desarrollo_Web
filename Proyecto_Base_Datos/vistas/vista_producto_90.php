@@ -258,7 +258,7 @@ MUSETEX insiste en que una empresa sin innovación es una empresa sin alma. Por 
            </div>
 
              <div class="terminos">
-                <p><a href="../vista/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
+                <p><a href="../vistas/terminos y condiciones.html">Terminos y Condiciones</a></p><br>
                 <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
             </div>
      </div>

@@ -20,7 +20,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keyswords" content="html5, css3">
-  <link rel="stylesheet" type="text/css" href="../css/estilos4.css">
   <link rel="stylesheet" type="text/css" href="../css/estilos.encabezado.terminos.css" >
   <script src="https://use.fontawesome.com/56837f1421.js"></script>
    <!-- <link rel="stylesheet" type="text/css" href="../css/icono.css">  -->   
@@ -33,7 +32,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <title>Unlimited Tecnhology</title>
+  <title>Terminos y Condiciones - Unlimited Tecnhology</title>
 </head>
 
 <body id="parallax" class="text-white">
@@ -217,7 +216,7 @@
            </div>
 
              <div class="terminos">
-                <p><a href="../vista/terminos y condiciones.php">Terminos y Condiciones</a></p><br>
+               
                 <p id="copyright">| © 2021 |  Todos los derechos reservados | Unlimited Tecnhology</p>
             </div>
      </div>

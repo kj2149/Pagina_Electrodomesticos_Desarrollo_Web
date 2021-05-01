@@ -61,7 +61,7 @@
 			  </div>
 		      </div>
 		      <a class="iniciar1" href="../vistas/login.php" ><button type="button" class="bot-log-reg">Acceder</button></a> 
-		      <a class="registrar1" href="vistas/registro.php" > <button type="button" class="bot-log-reg">Registrarse</button></a>
+		      <a class="registrar1" href="../vistas/registro.php" > <button type="button" class="bot-log-reg">Registrarse</button></a>
         </div>
 
 <!--Menu Header-->
